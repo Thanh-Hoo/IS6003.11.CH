@@ -1,0 +1,5 @@
+{
+  "representation": "đã dùng embedding của outputs/runs/20261017T081309Z-930f8a85 (đã kiểm fingerprint, không fit lại)",
+  "markov": "điểm out-of-fold M_markov từ outputs/improvement/20261022T151529Z-bb0fee9a (sha256 98b34f56ff56e6ee…)",
+  "replay": "có"
+}

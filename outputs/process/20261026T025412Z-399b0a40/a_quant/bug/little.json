@@ -1,0 +1,15 @@
+{
+  "window_start": "2021-06-02T07:24:19.359000+00:00",
+  "window_end": "2022-06-27T08:58:53.987000+00:00",
+  "window_days": 390.0656785648148,
+  "n_cases": 161,
+  "lambda_per_day": 0.41275100283719945,
+  "W_days": 45.62498249468024,
+  "L_measured": 18.83175727910894,
+  "L_little": 18.83175727910894,
+  "arrivals_first_half": 109,
+  "arrivals_second_half": 52,
+  "W_days_first_half": 53.61335096776249,
+  "W_days_second_half": 28.88013319533476,
+  "note": "Chỉ có ca đã đóng nên L = λ·W đúng theo định nghĩa trên cả cửa sổ; độ lệch theo tuần và giữa hai nửa kỳ mới mang thông tin về tính dừng."
+}

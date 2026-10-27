@@ -1,0 +1,162 @@
+case_id,n_drawn,n_top,share_top,consensus,rank,terminal_status,n_events,n_exceed,reasons
+bug:TI-4584,121,121,1.0,True,3,DONE,51,5,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 98 trong nhóm DONE·dài); số cờ quy tắc = 3 (phân vị 98 trong nhóm DONE·dài); lùi trạng thái/mở lại = 2 (phân vị 97 trong nhóm DONE·dài); đổi người phụ trách = 5 (phân vị 92 trong nhóm DONE·dài); lần đổi trạng thái bù = 6 (phân vị 100 trong nhóm DONE·dài)"
+bug:TI-4671,127,127,1.0,True,1,Rejected,9,5,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 95 trong nhóm Rejected·ngắn); số cờ quy tắc = 2 (phân vị 99 trong nhóm Rejected·ngắn); số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn); lùi trạng thái/mở lại = 1 (phân vị 99 trong nhóm Rejected·ngắn); lần đổi trạng thái bù = 1 (phân vị 97 trong nhóm Rejected·ngắn)"
+bug:TI-4748,138,138,1.0,True,6,DONE,51,3,"lùi trạng thái/mở lại = 2 (phân vị 97 trong nhóm DONE·dài); đổi người phụ trách = 7 (phân vị 100 trong nhóm DONE·dài); độ bất ngờ M_markov (khử độ dài) = 1,57 (phân vị 96 trong nhóm DONE·dài)"
+bug:TI-5260,114,114,1.0,True,2,Rejected,14,5,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 100 trong nhóm Rejected·vừa); số cờ quy tắc = 2 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa); đổi người phụ trách = 4 (phân vị 100 trong nhóm Rejected·vừa); độ bất ngờ M_markov (khử độ dài) = 3,92 (phân vị 100 trong nhóm Rejected·vừa)"
+bug:TI-5564,129,129,1.0,True,7,DONE,37,3,"số cờ quy tắc = 4 (phân vị 100 trong nhóm DONE·dài); lùi trạng thái/mở lại = 2 (phân vị 97 trong nhóm DONE·dài); độ bất ngờ M_markov (khử độ dài) = 1,55 (phân vị 94 trong nhóm DONE·dài)"
+bug:TI-4872,137,134,0.9781021897810219,True,5,Rejected,8,4,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 95 trong nhóm Rejected·ngắn); số cờ quy tắc = 2 (phân vị 99 trong nhóm Rejected·ngắn); lùi trạng thái/mở lại = 1 (phân vị 99 trong nhóm Rejected·ngắn); độ bất ngờ M_markov (khử độ dài) = 2,64 (phân vị 98 trong nhóm Rejected·ngắn)"
+bug:TI-5770,116,108,0.9310344827586207,True,9,DONE,19,3,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 94 trong nhóm DONE·vừa); số cờ quy tắc = 2 (phân vị 96 trong nhóm DONE·vừa); độ bất ngờ M_markov (khử độ dài) = 3,64 (phân vị 100 trong nhóm DONE·vừa)"
+bug:TI-6208,126,111,0.8809523809523809,True,11,DONE,20,3,"lệch mô hình chuẩn (1 − fitness) = 0,154 (phân vị 100 trong nhóm DONE·vừa); lùi trạng thái/mở lại = 1 (phân vị 93 trong nhóm DONE·vừa); đổi người phụ trách = 4 (phân vị 100 trong nhóm DONE·vừa)"
+bug:TI-5261,125,110,0.88,True,15,Rejected,12,2,"lệch mô hình chuẩn (1 − fitness) = 0,167 (phân vị 99 trong nhóm Rejected·ngắn); độ bất ngờ M_markov (khử độ dài) = 3,36 (phân vị 100 trong nhóm Rejected·ngắn)"
+bug:TI-6163,129,113,0.875968992248062,True,14,DONE,19,2,"lùi trạng thái/mở lại = 2 (phân vị 100 trong nhóm DONE·vừa); độ bất ngờ M_markov (khử độ dài) = 2,49 (phân vị 96 trong nhóm DONE·vừa)"
+bug:TI-5676,124,85,0.6854838709677419,False,12,DONE,19,3,số cờ quy tắc = 2 (phân vị 96 trong nhóm DONE·vừa); lùi trạng thái/mở lại = 1 (phân vị 93 trong nhóm DONE·vừa); lần đổi trạng thái bù = 4 (phân vị 93 trong nhóm DONE·vừa)
+bug:TI-5598,129,85,0.6589147286821705,False,4,Rejected,37,4,"lệch mô hình chuẩn (1 − fitness) = 0,0833 (phân vị 100 trong nhóm Rejected·dài); số cờ quy tắc = 2 (phân vị 100 trong nhóm Rejected·dài); đổi người phụ trách = 6 (phân vị 100 trong nhóm Rejected·dài); độ bất ngờ M_markov (khử độ dài) = 1,27 (phân vị 100 trong nhóm Rejected·dài)"
+bug:TI-5200,129,84,0.6511627906976745,False,13,Rejected,22,2,số cờ quy tắc = 2 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa)
+bug:TI-5608,113,67,0.5929203539823009,False,17,DONE,29,2,"đổi người phụ trách = 6 (phân vị 98 trong nhóm DONE·dài); độ bất ngờ M_markov (khử độ dài) = 1,37 (phân vị 92 trong nhóm DONE·dài)"
+bug:TI-6150,121,70,0.5785123966942148,False,8,Rejected,18,3,"lệch mô hình chuẩn (1 − fitness) = 0,0833 (phân vị 92 trong nhóm Rejected·vừa); số cờ quy tắc = 2 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa)"
+bug:TI-4871,123,64,0.5203252032520326,False,10,Rejected,18,3,"lệch mô hình chuẩn (1 − fitness) = 0,0833 (phân vị 92 trong nhóm Rejected·vừa); số cờ quy tắc = 2 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa)"
+bug:TI-5378,129,57,0.4418604651162791,False,16,Rejected,20,2,số cờ quy tắc = 2 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa)
+bug:TI-5153,128,53,0.4140625,False,18,DONE,54,2,số lượt trễ định mức = 4 (phân vị 95 trong nhóm DONE·dài); đổi người phụ trách = 5 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-4935,123,38,0.3089430894308943,False,19,DONE,10,2,số lượt trễ định mức = 1 (phân vị 100 trong nhóm DONE·ngắn); lần đổi trạng thái bù = 3 (phân vị 100 trong nhóm DONE·ngắn)
+bug:TI-5118,117,36,0.3076923076923077,False,27,DONE,58,1,lùi trạng thái/mở lại = 2 (phân vị 97 trong nhóm DONE·dài)
+bug:TI-6203,128,26,0.203125,False,23,DONE,21,2,"lệch mô hình chuẩn (1 − fitness) = 0,125 (phân vị 94 trong nhóm DONE·vừa); số cờ quy tắc = 2 (phân vị 96 trong nhóm DONE·vừa)"
+bug:TI-4725,136,27,0.19852941176470587,False,22,Rejected,13,2,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn); đổi người phụ trách = 3 (phân vị 99 trong nhóm Rejected·ngắn)
+bug:TI-6105,126,25,0.1984126984126984,False,20,Rejected,16,2,"lệch mô hình chuẩn (1 − fitness) = 0,0833 (phân vị 92 trong nhóm Rejected·vừa); lùi trạng thái/mở lại = 1 (phân vị 90 trong nhóm Rejected·vừa)"
+bug:TI-5674,135,24,0.17777777777777778,False,65,Rejected,23,0,
+bug:TI-5311,135,22,0.16296296296296298,False,21,Rejected,8,2,"đổi người phụ trách = 3 (phân vị 99 trong nhóm Rejected·ngắn); độ bất ngờ M_markov (khử độ dài) = 1,17 (phân vị 92 trong nhóm Rejected·ngắn)"
+bug:TI-4751,119,18,0.15126050420168066,False,33,DONE,37,1,số cờ quy tắc = 2 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5633,135,18,0.13333333333333333,False,87,Rejected,30,0,
+bug:TI-4686,113,15,0.13274336283185842,False,26,DONE,25,1,lần đổi trạng thái bù = 5 (phân vị 97 trong nhóm DONE·dài)
+bug:TI-5347,132,17,0.12878787878787878,False,28,DONE,40,1,lần đổi trạng thái bù = 5 (phân vị 97 trong nhóm DONE·dài)
+bug:TI-4966,134,16,0.11940298507462686,False,29,Rejected,9,1,"lệch mô hình chuẩn (1 − fitness) = 0,167 (phân vị 99 trong nhóm Rejected·ngắn)"
+bug:TI-4811,117,12,0.10256410256410256,False,32,DONE,25,1,"lệch mô hình chuẩn (1 − fitness) = 0,154 (phân vị 100 trong nhóm DONE·dài)"
+bug:TI-5269,118,11,0.09322033898305085,False,25,DONE,32,1,"độ bất ngờ M_markov (khử độ dài) = 2,45 (phân vị 100 trong nhóm DONE·dài)"
+bug:TI-5331,136,11,0.08088235294117647,False,38,DONE,25,1,"độ bất ngờ M_markov (khử độ dài) = 2,06 (phân vị 98 trong nhóm DONE·dài)"
+bug:TI-5568,127,7,0.05511811023622047,False,24,DONE,19,2,lùi trạng thái/mở lại = 1 (phân vị 93 trong nhóm DONE·vừa); lần đổi trạng thái bù = 5 (phân vị 100 trong nhóm DONE·vừa)
+bug:TI-5915,126,6,0.047619047619047616,False,66,DONE,10,0,
+bug:TI-5308,143,5,0.03496503496503497,False,30,Rejected,10,1,"độ bất ngờ M_markov (khử độ dài) = 2,29 (phân vị 96 trong nhóm Rejected·ngắn)"
+bug:TI-5016,129,3,0.023255813953488372,False,34,DONE,14,1,đổi người phụ trách = 2 (phân vị 100 trong nhóm DONE·ngắn)
+bug:TI-4902,142,3,0.02112676056338028,False,36,DONE,12,1,"độ bất ngờ M_markov (khử độ dài) = 1,24 (phân vị 100 trong nhóm DONE·ngắn)"
+bug:TI-5268,132,2,0.015151515151515152,False,42,Rejected,17,1,"độ bất ngờ M_markov (khử độ dài) = 1,28 (phân vị 92 trong nhóm Rejected·vừa)"
+bug:TI-6043,136,2,0.014705882352941176,False,71,Rejected,15,0,
+bug:TI-5244,120,1,0.008333333333333333,False,69,DONE,23,0,
+bug:TI-5488,123,1,0.008130081300813009,False,44,DONE,16,1,số lượt trễ định mức = 3 (phân vị 98 trong nhóm DONE·vừa)
+bug:TI-5139,126,1,0.007936507936507936,False,37,DONE,29,1,số cờ quy tắc = 2 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5863,132,1,0.007575757575757576,False,91,Rejected,15,0,
+bug:TI-5145,134,1,0.007462686567164179,False,119,DONE,13,0,
+bug:TI-4596,117,0,0.0,False,131,DONE,40,0,
+bug:TI-4599,122,0,0.0,False,80,DONE,27,0,
+bug:TI-4616,126,0,0.0,False,67,Rejected,7,0,
+bug:TI-4617,135,0,0.0,False,107,DONE,46,0,
+bug:TI-4649,130,0,0.0,False,84,Rejected,6,0,
+bug:TI-4651,126,0,0.0,False,143,DONE,30,0,
+bug:TI-4682,133,0,0.0,False,158,DONE,26,0,
+bug:TI-4683,118,0,0.0,False,50,Rejected,12,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-4723,130,0,0.0,False,39,DONE,33,1,số cờ quy tắc = 2 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-4724,123,0,0.0,False,57,Rejected,12,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-4726,120,0,0.0,False,112,Rejected,6,0,
+bug:TI-4727,133,0,0.0,False,126,DONE,26,0,
+bug:TI-4740,132,0,0.0,False,60,DONE,25,1,số lượt trễ định mức = 4 (phân vị 95 trong nhóm DONE·dài)
+bug:TI-4745,122,0,0.0,False,58,Rejected,11,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-4758,120,0,0.0,False,108,Rejected,12,0,
+bug:TI-4759,135,0,0.0,False,52,DONE,16,1,"độ bất ngờ M_markov (khử độ dài) = 1,53 (phân vị 93 trong nhóm DONE·vừa)"
+bug:TI-4770,127,0,0.0,False,109,Rejected,13,0,
+bug:TI-4818,132,0,0.0,False,46,Rejected,11,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-4820,123,0,0.0,False,73,DONE,19,0,
+bug:TI-4829,132,0,0.0,False,82,Rejected,18,0,
+bug:TI-4834,113,0,0.0,False,142,DONE,21,0,
+bug:TI-4849,122,0,0.0,False,97,Rejected,5,0,
+bug:TI-4876,120,0,0.0,False,74,DONE,23,0,
+bug:TI-4887,125,0,0.0,False,85,Rejected,6,0,
+bug:TI-4888,126,0,0.0,False,64,DONE,18,1,lần đổi trạng thái bù = 4 (phân vị 93 trong nhóm DONE·vừa)
+bug:TI-4890,126,0,0.0,False,144,DONE,15,0,
+bug:TI-4893,132,0,0.0,False,159,DONE,37,0,
+bug:TI-4894,125,0,0.0,False,110,Rejected,6,0,
+bug:TI-4931,129,0,0.0,False,78,Rejected,6,0,
+bug:TI-4932,135,0,0.0,False,77,Rejected,12,0,
+bug:TI-4936,120,0,0.0,False,148,Rejected,16,0,
+bug:TI-4967,132,0,0.0,False,56,DONE,37,1,số lượt trễ định mức = 4 (phân vị 95 trong nhóm DONE·dài)
+bug:TI-5007,122,0,0.0,False,152,DONE,29,0,
+bug:TI-5023,134,0,0.0,False,125,Rejected,17,0,
+bug:TI-5041,133,0,0.0,False,94,DONE,21,0,
+bug:TI-5052,117,0,0.0,False,76,Rejected,7,0,
+bug:TI-5066,122,0,0.0,False,101,DONE,21,0,
+bug:TI-5091,125,0,0.0,False,128,DONE,22,0,
+bug:TI-5115,137,0,0.0,False,47,Rejected,4,1,"độ bất ngờ M_markov (khử độ dài) = 1,56 (phân vị 94 trong nhóm Rejected·ngắn)"
+bug:TI-5117,130,0,0.0,False,134,Rejected,17,0,
+bug:TI-5133,120,0,0.0,False,140,Rejected,14,0,
+bug:TI-5176,112,0,0.0,False,86,DONE,27,0,
+bug:TI-5187,128,0,0.0,False,116,Rejected,13,0,
+bug:TI-5199,130,0,0.0,False,92,Rejected,5,0,
+bug:TI-5201,117,0,0.0,False,43,Rejected,15,1,"độ bất ngờ M_markov (khử độ dài) = 1,6 (phân vị 96 trong nhóm Rejected·vừa)"
+bug:TI-5246,116,0,0.0,False,106,Rejected,13,0,
+bug:TI-5254,117,0,0.0,False,99,Rejected,6,0,
+bug:TI-5256,121,0,0.0,False,153,DONE,19,0,
+bug:TI-5259,124,0,0.0,False,81,Rejected,11,0,
+bug:TI-5266,130,0,0.0,False,150,DONE,25,0,
+bug:TI-5267,133,0,0.0,False,45,DONE,28,1,đổi người phụ trách = 5 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5332,131,0,0.0,False,72,DONE,22,0,
+bug:TI-5333,134,0,0.0,False,70,DONE,22,0,
+bug:TI-5345,117,0,0.0,False,117,Rejected,17,0,
+bug:TI-5346,118,0,0.0,False,127,DONE,19,0,
+bug:TI-5362,124,0,0.0,False,31,DONE,33,1,số cờ quy tắc = 2 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5366,122,0,0.0,False,147,Rejected,18,0,
+bug:TI-5376,129,0,0.0,False,146,DONE,25,0,
+bug:TI-5382,133,0,0.0,False,54,Rejected,12,1,lần đổi trạng thái bù = 1 (phân vị 97 trong nhóm Rejected·ngắn)
+bug:TI-5383,116,0,0.0,False,149,Rejected,14,0,
+bug:TI-5390,116,0,0.0,False,124,Rejected,10,0,
+bug:TI-5410,133,0,0.0,False,111,Rejected,12,0,
+bug:TI-5411,117,0,0.0,False,96,Rejected,14,0,
+bug:TI-5412,121,0,0.0,False,63,DONE,61,1,số lượt trễ định mức = 4 (phân vị 95 trong nhóm DONE·dài)
+bug:TI-5420,112,0,0.0,False,100,DONE,24,0,
+bug:TI-5426,125,0,0.0,False,133,DONE,39,0,
+bug:TI-5432,129,0,0.0,False,122,DONE,24,0,
+bug:TI-5440,125,0,0.0,False,62,DONE,19,1,lần đổi trạng thái bù = 4 (phân vị 93 trong nhóm DONE·vừa)
+bug:TI-5442,134,0,0.0,False,48,DONE,29,1,số lượt trễ định mức = 5 (phân vị 100 trong nhóm DONE·dài)
+bug:TI-5443,120,0,0.0,False,103,Rejected,12,0,
+bug:TI-5444,130,0,0.0,False,53,DONE,19,1,số lượt trễ định mức = 3 (phân vị 98 trong nhóm DONE·vừa)
+bug:TI-5445,136,0,0.0,False,68,Rejected,8,0,
+bug:TI-5469,131,0,0.0,False,156,DONE,28,0,
+bug:TI-5477,126,0,0.0,False,141,DONE,34,0,
+bug:TI-5480,127,0,0.0,False,40,DONE,34,1,đổi người phụ trách = 5 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5484,126,0,0.0,False,75,DONE,21,0,
+bug:TI-5489,134,0,0.0,False,121,DONE,27,0,
+bug:TI-5492,128,0,0.0,False,102,DONE,33,0,
+bug:TI-5545,134,0,0.0,False,113,Rejected,6,0,
+bug:TI-5547,124,0,0.0,False,51,DONE,38,1,đổi người phụ trách = 5 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5548,132,0,0.0,False,155,DONE,30,0,
+bug:TI-5555,125,0,0.0,False,118,Rejected,20,0,
+bug:TI-5569,130,0,0.0,False,154,Rejected,19,0,
+bug:TI-5583,121,0,0.0,False,120,DONE,22,0,
+bug:TI-5586,130,0,0.0,False,145,DONE,33,0,
+bug:TI-5591,125,0,0.0,False,35,DONE,25,1,số cờ quy tắc = 2 (phân vị 92 trong nhóm DONE·dài)
+bug:TI-5618,125,0,0.0,False,137,Rejected,16,0,
+bug:TI-5630,134,0,0.0,False,135,Rejected,17,0,
+bug:TI-5636,136,0,0.0,False,115,Rejected,13,0,
+bug:TI-5637,122,0,0.0,False,151,DONE,34,0,
+bug:TI-5656,130,0,0.0,False,59,Rejected,13,1,lần đổi trạng thái bù = 1 (phân vị 97 trong nhóm Rejected·ngắn)
+bug:TI-5672,125,0,0.0,False,132,DONE,36,0,
+bug:TI-5675,121,0,0.0,False,88,Rejected,7,0,
+bug:TI-5750,123,0,0.0,False,55,Rejected,11,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-5751,115,0,0.0,False,129,DONE,22,0,
+bug:TI-5769,124,0,0.0,False,104,Rejected,4,0,
+bug:TI-5837,129,0,0.0,False,161,DONE,25,0,
+bug:TI-5900,125,0,0.0,False,160,DONE,23,0,
+bug:TI-5916,130,0,0.0,False,90,DONE,36,0,
+bug:TI-5965,124,0,0.0,False,61,Rejected,10,1,lần đổi trạng thái bù = 1 (phân vị 97 trong nhóm Rejected·ngắn)
+bug:TI-5991,127,0,0.0,False,89,Rejected,17,0,
+bug:TI-6007,124,0,0.0,False,49,Rejected,13,1,số lượt trễ định mức = 2 (phân vị 93 trong nhóm Rejected·ngắn)
+bug:TI-6041,118,0,0.0,False,123,Rejected,20,0,
+bug:TI-6079,129,0,0.0,False,138,Rejected,14,0,
+bug:TI-6087,136,0,0.0,False,105,Rejected,15,0,
+bug:TI-6088,121,0,0.0,False,130,Rejected,12,0,
+bug:TI-6089,136,0,0.0,False,79,Rejected,8,0,
+bug:TI-6094,129,0,0.0,False,157,DONE,27,0,
+bug:TI-6132,127,0,0.0,False,136,Rejected,13,0,
+bug:TI-6149,121,0,0.0,False,114,Rejected,6,0,
+bug:TI-6151,113,0,0.0,False,139,Rejected,11,0,
+bug:TI-6152,116,0,0.0,False,98,DONE,14,0,
+bug:TI-6160,120,0,0.0,False,95,Rejected,5,0,
+bug:TI-6209,123,0,0.0,False,83,DONE,27,0,
+bug:TI-6255,143,0,0.0,False,41,DONE,25,1,"độ bất ngờ M_markov (khử độ dài) = 1,05 (phân vị 90 trong nhóm DONE·dài)"
+bug:TI-6297,109,0,0.0,False,93,Rejected,7,0,

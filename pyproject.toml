@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jira-ad"
+version = "0.1.0"
+description = "Phát hiện các ca xử lý Jira khác thường bằng biểu diễn đồ thị Node2Vec và Isolation Forest"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy",
+    "pandas>=2.2",
+    "networkx",
+    "gensim>=4.4,<5",
+    "scikit-learn",
+    "pyarrow",
+    "pyyaml",
+    "joblib",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab",
+    "nbformat",
+    "nbclient",
+    "ipykernel",
+]
+# Extra `dev` chỉ để hỗ trợ `pip install -e '.[notebook,dev]'`; uv dùng dependency group `dev` bên dưới.
+dev = [
+    "pytest>=7.4",
+    "ruff",
+]
+process = [
+    "pm4py>=2.7.23.11",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.4",
+    "ruff",
+]
+
+[project.scripts]
+jira-ad = "jira_ad.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jira_ad"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

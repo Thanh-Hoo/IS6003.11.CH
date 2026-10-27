@@ -1,0 +1,8 @@
+{
+  "INVESTIGATED": "PO",
+  "In Progress": "Eng",
+  "In Test": "SQA",
+  "Inbox": "PO",
+  "To Do": "PO",
+  "To Investigate": "PO"
+}

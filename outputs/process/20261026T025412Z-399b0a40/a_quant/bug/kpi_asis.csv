@@ -1,0 +1,19 @@
+kpi,value,unit,kind
+n_cases,161.0,ca,đo
+share_done,0.515527950310559,tỉ lệ,đo
+share_rejected,0.484472049689441,tỉ lệ,đo
+ct_cal_median_days,23.031620173611113,ngày lịch,đo
+ct_cal_p90_days,104.3069025,ngày lịch,đo
+ct_work_median_days,17.03162017361111,ngày làm việc,đo
+ct_work_p90_days,74.3069025,ngày làm việc,đo
+pt_share_min,0.16736598974692463,tỉ lệ,xấp xỉ (khoảng)
+pt_share_max,0.5924901385366019,tỉ lệ,xấp xỉ (khoảng)
+cte_median_min,2.9400021641693312e-06,tỉ lệ,xấp xỉ (khoảng)
+cte_median_max,0.7393110283884327,tỉ lệ,xấp xỉ (khoảng)
+fpy_strict,0.8136645962732919,tỉ lệ,đo
+fpy_adjusted,0.9565217391304348,tỉ lệ,đo
+rejected_issue_days_work,1928.5597155324076,ngày làm việc,đo
+rejected_after_in_progress,1.0,ca,đo
+throughput_per_week_mean,2.824561403508772,ca/tuần,đo
+wip_mean,18.410080655748168,ca,đo
+backfill_share_of_changes,0.298372513562387,tỉ lệ,đo

@@ -1,0 +1,66 @@
+# Ma trận thực nghiệm thành phần (spec §11, Task 8). Chạy: uv run jira-ad experiments --config configs/experiments.yaml
+#
+# Quy ước (bất biến):
+#  - Mỗi thí nghiệm đổi ĐÚNG MỘT yếu tố so với baseline (không chạy tích Descartes). Nhiều thay đổi một lúc
+#    phải khai `allow_multiple_changes` kèm lý do.
+#  - Ba model seed 42/43/44 trên cùng split (seed 42) và cùng bộ mutant (seed mutation cố định trong baseline):
+#    std theo seed là độ ổn định của bước học, KHÔNG phải khoảng tin cậy quần thể và không phải ba mẫu dữ liệu độc lập.
+#  - Cấu hình baseline đã được khóa trước khi xem test. Các thí nghiệm dưới đây mô tả ĐỘ NHẠY (exploratory):
+#    không chọn cấu hình tốt nhất theo test rồi công bố như holdout. Nếu sau này tuning thì chỉ chọn trên validation.
+#  - Story là thực nghiệm riêng với protocol riêng; không so cosine giữa mô hình bug và story học độc lập.
+#
+# QUY TẮC QUYẾT ĐỊNH — KHÓA NGÀY 2026-10-17, TRƯỚC KHI CHẠY cross_fit_5, dim_4, dim_8 (khối `decision` bên dưới):
+#  - Ba so sánh chính, mỗi so sánh kiểm một giả thuyết đã nêu ở docs/RESEARCH_NOTES.md:
+#      cross_fit_5 → giả thuyết 1 (đặc trưng train in-sample làm các cột unseen_* hằng và surprisal thiên thấp);
+#      dim_4, dim_8 → giả thuyết 2 (cột pooling không thấy thứ tự làm loãng Isolation Forest của D_hybrid).
+#  - Chỉ số chính: macro AUROC của D_hybrid trên VALIDATION, trung bình qua ba model seed. Không dùng test để chọn.
+#  - "Ứng viên cải thiện" ⇔ khoảng bootstrap theo parent của (thí nghiệm − baseline) nằm hoàn toàn trên 0,
+#    mức tin cậy 1 − 0,05/3 (Bonferroni theo ba so sánh). Ngược lại: không có bằng chứng.
+#  - Kết quả nào cũng không đổi baseline: baseline vẫn là cấu hình ghi nhận. Kết quả trên test chỉ được xem
+#    sau khi đã có phán quyết trên validation và chỉ để mô tả độ nhạy (khám phá).
+#  - Các thí nghiệm khác (undirected_walk, activity_role_nodes, q_*, dim_32, keep_all_noise, story_cohort) đã xem
+#    trên test từ Task 8 nên chỉ là mô tả khám phá, không nằm trong họ so sánh này.
+base: configs/baseline.yaml
+model_seeds: [42, 43, 44]
+decision:
+  primary_method: D_hybrid
+  selection_split: validation
+  family_alpha: 0.05
+  comparisons: [cross_fit_5, dim_4, dim_8]
+experiments:
+  - name: baseline
+    changes: {}
+    note: Cấu hình mặc định đã khóa (p=q=1, d=16, DFG có hướng, nút activity, noise policy mặc định).
+  - name: undirected_walk
+    changes: {graph.directed: false}
+    note: Walk trên đồ thị vô hướng (gộp trọng số hai chiều bằng tổng); DFG và surprisal vẫn có hướng.
+  - name: activity_role_nodes
+    changes: {graph.encoding: activity_role}
+    note: Nút là cặp (activity, role) thay vì chỉ activity.
+  - name: keep_all_noise
+    changes: {preprocess.noise_policy: keep_all}
+    note: Giữ cả cập nhật RemoteIssueLink chung chung. Cùng tập ca và cùng split nhưng nội dung core và mutant khác baseline (khác protocol).
+  - name: q_half
+    changes: {walk.q: 0.5}
+    note: q = 0,5 với p = 1 (walk thiên về ra xa).
+  - name: q_double
+    changes: {walk.q: 2.0}
+    note: q = 2 với p = 1 (walk thiên về ở gần).
+  - name: dim_32
+    changes: {embedding.dimensions: 32}
+    note: Số chiều embedding 32 thay vì 16.
+  - name: story_cohort
+    changes: {data.cohort: story}
+    note: Tập story chạy riêng với protocol riêng (không trộn với bug). Chỉ 7 issue Rejected nên stratum này rất nhỏ (test chỉ có 1 ca Rejected).
+  - name: cross_fit_5
+    changes: {features.cross_fit_folds: 5}
+    note: Đặc trưng phụ thuộc đồ thị của train (surprisal, unseen_*) tính chéo 5 fold trên train; embedding vẫn học trên toàn bộ train. Giả thuyết 1.
+  - name: dim_4
+    changes: {embedding.dimensions: 4}
+    note: Embedding 4 chiều (8 cột pooling + 10 H) để giảm tỷ trọng cột pooling không thấy thứ tự. Giả thuyết 2.
+  - name: dim_8
+    changes: {embedding.dimensions: 8}
+    note: Embedding 8 chiều (16 cột pooling + 10 H). Giả thuyết 2.
+  - name: temporal_holdout
+    changes: {split.strategy: temporal}
+    note: Holdout theo thời gian (spec §5.1 mở rộng) - train là 60% ca kết thúc sớm nhất, validation 20% kế tiếp, test 20% muộn nhất. Protocol riêng (khác split, khác tập ca held-out, khác mutant), không so trực tiếp với baseline; không nằm trong họ so sánh của khối decision.

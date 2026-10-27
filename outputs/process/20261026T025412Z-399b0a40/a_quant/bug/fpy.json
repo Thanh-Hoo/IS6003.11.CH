@@ -1,0 +1,10 @@
+{
+  "n_cases": 161,
+  "fpy_strict": 0.8136645962732919,
+  "fpy_adjusted": 0.9565217391304348,
+  "fpy_strict_done": 0.7590361445783133,
+  "fpy_adjusted_done": 0.9518072289156626,
+  "n_cases_rework": 30,
+  "n_cases_rework_outside_backfill": 7,
+  "definition": "Lùi = sang trạng thái có thứ tự nhỏ hơn (states.order); mở lại = rời DONE/Rejected; adjusted bỏ qua lần lùi/mở lại thuộc một đợt cập nhật bù (chuỗi đổi trạng thái < 60 s)."
+}

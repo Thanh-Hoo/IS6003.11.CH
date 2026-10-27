@@ -1,0 +1,9 @@
+component,content,evidence
+Khách hàng,Người dùng/khách hàng gặp lỗi (giả định đề bài) và các vai trò nội bộ báo lỗi.,Vai trò tạo issue: Eng 54; SQA 44; unknown 26; PO 16; __MISSING_ROLE__ 11
+Sản phẩm/dịch vụ,Lỗi được sửa và đóng (DONE) hoặc quyết định không sửa (Rejected); thay đổi mã liên kết commit/MR.,DONE 83; Rejected 78; LINK_COMMIT 342; LINK_MERGE_REQUEST 95 event
+Quy trình và hoạt động,"Chuỗi trạng thái Jira từ tạo đến đóng, xen các hoạt động sửa trường, gán người, liên kết.","10 trạng thái (DONE, INVESTIGATED, In Progress, In Test, Inbox, OPEN, Rejected, To Do, To Investigate, Triage); 30 biến thể trạng thái; 49 activity"
+Người tham gia,Các vai trò con người trong log (không phân tích cá nhân).,"PO 1296; Eng 489; SQA 168; RTE 43; Integrator 21; Support/Mgr 11; PM 7; Software Architect 5; không xác định: unknown 837, thiếu role 15"
+Thông tin,"Mô tả lỗi, phân loại backlog, phiên bản sửa, epic, story point, file đính kèm, liên kết issue.",Hoạt động trên trường thông tin: ADD_ISSUE_LINK 384; EDIT_DESCRIPTION 357; UPDATE_BACKLOG_CLASSIFICATION 134; REMOVE_ASSIGNEE 126; UPDATE_PROJECT 119; EDIT_ISSUEPARENTASSOCIATION 114
+Công nghệ,"Jira (theo dõi issue, workflow) tích hợp hệ thống quản lý mã nguồn qua bot.",bot 2230/5126 event (43.5%) trong full view
+Môi trường,"Một team trong công ty phần mềm lớn, có áp lực phát hành (giả định đề bài + trường dữ liệu).",Giai đoạn 2021-06 → 2022-08; UPDATE_BLOCKING_FOR_RELEASE 47 event
+Hạ tầng,"Máy chủ Jira, Git/merge request và tích hợp tự động dùng chung (giả định đề bài; log không mô tả).","Dấu vết tích hợp: LINK_COMMIT 342, LINK_MERGE_REQUEST 95 event trong core view"

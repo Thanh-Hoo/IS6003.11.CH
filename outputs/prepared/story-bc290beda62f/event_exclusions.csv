@@ -1,0 +1,3 @@
+stage,rule,n_events,n_cases
+post_terminal,after_final_terminal_status,995,77
+noise_policy,drop_generic_external_link_updates:UPDATE_EXTERNAL_LINK,463,53

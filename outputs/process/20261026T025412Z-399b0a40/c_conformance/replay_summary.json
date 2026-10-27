@@ -1,0 +1,37 @@
+{
+  "by_branch": {
+    "all": {
+      "n_cases": 161,
+      "mean_trace_fitness": 0.9674290134620788,
+      "n_fit": 105,
+      "share_fit": 0.6521739130434783
+    },
+    "DONE": {
+      "n_cases": 83,
+      "mean_trace_fitness": 0.9518445177941989,
+      "n_fit": 39,
+      "share_fit": 0.46987951807228917
+    },
+    "Rejected": {
+      "n_cases": 78,
+      "mean_trace_fitness": 0.9840125152625152,
+      "n_fit": 66,
+      "share_fit": 0.8461538461538461
+    }
+  },
+  "model_quality": {
+    "fitness": 0.9647122692725298,
+    "perc_fit_traces": 65.21739130434783,
+    "precision": 0.915481832543444,
+    "generalization": 0.7816563346207308,
+    "simplicity": 0.7857142857142856,
+    "n_places": 19,
+    "n_transitions": 25,
+    "n_invisible": 16
+  },
+  "unfit": {
+    "n_cases": 56,
+    "mean_trace_fitness": 0.9063584137034768,
+    "min_trace_fitness": 0.8333333333333334
+  }
+}

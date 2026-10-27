@@ -1,0 +1,49 @@
+digraph B {
+  rankdir=LR;
+  label="Mô hình chuẩn (giả định của tác giả) — lane theo vai trò"; labelloc=t; fontname="Helvetica";
+  node [fontname="Helvetica"]; edge [fontname="Helvetica"];
+  "CREATE" [shape=circle, label="CREATE", width=0.8];
+  "DONE" [shape=doublecircle, label="DONE", width=0.8];
+  "Rejected" [shape=doublecircle, label="Rejected", width=0.8];
+  subgraph cluster_0 {
+    label="Eng"; style=rounded; color=gray;
+    "In Progress" [shape=box, style=rounded];
+  }
+  subgraph cluster_1 {
+    label="PO"; style=rounded; color=gray;
+    "INVESTIGATED" [shape=box, style=rounded];
+    "Inbox" [shape=box, style=rounded];
+    "To Do" [shape=box, style=rounded];
+    "To Investigate" [shape=box, style=rounded];
+  }
+  subgraph cluster_2 {
+    label="SQA"; style=rounded; color=gray;
+    "In Test" [shape=box, style=rounded];
+  }
+  "xor_CREATE" [shape=diamond, label="×", width=0.4, height=0.4];
+  "CREATE" -> "xor_CREATE";
+  "xor_CREATE" -> "Inbox";
+  "xor_CREATE" -> "Rejected";
+  "xor_CREATE" -> "To Investigate";
+  "xor_INVESTIGATED" [shape=diamond, label="×", width=0.4, height=0.4];
+  "INVESTIGATED" -> "xor_INVESTIGATED";
+  "xor_INVESTIGATED" -> "Rejected";
+  "xor_INVESTIGATED" -> "To Do";
+  "In Progress" -> "In Test";
+  "xor_In Test" [shape=diamond, label="×", width=0.4, height=0.4];
+  "In Test" -> "xor_In Test";
+  "xor_In Test" -> "DONE";
+  "xor_In Test" -> "In Progress";
+  "xor_Inbox" [shape=diamond, label="×", width=0.4, height=0.4];
+  "Inbox" -> "xor_Inbox";
+  "xor_Inbox" -> "Rejected";
+  "xor_Inbox" -> "To Investigate";
+  "xor_To Do" [shape=diamond, label="×", width=0.4, height=0.4];
+  "To Do" -> "xor_To Do";
+  "xor_To Do" -> "In Progress";
+  "xor_To Do" -> "Rejected";
+  "xor_To Investigate" [shape=diamond, label="×", width=0.4, height=0.4];
+  "To Investigate" -> "xor_To Investigate";
+  "xor_To Investigate" -> "INVESTIGATED";
+  "xor_To Investigate" -> "Rejected";
+}

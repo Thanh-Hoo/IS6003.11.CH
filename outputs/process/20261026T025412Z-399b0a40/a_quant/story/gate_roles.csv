@@ -1,0 +1,16 @@
+target_state,role,n,share_of_target,is_human,is_top_human
+DONE,Eng,104,0.5777777777777777,True,True
+DONE,PO,72,0.4,True,False
+DONE,SQA,4,0.022222222222222223,True,False
+In Progress,unknown,133,0.7189189189189189,False,False
+In Progress,PO,27,0.14594594594594595,True,True
+In Progress,Eng,25,0.13513513513513514,True,False
+In Test,Eng,2,1.0,True,True
+Inbox,Eng,1,0.5,True,True
+Inbox,PO,1,0.5,True,False
+Rejected,PO,7,0.7777777777777778,True,True
+Rejected,Eng,2,0.2222222222222222,True,False
+To Do,PO,97,0.5574712643678161,True,True
+To Do,Eng,53,0.3045977011494253,True,False
+To Do,unknown,23,0.13218390804597702,False,False
+To Do,SQA,1,0.005747126436781609,True,False

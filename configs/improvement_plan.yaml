@@ -1,0 +1,30 @@
+# Kế hoạch cải tiến — KHÓA NGÀY 2026-10-22, TRƯỚC MỌI RUN CỦA BA PHƯƠNG PHÁP MỚI.
+# Chạy: uv run jira-ad improve --plan configs/improvement_plan.yaml
+# Kế hoạch đầy đủ: docs/superpowers/plans/2026-10-22-cai-tien-mo-hinh.md
+#
+# Giao thức 1 (chọn phương án): split V1 97/33/31, mutant V1, ba model seed. Chỉ số chính: macro AUROC trên
+#   VALIDATION, trung bình các seed. Ứng viên cải thiện ⇔ khoảng bootstrap theo parent của (ứng viên − reference)
+#   nằm hoàn toàn trên 0 ở mức 1 − family_alpha/số ứng viên. Test chỉ xem sau phán quyết (khám phá).
+# Giao thức 2 (khám phá, độ mạnh cao hơn): cross-validation theo issue trên cả 161 ca, thêm hai loại mutant.
+# Tiêu chí ứng dụng (khóa trước), trên giao thức 2:
+#   tự động cảnh báo      ⇔ cận dưới 95% của macro AUROC >= alert_auroc_lower VÀ AUROC skip_status >= alert_skip_status_auroc
+#   bộ lọc ưu tiên rà soát ⇔ cận dưới 95% của macro AUROC > triage_auroc_lower VÀ Jaccard top-10% giữa các seed
+#                            >= triage_jaccard VÀ thời gian chấm < triage_ms_per_case ms/ca
+#   còn lại               ⇔ chưa đủ để ứng dụng
+config: configs/improvements.yaml
+model_seeds: [42, 43, 44]
+decision:
+  reference: D_hybrid
+  candidates: [E_score_fusion, F_edge_hybrid, M_markov]
+  selection_split: validation
+  family_alpha: 0.05
+crossval:
+  folds: 5
+  mutation_types: [swap_adjacent, delete_internal, duplicate_block, skip_status, multi_edit]
+applicability:
+  alert_auroc_lower: 0.80
+  alert_skip_status_auroc: 0.80
+  triage_auroc_lower: 0.5
+  triage_top_fraction: 0.10
+  triage_jaccard: 0.6
+  triage_ms_per_case: 100.0

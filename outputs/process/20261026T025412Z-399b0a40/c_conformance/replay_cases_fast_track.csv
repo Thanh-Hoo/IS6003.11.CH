@@ -1,0 +1,162 @@
+case_id,trace_fitness,is_fit,missing,remaining,consumed,produced,unknown_activities,variant,terminal_status
+bug:TI-4584,0.875,False,3,3,24,24,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE > In Progress > Rejected > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4596,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4599,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4616,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4617,0.9444444444444444,False,1,1,18,18,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4649,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4651,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4671,0.875,False,1,1,8,8,,CREATE > Rejected > Inbox > Rejected,Rejected
+bug:TI-4682,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4683,1.0,True,0,0,11,11,,CREATE > To Investigate > INVESTIGATED > To Do > Rejected,Rejected
+bug:TI-4686,0.9047619047619048,False,2,2,21,21,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > Inbox > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4723,0.9444444444444444,False,1,1,18,18,,CREATE > Rejected > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4724,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4725,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4726,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4727,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4740,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4745,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4748,0.92,False,2,2,25,25,,CREATE > To Investigate > INVESTIGATED > To Investigate > INVESTIGATED > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4751,0.9444444444444444,False,1,1,18,18,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4758,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4759,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4770,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4811,0.9285714285714286,False,1,1,14,14,,CREATE > To Do > In Progress > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4818,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4820,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4829,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4834,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4849,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4871,0.9166666666666666,False,1,1,12,12,,CREATE > Rejected > Inbox > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4872,0.875,False,1,1,8,8,,CREATE > Rejected > Inbox > Rejected,Rejected
+bug:TI-4876,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4887,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4888,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4890,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4893,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4894,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4902,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4931,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4932,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-4935,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-4936,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-4966,1.0,True,0,0,7,7,,CREATE > To Do > Rejected,Rejected
+bug:TI-4967,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5007,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5016,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5023,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5041,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5052,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5066,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5091,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5115,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5117,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5118,0.92,False,2,2,25,25,,CREATE > To Investigate > INVESTIGATED > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5133,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5139,0.9444444444444444,False,1,1,18,18,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5145,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5153,0.9444444444444444,False,1,1,18,18,,CREATE > To Investigate > INVESTIGATED > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5176,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5187,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5199,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5200,0.9285714285714286,False,1,1,14,14,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > To Do > Rejected,Rejected
+bug:TI-5201,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5244,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5246,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5254,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5256,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5259,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5260,0.875,False,1,1,8,8,,CREATE > To Do > Inbox > Rejected,Rejected
+bug:TI-5261,1.0,True,0,0,7,7,,CREATE > To Do > Rejected,Rejected
+bug:TI-5266,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5267,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5268,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5269,1.0,True,0,0,15,15,,CREATE > To Do > In Progress > In Test > In Progress > In Test > DONE,DONE
+bug:TI-5308,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5311,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5331,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5332,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5333,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5345,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5346,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5347,0.9545454545454546,False,1,1,22,22,,CREATE > To Investigate > INVESTIGATED > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5362,0.95,False,1,1,20,20,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE > In Progress > In Test > DONE,DONE
+bug:TI-5366,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5376,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5378,0.9285714285714286,False,1,1,14,14,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > To Do > Rejected,Rejected
+bug:TI-5382,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5383,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5390,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5410,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5411,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5412,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5420,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5426,1.0,True,0,0,17,17,,CREATE > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5432,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5440,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5442,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5443,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5444,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5445,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5469,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5477,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5480,0.9444444444444444,False,1,1,18,18,,CREATE > To Investigate > INVESTIGATED > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5484,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5488,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5489,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5492,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5545,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5547,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5548,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5555,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5564,0.92,False,2,2,25,25,,CREATE > To Do > In Progress > In Test > DONE > In Progress > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5568,0.9444444444444444,False,1,1,18,18,,CREATE > To Investigate > INVESTIGATED > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5569,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5583,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5586,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5591,0.95,False,1,1,20,20,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE > In Progress > In Test > DONE,DONE
+bug:TI-5598,0.9166666666666666,False,1,1,12,12,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5608,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5618,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5630,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5633,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5636,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5637,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5656,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5672,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5674,0.9375,False,1,1,16,16,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > In Progress > Rejected,Rejected
+bug:TI-5675,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5676,0.9444444444444444,False,1,1,18,18,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5750,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5751,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5769,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-5770,0.875,False,1,1,8,8,"OPEN, Triage",CREATE > OPEN > Triage > In Progress > In Test > DONE,DONE
+bug:TI-5837,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5863,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5900,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5915,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5916,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-5965,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-5991,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6007,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6041,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6043,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6079,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6087,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6088,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6089,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-6094,1.0,True,0,0,15,15,,CREATE > To Investigate > INVESTIGATED > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6105,0.9166666666666666,False,1,1,12,12,,CREATE > To Investigate > INVESTIGATED > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6132,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6149,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-6150,0.9166666666666666,False,1,1,12,12,,CREATE > To Do > Inbox > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6151,1.0,True,0,0,9,9,,CREATE > To Investigate > INVESTIGATED > Rejected,Rejected
+bug:TI-6152,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6160,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected
+bug:TI-6163,0.9444444444444444,False,1,1,18,18,,CREATE > To Do > In Progress > In Test > In Progress > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6203,0.875,False,1,1,8,8,,CREATE > In Progress > In Test > DONE,DONE
+bug:TI-6208,0.9285714285714286,False,1,1,14,14,,CREATE > To Do > In Progress > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6209,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6255,1.0,True,0,0,11,11,,CREATE > To Do > In Progress > In Test > DONE,DONE
+bug:TI-6297,1.0,True,0,0,5,5,,CREATE > Rejected,Rejected

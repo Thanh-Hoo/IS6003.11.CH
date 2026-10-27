@@ -1,0 +1,157 @@
+{
+  "stage": "prepare",
+  "prepare_key": "bc290beda62f",
+  "cohort": "story",
+  "input": {
+    "cohort": "story",
+    "relative_path": "dataset/TIeventlogStory.csv",
+    "sha256": "afd53fca100a90c5e4c63360d14c84bd1f9109d2670fc7b8184e57a52c8b6387",
+    "size_bytes": 336703,
+    "n_rows": 4439
+  },
+  "action_rules": {
+    "relative_path": "configs/actions.yaml",
+    "sha256": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0"
+  },
+  "settings": {
+    "preprocess": {
+      "view": "core",
+      "terminal_statuses": [
+        "DONE",
+        "Rejected"
+      ],
+      "noise_policy": "drop_generic_external_link_updates"
+    },
+    "split": {
+      "seed": 42,
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "test_fraction": 0.2,
+      "stratify": "terminal_status"
+    }
+  },
+  "view": "core",
+  "terminal_statuses": [
+    "DONE",
+    "Rejected"
+  ],
+  "noise_policy": "drop_generic_external_link_updates",
+  "action_rules_sha256": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0",
+  "full_view": {
+    "n_events": 4439,
+    "n_cases": 182,
+    "n_missing_role_events": 0,
+    "n_unknown_role_events": 261,
+    "n_bot_events": 1941,
+    "n_fallback_activity_events": 0,
+    "n_distinct_activities": 40
+  },
+  "core_view": {
+    "n_events": 2981,
+    "n_cases": 182,
+    "n_missing_role_events": 0,
+    "n_unknown_role_events": 261,
+    "n_bot_events": 564,
+    "n_fallback_activity_events": 0,
+    "n_distinct_activities": 39,
+    "events_per_case": {
+      "min": 5,
+      "median": 14.0,
+      "max": 51,
+      "mean": 16.37912087912088
+    },
+    "terminal_status_counts": {
+      "DONE": 175,
+      "Rejected": 7
+    },
+    "activity_counts": {
+      "LINK_COMMIT": 477,
+      "UPDATE_RANK": 306,
+      "EDIT_ISSUEPARENTASSOCIATION": 193,
+      "STATUS_In Progress": 185,
+      "CREATE": 182,
+      "STATUS_DONE": 180,
+      "STATUS_To Do": 174,
+      "UPDATE_SPRINT": 152,
+      "ADD_STORY_POINTS": 148,
+      "ADD_FIX_VERSION": 126,
+      "ADD_SPRINT": 125,
+      "ADD_ASSIGNEE": 118,
+      "UPDATE_BACKLOG_CLASSIFICATION": 104,
+      "EDIT_DESCRIPTION": 88,
+      "LINK_MERGE_REQUEST": 79,
+      "ADD_ISSUE_LINK": 66,
+      "ADD_EPIC_LINK": 55,
+      "EDIT_SUMMARY": 47,
+      "UPDATE_STORY_POINTS": 39,
+      "UPDATE_EPIC_LINK": 25,
+      "REMOVE_SPRINT": 16,
+      "UPDATE_ASSIGNEE": 13,
+      "ADD_PARENT": 11,
+      "STATUS_Rejected": 9,
+      "REMOVE_ASSIGNEE": 8,
+      "UPDATE_FIX_VERSION": 8,
+      "UPDATE_PROJECT": 8,
+      "ADD_ATTACHMENT": 7,
+      "UPDATE_FLAGGED": 5,
+      "UPDATE_LABELS": 5,
+      "EDIT_REPORTER": 4,
+      "REMOVE_ATTACHMENT": 3,
+      "REMOVE_FIX_VERSION": 3,
+      "REMOVE_ISSUE_LINK": 3,
+      "UPDATE_PARENT": 3,
+      "STATUS_In Test": 2,
+      "STATUS_Inbox": 2,
+      "REMOVE_COMMENT": 1,
+      "UPDATE_ISSUETYPE": 1
+    }
+  },
+  "funnel": {
+    "n_events_full": 4439,
+    "n_events_in_excluded_cases": 0,
+    "n_events_post_terminal": 995,
+    "n_events_dropped_noise": 463,
+    "n_events_core": 2981
+  },
+  "case_exclusions": {},
+  "post_terminal": {
+    "n_events": 995,
+    "n_cases": 77
+  },
+  "reopen": {
+    "n_cases_with_reopen": 7
+  },
+  "noise": {
+    "events_dropped_by_activity": {
+      "UPDATE_EXTERNAL_LINK": 463
+    }
+  },
+  "split": {
+    "split_hash": "6fdb5cba5a0bd2937dd1040cc96b85c7c0b4e80419980576f2d7d96101b5f8d3",
+    "sizes": {
+      "train": 109,
+      "validation": 37,
+      "test": 36
+    },
+    "terminal_status_by_split": {
+      "train": {
+        "DONE": 105,
+        "Rejected": 4
+      },
+      "validation": {
+        "DONE": 35,
+        "Rejected": 2
+      },
+      "test": {
+        "DONE": 35,
+        "Rejected": 1
+      }
+    }
+  },
+  "mapping": {
+    "n_distinct_raw_actions": 74,
+    "n_fallback_raw_actions": 0,
+    "n_fallback_events": 0,
+    "fallback_raw_actions": []
+  }
+}

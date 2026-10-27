@@ -1,0 +1,137 @@
+{
+  "bundle_version": 1,
+  "method": "A_stats",
+  "seed": 42,
+  "n_train": 97,
+  "n_features": 10,
+  "train_ids_sha256": "803fc479751ca41f43a7e5459e91bbdbbb37e3c03f3659dbc71eb3e365bf9719",
+  "encoder_state_sha256": "ba5e056ff261ace163827d400bba2fab216dc9b811a5063c4805867055985b2e",
+  "n_constant_features": 2,
+  "constant_feature_names": [
+    "unseen_node_ratio",
+    "unseen_transition_ratio"
+  ],
+  "fit_seconds": 0.11651495902333409,
+  "detector_params": {
+    "n_estimators": 200,
+    "max_samples": "auto",
+    "contamination": "auto",
+    "n_jobs": 1
+  },
+  "preprocess": {
+    "view": "core",
+    "terminal_statuses": [
+      "DONE",
+      "Rejected"
+    ],
+    "noise_policy": "drop_generic_external_link_updates",
+    "actions_file": "configs/actions.yaml"
+  },
+  "action_rules_sha256": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0",
+  "action_rules_text": "# Quy tắc chuẩn hóa action Jira -> activity (spec §4.1). Nội dung file này được băm (action_rules_hash).\n#\n# Một dòng event Jira có thể chứa nhiều mệnh đề nối bằng \", \" (ví dụ\n# \"update resolution to Done, update status to DONE\"). Giữ MỘT event; mỗi mệnh đề được so khớp\n# lần lượt với `rules`. Activity chính của event là mệnh đề khớp quy tắc ĐỨNG TRƯỚC nhất trong\n# danh sách (thứ tự trong file = thứ tự ưu tiên); nếu nhiều mệnh đề cùng quy tắc, lấy mệnh đề\n# xuất hiện trước. Các mệnh đề còn lại được lưu ở cột `secondary_changes`, không tách event.\n#\n# Quy tắc ưu tiên theo spec: create > cập nhật status > liên kết commit/MR > assignee >\n# sprint/fix version > các thay đổi field khác > fallback.\n#\n# Chỉ dùng chữ trong mệnh đề (động từ + tên field); KHÔNG suy diễn mục đích từ giá trị tự do và\n# không lưu giá trị (ví dụ mọi \"update Backlog Classification to ...\" đều là\n# UPDATE_BACKLOG_CLASSIFICATION).\n#\n# `match` là regex fullmatch trên một mệnh đề đã strip. `activity` là mẫu:\n#   {verb}   động từ viết hoa           ({add, update, remove, edit} -> ADD, UPDATE, ...)\n#   {field}  tên field viết hoa, ký tự không chữ-số thành \"_\" (\"Fix Version\" -> FIX_VERSION)\n#   {status} giá trị status GIỮ NGUYÊN chữ hoa/thường và khoảng trắng; quy tắc có {status} đặt\n#            status_value cho event (so khớp terminal_statuses).\nversion: 1\nmissing_role: __MISSING_ROLE__   # role trống; \"unknown\" vẫn là giá trị riêng\nbot_roles: [bot]\nfallback_activity: OTHER_ACTION\nclause_separator: ',\\s+(?=(?:update|add|remove|edit)\\s)'\n\n# Hoạt động bị bỏ khỏi core view theo từng noise policy. Policy mặc định chỉ bỏ cập nhật\n# RemoteIssueLink chung chung; vẫn giữ LINK_COMMIT, LINK_MERGE_REQUEST và hành động bot khác.\nnoise_policies:\n  drop_generic_external_link_updates: [UPDATE_EXTERNAL_LINK]\n  keep_all: []\n\nrules:\n  - name: create\n    match: 'Issue created'\n    activity: CREATE\n  - name: status\n    match: 'update status to (?P<status>.+)'\n    activity: 'STATUS_{status}'\n  - name: link_commit\n    match: '(?:add|update|remove) RemoteIssueLink to Commit'\n    activity: LINK_COMMIT\n  - name: link_merge_request\n    match: '(?:add|update|remove) RemoteIssueLink to Merge request'\n    activity: LINK_MERGE_REQUEST\n  - name: assignee\n    match: '(?P<verb>add|update|remove) (?P<field>assignee)'\n    activity: '{verb}_{field}'\n  - name: sprint_fix_version\n    match: '(?P<verb>add|update|remove) (?P<field>Sprint|Fix Version)(?: to\\b.*)?'\n    activity: '{verb}_{field}'\n  - name: external_link_update\n    match: 'update RemoteIssueLink'\n    activity: UPDATE_EXTERNAL_LINK\n  - name: issue_link\n    match: '(?P<verb>add|remove) link to .+'\n    activity: '{verb}_ISSUE_LINK'\n  - name: field_change\n    match: '(?P<verb>add|update|remove|edit) (?P<field>[A-Za-z][A-Za-z0-9 ]*?)(?: to\\b.*)?'\n    activity: '{verb}_{field}'\n",
+  "config": {
+    "project": {
+      "output_root": "outputs"
+    },
+    "data": {
+      "root": "dataset",
+      "files": {
+        "bug": "TIeventlogBug.csv",
+        "story": "TIeventlogStory.csv"
+      },
+      "recursive_discovery": true,
+      "cohort": "bug",
+      "reference_counts": {
+        "bug": {
+          "events": 5126,
+          "issues": 161
+        },
+        "story": {
+          "events": 4439,
+          "issues": 182
+        }
+      }
+    },
+    "preprocess": {
+      "actions_file": "configs/actions.yaml",
+      "view": "core",
+      "terminal_statuses": [
+        "DONE",
+        "Rejected"
+      ],
+      "noise_policy": "drop_generic_external_link_updates"
+    },
+    "split": {
+      "seed": 42,
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "test_fraction": 0.2,
+      "stratify": "terminal_status"
+    },
+    "graph": {
+      "directed": true,
+      "encoding": "activity",
+      "add_boundaries": true,
+      "transition_alpha": 1.0
+    },
+    "walk": {
+      "p": 1.0,
+      "q": 1.0,
+      "length": 20,
+      "walks_per_node": 50
+    },
+    "embedding": {
+      "dimensions": 16,
+      "window": 3,
+      "epochs": 20,
+      "negative": 5,
+      "min_count": 1,
+      "sample": 0.0,
+      "workers": 1
+    },
+    "features": {
+      "methods": [
+        "A_stats",
+        "B_ngrams",
+        "C_embedding",
+        "D_hybrid"
+      ],
+      "include_time": false
+    },
+    "detector": {
+      "n_estimators": 200,
+      "max_samples": "auto",
+      "contamination": "auto",
+      "n_jobs": 1
+    },
+    "mutation": {
+      "types": [
+        "swap_adjacent",
+        "delete_internal",
+        "duplicate_block"
+      ],
+      "max_per_type_per_parent": 1,
+      "validation_seed": 1042,
+      "test_seed": 2042,
+      "duplicate_block_max_length": 2
+    },
+    "run": {
+      "seed": 42,
+      "fail_on_existing_output": true
+    },
+    "notebooks": {
+      "timeout_seconds": 180
+    }
+  },
+  "packages": {
+    "python": "3.12.7",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "gensim": "4.4.0",
+    "networkx": "3.7",
+    "pyarrow": "26.0.0",
+    "joblib": "1.6.0"
+  }
+}

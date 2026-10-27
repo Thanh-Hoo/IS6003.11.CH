@@ -1,0 +1,75 @@
+raw_action,activity,secondary_changes,rule,is_fallback,n_events,n_cases
+update RemoteIssueLink,UPDATE_EXTERNAL_LINK,,external_link_update,False,1215,56
+add RemoteIssueLink to Commit,LINK_COMMIT,,link_commit,False,626,59
+update Rank to Ranked higher,UPDATE_RANK,,field_change,False,211,128
+edit IssueParentAssociation,EDIT_ISSUEPARENTASSOCIATION,,field_change,False,204,147
+Issue created,CREATE,,create,False,182,182
+"update resolution to Done, update status to DONE",STATUS_DONE,UPDATE_RESOLUTION,status,False,180,175
+update status to In Progress,STATUS_In Progress,,status,False,180,177
+update Sprint,UPDATE_SPRINT,,sprint_fix_version,False,164,80
+add Story Points,ADD_STORY_POINTS,,field_change,False,147,147
+update status to To Do,STATUS_To Do,,status,False,142,140
+add Sprint,ADD_SPRINT,,sprint_fix_version,False,126,122
+add Fix Version,ADD_FIX_VERSION,,sprint_fix_version,False,122,120
+add assignee,ADD_ASSIGNEE,,assignee,False,114,112
+update Rank to Ranked lower,UPDATE_RANK,,field_change,False,96,58
+add RemoteIssueLink to Merge request,LINK_MERGE_REQUEST,,link_merge_request,False,92,59
+edit description,EDIT_DESCRIPTION,,field_change,False,90,53
+add Epic Link,ADD_EPIC_LINK,,field_change,False,64,57
+update Backlog Classification to Business Value,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,59,59
+edit summary,EDIT_SUMMARY,,field_change,False,48,38
+update Backlog Classification to Technical Innovation,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,40,40
+add link to relates to,ADD_ISSUE_LINK,,issue_link,False,39,39
+update Story Points,UPDATE_STORY_POINTS,,field_change,False,38,29
+update Epic Link,UPDATE_EPIC_LINK,,field_change,False,27,24
+"update project to TI-TI, update status to To Do, update Workflow to SW Development Story Workflow, edit Key",STATUS_To Do,UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,26,26
+"update Backlog Classification to Business Value, add Fix Version",ADD_FIX_VERSION,UPDATE_BACKLOG_CLASSIFICATION,sprint_fix_version,False,19,19
+update assignee,UPDATE_ASSIGNEE,,assignee,False,13,11
+add Parent,ADD_PARENT,,field_change,False,11,11
+add link to blocks,ADD_ISSUE_LINK,,issue_link,False,11,7
+update Backlog Classification to Technical Debt,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,11,11
+remove Sprint,REMOVE_SPRINT,,sprint_fix_version,False,9,9
+remove assignee,REMOVE_ASSIGNEE,,assignee,False,9,7
+"update resolution to Canceled, update status to Rejected",STATUS_Rejected,UPDATE_RESOLUTION,status,False,9,9
+add Attachment,ADD_ATTACHMENT,,field_change,False,7,4
+"update project to TI-TI, edit Key",UPDATE_PROJECT,EDIT_KEY,field_change,False,7,7
+add link to is blocked by,ADD_ISSUE_LINK,,issue_link,False,6,6
+add link to is cloned by,ADD_ISSUE_LINK,,issue_link,False,6,5
+"remove Sprint, add Story Points, update issuetype to Story, remove Parent, update Workflow to SW Development Story Workflow",REMOVE_SPRINT,ADD_STORY_POINTS|UPDATE_ISSUETYPE|REMOVE_PARENT|UPDATE_WORKFLOW,sprint_fix_version,False,6,6
+"add assignee, update Backlog Classification to Business Value, add Fix Version",ADD_ASSIGNEE,UPDATE_BACKLOG_CLASSIFICATION|ADD_FIX_VERSION,assignee,False,5,5
+remove RemoteIssueLink to Commit,LINK_COMMIT,,link_commit,False,5,1
+"remove resolution, update status to In Progress",STATUS_In Progress,REMOVE_RESOLUTION,status,False,5,5
+update Backlog Classification to Support,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,5,5
+"update Fix Version to removed, added",UPDATE_FIX_VERSION,,sprint_fix_version,False,5,5
+add link to clones,ADD_ISSUE_LINK,,issue_link,False,4,4
+edit reporter,EDIT_REPORTER,,field_change,False,4,4
+update Flagged to Impediment,UPDATE_FLAGGED,,field_change,False,4,4
+update labels to ,UPDATE_LABELS,,field_change,False,4,4
+remove Attachment,REMOVE_ATTACHMENT,,field_change,False,3,3
+remove Fix Version,REMOVE_FIX_VERSION,,sprint_fix_version,False,3,2
+"remove Sprint, update issuetype to Story, remove Parent, update Workflow to SW Development Story Workflow",REMOVE_SPRINT,UPDATE_ISSUETYPE|REMOVE_PARENT|UPDATE_WORKFLOW,sprint_fix_version,False,3,3
+update Parent,UPDATE_PARENT,,field_change,False,3,2
+remove link to is cloned by,REMOVE_ISSUE_LINK,,issue_link,False,2,2
+"remove resolution, update status to To Do",STATUS_To Do,REMOVE_RESOLUTION,status,False,2,2
+"update Fix Version to added, removed",UPDATE_FIX_VERSION,,sprint_fix_version,False,2,2
+update labels to ExtBlocked,UPDATE_LABELS,,field_change,False,2,2
+update status to In Test,STATUS_In Test,,status,False,2,2
+update status to Inbox,STATUS_Inbox,,status,False,2,2
+"add Story Points, update issuetype to Story, remove Parent, update Workflow to SW Development Story Workflow",ADD_STORY_POINTS,UPDATE_ISSUETYPE|REMOVE_PARENT|UPDATE_WORKFLOW,field_change,False,1,1
+"add Story Points, update issuetype to Story, update project to TI-TI, update status to To Do, update Workflow to SW Development Story Workflow, edit Key",STATUS_To Do,ADD_STORY_POINTS|UPDATE_ISSUETYPE|UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,1,1
+add link to is caused by,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to is contained by,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to split from,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to split to,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to treats,ADD_ISSUE_LINK,,issue_link,False,1,1
+remove Comment,REMOVE_COMMENT,,field_change,False,1,1
+remove link to clones,REMOVE_ISSUE_LINK,,issue_link,False,1,1
+"update Fix Version to removed, added, update project to TI-TI, edit Key",UPDATE_FIX_VERSION,UPDATE_PROJECT|EDIT_KEY,sprint_fix_version,False,1,1
+update Flagged to ,UPDATE_FLAGGED,,field_change,False,1,1
+"update Story Points, edit summary",UPDATE_STORY_POINTS,EDIT_SUMMARY,field_change,False,1,1
+"update TEST FIELD OBJECT to , update issuetype to Story, update project to TI-TI, update status to To Do, update Workflow to SW Development Story Workflow, edit Key",STATUS_To Do,UPDATE_TEST_FIELD_OBJECT|UPDATE_ISSUETYPE|UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,1,1
+"update TEST FIELD OBJECT to , update project to TI-TI, update status to To Do, update Workflow to SW Development Story Workflow, edit Key",STATUS_To Do,UPDATE_TEST_FIELD_OBJECT|UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,1,1
+"update issuetype to Story, remove Parent, update Workflow to SW Development Story Workflow",UPDATE_ISSUETYPE,REMOVE_PARENT|UPDATE_WORKFLOW,field_change,False,1,1
+update labels to ExtBlocking,UPDATE_LABELS,,field_change,False,1,1
+"update project to DB&O - Source, edit Key",UPDATE_PROJECT,EDIT_KEY,field_change,False,1,1
+"update project to TI-TI, update status to To Do, update Workflow to SW Development Subtask Workflow, edit Key",STATUS_To Do,UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,1,1

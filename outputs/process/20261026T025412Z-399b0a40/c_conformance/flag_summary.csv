@@ -1,0 +1,8 @@
+flag,label,n_cases,share_cases,n_occurrences,n_done,n_rejected,example_cases
+skip_investigation,Bỏ pha điều tra,39,0.2422360248447205,39,32,7,"bug:TI-4751, bug:TI-4759, bug:TI-4811, bug:TI-4820, bug:TI-4876"
+direct_reject,CREATE → Rejected trực tiếp,26,0.16149068322981366,26,1,25,"bug:TI-4616, bug:TI-4649, bug:TI-4671, bug:TI-4723, bug:TI-4726"
+reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),2,0.012422360248447204,2,1,1,"bug:TI-4584, bug:TI-5674"
+reopen_done,Mở lại sau DONE,4,0.024844720496894408,4,4,0,"bug:TI-4584, bug:TI-5362, bug:TI-5564, bug:TI-5591"
+back_to_inbox,Lùi về Inbox từ trạng thái sau,17,0.10559006211180125,17,9,8,"bug:TI-4671, bug:TI-4686, bug:TI-4723, bug:TI-4748, bug:TI-4751"
+progress_not_from_todo,Vào In Progress không qua To Do,6,0.037267080745341616,6,6,0,"bug:TI-4584, bug:TI-5362, bug:TI-5564, bug:TI-5591, bug:TI-5770"
+backfill,Đổi trạng thái trong đợt cập nhật bù,69,0.42857142857142855,165,55,14,"bug:TI-4584, bug:TI-4596, bug:TI-4599, bug:TI-4617, bug:TI-4671"

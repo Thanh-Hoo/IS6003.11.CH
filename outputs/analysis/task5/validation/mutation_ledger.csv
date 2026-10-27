@@ -1,0 +1,100 @@
+mutation_id,parent_case_id,split,mutation_type,seed,status,skip_reason,edited_positions,original_length,mutated_length,original_sequence_hash,mutated_sequence_hash,n_candidates,n_rejected_candidates
+bug:TI-4596::swap_adjacent::1042,bug:TI-4596,validation,swap_adjacent,1042,created,,"[2, 3]",40,40,4519ab6f306fd1ea,e753399191fce749,31,0
+bug:TI-4596::delete_internal::1042,bug:TI-4596,validation,delete_internal,1042,created,,[21],40,39,4519ab6f306fd1ea,9a49735a5db6b4b4,38,0
+bug:TI-4596::duplicate_block::1042,bug:TI-4596,validation,duplicate_block,1042,created,,[10],40,41,4519ab6f306fd1ea,40ed1b12ae288d6e,75,0
+bug:TI-4616::swap_adjacent::1042,bug:TI-4616,validation,swap_adjacent,1042,created,,"[4, 5]",7,7,a7c641e49681b80a,6853047d70dddb0e,4,0
+bug:TI-4616::delete_internal::1042,bug:TI-4616,validation,delete_internal,1042,created,,[3],7,6,a7c641e49681b80a,af1b80b1280fe03f,5,1
+bug:TI-4616::duplicate_block::1042,bug:TI-4616,validation,duplicate_block,1042,created,,[2],7,8,a7c641e49681b80a,b2b61b5ab92c4076,9,0
+bug:TI-4617::swap_adjacent::1042,bug:TI-4617,validation,swap_adjacent,1042,created,,"[30, 31]",46,46,7be5b8fee2e9d32d,35e00120521f1e68,30,0
+bug:TI-4617::delete_internal::1042,bug:TI-4617,validation,delete_internal,1042,created,,[36],46,45,7be5b8fee2e9d32d,ca9b401e585df30f,44,0
+bug:TI-4617::duplicate_block::1042,bug:TI-4617,validation,duplicate_block,1042,created,,[27],46,47,7be5b8fee2e9d32d,d2f859ef7557e0f2,87,0
+bug:TI-4651::swap_adjacent::1042,bug:TI-4651,validation,swap_adjacent,1042,created,,"[2, 3]",30,30,88c16c25bb0883a4,57f19eda37d6cb8b,21,0
+bug:TI-4651::delete_internal::1042,bug:TI-4651,validation,delete_internal,1042,created,,[6],30,29,88c16c25bb0883a4,2fc92c1c484ea90f,28,0
+bug:TI-4651::duplicate_block::1042,bug:TI-4651,validation,duplicate_block,1042,created,,[25],30,31,88c16c25bb0883a4,0c962eecb5e53abc,55,0
+bug:TI-4724::swap_adjacent::1042,bug:TI-4724,validation,swap_adjacent,1042,created,,"[5, 6]",12,12,6348c4e7f254143c,533ec4d8ebff3661,7,0
+bug:TI-4724::delete_internal::1042,bug:TI-4724,validation,delete_internal,1042,created,,[3],12,11,6348c4e7f254143c,d2e8537909cd2e3b,10,0
+bug:TI-4724::duplicate_block::1042,bug:TI-4724,validation,duplicate_block,1042,created,,[4],12,13,6348c4e7f254143c,b83c4986c669d97e,19,0
+bug:TI-4726::swap_adjacent::1042,bug:TI-4726,validation,swap_adjacent,1042,created,,"[1, 2]",6,6,ebe84e4f8019ded3,36a80d87076ac515,3,0
+bug:TI-4726::delete_internal::1042,bug:TI-4726,validation,delete_internal,1042,created,,[4],6,5,ebe84e4f8019ded3,516fcecbc5fbf8fd,4,0
+bug:TI-4726::duplicate_block::1042,bug:TI-4726,validation,duplicate_block,1042,created,,[4],6,7,ebe84e4f8019ded3,715053851162f425,7,0
+bug:TI-4751::swap_adjacent::1042,bug:TI-4751,validation,swap_adjacent,1042,created,,"[32, 33]",37,37,16d3c8c1a76a4528,e90cf36cd3063c93,24,0
+bug:TI-4751::delete_internal::1042,bug:TI-4751,validation,delete_internal,1042,created,,[22],37,36,16d3c8c1a76a4528,67fcc8d4e0f6f8ff,35,0
+bug:TI-4751::duplicate_block::1042,bug:TI-4751,validation,duplicate_block,1042,created,,"[34, 35]",37,39,16d3c8c1a76a4528,8302664b28027c31,69,0
+bug:TI-4818::swap_adjacent::1042,bug:TI-4818,validation,swap_adjacent,1042,created,,"[2, 3]",11,11,7e1470fb6a90d19c,24d652fb4ce8f73d,8,0
+bug:TI-4818::delete_internal::1042,bug:TI-4818,validation,delete_internal,1042,created,,[4],11,10,7e1470fb6a90d19c,9981ffc4e5e135dc,9,0
+bug:TI-4818::duplicate_block::1042,bug:TI-4818,validation,duplicate_block,1042,created,,"[4, 5]",11,13,7e1470fb6a90d19c,1b5d2bb638d93ae9,17,0
+bug:TI-4834::swap_adjacent::1042,bug:TI-4834,validation,swap_adjacent,1042,created,,"[4, 5]",21,21,763f8ad4b8721266,e1ffc27432fc3fd2,16,0
+bug:TI-4834::delete_internal::1042,bug:TI-4834,validation,delete_internal,1042,created,,[16],21,20,763f8ad4b8721266,87a77903c940b314,19,0
+bug:TI-4834::duplicate_block::1042,bug:TI-4834,validation,duplicate_block,1042,created,,"[14, 15]",21,23,763f8ad4b8721266,1514684b8045b207,37,0
+bug:TI-4872::swap_adjacent::1042,bug:TI-4872,validation,swap_adjacent,1042,created,,"[3, 4]",8,8,2ae4414eda80fae2,f1ebfd4002fe43ae,4,0
+bug:TI-4872::delete_internal::1042,bug:TI-4872,validation,delete_internal,1042,created,,[3],8,7,2ae4414eda80fae2,87c186ff8a0567cb,6,0
+bug:TI-4872::duplicate_block::1042,bug:TI-4872,validation,duplicate_block,1042,created,,[2],8,9,2ae4414eda80fae2,eab28741a0520995,11,0
+bug:TI-4887::swap_adjacent::1042,bug:TI-4887,validation,swap_adjacent,1042,created,,"[1, 2]",6,6,ebe84e4f8019ded3,36a80d87076ac515,3,0
+bug:TI-4887::delete_internal::1042,bug:TI-4887,validation,delete_internal,1042,created,,[4],6,5,ebe84e4f8019ded3,516fcecbc5fbf8fd,4,0
+bug:TI-4887::duplicate_block::1042,bug:TI-4887,validation,duplicate_block,1042,created,,"[3, 4]",6,8,ebe84e4f8019ded3,f410c0e3a341a5e1,7,0
+bug:TI-4893::swap_adjacent::1042,bug:TI-4893,validation,swap_adjacent,1042,created,,"[28, 29]",37,37,96330626995974ab,92b7ebd398ced3ff,25,0
+bug:TI-4893::delete_internal::1042,bug:TI-4893,validation,delete_internal,1042,created,,[5],37,36,96330626995974ab,de5c86d78345a55b,35,0
+bug:TI-4893::duplicate_block::1042,bug:TI-4893,validation,duplicate_block,1042,created,,"[20, 21]",37,39,96330626995974ab,e4ebb6c0bc39a9fc,69,0
+bug:TI-4894::swap_adjacent::1042,bug:TI-4894,validation,swap_adjacent,1042,created,,"[2, 3]",6,6,ebe84e4f8019ded3,03127c0884dbd6ad,3,0
+bug:TI-4894::delete_internal::1042,bug:TI-4894,validation,delete_internal,1042,created,,[2],6,5,ebe84e4f8019ded3,f6841d6b0d9f4d20,4,0
+bug:TI-4894::duplicate_block::1042,bug:TI-4894,validation,duplicate_block,1042,created,,[1],6,7,ebe84e4f8019ded3,3d1f24777b9ab115,7,0
+bug:TI-4932::swap_adjacent::1042,bug:TI-4932,validation,swap_adjacent,1042,created,,"[7, 8]",12,12,283a1551a69a34da,0eadf1f7aa0bcd62,8,0
+bug:TI-4932::delete_internal::1042,bug:TI-4932,validation,delete_internal,1042,created,,[9],12,11,283a1551a69a34da,84dd9d9e0e853d67,10,0
+bug:TI-4932::duplicate_block::1042,bug:TI-4932,validation,duplicate_block,1042,created,,[4],12,13,283a1551a69a34da,f1790ebd8fda1347,19,0
+bug:TI-5052::swap_adjacent::1042,bug:TI-5052,validation,swap_adjacent,1042,created,,"[1, 2]",7,7,a2a90349e9024852,b4d8ae6c99f6513b,4,0
+bug:TI-5052::delete_internal::1042,bug:TI-5052,validation,delete_internal,1042,created,,[5],7,6,a2a90349e9024852,c54a84aba263bdb0,5,0
+bug:TI-5052::duplicate_block::1042,bug:TI-5052,validation,duplicate_block,1042,created,,"[4, 5]",7,9,a2a90349e9024852,d3d80c24f186e4d3,9,0
+bug:TI-5139::swap_adjacent::1042,bug:TI-5139,validation,swap_adjacent,1042,created,,"[8, 9]",29,29,6ecafd3890c04b54,243253c497fcc49b,22,0
+bug:TI-5139::delete_internal::1042,bug:TI-5139,validation,delete_internal,1042,created,,[7],29,28,6ecafd3890c04b54,919259f75cdd7ad8,27,0
+bug:TI-5139::duplicate_block::1042,bug:TI-5139,validation,duplicate_block,1042,created,,"[25, 26]",29,31,6ecafd3890c04b54,939f59817c3105df,53,0
+bug:TI-5200::swap_adjacent::1042,bug:TI-5200,validation,swap_adjacent,1042,created,,"[7, 8]",22,22,72a251eb95aa5d26,22f41a8ab70b78b1,17,0
+bug:TI-5200::delete_internal::1042,bug:TI-5200,validation,delete_internal,1042,created,,[4],22,21,72a251eb95aa5d26,eceb154ddabe64d3,20,0
+bug:TI-5200::duplicate_block::1042,bug:TI-5200,validation,duplicate_block,1042,created,,"[19, 20]",22,24,72a251eb95aa5d26,fff3a43317b6cfd3,39,0
+bug:TI-5244::swap_adjacent::1042,bug:TI-5244,validation,swap_adjacent,1042,created,,"[11, 12]",23,23,1bae106d25b24fdd,bd8239ba04a3cccd,16,0
+bug:TI-5244::delete_internal::1042,bug:TI-5244,validation,delete_internal,1042,created,,[2],23,22,1bae106d25b24fdd,cd1d6eda2926e1f5,21,0
+bug:TI-5244::duplicate_block::1042,bug:TI-5244,validation,duplicate_block,1042,created,,[7],23,24,1bae106d25b24fdd,eafa454c9866890a,41,0
+bug:TI-5269::swap_adjacent::1042,bug:TI-5269,validation,swap_adjacent,1042,created,,"[22, 23]",32,32,5ce54b165acdf89e,f52c71d71e032542,26,0
+bug:TI-5269::delete_internal::1042,bug:TI-5269,validation,delete_internal,1042,created,,[9],32,31,5ce54b165acdf89e,bd3f7cfed740cdc1,30,0
+bug:TI-5269::duplicate_block::1042,bug:TI-5269,validation,duplicate_block,1042,created,,[1],32,33,5ce54b165acdf89e,65137fb0cfdae366,59,0
+bug:TI-5331::swap_adjacent::1042,bug:TI-5331,validation,swap_adjacent,1042,created,,"[8, 9]",25,25,efac5d467748e2a2,6a641b9698270965,18,0
+bug:TI-5331::delete_internal::1042,bug:TI-5331,validation,delete_internal,1042,created,,[19],25,24,efac5d467748e2a2,861a4f8eded2fa04,23,0
+bug:TI-5331::duplicate_block::1042,bug:TI-5331,validation,duplicate_block,1042,created,,[14],25,26,efac5d467748e2a2,36587c2aa49e4640,45,0
+bug:TI-5362::swap_adjacent::1042,bug:TI-5362,validation,swap_adjacent,1042,created,,"[23, 24]",33,33,238586ec5ce91cdc,4a55130c00b527e6,28,0
+bug:TI-5362::delete_internal::1042,bug:TI-5362,validation,delete_internal,1042,created,,[24],33,32,238586ec5ce91cdc,345e2a341142b37b,31,0
+bug:TI-5362::duplicate_block::1042,bug:TI-5362,validation,duplicate_block,1042,created,,"[21, 22]",33,35,238586ec5ce91cdc,baf03fceaa373669,61,0
+bug:TI-5366::swap_adjacent::1042,bug:TI-5366,validation,swap_adjacent,1042,created,,"[7, 8]",18,18,5c5b95afb7a9cf47,187cd3750a52cde4,15,0
+bug:TI-5366::delete_internal::1042,bug:TI-5366,validation,delete_internal,1042,created,,[7],18,17,5c5b95afb7a9cf47,a73dae9915863823,16,0
+bug:TI-5366::duplicate_block::1042,bug:TI-5366,validation,duplicate_block,1042,created,,[13],18,19,5c5b95afb7a9cf47,0da0fe8292a2ff8a,31,0
+bug:TI-5411::swap_adjacent::1042,bug:TI-5411,validation,swap_adjacent,1042,created,,"[5, 6]",14,14,deab9cb8d1cbdd46,fb21a8c8424c2774,9,0
+bug:TI-5411::delete_internal::1042,bug:TI-5411,validation,delete_internal,1042,created,,[4],14,13,deab9cb8d1cbdd46,8462b27cd6c8b9e3,12,0
+bug:TI-5411::duplicate_block::1042,bug:TI-5411,validation,duplicate_block,1042,created,,"[7, 8]",14,16,deab9cb8d1cbdd46,a9079cc358819fcc,23,0
+bug:TI-5432::swap_adjacent::1042,bug:TI-5432,validation,swap_adjacent,1042,created,,"[4, 5]",24,24,1eb0743e90800ba1,fd5337e66cd0488c,19,0
+bug:TI-5432::delete_internal::1042,bug:TI-5432,validation,delete_internal,1042,created,,[4],24,23,1eb0743e90800ba1,4b15319ac3b953e2,22,0
+bug:TI-5432::duplicate_block::1042,bug:TI-5432,validation,duplicate_block,1042,created,,[13],24,25,1eb0743e90800ba1,efd34f7f9021118d,43,0
+bug:TI-5488::swap_adjacent::1042,bug:TI-5488,validation,swap_adjacent,1042,created,,"[12, 13]",16,16,23f452ec9dc42b76,9c5c7cc192976527,12,0
+bug:TI-5488::delete_internal::1042,bug:TI-5488,validation,delete_internal,1042,created,,[11],16,15,23f452ec9dc42b76,70554656f9e28693,14,0
+bug:TI-5488::duplicate_block::1042,bug:TI-5488,validation,duplicate_block,1042,created,,[4],16,17,23f452ec9dc42b76,5831e0a269076ade,27,0
+bug:TI-5547::swap_adjacent::1042,bug:TI-5547,validation,swap_adjacent,1042,created,,"[35, 36]",38,38,c6ef05d20c42a699,20839069db878fc1,28,0
+bug:TI-5547::delete_internal::1042,bug:TI-5547,validation,delete_internal,1042,created,,[34],38,37,c6ef05d20c42a699,2bddd55c8b44eaee,36,0
+bug:TI-5547::duplicate_block::1042,bug:TI-5547,validation,duplicate_block,1042,created,,[18],38,39,c6ef05d20c42a699,6f75ab35c5bc2877,71,0
+bug:TI-5555::swap_adjacent::1042,bug:TI-5555,validation,swap_adjacent,1042,created,,"[15, 16]",20,20,cdd44daac1845c1d,649094bdeee1f4f9,14,0
+bug:TI-5555::delete_internal::1042,bug:TI-5555,validation,delete_internal,1042,created,,[13],20,19,cdd44daac1845c1d,4fe5070ffa7842b7,18,0
+bug:TI-5555::duplicate_block::1042,bug:TI-5555,validation,duplicate_block,1042,created,,[7],20,21,cdd44daac1845c1d,6742873fb3d580e5,35,0
+bug:TI-5591::swap_adjacent::1042,bug:TI-5591,validation,swap_adjacent,1042,created,,"[12, 13]",25,25,dd29587019e34480,fab167c23c9330eb,22,0
+bug:TI-5591::delete_internal::1042,bug:TI-5591,validation,delete_internal,1042,created,,[14],25,24,dd29587019e34480,499a58ddd6cf77dc,23,0
+bug:TI-5591::duplicate_block::1042,bug:TI-5591,validation,duplicate_block,1042,created,,"[5, 6]",25,27,dd29587019e34480,3e4d9471d99743ab,45,0
+bug:TI-5630::swap_adjacent::1042,bug:TI-5630,validation,swap_adjacent,1042,created,,"[8, 9]",17,17,41af77eaa9cbe100,4c54a6534855f099,13,0
+bug:TI-5630::delete_internal::1042,bug:TI-5630,validation,delete_internal,1042,created,,[10],17,16,41af77eaa9cbe100,e4b2982499211ba6,15,0
+bug:TI-5630::duplicate_block::1042,bug:TI-5630,validation,duplicate_block,1042,created,,[14],17,18,41af77eaa9cbe100,0eeacd86ef90df7b,29,0
+bug:TI-5637::swap_adjacent::1042,bug:TI-5637,validation,swap_adjacent,1042,created,,"[8, 9]",34,34,2a06167833dc65ca,3cdf149b6159db14,21,0
+bug:TI-5637::delete_internal::1042,bug:TI-5637,validation,delete_internal,1042,created,,[21],34,33,2a06167833dc65ca,78a8fd71b8d75e54,32,0
+bug:TI-5637::duplicate_block::1042,bug:TI-5637,validation,duplicate_block,1042,created,,"[13, 14]",34,36,2a06167833dc65ca,bb7dc58185aacba7,63,0
+bug:TI-6087::swap_adjacent::1042,bug:TI-6087,validation,swap_adjacent,1042,created,,"[7, 8]",15,15,d6de2f5b7930efc6,fc960a30efce1ba1,12,0
+bug:TI-6087::delete_internal::1042,bug:TI-6087,validation,delete_internal,1042,created,,[11],15,14,d6de2f5b7930efc6,521c935b9311b83f,13,0
+bug:TI-6087::duplicate_block::1042,bug:TI-6087,validation,duplicate_block,1042,created,,[10],15,16,d6de2f5b7930efc6,1b03242963936f66,25,0
+bug:TI-6151::swap_adjacent::1042,bug:TI-6151,validation,swap_adjacent,1042,created,,"[5, 6]",11,11,d8c6c5bdd187346b,a1c8067f81a1beba,8,0
+bug:TI-6151::delete_internal::1042,bug:TI-6151,validation,delete_internal,1042,created,,[3],11,10,d8c6c5bdd187346b,9cebc4fe73973acc,9,0
+bug:TI-6151::duplicate_block::1042,bug:TI-6151,validation,duplicate_block,1042,created,,"[1, 2]",11,13,d8c6c5bdd187346b,8a52fda5f967ffec,17,0
+bug:TI-6163::swap_adjacent::1042,bug:TI-6163,validation,swap_adjacent,1042,created,,"[15, 16]",19,19,55a17b929b6714b2,f983888b134f0548,16,0
+bug:TI-6163::delete_internal::1042,bug:TI-6163,validation,delete_internal,1042,created,,[15],19,18,55a17b929b6714b2,fee61c7b795d5fd0,17,0
+bug:TI-6163::duplicate_block::1042,bug:TI-6163,validation,duplicate_block,1042,created,,[17],19,20,55a17b929b6714b2,7c20ee8ab415887b,33,0

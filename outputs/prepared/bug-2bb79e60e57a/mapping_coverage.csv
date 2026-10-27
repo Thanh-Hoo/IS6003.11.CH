@@ -1,0 +1,100 @@
+raw_action,activity,secondary_changes,rule,is_fallback,n_events,n_cases
+update RemoteIssueLink,UPDATE_EXTERNAL_LINK,,external_link_update,False,1776,55
+edit description,EDIT_DESCRIPTION,,field_change,False,368,123
+add RemoteIssueLink to Commit,LINK_COMMIT,,link_commit,False,360,55
+add link to relates to,ADD_ISSUE_LINK,,issue_link,False,325,154
+Issue created,CREATE,,create,False,161,161
+update Backlog Classification to Technical Debt,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,128,127
+remove assignee,REMOVE_ASSIGNEE,,assignee,False,127,121
+edit IssueParentAssociation,EDIT_ISSUEPARENTASSOCIATION,,field_change,False,122,83
+"update project to TI-TI, edit Key",UPDATE_PROJECT,EDIT_KEY,field_change,False,117,117
+update status to INVESTIGATED,STATUS_INVESTIGATED,,status,False,114,106
+update status to To Investigate,STATUS_To Investigate,,status,False,114,106
+update status to To Do,STATUS_To Do,,status,False,105,90
+add RemoteIssueLink to Merge request,LINK_MERGE_REQUEST,,link_merge_request,False,100,61
+add Fix Version,ADD_FIX_VERSION,,sprint_fix_version,False,97,89
+update status to In Progress,STATUS_In Progress,,status,False,95,84
+update status to In Test,STATUS_In Test,,status,False,91,84
+add assignee,ADD_ASSIGNEE,,assignee,False,87,81
+"update resolution to Done, update status to DONE",STATUS_DONE,UPDATE_RESOLUTION,status,False,87,83
+update assignee,UPDATE_ASSIGNEE,,assignee,False,86,54
+"update resolution to Canceled, update status to Rejected",STATUS_Rejected,UPDATE_RESOLUTION,status,False,83,80
+add Epic Link,ADD_EPIC_LINK,,field_change,False,79,70
+add Story Points,ADD_STORY_POINTS,,field_change,False,69,66
+add Attachment,ADD_ATTACHMENT,,field_change,False,59,27
+update Blocking for Release to Yes,UPDATE_BLOCKING_FOR_RELEASE,,field_change,False,47,47
+update Rank to Ranked higher,UPDATE_RANK,,field_change,False,27,22
+update Epic Link,UPDATE_EPIC_LINK,,field_change,False,23,17
+edit summary,EDIT_SUMMARY,,field_change,False,15,12
+update Rank to Ranked lower,UPDATE_RANK,,field_change,False,15,5
+add Sprint,ADD_SPRINT,,sprint_fix_version,False,14,10
+"update Fix Version to removed, added",UPDATE_FIX_VERSION,,sprint_fix_version,False,14,14
+update status to Inbox,STATUS_Inbox,,status,False,14,14
+remove Sprint,REMOVE_SPRINT,,sprint_fix_version,False,13,11
+update Story Points,UPDATE_STORY_POINTS,,field_change,False,12,9
+add link to duplicates,ADD_ISSUE_LINK,,issue_link,False,10,9
+add link to is duplicated by,ADD_ISSUE_LINK,,issue_link,False,10,9
+add link to blocks,ADD_ISSUE_LINK,,issue_link,False,9,7
+update Sprint,UPDATE_SPRINT,,sprint_fix_version,False,9,6
+add link to clones,ADD_ISSUE_LINK,,issue_link,False,8,8
+edit Component,EDIT_COMPONENT,,field_change,False,8,8
+add link to causes,ADD_ISSUE_LINK,,issue_link,False,6,4
+add link to is cloned by,ADD_ISSUE_LINK,,issue_link,False,6,4
+edit reporter,EDIT_REPORTER,,field_change,False,6,6
+remove Fix Version,REMOVE_FIX_VERSION,,sprint_fix_version,False,5,5
+remove link to is cloned by,REMOVE_ISSUE_LINK,,issue_link,False,5,3
+update Backlog Classification to Support,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,5,5
+add link to is caused by,ADD_ISSUE_LINK,,issue_link,False,4,4
+remove Story Points,REMOVE_STORY_POINTS,,field_change,False,4,4
+"remove resolution, update status to In Progress",STATUS_In Progress,REMOVE_RESOLUTION,status,False,4,4
+"remove resolution, update status to Inbox",STATUS_Inbox,REMOVE_RESOLUTION,status,False,4,4
+update priority to Critical,UPDATE_PRIORITY,,field_change,False,4,4
+add link to is blocked by,ADD_ISSUE_LINK,,issue_link,False,3,3
+add link to precedes,ADD_ISSUE_LINK,,issue_link,False,3,3
+remove link to clones,REMOVE_ISSUE_LINK,,issue_link,False,3,3
+remove link to relates to,REMOVE_ISSUE_LINK,,issue_link,False,3,3
+"update Fix Version to removed, added, update project to TI-TI, edit Key",UPDATE_FIX_VERSION,UPDATE_PROJECT|EDIT_KEY,sprint_fix_version,False,3,3
+update labels to ,UPDATE_LABELS,,field_change,False,3,3
+update labels to ExtBlocking,UPDATE_LABELS,,field_change,False,3,3
+add Parent,ADD_PARENT,,field_change,False,2,2
+add link to follows,ADD_ISSUE_LINK,,issue_link,False,2,2
+add link to treats,ADD_ISSUE_LINK,,issue_link,False,2,1
+add undefined,ADD_UNDEFINED,,field_change,False,2,1
+"remove Fix Version, update project to TI-TI, edit Key",REMOVE_FIX_VERSION,UPDATE_PROJECT|EDIT_KEY,sprint_fix_version,False,2,2
+update Backlog Classification to Business Value,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,2,2
+update Blocking for Release to No,UPDATE_BLOCKING_FOR_RELEASE,,field_change,False,2,2
+update Version,UPDATE_VERSION,,field_change,False,2,2
+update labels to ExtBlocking ExtPriorityIssue,UPDATE_LABELS,,field_change,False,2,2
+update labels to ExtPriorityIssue,UPDATE_LABELS,,field_change,False,2,2
+update priority to High,UPDATE_PRIORITY,,field_change,False,2,2
+"update project to TI-TI Stages, edit Key",UPDATE_PROJECT,EDIT_KEY,field_change,False,2,2
+add link to contains,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to discovered,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to is referred by,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to is treated by,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to mentions,ADD_ISSUE_LINK,,issue_link,False,1,1
+add link to was discovered by,ADD_ISSUE_LINK,,issue_link,False,1,1
+remove Comment,REMOVE_COMMENT,,field_change,False,1,1
+"remove Fix Version, update project to SOFTWARE, update Version, edit Key",REMOVE_FIX_VERSION,UPDATE_PROJECT|UPDATE_VERSION|EDIT_KEY,sprint_fix_version,False,1,1
+"remove Fix Version, update project to TI-TI, update Workflow to Copy of SW Development Bug Workflow, edit Key",REMOVE_FIX_VERSION,UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,sprint_fix_version,False,1,1
+"remove Sprint, add Story Points, update issuetype to Bug, remove Parent, update Workflow to Copy of SW Development Bug Workflow",REMOVE_SPRINT,ADD_STORY_POINTS|UPDATE_ISSUETYPE|REMOVE_PARENT|UPDATE_WORKFLOW,sprint_fix_version,False,1,1
+"remove Sprint, update issuetype to Bug, remove Parent, update Workflow to Copy of SW Development Bug Workflow",REMOVE_SPRINT,UPDATE_ISSUETYPE|REMOVE_PARENT|UPDATE_WORKFLOW,sprint_fix_version,False,1,1
+remove link to duplicates,REMOVE_ISSUE_LINK,,issue_link,False,1,1
+"remove resolution, update status to To Do",STATUS_To Do,REMOVE_RESOLUTION,status,False,1,1
+"update Backlog Classification to Technical Debt, update Defect Type to Engineering Issue",UPDATE_BACKLOG_CLASSIFICATION,UPDATE_DEFECT_TYPE,field_change,False,1,1
+update Backlog Classification to Technical Innovation,UPDATE_BACKLOG_CLASSIFICATION,,field_change,False,1,1
+update Escalation to Yes,UPDATE_ESCALATION,,field_change,False,1,1
+"update Fix Version to added, removed",UPDATE_FIX_VERSION,,sprint_fix_version,False,1,1
+"update Fix Version to added, removed, update project to TI-TI, edit Key",UPDATE_FIX_VERSION,UPDATE_PROJECT|EDIT_KEY,sprint_fix_version,False,1,1
+"update Fix Version to removed, added, update project to Brno - Optics, update Version, edit Key",UPDATE_FIX_VERSION,UPDATE_PROJECT|UPDATE_VERSION|EDIT_KEY,sprint_fix_version,False,1,1
+"update Fix Version to removed, added, update project to TI-TI, update Version, edit Key",UPDATE_FIX_VERSION,UPDATE_PROJECT|UPDATE_VERSION|EDIT_KEY,sprint_fix_version,False,1,1
+update Issue Classification to ,UPDATE_ISSUE_CLASSIFICATION,,field_change,False,1,1
+update Issue Classification to Crash,UPDATE_ISSUE_CLASSIFICATION,,field_change,False,1,1
+update ScrumTeam to EPU1,UPDATE_SCRUMTEAM,,field_change,False,1,1
+update Version to 7.11.0,UPDATE_VERSION,,field_change,False,1,1
+"update issuetype to Bug, update Workflow to Copy of SW Development Bug Workflow",UPDATE_ISSUETYPE,UPDATE_WORKFLOW,field_change,False,1,1
+update priority to Low,UPDATE_PRIORITY,,field_change,False,1,1
+update priority to Medium,UPDATE_PRIORITY,,field_change,False,1,1
+"update project to Automation - AutoStar Platform, edit Key",UPDATE_PROJECT,EDIT_KEY,field_change,False,1,1
+"update project to EPU, update status to OPEN, update Workflow to NLEIN-ASG Software Workflow V1, edit Key",STATUS_OPEN,UPDATE_PROJECT|UPDATE_WORKFLOW|EDIT_KEY,status,False,1,1
+update status to Triage,STATUS_Triage,,status,False,1,1

@@ -1,0 +1,50 @@
+activity,group
+ADD_ASSIGNEE,assignment
+ADD_ATTACHMENT,documentation
+ADD_EPIC_LINK,linking
+ADD_FIX_VERSION,planning
+ADD_ISSUE_LINK,linking
+ADD_PARENT,linking
+ADD_SPRINT,planning
+ADD_STORY_POINTS,planning
+ADD_UNDEFINED,other
+CREATE,documentation
+EDIT_COMPONENT,documentation
+EDIT_DESCRIPTION,documentation
+EDIT_ISSUEPARENTASSOCIATION,linking
+EDIT_REPORTER,documentation
+EDIT_SUMMARY,documentation
+LINK_COMMIT,code
+LINK_MERGE_REQUEST,code
+REMOVE_ASSIGNEE,assignment
+REMOVE_COMMENT,documentation
+REMOVE_FIX_VERSION,planning
+REMOVE_ISSUE_LINK,linking
+REMOVE_SPRINT,planning
+REMOVE_STORY_POINTS,planning
+STATUS_DONE,status
+STATUS_INVESTIGATED,status
+STATUS_In Progress,status
+STATUS_In Test,status
+STATUS_Inbox,status
+STATUS_OPEN,status
+STATUS_Rejected,status
+STATUS_To Do,status
+STATUS_To Investigate,status
+STATUS_Triage,status
+UPDATE_ASSIGNEE,assignment
+UPDATE_BACKLOG_CLASSIFICATION,classification
+UPDATE_BLOCKING_FOR_RELEASE,classification
+UPDATE_EPIC_LINK,linking
+UPDATE_ESCALATION,classification
+UPDATE_FIX_VERSION,planning
+UPDATE_ISSUETYPE,classification
+UPDATE_ISSUE_CLASSIFICATION,classification
+UPDATE_LABELS,classification
+UPDATE_PRIORITY,classification
+UPDATE_PROJECT,classification
+UPDATE_RANK,planning
+UPDATE_SCRUMTEAM,planning
+UPDATE_SPRINT,planning
+UPDATE_STORY_POINTS,planning
+UPDATE_VERSION,planning

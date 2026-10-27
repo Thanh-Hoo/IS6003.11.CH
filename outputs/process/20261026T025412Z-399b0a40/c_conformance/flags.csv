@@ -1,0 +1,1128 @@
+case_id,terminal_status,flag,label,n
+bug:TI-4584,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4584,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4584,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),1
+bug:TI-4584,DONE,reopen_done,Mở lại sau DONE,1
+bug:TI-4584,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4584,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-4584,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,6
+bug:TI-4596,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4596,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4596,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4596,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4596,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4596,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4596,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-4599,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4599,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4599,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4599,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4599,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4599,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4599,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-4616,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4616,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4616,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4616,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4616,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4616,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4616,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4617,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4617,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4617,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4617,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4617,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4617,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4617,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-4649,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4649,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4649,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4649,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4649,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4649,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4649,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4651,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4651,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4651,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4651,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4651,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4651,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4651,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4671,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4671,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4671,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4671,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4671,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4671,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4671,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-4682,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4682,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4682,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4682,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4682,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4682,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4682,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-4683,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4683,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4683,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4683,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4683,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4683,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4683,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4686,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4686,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4686,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4686,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4686,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4686,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4686,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,5
+bug:TI-4723,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4723,DONE,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4723,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4723,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4723,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4723,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4723,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-4724,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4724,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4724,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4724,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4724,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4724,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4724,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4725,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4725,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4725,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4725,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4725,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4725,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4725,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4726,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4726,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4726,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4726,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4726,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4726,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4726,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4727,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4727,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4727,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4727,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4727,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4727,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4727,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-4740,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4740,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4740,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4740,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4740,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4740,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4740,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4745,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4745,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4745,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4745,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4745,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4745,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4745,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4748,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4748,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4748,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4748,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4748,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4748,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4748,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-4751,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4751,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4751,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4751,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4751,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4751,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4751,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-4758,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4758,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4758,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4758,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4758,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4758,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4758,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4759,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4759,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4759,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4759,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4759,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4759,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4759,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4770,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4770,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4770,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4770,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4770,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4770,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4770,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4811,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4811,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4811,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4811,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4811,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4811,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4811,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-4818,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4818,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4818,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4818,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4818,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4818,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4818,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4820,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4820,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4820,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4820,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4820,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4820,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4820,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-4829,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4829,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4829,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4829,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4829,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4829,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4829,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4834,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4834,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4834,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4834,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4834,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4834,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4834,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-4849,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4849,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4849,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4849,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4849,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4849,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4849,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4871,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4871,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4871,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4871,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4871,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4871,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4871,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-4872,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4872,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4872,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4872,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4872,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-4872,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4872,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4876,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4876,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4876,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4876,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4876,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4876,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4876,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4887,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4887,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4887,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4887,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4887,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4887,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4887,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4888,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4888,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4888,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4888,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4888,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4888,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4888,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-4890,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4890,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4890,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4890,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4890,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4890,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4890,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-4893,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4893,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4893,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4893,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4893,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4893,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4893,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-4894,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4894,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4894,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4894,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4894,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4894,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4894,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4902,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4902,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4902,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4902,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4902,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4902,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4902,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4931,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4931,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4931,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4931,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4931,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4931,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4931,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4932,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4932,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-4932,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4932,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4932,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4932,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4932,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4935,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4935,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4935,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4935,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4935,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4935,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4935,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-4936,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4936,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4936,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4936,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4936,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4936,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4936,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4966,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-4966,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4966,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4966,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-4966,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4966,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4966,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-4967,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-4967,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-4967,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-4967,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-4967,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-4967,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-4967,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5007,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5007,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5007,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5007,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5007,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5007,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5007,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5016,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5016,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5016,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5016,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5016,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5016,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5016,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5023,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5023,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5023,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5023,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5023,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5023,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5023,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5041,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5041,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5041,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5041,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5041,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5041,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5041,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5052,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5052,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5052,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5052,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5052,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5052,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5052,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5066,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5066,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5066,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5066,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5066,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5066,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5066,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5091,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5091,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5091,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5091,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5091,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5091,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5091,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5115,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5115,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5115,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5115,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5115,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5115,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5115,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5117,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5117,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5117,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5117,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5117,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5117,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5117,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5118,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5118,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5118,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5118,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5118,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5118,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5118,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-5133,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5133,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5133,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5133,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5133,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5133,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5133,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5139,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5139,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5139,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5139,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5139,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5139,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5139,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5145,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5145,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5145,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5145,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5145,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5145,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5145,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5153,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5153,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5153,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5153,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5153,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5153,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5153,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5176,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5176,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5176,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5176,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5176,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5176,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5176,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5187,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5187,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5187,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5187,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5187,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5187,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5187,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5199,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5199,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5199,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5199,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5199,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5199,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5199,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5200,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5200,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5200,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5200,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5200,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5200,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5200,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5201,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5201,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5201,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5201,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5201,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5201,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5201,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5244,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5244,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5244,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5244,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5244,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5244,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5244,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5246,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5246,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5246,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5246,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5246,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5246,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5246,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5254,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5254,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5254,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5254,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5254,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5254,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5254,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5256,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5256,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5256,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5256,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5256,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5256,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5256,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5259,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5259,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5259,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5259,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5259,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5259,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5259,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5260,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5260,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5260,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5260,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5260,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5260,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5260,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5261,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5261,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5261,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5261,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5261,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5261,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5261,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5266,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5266,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5266,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5266,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5266,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5266,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5266,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5267,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5267,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5267,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5267,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5267,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5267,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5267,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5268,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5268,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5268,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5268,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5268,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5268,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5268,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5269,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5269,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5269,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5269,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5269,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5269,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5269,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5308,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5308,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5308,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5308,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5308,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5308,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5308,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5311,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5311,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5311,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5311,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5311,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5311,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5311,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5331,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5331,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5331,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5331,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5331,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5331,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5331,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5332,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5332,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5332,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5332,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5332,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5332,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5332,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5333,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5333,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5333,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5333,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5333,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5333,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5333,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5345,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5345,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5345,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5345,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5345,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5345,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5345,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5346,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5346,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5346,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5346,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5346,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5346,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5346,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5347,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5347,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5347,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5347,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5347,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5347,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5347,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,5
+bug:TI-5362,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5362,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5362,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5362,DONE,reopen_done,Mở lại sau DONE,1
+bug:TI-5362,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5362,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-5362,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5366,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5366,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5366,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5366,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5366,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5366,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5366,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5376,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5376,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5376,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5376,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5376,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5376,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5376,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5378,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5378,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5378,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5378,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5378,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5378,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5378,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5382,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5382,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5382,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5382,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5382,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5382,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5382,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5383,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5383,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5383,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5383,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5383,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5383,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5383,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5390,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5390,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5390,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5390,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5390,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5390,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5390,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5410,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5410,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5410,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5410,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5410,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5410,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5410,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5411,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5411,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5411,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5411,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5411,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5411,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5411,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5412,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5412,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5412,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5412,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5412,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5412,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5412,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5420,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5420,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5420,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5420,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5420,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5420,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5420,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5426,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5426,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5426,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5426,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5426,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5426,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5426,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5432,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5432,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5432,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5432,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5432,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5432,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5432,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5440,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5440,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5440,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5440,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5440,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5440,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5440,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-5442,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5442,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5442,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5442,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5442,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5442,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5442,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5443,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5443,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5443,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5443,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5443,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5443,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5443,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5444,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5444,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5444,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5444,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5444,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5444,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5444,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5445,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5445,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5445,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5445,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5445,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5445,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5445,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5469,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5469,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5469,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5469,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5469,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5469,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5469,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5477,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5477,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5477,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5477,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5477,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5477,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5477,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5480,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5480,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5480,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5480,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5480,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5480,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5480,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5484,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5484,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5484,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5484,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5484,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5484,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5484,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5488,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5488,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5488,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5488,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5488,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5488,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5488,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5489,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5489,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5489,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5489,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5489,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5489,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5489,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5492,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5492,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5492,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5492,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5492,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5492,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5492,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5545,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5545,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5545,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5545,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5545,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5545,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5545,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5547,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5547,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5547,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5547,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5547,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5547,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5547,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5548,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5548,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5548,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5548,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5548,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5548,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5548,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5555,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5555,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5555,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5555,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5555,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5555,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5555,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5564,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5564,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5564,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5564,DONE,reopen_done,Mở lại sau DONE,1
+bug:TI-5564,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5564,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-5564,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-5568,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5568,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5568,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5568,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5568,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5568,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5568,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,5
+bug:TI-5569,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5569,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5569,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5569,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5569,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5569,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5569,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5583,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5583,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5583,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5583,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5583,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5583,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5583,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5586,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5586,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5586,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5586,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5586,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5586,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5586,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5591,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5591,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5591,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5591,DONE,reopen_done,Mở lại sau DONE,1
+bug:TI-5591,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5591,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-5591,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5598,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5598,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5598,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5598,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5598,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5598,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5598,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5608,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5608,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5608,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5608,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5608,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5608,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5608,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5618,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5618,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5618,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5618,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5618,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5618,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5618,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5630,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5630,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5630,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5630,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5630,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5630,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5630,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5633,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5633,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5633,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5633,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5633,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5633,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5633,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5636,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5636,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5636,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5636,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5636,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5636,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5636,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5637,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5637,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5637,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5637,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5637,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5637,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5637,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5656,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5656,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5656,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5656,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5656,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5656,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5656,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5672,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5672,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5672,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5672,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5672,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5672,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5672,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5674,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5674,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5674,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),1
+bug:TI-5674,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5674,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5674,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5674,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5675,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5675,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5675,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5675,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5675,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5675,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5675,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5676,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5676,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5676,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5676,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5676,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-5676,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5676,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,4
+bug:TI-5750,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5750,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5750,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5750,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5750,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5750,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5750,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5751,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5751,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5751,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5751,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5751,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5751,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5751,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5769,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5769,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-5769,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5769,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5769,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5769,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5769,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5770,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5770,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5770,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5770,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5770,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5770,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-5770,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5837,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5837,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5837,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5837,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5837,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5837,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5837,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5863,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5863,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5863,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5863,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5863,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5863,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5863,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-5900,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5900,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5900,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5900,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5900,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5900,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5900,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5915,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-5915,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5915,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5915,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5915,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5915,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5915,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-5916,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5916,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5916,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5916,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-5916,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5916,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5916,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,3
+bug:TI-5965,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5965,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5965,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5965,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5965,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5965,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5965,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-5991,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-5991,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-5991,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-5991,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-5991,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-5991,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-5991,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6007,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6007,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6007,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6007,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6007,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6007,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6007,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6041,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6041,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6041,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6041,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6041,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6041,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6041,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6043,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6043,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6043,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6043,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6043,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6043,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6043,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6079,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6079,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6079,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6079,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6079,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6079,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6079,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6087,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6087,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6087,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6087,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6087,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6087,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6087,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6088,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6088,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6088,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6088,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6088,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6088,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6088,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6089,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6089,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-6089,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6089,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6089,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6089,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6089,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6094,DONE,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6094,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6094,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6094,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6094,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6094,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6094,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6105,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6105,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6105,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6105,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6105,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6105,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6105,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6132,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6132,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6132,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6132,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6132,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6132,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6132,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6149,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6149,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-6149,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6149,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6149,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6149,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6149,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6150,Rejected,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6150,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6150,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6150,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6150,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,1
+bug:TI-6150,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6150,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6151,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6151,Rejected,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6151,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6151,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6151,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6151,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6151,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6152,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6152,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6152,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6152,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6152,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6152,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6152,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6160,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6160,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-6160,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6160,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6160,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6160,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6160,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6163,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6163,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6163,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6163,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6163,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6163,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6163,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6203,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6203,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6203,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6203,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6203,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6203,DONE,progress_not_from_todo,Vào In Progress không qua To Do,1
+bug:TI-6203,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,1
+bug:TI-6208,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6208,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6208,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6208,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6208,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6208,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6208,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,2
+bug:TI-6209,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6209,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6209,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6209,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6209,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6209,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6209,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6255,DONE,skip_investigation,Bỏ pha điều tra,1
+bug:TI-6255,DONE,direct_reject,CREATE → Rejected trực tiếp,0
+bug:TI-6255,DONE,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6255,DONE,reopen_done,Mở lại sau DONE,0
+bug:TI-6255,DONE,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6255,DONE,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6255,DONE,backfill,Đổi trạng thái trong đợt cập nhật bù,0
+bug:TI-6297,Rejected,skip_investigation,Bỏ pha điều tra,0
+bug:TI-6297,Rejected,direct_reject,CREATE → Rejected trực tiếp,1
+bug:TI-6297,Rejected,reject_after_work,Rejected sau khi đã In Progress (công sức bị bỏ),0
+bug:TI-6297,Rejected,reopen_done,Mở lại sau DONE,0
+bug:TI-6297,Rejected,back_to_inbox,Lùi về Inbox từ trạng thái sau,0
+bug:TI-6297,Rejected,progress_not_from_todo,Vào In Progress không qua To Do,0
+bug:TI-6297,Rejected,backfill,Đổi trạng thái trong đợt cập nhật bù,0

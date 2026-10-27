@@ -1,0 +1,50 @@
+{
+  "run_id": "20261026T025412Z-399b0a40",
+  "started_at_utc": "2026-10-26T03:00:36+00:00",
+  "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+  "timeout_seconds": 300,
+  "notebooks": [
+    {
+      "name": "07_quantitative.ipynb",
+      "status": "ok",
+      "seconds": 2.979,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/07_quantitative.ipynb"
+    },
+    {
+      "name": "08_norms_centrality.ipynb",
+      "status": "ok",
+      "seconds": 2.801,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/08_norms_centrality.ipynb"
+    },
+    {
+      "name": "09_conformance.ipynb",
+      "status": "ok",
+      "seconds": 2.869,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/09_conformance.ipynb"
+    },
+    {
+      "name": "10_bpr.ipynb",
+      "status": "ok",
+      "seconds": 2.722,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/10_bpr.ipynb"
+    },
+    {
+      "name": "11_ranking.ipynb",
+      "status": "ok",
+      "seconds": 2.772,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/11_ranking.ipynb"
+    },
+    {
+      "name": "12_summary_report.ipynb",
+      "status": "ok",
+      "seconds": 2.94,
+      "python": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/.venv/bin/python3",
+      "executed_path": "/Users/thanhho/Documents/Work Space/UIT/HK4/zenodo/outputs/process/20261026T025412Z-399b0a40/notebooks_executed/12_summary_report.ipynb"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+phase,weeks,action,kpi,baseline_asis,target_tobe,unit,tobe_label,note
+chuan_bi,1–2,"Cấu hình Jira: thêm Investigating, bỏ INVESTIGATED, tự chuyển In Progress khi có commit/MR; họp triage hằng ngày ở Inbox",status_changes_per_case,4.434782608695652,5.428571428571429,lần/ca,mục tiêu / kịch bản ước tính,
+chuan_bi,1–2,"Cấu hình Jira: thêm Investigating, bỏ INVESTIGATED, tự chuyển In Progress khi có commit/MR; họp triage hằng ngày ở Inbox",pt_share_main,0.16736598974692463,0.16853875953706388,tỉ lệ,mục tiêu / kịch bản ước tính,
+chay_thu,3–8,Chạy quy trình TO-BE với một team; ghi nhận ca đi luồng nhanh và ca bị loại sớm,ct_work_median_days,17.03162017361111,15.212008090277775,ngày làm việc,mục tiêu / kịch bản ước tính,
+chay_thu,3–8,Chạy quy trình TO-BE với một team; ghi nhận ca đi luồng nhanh và ca bị loại sớm,rejected_issue_days_work,1928.5597155324076,1394.208265,ngày-issue làm việc,mục tiêu / kịch bản ước tính,
+chay_thu,3–8,Chạy quy trình TO-BE với một team; ghi nhận ca đi luồng nhanh và ca bị loại sớm,conformance_share_fit,0.6521739130434783,0.8074534161490683,tỉ lệ ca khớp,mục tiêu / kịch bản ước tính,
+danh_gia,9–10,So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0,ct_work_median_days,17.03162017361111,15.212008090277775,ngày làm việc,mục tiêu / kịch bản ước tính,
+danh_gia,9–10,So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0,ct_work_p90_days,74.3069025,57.87575729456019,ngày làm việc,mục tiêu / kịch bản ước tính,
+danh_gia,9–10,So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0,rejected_issue_days_work,1928.5597155324076,1394.208265,ngày-issue làm việc,mục tiêu / kịch bản ước tính,
+danh_gia,9–10,So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0,conformance_share_fit,0.6521739130434783,0.8074534161490683,tỉ lệ ca khớp,mục tiêu / kịch bản ước tính,

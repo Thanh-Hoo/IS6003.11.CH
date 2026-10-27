@@ -1,0 +1,157 @@
+# Cấu hình giai đoạn 2 — đồ án môn "Hoạch định nguồn lực doanh nghiệp nâng cao".
+# Kế hoạch: docs/superpowers/plans/2026-10-26-do-an-mon-hoc.md; quyết định đã duyệt: CLAUDE.md.
+# Chạy: uv run jira-ad process --config configs/process.yaml
+paths:
+  base_config: configs/baseline.yaml          # cấu hình giai đoạn 1, CHỈ ĐỌC (loader, quy tắc action, core view, split)
+  output_root: outputs/process
+  v1_run: outputs/runs/20261017T081309Z-930f8a85            # embedding V1 (không fit lại)
+  improvement_dir: outputs/improvement/20261022T151529Z-bb0fee9a   # điểm out-of-fold 161 ca
+cohorts: [bug, story]   # bug là đối tượng chính; story chỉ đặt cạnh, không trộn
+calendar:
+  workdays: [0, 1, 2, 3, 4]   # T2–T6, chu kỳ 24 giờ, không giờ hành chính, không ngày lễ
+  primary: local              # Quyết định 7: ngày địa phương theo offset gốc trong timestamp_raw; utc là độ nhạy
+backfill:
+  threshold_seconds: 60       # đổi trạng thái cách lần trước < 60 s = cập nhật bù
+states:
+  # Thứ tự dùng để nhận diện "lùi trạng thái". Trạng thái không khai báo (Triage, OPEN...) = other (tính là chờ).
+  order: [Inbox, To Investigate, INVESTIGATED, To Do, In Progress, In Test]
+  work: [In Progress, In Test]                          # Quyết định 2 (phương án chính)
+  wait: [Inbox, To Investigate, INVESTIGATED, To Do]    # "To ..." là hàng đợi; không có trạng thái Investigating
+  terminal: [DONE, Rejected]
+  sensitivity_work: [To Investigate, In Progress, In Test]   # độ nhạy bắt buộc: To Investigate là "làm"
+norms:
+  percentile: 0.75     # Quyết định 3: định mức nội suy = P75 dwell ngày làm việc theo trạng thái (cả 161 ca)
+  min_visits: 10       # trạng thái có ít lượt hơn (Triage, OPEN, DONE/Rejected giữa chừng) không có định mức
+  explicit_days: {}    # SLA thật nếu có, vd {"To Do": 5}; ghi đè phân vị
+centrality:
+  pagerank_alpha: 0.85
+  top_late: 20         # số lần trễ lớn nhất đưa vào bảng
+  example_cases: 3     # số issueKey ví dụ cho mỗi ưu tiên
+reference_model:
+  # Quyết định 4: mô hình chuẩn là GIẢ ĐỊNH CỦA TÁC GIẢ, trình bày cho người dùng trước khi replay (điểm dừng 2).
+  # Giả định A1 (của agent, chờ duyệt): CREATE = issue vào trạng thái khởi tạo Inbox một cách ngầm định, nên các cung
+  # ra của Inbox cũng là cung ra của CREATE; Inbox tường minh chỉ được phép ngay sau CREATE.
+  approved: true   # Quyết định 8 (26/10): người dùng duyệt phương án (a), giữ A1 và đúng danh sách cung
+  start: CREATE
+  ends: [DONE, Rejected]
+  arcs:
+    - "CREATE -> Inbox"
+    - "CREATE -> To Investigate"
+    - "CREATE -> Rejected"
+    - "Inbox -> To Investigate"
+    - "Inbox -> Rejected"
+    - "To Investigate -> INVESTIGATED"
+    - "To Investigate -> Rejected"
+    - "INVESTIGATED -> To Do"
+    - "INVESTIGATED -> Rejected"
+    - "To Do -> In Progress"
+    - "To Do -> Rejected"
+    - "In Progress -> In Test"
+    - "In Test -> In Progress"      # vòng sửa lại sau kiểm thử
+    - "In Test -> DONE"
+flags:   # Quyết định 4: chỉ đếm, không kết luận lỗi; quy tắc 0 vi phạm vẫn giữ và ghi là kết quả
+  - {id: skip_investigation, label: "Bỏ pha điều tra", kind: missing_before,
+     states: [To Do, In Progress, In Test, DONE], other_states: [To Investigate, INVESTIGATED]}
+  - {id: direct_reject, label: "CREATE → Rejected trực tiếp", kind: first_status_is, states: [Rejected], other_states: []}
+  - {id: reject_after_work, label: "Rejected sau khi đã In Progress (công sức bị bỏ)", kind: after,
+     states: [Rejected], other_states: [In Progress]}
+  - {id: reopen_done, label: "Mở lại sau DONE", kind: leaves, states: [DONE], other_states: []}
+  - {id: back_to_inbox, label: "Lùi về Inbox từ trạng thái sau", kind: enters_from_status, states: [Inbox], other_states: []}
+  - {id: progress_not_from_todo, label: "Vào In Progress không qua To Do", kind: enters_not_from,
+     states: [In Progress], other_states: [To Do, In Test]}   # In Test → In Progress là vòng được phép
+  - {id: backfill, label: "Đổi trạng thái trong đợt cập nhật bù", kind: backfill, states: [], other_states: []}
+discovery:   # khai phá AS-IS trên status log (activity = CREATE + tên trạng thái), cả 161 ca
+  - {id: alpha, miner: alpha, params: {}}
+  - {id: heuristics, miner: heuristics, params: {dependency_threshold: 0.5}}
+  - {id: inductive, miner: inductive, params: {noise_threshold: 0.0}}
+  - {id: inductive_infrequent, miner: inductive, params: {noise_threshold: 0.2}}
+alternative_models:   # Quyết định 8: KHÔNG phải mô hình chuẩn — ứng viên TO-BE cho Chương 4, replay cạnh mô hình chuẩn
+  - {id: fast_track, label: "Luồng nhanh (ứng viên TO-BE): cho phép bỏ pha điều tra", extra_arcs: ["CREATE -> To Do"]}
+deviation_report:     # sai lệch báo theo nhánh DONE/Rejected, tách ca có cập nhật bù (cùng với lùi trạng thái và mở lại)
+  arcs: ["CREATE -> To Do", "To Do -> Inbox"]
+bpr:
+  # KHÓA 26/10 TRƯỚC KHI TÍNH PHÁN QUYẾT. Ngưỡng đặt theo nguyên tắc (1 tuần làm việc = 5 ngày; "đáng kể" = 20%;
+  # "đa số" = 50%; bootstrap 95% loại trừ 0), không theo giá trị đo. Phán quyết: ủng hộ / không ủng hộ / không đủ dữ liệu.
+  early_triage_min_share: 0.20        # ca Rejected chiếm >= 20% ngày-issue làm việc ...
+  early_triage_min_median_days: 5.0   # ... và trung vị thời gian tới khi Rejected >= 5 ngày làm việc
+  auto_transition_min_share: 0.30     # >= 30% ca có commit/MR liên kết TRƯỚC khi vào In Progress
+  merge_max_days: 1.0                 # INVESTIGATED → To Do trong <= 1 ngày làm việc là "đi xuyên qua" ...
+  merge_min_share: 0.50               # ... ở >= 50% số lần chuyển
+  po_state: To Do                     # kiểm chứng: chờ ở To Do có gắn với PO (vai trò chuyển ra) không
+  duplicate_pattern: "link to duplicates"   # issue này là bản trùng của issue khác
+  duplicate_min_cases: 5
+  duplicate_min_median_days: 5.0
+  investigating_min_width_pp: 10.0    # khoảng PT rộng > 10 điểm % do cách xếp To Investigate
+  fast_track_max_fpy_drop: 0.10       # luồng nhanh không làm FPY (DONE) thấp hơn quá 0,10
+  bootstrap_n: 2000
+  seed: 20261026
+bpr_candidates:   # vấn đề → thủ pháp BPR (Buổi 2, heuristics của Reijers & Limam Mansar); bằng chứng sinh từ phép kiểm chứng
+  - {id: early_triage, problem: "Ca bị từ chối vẫn nằm lâu trong quy trình trước khi bị loại",
+     heuristic: "Triage / knock-out sớm: quyết định loại ngay ở Inbox"}
+  - {id: auto_transition, problem: "Trạng thái Jira cập nhật muộn so với công việc thật (commit/MR có trước In Progress)",
+     heuristic: "Task automation: tự chuyển In Progress khi có commit/MR đầu tiên"}
+  - {id: merge_investigated, problem: "INVESTIGATED thường chỉ là bước đi xuyên qua trước To Do",
+     heuristic: "Task composition: gộp INVESTIGATED vào To Do"}
+  - {id: reduce_po_dependency, problem: "PO là vai trò cổng của phần lớn trạng thái chờ",
+     heuristic: "Empower / phân quyền: giảm số bước phải chờ PO"}
+  - {id: early_duplicate_detection, problem: "Bug trùng có thể bị phát hiện muộn",
+     heuristic: "Knock-out sớm: kiểm tra trùng ngay khi tạo"}
+  - {id: add_investigating_state, problem: "Công sức điều tra không hiện trong Jira (To Investigate vừa là hàng đợi vừa là việc)",
+     heuristic: "Control addition: thêm trạng thái Investigating để đo được việc điều tra"}
+  - {id: fast_track, problem: "Mọi bug đều phải qua điều tra dù một phần được sửa thẳng",
+     heuristic: "Triage: phân luồng bug rõ ràng sang To Do (luồng nhanh)"}
+tobe_model:   # thiết kế SAU phán quyết (Ruling 95): chỉ gồm ứng viên được ủng hộ; số liệu TO-BE là mục tiêu / kịch bản ước tính
+  start: CREATE
+  ends: [DONE, Rejected]
+  arcs:
+    - "CREATE -> Inbox"
+    - "Inbox -> Rejected"              # early_triage: loại sớm ở Inbox
+    - "Inbox -> To Do"                 # fast_track: bug rõ ràng đi thẳng
+    - "Inbox -> To Investigate"
+    - "To Investigate -> Investigating"   # add_investigating_state: tách hàng đợi khỏi việc điều tra
+    - "Investigating -> To Do"         # merge_investigated: bỏ INVESTIGATED
+    - "Investigating -> Rejected"
+    - "To Do -> In Progress"           # auto_transition: tự động khi có commit/MR đầu tiên
+    - "To Do -> Rejected"
+    - "In Progress -> In Test"
+    - "In Test -> In Progress"
+    - "In Test -> DONE"
+  automated_arcs: ["To Do -> In Progress"]
+  lanes:   # trạng thái có sẵn: lane AS-IS (vai trò chuyển ra nhiều nhất); Investigating: lấy lane của To Investigate AS-IS (việc điều tra đang diễn ra trong đó)
+    Inbox: PO
+    To Investigate: PO
+    Investigating: PO
+    To Do: PO
+    In Progress: Eng
+    In Test: SQA
+pilot:   # kế hoạch pilot; mốc so sánh lấy từ KPI AS-IS đo được, chạy lại cùng lệnh `jira-ad process` trên dữ liệu pilot
+  - {id: chuan_bi, weeks: "1–2", action: "Cấu hình Jira: thêm Investigating, bỏ INVESTIGATED, tự chuyển In Progress khi có commit/MR; họp triage hằng ngày ở Inbox",
+     kpis: [status_changes_per_case, pt_share_main]}
+  - {id: chay_thu, weeks: "3–8", action: "Chạy quy trình TO-BE với một team; ghi nhận ca đi luồng nhanh và ca bị loại sớm",
+     kpis: [ct_work_median_days, rejected_issue_days_work, conformance_share_fit]}
+  - {id: danh_gia, weeks: "9–10", action: "So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0",
+     kpis: [ct_work_median_days, ct_work_p90_days, rejected_issue_days_work, conformance_share_fit]}
+ranking:   # KHÓA 26/10 TRƯỚC KHI TÍNH (Task 23). Embedding lấy từ paths.v1_run (không fit lại); điểm M_markov out-of-fold từ paths.improvement_dir.
+  oof_method: M_markov
+  k_min: 2
+  k_max: 6
+  seed: 20261026
+  top_share: 0.10          # top 10% = "nên xem trước", không phải "vi phạm"
+  peer_percentile: 0.90    # một chiều "vượt" khi phân vị trong nhóm (nhánh × độ dài) > 0,90
+  length_bins: 3           # nhóm độ dài theo tam phân vị số event của toàn bộ ca
+  n_boot: 200              # bootstrap ổn định top-k (Jaccard)
+  consensus_share: 0.70    # danh sách đồng thuận: ca nằm trong top ở >= 70% số lần bootstrap mà ca được rút (người dùng quyết định 26/10)
+  blind_top: 15
+  blind_random: 15
+  assignee_activities: [ADD_ASSIGNEE, UPDATE_ASSIGNEE, REMOVE_ASSIGNEE]
+  activity_groups:         # nhóm nghiệp vụ theo loại trường Jira (do tác giả định nghĩa trước); activity không liệt kê = other
+    status: ["STATUS_DONE", "STATUS_INVESTIGATED", "STATUS_In Progress", "STATUS_In Test", "STATUS_Inbox", "STATUS_OPEN",
+             "STATUS_Rejected", "STATUS_To Do", "STATUS_To Investigate", "STATUS_Triage"]
+    code: [LINK_COMMIT, LINK_MERGE_REQUEST]
+    assignment: [ADD_ASSIGNEE, UPDATE_ASSIGNEE, REMOVE_ASSIGNEE]
+    planning: [ADD_FIX_VERSION, REMOVE_FIX_VERSION, UPDATE_FIX_VERSION, ADD_SPRINT, REMOVE_SPRINT, UPDATE_SPRINT,
+               ADD_STORY_POINTS, UPDATE_STORY_POINTS, REMOVE_STORY_POINTS, UPDATE_RANK, UPDATE_VERSION, UPDATE_SCRUMTEAM]
+    linking: [ADD_ISSUE_LINK, REMOVE_ISSUE_LINK, ADD_EPIC_LINK, UPDATE_EPIC_LINK, ADD_PARENT, EDIT_ISSUEPARENTASSOCIATION]
+    documentation: [CREATE, EDIT_DESCRIPTION, EDIT_SUMMARY, ADD_ATTACHMENT, REMOVE_COMMENT, EDIT_REPORTER, EDIT_COMPONENT]
+    classification: [UPDATE_BACKLOG_CLASSIFICATION, UPDATE_ISSUE_CLASSIFICATION, UPDATE_ISSUETYPE, UPDATE_PRIORITY,
+                     UPDATE_LABELS, UPDATE_PROJECT, UPDATE_BLOCKING_FOR_RELEASE, UPDATE_ESCALATION]

@@ -1,0 +1,132 @@
+{
+  "stage": "audit_raw",
+  "scope": "analysis_only",
+  "view": "raw",
+  "generated_at_utc": "2026-10-15T17:35:48+00:00",
+  "config_path": "configs/baseline.yaml",
+  "inputs": [
+    {
+      "cohort": "bug",
+      "relative_path": "dataset/TIeventlogBug.csv",
+      "sha256": "cda16f1c5c4af641ea89e77ac5b8217c5f5a923988e7984a73e80f159f38de80",
+      "size_bytes": 386579,
+      "n_rows": 5126
+    },
+    {
+      "cohort": "story",
+      "relative_path": "dataset/TIeventlogStory.csv",
+      "sha256": "afd53fca100a90c5e4c63360d14c84bd1f9109d2670fc7b8184e57a52c8b6387",
+      "size_bytes": 336703,
+      "n_rows": 4439
+    }
+  ],
+  "cohorts": {
+    "bug": {
+      "n_events": 5126,
+      "n_cases": 161,
+      "issue_types": [
+        "bug"
+      ],
+      "events_per_case": {
+        "min": 4,
+        "median": 20.0,
+        "max": 239,
+        "mean": 31.838509316770185
+      },
+      "n_single_event_cases": 0,
+      "n_blank_role": 15,
+      "n_role_bot": 2230,
+      "bot_share": 0.4350370659383535,
+      "role_counts": {
+        "bot": 2230,
+        "PO": 1296,
+        "unknown": 837,
+        "Eng": 489,
+        "SQA": 168,
+        "RTE": 43,
+        "Integrator": 21,
+        "": 15,
+        "Support/Mgr": 11,
+        "PM": 7,
+        "Software Architect": 5,
+        "SM": 3,
+        "ART Architect": 1
+      },
+      "n_distinct_raw_actions": 99,
+      "utc_offsets": {
+        "-0700": 2779,
+        "-0800": 2347
+      },
+      "n_cases_needing_reorder": 161,
+      "n_tie_groups": 0,
+      "n_events_in_ties": 0,
+      "n_exact_duplicate_rows": 0,
+      "timestamp_min_utc": "2021-06-02T07:24:19.359+00:00",
+      "timestamp_max_utc": "2022-08-09T12:30:44.411+00:00",
+      "reference_diff": {
+        "events": {
+          "expected": 5126,
+          "actual": 5126,
+          "delta": 0
+        },
+        "issues": {
+          "expected": 161,
+          "actual": 161,
+          "delta": 0
+        }
+      }
+    },
+    "story": {
+      "n_events": 4439,
+      "n_cases": 182,
+      "issue_types": [
+        "story"
+      ],
+      "events_per_case": {
+        "min": 5,
+        "median": 15.0,
+        "max": 212,
+        "mean": 24.39010989010989
+      },
+      "n_single_event_cases": 0,
+      "n_blank_role": 0,
+      "n_role_bot": 1941,
+      "bot_share": 0.4372606442892543,
+      "role_counts": {
+        "bot": 1941,
+        "PO": 1532,
+        "Eng": 667,
+        "unknown": 261,
+        "SQA": 15,
+        "Support/Mgr": 7,
+        "Software Architect": 7,
+        "RTE": 5,
+        "Integrator": 3,
+        "SM": 1
+      },
+      "n_distinct_raw_actions": 74,
+      "utc_offsets": {
+        "-0700": 3243,
+        "-0800": 1196
+      },
+      "n_cases_needing_reorder": 182,
+      "n_tie_groups": 0,
+      "n_events_in_ties": 0,
+      "n_exact_duplicate_rows": 0,
+      "timestamp_min_utc": "2021-06-16T11:13:46.509+00:00",
+      "timestamp_max_utc": "2022-08-22T07:45:42.245+00:00",
+      "reference_diff": {
+        "events": {
+          "expected": 4439,
+          "actual": 4439,
+          "delta": 0
+        },
+        "issues": {
+          "expected": 182,
+          "actual": 182,
+          "delta": 0
+        }
+      }
+    }
+  }
+}

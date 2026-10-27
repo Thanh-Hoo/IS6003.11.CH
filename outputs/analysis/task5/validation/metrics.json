@@ -1,0 +1,255 @@
+{
+  "label_definition": "is_injected: 0 = trace gốc chưa xác nhận bình thường, 1 = mutant được chèn; không phải nhãn bất thường thật",
+  "design": {
+    "injected_rate": 0.5,
+    "note": "tỷ lệ thiết kế, không phải tỷ lệ bất thường thật"
+  },
+  "methods": [
+    "A_stats",
+    "B_ngrams",
+    "C_embedding",
+    "D_hybrid"
+  ],
+  "metrics_by_type": [
+    {
+      "method": "A_stats",
+      "mutation_type": "delete_internal",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.487603305785124,
+      "average_precision": 0.535151167475832,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.3939393939393939,
+      "mean_delta_score": -0.00040746424864672996,
+      "median_delta_score": -0.004368168611393386,
+      "null_reason": null
+    },
+    {
+      "method": "B_ngrams",
+      "mutation_type": "delete_internal",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5215794306703397,
+      "average_precision": 0.5169989789093167,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.5151515151515151,
+      "mean_delta_score": 0.0004926443657738742,
+      "median_delta_score": 0.00033073642623770994,
+      "null_reason": null
+    },
+    {
+      "method": "C_embedding",
+      "mutation_type": "delete_internal",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5656565656565656,
+      "average_precision": 0.6031205720601227,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.6363636363636364,
+      "mean_delta_score": 0.012004189452139814,
+      "median_delta_score": 0.001983513051429353,
+      "null_reason": null
+    },
+    {
+      "method": "D_hybrid",
+      "mutation_type": "delete_internal",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5583103764921947,
+      "average_precision": 0.5809423462765452,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.5454545454545454,
+      "mean_delta_score": 0.008903183927029644,
+      "median_delta_score": 0.00018820403494890225,
+      "null_reason": null
+    },
+    {
+      "method": "A_stats",
+      "mutation_type": "duplicate_block",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5656565656565657,
+      "average_precision": 0.5706554367987307,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.8181818181818182,
+      "mean_delta_score": 0.00957171379303251,
+      "median_delta_score": 0.012769874652602375,
+      "null_reason": null
+    },
+    {
+      "method": "B_ngrams",
+      "mutation_type": "duplicate_block",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5142332415059687,
+      "average_precision": 0.513781003837547,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.45454545454545453,
+      "mean_delta_score": -2.6360562381400392e-05,
+      "median_delta_score": -0.0004654498199010426,
+      "null_reason": null
+    },
+    {
+      "method": "C_embedding",
+      "mutation_type": "duplicate_block",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.534435261707989,
+      "average_precision": 0.5432068780136391,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.696969696969697,
+      "mean_delta_score": 0.00495916371861102,
+      "median_delta_score": 0.0031617538117025834,
+      "null_reason": null
+    },
+    {
+      "method": "D_hybrid",
+      "mutation_type": "duplicate_block",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5610651974288338,
+      "average_precision": 0.5725384741243369,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.7575757575757576,
+      "mean_delta_score": 0.0061368506938000444,
+      "median_delta_score": 0.003919643915252902,
+      "null_reason": null
+    },
+    {
+      "method": "A_stats",
+      "mutation_type": "swap_adjacent",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5160697887970614,
+      "average_precision": 0.5617153906823567,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.6060606060606061,
+      "mean_delta_score": 0.006769588915394413,
+      "median_delta_score": 0.0038486954030658715,
+      "null_reason": null
+    },
+    {
+      "method": "B_ngrams",
+      "mutation_type": "swap_adjacent",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5119375573921029,
+      "average_precision": 0.5230598071828637,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.5303030303030303,
+      "mean_delta_score": -0.00025844681935182685,
+      "median_delta_score": 0.00021744089167702318,
+      "null_reason": null
+    },
+    {
+      "method": "C_embedding",
+      "mutation_type": "swap_adjacent",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5,
+      "average_precision": 0.4999999999999999,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.5,
+      "mean_delta_score": 0.0,
+      "median_delta_score": 0.0,
+      "null_reason": null
+    },
+    {
+      "method": "D_hybrid",
+      "mutation_type": "swap_adjacent",
+      "n_original": 33,
+      "n_mutant": 33,
+      "injected_rate": 0.5,
+      "auroc": 0.5266299357208448,
+      "average_precision": 0.5603250194073165,
+      "ap_constant_predictor": 0.5,
+      "paired_win_rate": 0.6515151515151515,
+      "mean_delta_score": 0.00259256341644404,
+      "median_delta_score": 0.0005518493565744298,
+      "null_reason": null
+    }
+  ],
+  "intersection": {
+    "delete_internal": {
+      "n_parents": 33,
+      "methods": [
+        "A_stats",
+        "B_ngrams",
+        "C_embedding",
+        "D_hybrid"
+      ]
+    },
+    "duplicate_block": {
+      "n_parents": 33,
+      "methods": [
+        "A_stats",
+        "B_ngrams",
+        "C_embedding",
+        "D_hybrid"
+      ]
+    },
+    "swap_adjacent": {
+      "n_parents": 33,
+      "methods": [
+        "A_stats",
+        "B_ngrams",
+        "C_embedding",
+        "D_hybrid"
+      ]
+    }
+  },
+  "macro_by_method": {
+    "A_stats": {
+      "n_types_scored": 3,
+      "macro_auroc": 0.5231098867462504,
+      "macro_average_precision": 0.5558406649856398,
+      "macro_paired_win_rate": 0.6060606060606061
+    },
+    "B_ngrams": {
+      "n_types_scored": 3,
+      "macro_auroc": 0.5159167431894703,
+      "macro_average_precision": 0.5179465966432425,
+      "macro_paired_win_rate": 0.5
+    },
+    "C_embedding": {
+      "n_types_scored": 3,
+      "macro_auroc": 0.5333639424548515,
+      "macro_average_precision": 0.5487758166912539,
+      "macro_paired_win_rate": 0.6111111111111112
+    },
+    "D_hybrid": {
+      "n_types_scored": 3,
+      "macro_auroc": 0.5486685032139578,
+      "macro_average_precision": 0.5712686132693995,
+      "macro_paired_win_rate": 0.6515151515151515
+    }
+  },
+  "mutation_summary": {
+    "delete_internal": {
+      "created": 33,
+      "skipped": 0,
+      "skip_reasons": {}
+    },
+    "duplicate_block": {
+      "created": 33,
+      "skipped": 0,
+      "skip_reasons": {}
+    },
+    "swap_adjacent": {
+      "created": 33,
+      "skipped": 0,
+      "skip_reasons": {}
+    }
+  }
+}

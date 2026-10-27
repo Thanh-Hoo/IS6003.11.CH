@@ -1,0 +1,13 @@
+category,branch,n_cases,n_occurrences,n_occ_in_burst,n_cases_only_in_burst,n_cases_outside_burst,examples_only_in_burst,examples_outside_burst
+CREATE → To Do,all,37,37,9,9,28,"bug:TI-4811, bug:TI-4820, bug:TI-4935, bug:TI-5200, bug:TI-5564","bug:TI-4751, bug:TI-4759, bug:TI-4876, bug:TI-4890, bug:TI-4902"
+CREATE → To Do,DONE,30,30,7,7,23,"bug:TI-4811, bug:TI-4820, bug:TI-4935, bug:TI-5564, bug:TI-5608","bug:TI-4751, bug:TI-4759, bug:TI-4876, bug:TI-4890, bug:TI-4902"
+CREATE → To Do,Rejected,7,7,2,2,5,"bug:TI-5200, bug:TI-5598","bug:TI-4966, bug:TI-5260, bug:TI-5261, bug:TI-5378, bug:TI-6150"
+To Do → Inbox,all,11,11,10,10,1,"bug:TI-4748, bug:TI-4751, bug:TI-5118, bug:TI-5139, bug:TI-5200",bug:TI-5260
+To Do → Inbox,DONE,6,6,6,6,0,"bug:TI-4748, bug:TI-4751, bug:TI-5118, bug:TI-5139, bug:TI-5347",
+To Do → Inbox,Rejected,5,5,4,4,1,"bug:TI-5200, bug:TI-5378, bug:TI-5598, bug:TI-6150",bug:TI-5260
+Lùi trạng thái,all,23,26,20,17,6,"bug:TI-4617, bug:TI-4748, bug:TI-4751, bug:TI-4811, bug:TI-5118","bug:TI-4686, bug:TI-5153, bug:TI-5260, bug:TI-5269, bug:TI-5480"
+Lùi trạng thái,DONE,16,19,15,12,4,"bug:TI-4617, bug:TI-4748, bug:TI-4751, bug:TI-4811, bug:TI-5118","bug:TI-4686, bug:TI-5153, bug:TI-5269, bug:TI-5480"
+Lùi trạng thái,Rejected,7,7,5,5,2,"bug:TI-5200, bug:TI-5378, bug:TI-5598, bug:TI-5674, bug:TI-6150","bug:TI-5260, bug:TI-6105"
+Mở lại,all,8,9,8,7,1,"bug:TI-4584, bug:TI-4671, bug:TI-4723, bug:TI-4871, bug:TI-5362",bug:TI-4872
+Mở lại,DONE,5,6,6,5,0,"bug:TI-4584, bug:TI-4723, bug:TI-5362, bug:TI-5564, bug:TI-5591",
+Mở lại,Rejected,3,3,2,2,1,"bug:TI-4671, bug:TI-4871",bug:TI-4872

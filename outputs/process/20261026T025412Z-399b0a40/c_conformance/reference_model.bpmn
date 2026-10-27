@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="defs" targetNamespace="http://jira-ad/process">
+  <bpmn:collaboration id="collab">
+    <bpmn:participant id="pool" name="Team xử lý bug" processRef="proc" />
+  </bpmn:collaboration>
+  <bpmn:process id="proc" isExecutable="false">
+    <bpmn:startEvent id="n0" name="Bug được tạo" />
+    <bpmn:task id="n1" name="Inbox" />
+    <bpmn:endEvent id="n2" name="Từ chối (Rejected)" />
+    <bpmn:task id="n3" name="To Investigate" />
+    <bpmn:task id="n4" name="INVESTIGATED" />
+    <bpmn:task id="n5" name="To Do" />
+    <bpmn:task id="n6" name="In Progress" />
+    <bpmn:task id="n7" name="In Test" />
+    <bpmn:endEvent id="n8" name="Đã sửa (DONE)" />
+    <bpmn:exclusiveGateway id="g_n0" name="Sau Bug được tạo?" />
+    <bpmn:exclusiveGateway id="g_n1" name="Sau Inbox?" />
+    <bpmn:exclusiveGateway id="g_n3" name="Sau To Investigate?" />
+    <bpmn:exclusiveGateway id="g_n4" name="Sau INVESTIGATED?" />
+    <bpmn:exclusiveGateway id="g_n5" name="Sau To Do?" />
+    <bpmn:exclusiveGateway id="g_n7" name="Sau In Test?" />
+    <bpmn:laneSet id="lanes">
+      <bpmn:lane id="lane0" name="Eng">
+        <bpmn:flowNodeRef>n6</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane1" name="PO">
+        <bpmn:flowNodeRef>n0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n5</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane2" name="SQA">
+        <bpmn:flowNodeRef>n7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>n8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g_n7</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="f0" sourceRef="n0" targetRef="g_n0" />
+    <bpmn:sequenceFlow id="f1" sourceRef="g_n0" targetRef="n1" />
+    <bpmn:sequenceFlow id="f2" sourceRef="g_n0" targetRef="n3" />
+    <bpmn:sequenceFlow id="f3" sourceRef="g_n0" targetRef="n2" />
+    <bpmn:sequenceFlow id="f4" sourceRef="n1" targetRef="g_n1" />
+    <bpmn:sequenceFlow id="f5" sourceRef="g_n1" targetRef="n3" />
+    <bpmn:sequenceFlow id="f6" sourceRef="g_n1" targetRef="n2" />
+    <bpmn:sequenceFlow id="f7" sourceRef="n3" targetRef="g_n3" />
+    <bpmn:sequenceFlow id="f8" sourceRef="g_n3" targetRef="n4" />
+    <bpmn:sequenceFlow id="f9" sourceRef="g_n3" targetRef="n2" />
+    <bpmn:sequenceFlow id="f10" sourceRef="n4" targetRef="g_n4" />
+    <bpmn:sequenceFlow id="f11" sourceRef="g_n4" targetRef="n5" />
+    <bpmn:sequenceFlow id="f12" sourceRef="g_n4" targetRef="n2" />
+    <bpmn:sequenceFlow id="f13" sourceRef="n5" targetRef="g_n5" />
+    <bpmn:sequenceFlow id="f14" sourceRef="g_n5" targetRef="n6" />
+    <bpmn:sequenceFlow id="f15" sourceRef="g_n5" targetRef="n2" />
+    <bpmn:sequenceFlow id="f16" sourceRef="n6" targetRef="n7" />
+    <bpmn:sequenceFlow id="f17" sourceRef="n7" targetRef="g_n7" />
+    <bpmn:sequenceFlow id="f18" sourceRef="g_n7" targetRef="n6" />
+    <bpmn:sequenceFlow id="f19" sourceRef="g_n7" targetRef="n8" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="diagram">
+    <bpmndi:BPMNPlane id="plane" bpmnElement="collab">
+      <bpmndi:BPMNShape id="pool_di" bpmnElement="pool" isHorizontal="true">
+        <dc:Bounds x="0" y="0" width="1440" height="450" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="lane0_di" bpmnElement="lane0" isHorizontal="true">
+        <dc:Bounds x="30" y="0" width="1410" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="lane1_di" bpmnElement="lane1" isHorizontal="true">
+        <dc:Bounds x="30" y="150" width="1410" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="lane2_di" bpmnElement="lane2" isHorizontal="true">
+        <dc:Bounds x="30" y="300" width="1410" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n0_di" bpmnElement="n0">
+        <dc:Bounds x="80" y="207.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n1_di" bpmnElement="n1">
+        <dc:Bounds x="250" y="195.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n2_di" bpmnElement="n2">
+        <dc:Bounds x="250" y="207.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n3_di" bpmnElement="n3">
+        <dc:Bounds x="250" y="195.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n4_di" bpmnElement="n4">
+        <dc:Bounds x="420" y="195.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n5_di" bpmnElement="n5">
+        <dc:Bounds x="590" y="195.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n6_di" bpmnElement="n6">
+        <dc:Bounds x="760" y="45.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n7_di" bpmnElement="n7">
+        <dc:Bounds x="930" y="345.0" width="110" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="n8_di" bpmnElement="n8">
+        <dc:Bounds x="1100" y="357.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n0_di" bpmnElement="g_n0" isMarkerVisible="true">
+        <dc:Bounds x="158.0" y="245.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n1_di" bpmnElement="g_n1" isMarkerVisible="true">
+        <dc:Bounds x="365.0" y="245.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n3_di" bpmnElement="g_n3" isMarkerVisible="true">
+        <dc:Bounds x="365.0" y="245.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n4_di" bpmnElement="g_n4" isMarkerVisible="true">
+        <dc:Bounds x="535.0" y="245.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n5_di" bpmnElement="g_n5" isMarkerVisible="true">
+        <dc:Bounds x="705.0" y="245.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="g_n7_di" bpmnElement="g_n7" isMarkerVisible="true">
+        <dc:Bounds x="1045.0" y="395.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="f0_di" bpmnElement="f0">
+        <di:waypoint x="98" y="225" />
+        <di:waypoint x="183" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f1_di" bpmnElement="f1">
+        <di:waypoint x="183" y="270" />
+        <di:waypoint x="305" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f2_di" bpmnElement="f2">
+        <di:waypoint x="183" y="270" />
+        <di:waypoint x="305" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f3_di" bpmnElement="f3">
+        <di:waypoint x="183" y="270" />
+        <di:waypoint x="268" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f4_di" bpmnElement="f4">
+        <di:waypoint x="305" y="225" />
+        <di:waypoint x="390" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f5_di" bpmnElement="f5">
+        <di:waypoint x="390" y="270" />
+        <di:waypoint x="305" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f6_di" bpmnElement="f6">
+        <di:waypoint x="390" y="270" />
+        <di:waypoint x="268" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f7_di" bpmnElement="f7">
+        <di:waypoint x="305" y="225" />
+        <di:waypoint x="390" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f8_di" bpmnElement="f8">
+        <di:waypoint x="390" y="270" />
+        <di:waypoint x="475" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f9_di" bpmnElement="f9">
+        <di:waypoint x="390" y="270" />
+        <di:waypoint x="268" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f10_di" bpmnElement="f10">
+        <di:waypoint x="475" y="225" />
+        <di:waypoint x="560" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f11_di" bpmnElement="f11">
+        <di:waypoint x="560" y="270" />
+        <di:waypoint x="645" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f12_di" bpmnElement="f12">
+        <di:waypoint x="560" y="270" />
+        <di:waypoint x="268" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f13_di" bpmnElement="f13">
+        <di:waypoint x="645" y="225" />
+        <di:waypoint x="730" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f14_di" bpmnElement="f14">
+        <di:waypoint x="730" y="270" />
+        <di:waypoint x="815" y="75" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f15_di" bpmnElement="f15">
+        <di:waypoint x="730" y="270" />
+        <di:waypoint x="268" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f16_di" bpmnElement="f16">
+        <di:waypoint x="815" y="75" />
+        <di:waypoint x="985" y="375" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f17_di" bpmnElement="f17">
+        <di:waypoint x="985" y="375" />
+        <di:waypoint x="1070" y="420" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f18_di" bpmnElement="f18">
+        <di:waypoint x="1070" y="420" />
+        <di:waypoint x="815" y="75" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f19_di" bpmnElement="f19">
+        <di:waypoint x="1070" y="420" />
+        <di:waypoint x="1118" y="375" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

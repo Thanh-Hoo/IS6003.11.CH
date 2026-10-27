@@ -1,0 +1,150 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-22T15:12:39+00:00",
+  "plan": "configs/improvement_plan.yaml",
+  "plan_sha256": "98be18952f622e32ce82e2a9302c5857053c0ac4359d1c1d5438f57649a40969",
+  "config": "configs/improvements.yaml",
+  "config_hash": "25f2841c3ce11de831ac4603a637a9239ec4633f540e8f6bafbb5600d79c20c8",
+  "model_seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": [
+    "A_stats",
+    "B_ngrams",
+    "C_embedding",
+    "D_hybrid",
+    "E_score_fusion",
+    "F_edge_hybrid",
+    "M_markov"
+  ],
+  "decision": {
+    "reference": "D_hybrid",
+    "candidates": [
+      "E_score_fusion",
+      "F_edge_hybrid",
+      "M_markov"
+    ],
+    "selection_split": "validation",
+    "confidence": 0.9833333333333333
+  },
+  "crossval": {
+    "folds": 5,
+    "mutation_types": [
+      "swap_adjacent",
+      "delete_internal",
+      "duplicate_block",
+      "skip_status",
+      "multi_edit"
+    ]
+  },
+  "criteria": {
+    "alert_auroc_lower": 0.8,
+    "alert_skip_status_auroc": 0.8,
+    "triage_auroc_lower": 0.5,
+    "triage_top_fraction": 0.1,
+    "triage_jaccard": 0.6,
+    "triage_ms_per_case": 100.0
+  },
+  "environment": {
+    "python": "3.12.7",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "gensim": "4.4.0",
+    "networkx": "3.7",
+    "pyarrow": "26.0.0",
+    "joblib": "1.6.0"
+  },
+  "rerun_command": "uv run jira-ad improve --plan configs/improvement_plan.yaml",
+  "standard_runs": [
+    "20261022T151239Z-25f2841c",
+    "20261022T151244Z-e3fad874",
+    "20261022T151249Z-5ade6a42"
+  ],
+  "counts": {
+    "n_issues": 161,
+    "n_cv_mutants": 782
+  },
+  "artifacts": {
+    "applicability.csv": {
+      "sha256": "467583de695e40cd9ff210497301e852d1d94c0f427f74544cbfedb20def0c90",
+      "size_bytes": 1951
+    },
+    "cv_bootstrap_differences.csv": {
+      "sha256": "7cfa7aa6e9043bde8efcbf6007e0bf2874cda68249442aae9a6f3a62c5627093",
+      "size_bytes": 29844
+    },
+    "cv_bootstrap_intervals.csv": {
+      "sha256": "724b4f44f5dd957c7b82a200a3f1df2c51c3793dc398c56f3618719bec6ef701",
+      "size_bytes": 9714
+    },
+    "cv_ledger.csv": {
+      "sha256": "c5685146e2ae6365d278b1051ef7a027913b9171ff80cfd3f854cbb7bf234427",
+      "size_bytes": 113723
+    },
+    "cv_metrics.csv": {
+      "sha256": "61100b784d7c9bd7ebcd5c85c56b9f26adac3085f4d90de4c80e053d0c72f825",
+      "size_bytes": 14558
+    },
+    "cv_original_scores.csv": {
+      "sha256": "98b34f56ff56e6eea6c4eabf30b94e3f81985e6899afee148090d34f65488c0a",
+      "size_bytes": 329451
+    },
+    "cv_paired_scores.csv": {
+      "sha256": "50a755c10219167091220de936ee9e300614509f91a224213a9d4f7a79e017f2",
+      "size_bytes": 2154755
+    },
+    "cv_timings.csv": {
+      "sha256": "e15f515463e30fce27832898bfabbbe08d77f59d6b32584c3b44df032be19e7a",
+      "size_bytes": 6683
+    },
+    "decision_validation.csv": {
+      "sha256": "3f9eb73e16d8e4b3e0b2ffa399e07a76a6ccb5a8f6995c0315a0c37d55fbeefa",
+      "size_bytes": 705
+    },
+    "exploratory_test.csv": {
+      "sha256": "45991c4fb2f55228030bf484b13b96eeac2ff317b1b7ffa2b2e00b075abd1427",
+      "size_bytes": 688
+    },
+    "figures/cv_auroc_by_type.png": {
+      "sha256": "e9a2100eb646043b147d0b41d3c4d4514792eeab0a8e3f8bf23b441a0b7c9c0e",
+      "size_bytes": 78733
+    },
+    "figures/cv_macro_auroc.png": {
+      "sha256": "08dc2ee6ac136ba38c2be646d40cae6caa52449682e65aa82985454616a71781",
+      "size_bytes": 43941
+    },
+    "inference_profile.csv": {
+      "sha256": "f0a47b8135444f55b56f01c659ef27e9a944ec746bcf52cb26660afb14cee15f",
+      "size_bytes": 1726
+    },
+    "method_agreement.csv": {
+      "sha256": "63f19ef83ef9f59f043db77a3493e227a035fb34c4279f3cdcf6fb66913f7dbf",
+      "size_bytes": 995
+    },
+    "standard_bootstrap_differences_test.csv": {
+      "sha256": "a1bd84de55dc16b7de390331d455e019b4096b08f87c6f7bd7f8ceab74806383",
+      "size_bytes": 20304
+    },
+    "standard_bootstrap_differences_validation.csv": {
+      "sha256": "a322fd7ef66720a15771b36d10851f151f22f9c97bd8194d2cba3c6d0786c2bd",
+      "size_bytes": 20039
+    },
+    "standard_bootstrap_intervals_test.csv": {
+      "sha256": "7f6b7d269858ef330f7af0150743dee96c61836a54a49e4c889ca7d81f77cc76",
+      "size_bytes": 6456
+    },
+    "standard_bootstrap_intervals_validation.csv": {
+      "sha256": "5f401a0ca2802b8297c78a63fba78efad7742c7695044d99fd77b2f675459405",
+      "size_bytes": 6450
+    },
+    "standard_metrics.csv": {
+      "sha256": "b3a111d115103394676d328fa54f4c726829f96a86cdb140a87d2488e0e06b94",
+      "size_bytes": 1438
+    }
+  },
+  "finished_at_utc": "2026-10-22T15:14:04+00:00"
+}

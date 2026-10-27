@@ -1,0 +1,614 @@
+{
+  "run_id": "20261026T025412Z-399b0a40",
+  "status": "completed",
+  "created_utc": "2026-10-26T02:54:12.298067+00:00",
+  "config_path": "configs/process.yaml",
+  "config_hash": "399b0a40534a3d08466aaaf32175a68cb6d59cf4d90af65301ebb04c5e572a22",
+  "config": {
+    "paths": {
+      "base_config": "configs/baseline.yaml",
+      "output_root": "outputs/process",
+      "v1_run": "outputs/runs/20261017T081309Z-930f8a85",
+      "improvement_dir": "outputs/improvement/20261022T151529Z-bb0fee9a"
+    },
+    "calendar": {
+      "workdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "primary": "local"
+    },
+    "backfill": {
+      "threshold_seconds": 60.0
+    },
+    "states": {
+      "order": [
+        "Inbox",
+        "To Investigate",
+        "INVESTIGATED",
+        "To Do",
+        "In Progress",
+        "In Test"
+      ],
+      "work": [
+        "In Progress",
+        "In Test"
+      ],
+      "wait": [
+        "Inbox",
+        "To Investigate",
+        "INVESTIGATED",
+        "To Do"
+      ],
+      "terminal": [
+        "DONE",
+        "Rejected"
+      ],
+      "sensitivity_work": [
+        "To Investigate",
+        "In Progress",
+        "In Test"
+      ]
+    },
+    "norms": {
+      "percentile": 0.75,
+      "min_visits": 10,
+      "explicit_days": {}
+    },
+    "centrality": {
+      "pagerank_alpha": 0.85,
+      "top_late": 20,
+      "example_cases": 3
+    },
+    "reference_model": {
+      "approved": true,
+      "start": "CREATE",
+      "ends": [
+        "DONE",
+        "Rejected"
+      ],
+      "arcs": [
+        "CREATE -> Inbox",
+        "CREATE -> To Investigate",
+        "CREATE -> Rejected",
+        "Inbox -> To Investigate",
+        "Inbox -> Rejected",
+        "To Investigate -> INVESTIGATED",
+        "To Investigate -> Rejected",
+        "INVESTIGATED -> To Do",
+        "INVESTIGATED -> Rejected",
+        "To Do -> In Progress",
+        "To Do -> Rejected",
+        "In Progress -> In Test",
+        "In Test -> In Progress",
+        "In Test -> DONE"
+      ]
+    },
+    "deviation_report": {
+      "arcs": [
+        "CREATE -> To Do",
+        "To Do -> Inbox"
+      ]
+    },
+    "bpr": {
+      "early_triage_min_share": 0.2,
+      "early_triage_min_median_days": 5.0,
+      "auto_transition_min_share": 0.3,
+      "merge_max_days": 1.0,
+      "merge_min_share": 0.5,
+      "po_state": "To Do",
+      "duplicate_pattern": "link to duplicates",
+      "duplicate_min_cases": 5,
+      "duplicate_min_median_days": 5.0,
+      "investigating_min_width_pp": 10.0,
+      "fast_track_max_fpy_drop": 0.1,
+      "bootstrap_n": 2000,
+      "seed": 20261026
+    },
+    "tobe_model": {
+      "start": "CREATE",
+      "ends": [
+        "DONE",
+        "Rejected"
+      ],
+      "arcs": [
+        "CREATE -> Inbox",
+        "Inbox -> Rejected",
+        "Inbox -> To Do",
+        "Inbox -> To Investigate",
+        "To Investigate -> Investigating",
+        "Investigating -> To Do",
+        "Investigating -> Rejected",
+        "To Do -> In Progress",
+        "To Do -> Rejected",
+        "In Progress -> In Test",
+        "In Test -> In Progress",
+        "In Test -> DONE"
+      ],
+      "automated_arcs": [
+        "To Do -> In Progress"
+      ],
+      "lanes": {
+        "Inbox": "PO",
+        "To Investigate": "PO",
+        "Investigating": "PO",
+        "To Do": "PO",
+        "In Progress": "Eng",
+        "In Test": "SQA"
+      }
+    },
+    "ranking": {
+      "oof_method": "M_markov",
+      "k_min": 2,
+      "k_max": 6,
+      "seed": 20261026,
+      "top_share": 0.1,
+      "peer_percentile": 0.9,
+      "length_bins": 3,
+      "n_boot": 200,
+      "consensus_share": 0.7,
+      "blind_top": 15,
+      "blind_random": 15,
+      "assignee_activities": [
+        "ADD_ASSIGNEE",
+        "UPDATE_ASSIGNEE",
+        "REMOVE_ASSIGNEE"
+      ],
+      "activity_groups": {
+        "status": [
+          "STATUS_DONE",
+          "STATUS_INVESTIGATED",
+          "STATUS_In Progress",
+          "STATUS_In Test",
+          "STATUS_Inbox",
+          "STATUS_OPEN",
+          "STATUS_Rejected",
+          "STATUS_To Do",
+          "STATUS_To Investigate",
+          "STATUS_Triage"
+        ],
+        "code": [
+          "LINK_COMMIT",
+          "LINK_MERGE_REQUEST"
+        ],
+        "assignment": [
+          "ADD_ASSIGNEE",
+          "UPDATE_ASSIGNEE",
+          "REMOVE_ASSIGNEE"
+        ],
+        "planning": [
+          "ADD_FIX_VERSION",
+          "REMOVE_FIX_VERSION",
+          "UPDATE_FIX_VERSION",
+          "ADD_SPRINT",
+          "REMOVE_SPRINT",
+          "UPDATE_SPRINT",
+          "ADD_STORY_POINTS",
+          "UPDATE_STORY_POINTS",
+          "REMOVE_STORY_POINTS",
+          "UPDATE_RANK",
+          "UPDATE_VERSION",
+          "UPDATE_SCRUMTEAM"
+        ],
+        "linking": [
+          "ADD_ISSUE_LINK",
+          "REMOVE_ISSUE_LINK",
+          "ADD_EPIC_LINK",
+          "UPDATE_EPIC_LINK",
+          "ADD_PARENT",
+          "EDIT_ISSUEPARENTASSOCIATION"
+        ],
+        "documentation": [
+          "CREATE",
+          "EDIT_DESCRIPTION",
+          "EDIT_SUMMARY",
+          "ADD_ATTACHMENT",
+          "REMOVE_COMMENT",
+          "EDIT_REPORTER",
+          "EDIT_COMPONENT"
+        ],
+        "classification": [
+          "UPDATE_BACKLOG_CLASSIFICATION",
+          "UPDATE_ISSUE_CLASSIFICATION",
+          "UPDATE_ISSUETYPE",
+          "UPDATE_PRIORITY",
+          "UPDATE_LABELS",
+          "UPDATE_PROJECT",
+          "UPDATE_BLOCKING_FOR_RELEASE",
+          "UPDATE_ESCALATION"
+        ]
+      }
+    },
+    "flags": [
+      {
+        "id": "skip_investigation",
+        "label": "Bỏ pha điều tra",
+        "kind": "missing_before",
+        "states": [
+          "To Do",
+          "In Progress",
+          "In Test",
+          "DONE"
+        ],
+        "other_states": [
+          "To Investigate",
+          "INVESTIGATED"
+        ]
+      },
+      {
+        "id": "direct_reject",
+        "label": "CREATE → Rejected trực tiếp",
+        "kind": "first_status_is",
+        "states": [
+          "Rejected"
+        ],
+        "other_states": []
+      },
+      {
+        "id": "reject_after_work",
+        "label": "Rejected sau khi đã In Progress (công sức bị bỏ)",
+        "kind": "after",
+        "states": [
+          "Rejected"
+        ],
+        "other_states": [
+          "In Progress"
+        ]
+      },
+      {
+        "id": "reopen_done",
+        "label": "Mở lại sau DONE",
+        "kind": "leaves",
+        "states": [
+          "DONE"
+        ],
+        "other_states": []
+      },
+      {
+        "id": "back_to_inbox",
+        "label": "Lùi về Inbox từ trạng thái sau",
+        "kind": "enters_from_status",
+        "states": [
+          "Inbox"
+        ],
+        "other_states": []
+      },
+      {
+        "id": "progress_not_from_todo",
+        "label": "Vào In Progress không qua To Do",
+        "kind": "enters_not_from",
+        "states": [
+          "In Progress"
+        ],
+        "other_states": [
+          "To Do",
+          "In Test"
+        ]
+      },
+      {
+        "id": "backfill",
+        "label": "Đổi trạng thái trong đợt cập nhật bù",
+        "kind": "backfill",
+        "states": [],
+        "other_states": []
+      }
+    ],
+    "discovery": [
+      {
+        "id": "alpha",
+        "miner": "alpha",
+        "params": {}
+      },
+      {
+        "id": "heuristics",
+        "miner": "heuristics",
+        "params": {
+          "dependency_threshold": 0.5
+        }
+      },
+      {
+        "id": "inductive",
+        "miner": "inductive",
+        "params": {
+          "noise_threshold": 0.0
+        }
+      },
+      {
+        "id": "inductive_infrequent",
+        "miner": "inductive",
+        "params": {
+          "noise_threshold": 0.2
+        }
+      }
+    ],
+    "alternative_models": [
+      {
+        "id": "fast_track",
+        "label": "Luồng nhanh (ứng viên TO-BE): cho phép bỏ pha điều tra",
+        "extra_arcs": [
+          "CREATE -> To Do"
+        ]
+      }
+    ],
+    "bpr_candidates": [
+      {
+        "id": "early_triage",
+        "problem": "Ca bị từ chối vẫn nằm lâu trong quy trình trước khi bị loại",
+        "heuristic": "Triage / knock-out sớm: quyết định loại ngay ở Inbox"
+      },
+      {
+        "id": "auto_transition",
+        "problem": "Trạng thái Jira cập nhật muộn so với công việc thật (commit/MR có trước In Progress)",
+        "heuristic": "Task automation: tự chuyển In Progress khi có commit/MR đầu tiên"
+      },
+      {
+        "id": "merge_investigated",
+        "problem": "INVESTIGATED thường chỉ là bước đi xuyên qua trước To Do",
+        "heuristic": "Task composition: gộp INVESTIGATED vào To Do"
+      },
+      {
+        "id": "reduce_po_dependency",
+        "problem": "PO là vai trò cổng của phần lớn trạng thái chờ",
+        "heuristic": "Empower / phân quyền: giảm số bước phải chờ PO"
+      },
+      {
+        "id": "early_duplicate_detection",
+        "problem": "Bug trùng có thể bị phát hiện muộn",
+        "heuristic": "Knock-out sớm: kiểm tra trùng ngay khi tạo"
+      },
+      {
+        "id": "add_investigating_state",
+        "problem": "Công sức điều tra không hiện trong Jira (To Investigate vừa là hàng đợi vừa là việc)",
+        "heuristic": "Control addition: thêm trạng thái Investigating để đo được việc điều tra"
+      },
+      {
+        "id": "fast_track",
+        "problem": "Mọi bug đều phải qua điều tra dù một phần được sửa thẳng",
+        "heuristic": "Triage: phân luồng bug rõ ràng sang To Do (luồng nhanh)"
+      }
+    ],
+    "pilot": [
+      {
+        "id": "chuan_bi",
+        "weeks": "1–2",
+        "action": "Cấu hình Jira: thêm Investigating, bỏ INVESTIGATED, tự chuyển In Progress khi có commit/MR; họp triage hằng ngày ở Inbox",
+        "kpis": [
+          "status_changes_per_case",
+          "pt_share_main"
+        ]
+      },
+      {
+        "id": "chay_thu",
+        "weeks": "3–8",
+        "action": "Chạy quy trình TO-BE với một team; ghi nhận ca đi luồng nhanh và ca bị loại sớm",
+        "kpis": [
+          "ct_work_median_days",
+          "rejected_issue_days_work",
+          "conformance_share_fit"
+        ]
+      },
+      {
+        "id": "danh_gia",
+        "weeks": "9–10",
+        "action": "So KPI pilot với mốc AS-IS bằng cùng định nghĩa; tiếp tục nếu KPI chính đi đúng hướng mục tiêu và khoảng tin cậy bootstrap không chứa 0",
+        "kpis": [
+          "ct_work_median_days",
+          "ct_work_p90_days",
+          "rejected_issue_days_work",
+          "conformance_share_fit"
+        ]
+      }
+    ],
+    "cohorts": [
+      "bug",
+      "story"
+    ]
+  },
+  "inputs": {
+    "bug": {
+      "relative_path": "dataset/TIeventlogBug.csv",
+      "sha256": "cda16f1c5c4af641ea89e77ac5b8217c5f5a923988e7984a73e80f159f38de80",
+      "size_bytes": 386579,
+      "n_rows": 5126
+    },
+    "story": {
+      "relative_path": "dataset/TIeventlogStory.csv",
+      "sha256": "afd53fca100a90c5e4c63360d14c84bd1f9109d2670fc7b8184e57a52c8b6387",
+      "size_bytes": 336703,
+      "n_rows": 4439
+    },
+    "base_config": {
+      "path": "configs/baseline.yaml",
+      "sha256": "2638fd50904a75eb9a7be74b1233230bbd1695b940075c198d36b3144ee262cf"
+    }
+  },
+  "frozen_before": {
+    "configs/baseline.yaml": "2638fd50904a75eb9a7be74b1233230bbd1695b940075c198d36b3144ee262cf",
+    "configs/actions.yaml": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0",
+    "configs/experiments.yaml": "d7641ac840147eeb525b36355fc020460fae6dda94b10a0f589f96317a99b96f",
+    "configs/improvement_plan.yaml": "98be18952f622e32ce82e2a9302c5857053c0ac4359d1c1d5438f57649a40969",
+    "dataset": {
+      "n_files": 6,
+      "listing_sha256": "39177a7520a527130a099daf7f82d180a0e6a116c0c877e8c13409d5894c230a",
+      "content_sha256": "fb549605946a3fe2e17cdff0404e883bcf9ef1fb47724c421bed90449ef292ad"
+    },
+    "outputs/runs": {
+      "n_files": 4659,
+      "listing_sha256": "9f53587f92205ab7a91c0c8f10aaf7de7f80988822d867ee0189e2b848b60bbd",
+      "content_sha256": "8344cb1390e5d1368baa2e3da158f42d8ce271bf717cd6f8cf9f99461f9f7242"
+    },
+    "outputs/improvement": {
+      "n_files": 41,
+      "listing_sha256": "19ab0215580b16254f1ab6779e80e58770eaf5c2a3e4446185d52b2cb9ee8bf9",
+      "content_sha256": "d6e7678eb9799b44a51e121552bf79327b548e5a082d1d161deaa48700c485be"
+    }
+  },
+  "versions": {
+    "python": "3.12.7",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "networkx": "3.7",
+    "scikit-learn": "1.9.1",
+    "gensim": "4.4.0",
+    "pm4py": "2.7.23.11"
+  },
+  "code": {
+    "sha256": "ed83115da72a96af6ecac17610d370d96a617635e4abc0c807ee7459ba84e9b6",
+    "files": {
+      "jira_ad/__init__.py": "1aa4762848f87bc578dbf75975f90cec50d24eac212d14f93311d6b613875260",
+      "jira_ad/analysis.py": "2cd44b7e4ef3a005aa9549f5789b8ac375b78fa88fbd8431263577aa36cfa1f2",
+      "jira_ad/bpr.py": "4b742b2b093feb72d50ccf03ec1f081298fa094fd84e33ceeeae3315b5db1bba",
+      "jira_ad/centrality.py": "30b34c2fca4c7b5cd6548e5985c11b57d3f3b6324466c520f23189afd968349f",
+      "jira_ad/cli.py": "47d4243a191677efd2151935f5b41cbefe9e2ece1856f99cc464473a131c12df",
+      "jira_ad/config.py": "04c5fdac6f6876f4205a6dc6b5d893aff4f66d12d912705e96eb0e6841c153f0",
+      "jira_ad/conformance.py": "2c846c048ead261abf13c609e98cf59ff9c176d612f57937b2c2de57ce25cdd5",
+      "jira_ad/crossval.py": "578b12d75cc068122bf079ae4afcb764668b5f68118b479955b745ac6dba7ef7",
+      "jira_ad/data.py": "226a1c59fc6e4408426deb153d085964e3302e6cef9e20fb3f73cbdad64b0924",
+      "jira_ad/detector.py": "4a9d6eeacbdb4bcb5394e52f71a2fc390a5d6c5248bc5fe66a0af5ab25b5b3cf",
+      "jira_ad/embedding.py": "2d594e109cecfc99e12902a0fd62ff55a60ae15d1da585cd509c537bb8c417d1",
+      "jira_ad/evaluation.py": "851ac22efcc9a2756e48a71fd7bc7927f002f758bc540e54e50582a8e58a14e3",
+      "jira_ad/experiments.py": "dd55c8037f8f4ed7db07456ca046309f8f64c975a53f3a1825435065562a8652",
+      "jira_ad/features.py": "1ce905f07ae452b73b797833d7fe22ebc0a7b19c1ee53425286d3fc14b346864",
+      "jira_ad/graph.py": "0a816d8d0c911bbffa0173a1083adb1f2d5fd5b692f5faa935d7b826487d32f4",
+      "jira_ad/improvement.py": "00bfa136ee11567e7a421d31f800ca0b7173cfdfcdc52560ed3e0f66bccbd703",
+      "jira_ad/mutations.py": "13e1e28af3aa696c5ab7da9a3c098203d5a7bcce69133ef8046d0b7db6c651cc",
+      "jira_ad/norms.py": "30191ceaacbff125e1627c22d800c206c23e86f72578cf0fb8d49d62ce35d026",
+      "jira_ad/notebook_runner.py": "b965a4ea0edd512048e0263576da118dc857f536df045e8fd777e5248cace9e9",
+      "jira_ad/pipeline.py": "796a83d40769ba9bdba2b0cb92866327f6032e45f157d07fcfa6da1f6b2c824b",
+      "jira_ad/plots.py": "8f2521503acf8d33725a8c3dd2b7d32bedc85f69aaffcdef7d9b081d9bfc5eb1",
+      "jira_ad/preprocess.py": "5c627c81e083e7a3e08ebc7418608f7dd51cb5f4426e7bc13b6b314f08331420",
+      "jira_ad/process_analysis.py": "879456f1741062bd9b2c6c09aa4a4384fc57728c48497be89b91ac540e4238ec",
+      "jira_ad/process_config.py": "0b915d0c306fcce944ab32709b3237a8ae013760032e5feb7372ad5fe5a48969",
+      "jira_ad/process_figures.py": "a5feae92e96696a04bae2444fc0599fc30787eb71dbce8e74ba42b5bcf262118",
+      "jira_ad/process_metrics.py": "a3b4f04a2bd64569f0eece3843a7ed0e8795f9ac2aae8dd91ed22c44c235155b",
+      "jira_ad/process_plots.py": "7490886b5be04f3df5e0ea663fa640d96eb51ce8529f8f6305a2ac99e0851976",
+      "jira_ad/process_report.py": "a8153b2ef28e5791f8d9fd12d74826e986c105c60fbef64947c4683e8fb172e0",
+      "jira_ad/process_run.py": "09ab3ed9a6099d8d824fff6412a2bbbb44eb9a0e83bbfc50dc4d1b33f3158bcc",
+      "jira_ad/ranking.py": "37f574efd37da386e21a62243d3cb102f3891f742edb4fc9f1547172dade6361",
+      "jira_ad/splits.py": "dc07d0e5eb56293fed3e4eca4cf196235b148286302ccfb980e8eac88fe71ee9",
+      "jira_ad/status_log.py": "93f4e9bebaf92a3d30a2fab3ca4118068eefa02a592fcdab3b646378eefbc7c9",
+      "jira_ad/types.py": "62d922ab6b38e0f2e4927177c55b9e754588962580ad7127dc00f580456a766f",
+      "jira_ad/walks.py": "2ac58b726e13240e45d0c48ea75070f6897f194319fb52cbb568db2fda091d94",
+      "jira_ad/worktime.py": "292ab0cf1e7a06fcb7ba3a106d0be7af711f8b2194232ba9940c94c69631cab3"
+    }
+  },
+  "frozen_after": {
+    "configs/baseline.yaml": "2638fd50904a75eb9a7be74b1233230bbd1695b940075c198d36b3144ee262cf",
+    "configs/actions.yaml": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0",
+    "configs/experiments.yaml": "d7641ac840147eeb525b36355fc020460fae6dda94b10a0f589f96317a99b96f",
+    "configs/improvement_plan.yaml": "98be18952f622e32ce82e2a9302c5857053c0ac4359d1c1d5438f57649a40969",
+    "dataset": {
+      "n_files": 6,
+      "listing_sha256": "39177a7520a527130a099daf7f82d180a0e6a116c0c877e8c13409d5894c230a",
+      "content_sha256": "fb549605946a3fe2e17cdff0404e883bcf9ef1fb47724c421bed90449ef292ad"
+    },
+    "outputs/runs": {
+      "n_files": 4659,
+      "listing_sha256": "9f53587f92205ab7a91c0c8f10aaf7de7f80988822d867ee0189e2b848b60bbd",
+      "content_sha256": "8344cb1390e5d1368baa2e3da158f42d8ce271bf717cd6f8cf9f99461f9f7242"
+    },
+    "outputs/improvement": {
+      "n_files": 41,
+      "listing_sha256": "19ab0215580b16254f1ab6779e80e58770eaf5c2a3e4446185d52b2cb9ee8bf9",
+      "content_sha256": "d6e7678eb9799b44a51e121552bf79327b548e5a082d1d161deaa48700c485be"
+    }
+  },
+  "files": {
+    "a_quant/bug/cases.csv": "75e282e5460b3ca5e3855f6c51b4e06dc6d7dff000efd43494ec4f201d552d91",
+    "a_quant/bug/dwell_by_state.csv": "bee09ea8c4ecb8dd198c6d2aa416e0057fdcd70cb0f2e60e727327d420909c6d",
+    "a_quant/bug/fpy.json": "65ce8dbf0480e9cf2fecea36e00a60cdb5c28b75ba5c4c7c12036153c3646638",
+    "a_quant/bug/gate_roles.csv": "f7c42c646db1d789c8940017a6c6cfcafae0dfd89a6b2b51806266e6ccabca4c",
+    "a_quant/bug/kpi_asis.csv": "e70978d2b1ab3423d50f03496edbfd7e9bbd1b1471844d63fe95724fea29af49",
+    "a_quant/bug/little.json": "128796af11b8c8bdd0692f8122208d224b41bb1f78eed57c9bbe9ce991992c35",
+    "a_quant/bug/pt_wt_ranges.csv": "931f165e1294f8735665bfe7028865772c71e4292fce666bccf5872552a7f0b3",
+    "a_quant/bug/rejected_cost.csv": "b244863fead89933f26905770e0356229d24211946bd77cda0cdac8ddccc58ff",
+    "a_quant/bug/status_log.csv": "0f8ffa496fb822ea6da2fc24a588ee6d4d72daaa0c115d9edc3366ab9f49fa4f",
+    "a_quant/bug/weekly_little.csv": "a309de7e6269f4d0741fc4620503248bd4c3c769f2d24c0f001c7214ee9100fd",
+    "a_quant/story/cases.csv": "1f3f166ddb11d0f1ad35423be7e7d658b14445a88bed63f78c33d1077ba0f02b",
+    "a_quant/story/dwell_by_state.csv": "b7db0e125d15976ddf2fb9137d6e6fe3e80fc2dba91203146061cb057a65f879",
+    "a_quant/story/fpy.json": "35951a3532326fd0be9a5843be9a4caf61a232aa00db848df6ac206a63de23c5",
+    "a_quant/story/gate_roles.csv": "765450207d30cfd44c64cb58799d1fc73d4ffddb402d0e7e69979c0588aba396",
+    "a_quant/story/kpi_asis.csv": "410aded0bff5ec9cc259d749a1dea91738ef21e2feb180b2ff7c7ebc569f942e",
+    "a_quant/story/little.json": "fcfa01a1115c5e7d0ca0c713458460b2a0570c9056455f3ad835f9ab54d61e44",
+    "a_quant/story/pt_wt_ranges.csv": "c4621c63c3b20014c7a8994b4eb774c54cc021f2bed047f9eaf758730db310e6",
+    "a_quant/story/rejected_cost.csv": "d4ec10032af84b85065b0678e55bac55577cdb1ccd2c09ac17f9a4baf351ec3a",
+    "a_quant/story/status_log.csv": "74ceb52bc436100782ebb28585db160e3af56e143b905d51ca6ce69841b3c6a2",
+    "a_quant/story/weekly_little.csv": "ebb9addb0556d44a60f2b7081cd8fd78a8288711d82f4aa2134c14b17487c2ef",
+    "b_norms/centrality_activity.csv": "9318db6782417529f6428456c1b0d1c5d0ae3e60e6c69a9b5be5d0f7c16b1d98",
+    "b_norms/centrality_status.csv": "5f42191e528894f92ff76920fac9814c51dabe19b9fcf5884b0966169c09f846",
+    "b_norms/centrality_vs_delay.csv": "28a3adf3a03cc4b86f7446eff92426994041a9dd98af027f902d7396a57f36a1",
+    "b_norms/late_by_case.csv": "d1fecef84a3204666b2c2ba95b6d0a4940859fd2365189a4c48f176a730febeb",
+    "b_norms/late_by_role.csv": "568e86ec354ec5327585e71a1ef95e002e6d6353d0d512280130954d8a478aff",
+    "b_norms/late_by_state.csv": "5549b03bc598f0de011b45017012c571ed91e8af53159e4cf90a32898337f409",
+    "b_norms/late_visits.csv": "a95ee3f8135850c11a67d7ccb1ed4abe05ec486990147632956fa3384b67cc37",
+    "b_norms/norms.csv": "afde11f591b19966c41fc6f5c6ba47abd91044975a05c8f5580880764b85c75c",
+    "b_norms/priorities.csv": "257682cf28862224aa3e7540c8df712c0442ca49feaf970ebe4c60508c69baff",
+    "b_norms/status_dfg.dot": "4248448dd438ce0d7e6bdae20225f10ab0d576aad539994960925b84dc4ccd9d",
+    "b_norms/status_dfg.png": "21dd1a278da8ebcbf13c6a7a53cae8e72240381ef44fb0b7c2b8ef0be8fde513",
+    "b_norms/status_dfg.svg": "2fe90061d5f07ac1eb0af15a3e765baebeeb617235682f20ba74aec21ff2cdf7",
+    "b_norms/top_late.csv": "522549c46990ec4d3e6b8161cc9083bb35114f0ae5b0bb9c6de574499a8ed087",
+    "b_norms/train_ids.csv": "7849c8764be6a0980386f50b47b2ba2a2bca5a2bdb5ecd2535a205692256161c",
+    "c_conformance/arc_table.csv": "8816ead6d65951ca495277514c35286948ac556846feee4d0b3eed4eff8ca70f",
+    "c_conformance/deviation_breakdown.csv": "63c327e86cc042e03ad023dc038139d2c2cafacbc0f81dad86e603f7be163746",
+    "c_conformance/deviations_top.csv": "febf6724669e674a019d88cbbc28223e648876f6bd081c91ca24841aed461bc7",
+    "c_conformance/discovery_quality.csv": "234abc2877a06b639c744d6a47662e20c1364930c6dd504769f4abef27d7a5dc",
+    "c_conformance/flag_summary.csv": "9ad2f8c484cfe7f6a1afd74ec7e32fb4d6e866583627a979f4d42697a1d13aec",
+    "c_conformance/flags.csv": "2338221a4367d8c3919f97865dab6e1f519a30ec9bee469931f6cc741152c3ce",
+    "c_conformance/lanes.json": "f05568681a1f73179dacb40f9666d1048f14293878673cffd1ed51a790a18e79",
+    "c_conformance/models/alpha.dot": "964dcf886114e832b32c1db56cbbfb53fa8c6d3b1f66036c0b3fa426b6b6fb84",
+    "c_conformance/models/alpha.png": "e82e28ae21d301a4ff9e44ebc2aa2f65398c556b09d16cbca2ecf24e00d4520a",
+    "c_conformance/models/alpha.svg": "9cd0747ef1b2631c18cd2b9b6cb5005b8f4ccb525c2f5c859833760f44e5e084",
+    "c_conformance/models/fast_track.dot": "786634728a31ad1bd4c1d761a0a7f43deb3b1db8d21fae8a54a41e85b654ab2f",
+    "c_conformance/models/fast_track.png": "834cefe03eeec782ac826b773ed90069f48d462a283a857ed150cde873dec2e3",
+    "c_conformance/models/fast_track.svg": "ea26db05fa6f2568d55625d0b5f7e634a4a9521bd320e5509f7f256a7ab71b94",
+    "c_conformance/models/heuristics.dot": "b2da4ba8a99cf5889309b303df81b81892833c648e9dffaf728eef525228219e",
+    "c_conformance/models/heuristics.png": "28c05eae302ed46a11f3ea4f738ef4511db31ca6da692c69ddc88cfc4f34b1d6",
+    "c_conformance/models/heuristics.svg": "1b7e2525a12c726f902286cc3ede46754ae794d1eeb17618fdc89ec4cd3ae224",
+    "c_conformance/models/inductive.dot": "066826beff7ef22000e7212147c331586b6de1eac9997b7497bcd35c408dbb71",
+    "c_conformance/models/inductive.png": "e7e49f7681c758cfc8d71f9fe7f0fefbe61d1fb95f125327ff8ec5c84e012b9d",
+    "c_conformance/models/inductive.svg": "6310a18d4c857a82a10be65acf4a0902bfbaba1e77e5709f5e53bdcae300bcd0",
+    "c_conformance/models/inductive_infrequent.dot": "78966e6f7f728fe9021535b0dc8315214b3c5b4a2028230966173fad9960b341",
+    "c_conformance/models/inductive_infrequent.png": "2c713cc780a9d40d2c77895fa9c0e0528c83b0e589c097c64cf2cb8d7fc5f155",
+    "c_conformance/models/inductive_infrequent.svg": "487566fc495788d2f2d36bfe1205f5b895f3cdc1f219674b37ec35a06c162b34",
+    "c_conformance/reference_model.bpmn": "4d80a1b27bd667a9e924d8f8b3a0193502982632f65f94527be1deaadc0a1e06",
+    "c_conformance/reference_model.dot": "5c9eface56999e88e743729d547357c80f1b1f6170643f0f284629bafcf074a4",
+    "c_conformance/reference_model.png": "b035e0611565571a88110e49c67f8fdbbdbb80aa4468f71fe40c1e39bcbe7a76",
+    "c_conformance/reference_model.svg": "524c575ecaaead9327c53104ed9d91b38629edb65c1a433608a52587e128ef90",
+    "c_conformance/reference_net.dot": "e98bc45301fdd688062d27dc9cfe3b062b56b0ee6062e390f106d72639a9fa8d",
+    "c_conformance/reference_net.png": "f602668107534fa56deab92d2423c80d6856ba70b06f674fa7e61d5fb7ba2693",
+    "c_conformance/reference_net.svg": "5b716f6cb37fc5009ed07df06fa45a05e29344a3070e44bc5a0835339acdcce8",
+    "c_conformance/replay_cases.csv": "bbb935cdbbd136df4e3c682abfff1246abb14d23d2164d3e7163ae0f7d905686",
+    "c_conformance/replay_cases_fast_track.csv": "8eccf29c8c3d3cca4563e813c4135805a4b1f4d0ecb0ad67813e10063fc36948",
+    "c_conformance/replay_comparison.csv": "130bb7804d998b4632d3826616565e1d2afec5ceff4dfe4f2089007acdbe4ba7",
+    "c_conformance/replay_gained_cases.csv": "7cfbc4be4c4cee7730d707857000ca774290c4bc032f1428e36e03673e7691b9",
+    "c_conformance/replay_summary.json": "6bde508d7f2c108e91e4128f5574e768239e95d5e6abb1200f4652b0c5e21b16",
+    "c_conformance/status.json": "996f019f4268b787a4098cff5c7028db919e883b645f8a06149242f2178e97c1",
+    "c_conformance/unobserved_arc_precision.csv": "4cfa6f9593ee01532523190ea0b934c9835cdbdf4b78f620ba2adba60c30bd52",
+    "c_conformance/work_system.csv": "a628ccb9cdab4348e251d28e22096d646e068f5685ecdfc0af6cf880f718f486",
+    "d_bpr/checks.csv": "0df2746272047ff17017fe68cb363d3fc644e2a186d8feee8768099c9779edef",
+    "d_bpr/kpi_asis_tobe.csv": "7bad756f709ad4af3b5102702648f311f19b8add39bde114c34cb3015c58dcc3",
+    "d_bpr/pilot.csv": "5f90dccae438687d41109a233a916dfe5dee816dfd7198093eb945104d0de9ed",
+    "d_bpr/problems.csv": "03ddd23503191af566311fc76f9d966eb29fb7861ad6b261440eaaf9a4348a4f",
+    "d_bpr/tobe_model.bpmn": "c6831b2414c95cd1da4f7fe305533016850f648eaa96d26bc35539b5a4d989a3",
+    "d_bpr/tobe_model.dot": "c5230e642794fcab5dbce3f521ff5fbf91c64ad947b1c4d4bc20a944b6ff1234",
+    "d_bpr/tobe_model.png": "b805591d18c3eba5835a0beb5176ce721534724dc90d7810db9cf0d9c458cc7a",
+    "d_bpr/tobe_model.svg": "d6eefededc40ddf6cae2b38b551a61438a42f2b84a8e2ee36fcc416e215a0534",
+    "d_bpr/todo_excess_by_role.csv": "be60b8fadc3e971e4d4c6fd8f221099c9b2d22a850a8bd8ab39be07dce78bba8",
+    "d_bpr/todo_excess_by_role_target.csv": "d2d60001e307b2d1f9d4c5e3a9566b9d8263fda622c10a840dac499aed326f3e",
+    "e_ranking/blind_review.csv": "5d92a6d55f75b303f89dae84a8ad7d935ecf816956a669d1d5fb6b9e2f5ee363",
+    "e_ranking/blind_review_key.csv": "bb8e9b731543a7ff909fc65d8ddeffd6d0869036e845017d382bfbec7c228838",
+    "e_ranking/classify.csv": "5383fcf2b54cde73ec55e7ca40519ed49b9a4c198b49218fe9595051119a5679",
+    "e_ranking/clusters.csv": "c8542497bf74d9fef792a9a88b03aad7e945b0ca2905852fba51dd7a3d54aa7c",
+    "e_ranking/consensus.csv": "9fdf606de8894f99458aaa7b26394635e3c8b4582b2082785e9f9dbcff49b2e5",
+    "e_ranking/correlations.json": "c4085c3532f6290c713f258733de4471d000ab2938b7830365682a45917ce1e5",
+    "e_ranking/groups.csv": "6d7c4b22b6604b2a90343f4ecd92de7bd69fed1734bebac3713d15c4ac4889b0",
+    "e_ranking/profile.csv": "0a3af8150cebff7f4eb2ac49cb78114f39c117e9455cf2811f67a47cb04b4626",
+    "e_ranking/ranking.csv": "4afaf321446d4daccc893c95196e1d3c7e3cd73d1ec6fca48ff2d8a4972cc1f7",
+    "e_ranking/stability.json": "3b9e5c4657f3f73f54ac0a46f45bb81f4c2a505cd2e955ebf213b9aed451beeb",
+    "e_ranking/status.json": "68039441a287fe61548765cdc43e139b991d1e21d72e19d157cf823fb2ec8640",
+    "e_ranking/top.csv": "d198bfb70e630fab26359a18a77e3dd6aa08a674053f9d89919ff90189ffdd16"
+  }
+}

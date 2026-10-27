@@ -1,0 +1,40 @@
+{
+  "method": "A_stats",
+  "feature_names": [
+    "log1p_length",
+    "distinct_activity_ratio",
+    "adjacent_repeat_ratio",
+    "revisit_ratio",
+    "known_role_switch_ratio",
+    "known_role_coverage",
+    "mean_transition_surprisal",
+    "max_transition_surprisal",
+    "unseen_node_ratio",
+    "unseen_transition_ratio"
+  ],
+  "n_features": 10,
+  "n_h_features": 10,
+  "n_train_traces": 97,
+  "train_ids_sha256": "803fc479751ca41f43a7e5459e91bbdbbb37e3c03f3659dbc71eb3e365bf9719",
+  "vocabulary_size": 49,
+  "n_bigram_features": 0,
+  "include_time": false,
+  "encoding": "activity",
+  "add_boundaries": true,
+  "transition_alpha": 1.0,
+  "seed": 42,
+  "state_sha256": "0f421a136cd0041c3bb09bb42f2f0d173e419e4faa1bdcbde819bbbd1a598beb",
+  "graph": {
+    "n_nodes": 51,
+    "n_activity_nodes": 49,
+    "n_edges": 386,
+    "n_self_loops": 13,
+    "density": 0.15137254901960784,
+    "n_train_traces": 97,
+    "total_transitions": 1998,
+    "max_edge_weight": 97,
+    "n_activities_with_single_successor": 8,
+    "n_activities_without_successor": 0,
+    "n_activities_leading_only_to_end": 0
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "stage": "prepare",
+  "prepare_key": "2bb79e60e57a",
+  "cohort": "bug",
+  "input": {
+    "cohort": "bug",
+    "relative_path": "dataset/TIeventlogBug.csv",
+    "sha256": "cda16f1c5c4af641ea89e77ac5b8217c5f5a923988e7984a73e80f159f38de80",
+    "size_bytes": 386579,
+    "n_rows": 5126
+  },
+  "action_rules": {
+    "relative_path": "configs/actions.yaml",
+    "sha256": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0"
+  },
+  "settings": {
+    "preprocess": {
+      "view": "core",
+      "terminal_statuses": [
+        "DONE",
+        "Rejected"
+      ],
+      "noise_policy": "drop_generic_external_link_updates"
+    },
+    "split": {
+      "seed": 42,
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "test_fraction": 0.2,
+      "stratify": "terminal_status",
+      "strategy": "temporal"
+    }
+  },
+  "view": "core",
+  "terminal_statuses": [
+    "DONE",
+    "Rejected"
+  ],
+  "noise_policy": "drop_generic_external_link_updates",
+  "action_rules_sha256": "4a35ef7d0f48052a165c3cdd9891ba919dff42bb41d9f67ca71dc9565520a8d0",
+  "full_view": {
+    "n_events": 5126,
+    "n_cases": 161,
+    "n_missing_role_events": 15,
+    "n_unknown_role_events": 837,
+    "n_bot_events": 2230,
+    "n_fallback_activity_events": 0,
+    "n_distinct_activities": 50
+  },
+  "core_view": {
+    "n_events": 3258,
+    "n_cases": 161,
+    "n_missing_role_events": 15,
+    "n_unknown_role_events": 832,
+    "n_bot_events": 431,
+    "n_fallback_activity_events": 0,
+    "n_distinct_activities": 49,
+    "events_per_case": {
+      "min": 4,
+      "median": 19.0,
+      "max": 61,
+      "mean": 20.236024844720497
+    },
+    "terminal_status_counts": {
+      "DONE": 83,
+      "Rejected": 78
+    },
+    "activity_counts": {
+      "ADD_ISSUE_LINK": 384,
+      "EDIT_DESCRIPTION": 357,
+      "LINK_COMMIT": 342,
+      "CREATE": 161,
+      "UPDATE_BACKLOG_CLASSIFICATION": 134,
+      "REMOVE_ASSIGNEE": 126,
+      "UPDATE_PROJECT": 119,
+      "EDIT_ISSUEPARENTASSOCIATION": 114,
+      "STATUS_INVESTIGATED": 114,
+      "STATUS_To Investigate": 114,
+      "STATUS_To Do": 106,
+      "STATUS_In Progress": 99,
+      "LINK_MERGE_REQUEST": 95,
+      "STATUS_In Test": 91,
+      "ADD_ASSIGNEE": 87,
+      "ADD_FIX_VERSION": 87,
+      "STATUS_DONE": 87,
+      "UPDATE_ASSIGNEE": 85,
+      "STATUS_Rejected": 83,
+      "ADD_EPIC_LINK": 71,
+      "ADD_STORY_POINTS": 62,
+      "ADD_ATTACHMENT": 59,
+      "UPDATE_BLOCKING_FOR_RELEASE": 47,
+      "UPDATE_RANK": 42,
+      "UPDATE_EPIC_LINK": 23,
+      "UPDATE_FIX_VERSION": 21,
+      "STATUS_Inbox": 18,
+      "REMOVE_SPRINT": 15,
+      "ADD_SPRINT": 14,
+      "EDIT_SUMMARY": 14,
+      "UPDATE_STORY_POINTS": 12,
+      "REMOVE_ISSUE_LINK": 10,
+      "UPDATE_SPRINT": 9,
+      "EDIT_COMPONENT": 8,
+      "REMOVE_FIX_VERSION": 8,
+      "UPDATE_PRIORITY": 8,
+      "UPDATE_LABELS": 7,
+      "EDIT_REPORTER": 6,
+      "REMOVE_STORY_POINTS": 4,
+      "UPDATE_VERSION": 3,
+      "ADD_PARENT": 2,
+      "ADD_UNDEFINED": 2,
+      "UPDATE_ISSUE_CLASSIFICATION": 2,
+      "REMOVE_COMMENT": 1,
+      "STATUS_OPEN": 1,
+      "STATUS_Triage": 1,
+      "UPDATE_ESCALATION": 1,
+      "UPDATE_ISSUETYPE": 1,
+      "UPDATE_SCRUMTEAM": 1
+    }
+  },
+  "funnel": {
+    "n_events_full": 5126,
+    "n_events_in_excluded_cases": 0,
+    "n_events_post_terminal": 1117,
+    "n_events_dropped_noise": 751,
+    "n_events_core": 3258
+  },
+  "case_exclusions": {},
+  "post_terminal": {
+    "n_events": 1117,
+    "n_cases": 63
+  },
+  "reopen": {
+    "n_cases_with_reopen": 8
+  },
+  "noise": {
+    "events_dropped_by_activity": {
+      "UPDATE_EXTERNAL_LINK": 751
+    }
+  },
+  "split": {
+    "split_hash": "120580d556dc488be9e88ac3ff4d5b7d804f798235adf760acf585f80b468e10",
+    "sizes": {
+      "train": 97,
+      "validation": 32,
+      "test": 32
+    },
+    "terminal_status_by_split": {
+      "train": {
+        "DONE": 50,
+        "Rejected": 47
+      },
+      "validation": {
+        "DONE": 18,
+        "Rejected": 14
+      },
+      "test": {
+        "DONE": 15,
+        "Rejected": 17
+      }
+    },
+    "temporal": {
+      "by_split": {
+        "train": {
+          "n": 97,
+          "first_terminal_utc": "2021-06-30T11:08:48+00:00",
+          "last_terminal_utc": "2022-01-25T12:34:41+00:00"
+        },
+        "validation": {
+          "n": 32,
+          "first_terminal_utc": "2022-01-27T06:47:46+00:00",
+          "last_terminal_utc": "2022-04-04T09:39:20+00:00"
+        },
+        "test": {
+          "n": 32,
+          "first_terminal_utc": "2022-04-05T09:39:22+00:00",
+          "last_terminal_utc": "2022-06-27T08:58:53+00:00"
+        }
+      },
+      "train_end_utc": "2022-01-25T12:34:41+00:00",
+      "n_heldout_started_before_train_end": 29,
+      "n_heldout": 64,
+      "train_validation_boundary_tie": false,
+      "validation_test_boundary_tie": false
+    }
+  },
+  "mapping": {
+    "n_distinct_raw_actions": 99,
+    "n_fallback_raw_actions": 0,
+    "n_fallback_events": 0,
+    "fallback_raw_actions": []
+  }
+}

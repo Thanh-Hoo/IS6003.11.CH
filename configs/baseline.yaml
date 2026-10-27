@@ -1,0 +1,62 @@
+# Cấu hình E2E mặc định cho tập bug (spec §8). Đường dẫn tương đối repo root.
+project:
+  output_root: outputs
+data:
+  root: dataset
+  files:
+    bug: TIeventlogBug.csv
+    story: TIeventlogStory.csv
+  recursive_discovery: true
+  cohort: bug
+  # Số liệu đã kiểm tra khi viết spec (§2). CHỈ để audit báo sai khác, không phải kết quả pipeline.
+  reference_counts:
+    bug: {events: 5126, issues: 161}
+    story: {events: 4439, issues: 182}
+preprocess:
+  actions_file: configs/actions.yaml
+  view: core
+  terminal_statuses: [DONE, Rejected]
+  noise_policy: drop_generic_external_link_updates
+split:
+  seed: 42
+  train_fraction: 0.60
+  validation_fraction: 0.20
+  test_fraction: 0.20
+  stratify: terminal_status
+graph:
+  directed: true
+  encoding: activity
+  add_boundaries: true
+  transition_alpha: 1.0
+walk:
+  p: 1.0
+  q: 1.0
+  length: 20
+  walks_per_node: 50
+embedding:
+  dimensions: 16
+  window: 3
+  epochs: 20
+  negative: 5
+  min_count: 1
+  sample: 0.0
+  workers: 1
+features:
+  methods: [A_stats, B_ngrams, C_embedding, D_hybrid]
+  include_time: false
+detector:
+  n_estimators: 200
+  max_samples: auto
+  contamination: auto
+  n_jobs: 1
+mutation:
+  types: [swap_adjacent, delete_internal, duplicate_block]
+  max_per_type_per_parent: 1
+  validation_seed: 1042
+  test_seed: 2042
+  duplicate_block_max_length: 2
+run:
+  seed: 42
+  fail_on_existing_output: true
+notebooks:
+  timeout_seconds: 180

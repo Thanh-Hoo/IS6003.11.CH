@@ -1,0 +1,806 @@
+mutation_id,parent_case_id,split,mutation_type,seed,status,skip_reason,edited_positions,original_length,mutated_length,original_sequence_hash,mutated_sequence_hash,n_candidates,n_rejected_candidates
+bug:TI-4584::swap_adjacent::2042,bug:TI-4584,fold0,swap_adjacent,2042,created,,"[40, 41]",51,51.0,ff65556d960645d5,e3cb69983253433c,38,0
+bug:TI-4584::delete_internal::2042,bug:TI-4584,fold0,delete_internal,2042,created,,[5],51,50.0,ff65556d960645d5,44a7daac9aa67041,49,0
+bug:TI-4584::duplicate_block::2042,bug:TI-4584,fold0,duplicate_block,2042,created,,[5],51,52.0,ff65556d960645d5,92232aeee48271ae,97,0
+bug:TI-4584::skip_status::2042,bug:TI-4584,fold0,skip_status,2042,created,,[42],51,50.0,ff65556d960645d5,3d07c3da7d5f12e7,11,0
+bug:TI-4584::multi_edit::2042,bug:TI-4584,fold0,multi_edit,2042,created,,"[[""duplicate"", 3], [""duplicate"", 41], [""swap"", 14]]",51,53.0,ff65556d960645d5,5c609901edaaf123,1,0
+bug:TI-4596::swap_adjacent::2042,bug:TI-4596,fold0,swap_adjacent,2042,created,,"[4, 5]",40,40.0,4519ab6f306fd1ea,978ba73aaa28a104,31,0
+bug:TI-4596::delete_internal::2042,bug:TI-4596,fold0,delete_internal,2042,created,,[21],40,39.0,4519ab6f306fd1ea,9a49735a5db6b4b4,38,0
+bug:TI-4596::duplicate_block::2042,bug:TI-4596,fold0,duplicate_block,2042,created,,"[1, 2]",40,42.0,4519ab6f306fd1ea,b4a423f7354acd05,75,0
+bug:TI-4596::skip_status::2042,bug:TI-4596,fold0,skip_status,2042,created,,[3],40,39.0,4519ab6f306fd1ea,be5a2108396ea821,5,0
+bug:TI-4596::multi_edit::2042,bug:TI-4596,fold0,multi_edit,2042,created,,"[[""duplicate"", 23], [""duplicate"", 10], [""swap"", 2]]",40,42.0,4519ab6f306fd1ea,66653b52924d714b,1,0
+bug:TI-4599::swap_adjacent::2042,bug:TI-4599,fold0,swap_adjacent,2042,created,,"[23, 24]",27,27.0,988b63cfd88a2648,a3314c1241383738,18,0
+bug:TI-4599::delete_internal::2042,bug:TI-4599,fold0,delete_internal,2042,created,,[10],27,26.0,988b63cfd88a2648,0bbee8c9bbd74cb8,25,0
+bug:TI-4599::duplicate_block::2042,bug:TI-4599,fold0,duplicate_block,2042,created,,[20],27,28.0,988b63cfd88a2648,26c8bb2ab47fe026,49,0
+bug:TI-4599::skip_status::2042,bug:TI-4599,fold0,skip_status,2042,created,,[4],27,26.0,988b63cfd88a2648,1fbd57b3e279b8f2,5,0
+bug:TI-4599::multi_edit::2042,bug:TI-4599,fold0,multi_edit,2042,created,,"[[""swap"", 6], [""delete"", 9], [""swap"", 6]]",27,26.0,988b63cfd88a2648,e1f1b676f7551410,1,0
+bug:TI-4671::swap_adjacent::2042,bug:TI-4671,fold0,swap_adjacent,2042,created,,"[5, 6]",9,9.0,6d9dcb343d64b856,8dae30d18ba46632,6,0
+bug:TI-4671::delete_internal::2042,bug:TI-4671,fold0,delete_internal,2042,created,,[1],9,8.0,6d9dcb343d64b856,de23cd8ae695646a,7,0
+bug:TI-4671::duplicate_block::2042,bug:TI-4671,fold0,duplicate_block,2042,created,,"[3, 4]",9,11.0,6d9dcb343d64b856,5d111f916646a348,13,0
+bug:TI-4671::skip_status::2042,bug:TI-4671,fold0,skip_status,2042,created,,[7],9,8.0,6d9dcb343d64b856,0fedefd7b4e20af1,2,0
+bug:TI-4671::multi_edit::2042,bug:TI-4671,fold0,multi_edit,2042,created,,"[[""delete"", 4], [""duplicate"", 6], [""duplicate"", 3]]",9,10.0,6d9dcb343d64b856,06f31b0c08b93233,1,0
+bug:TI-4723::swap_adjacent::2042,bug:TI-4723,fold0,swap_adjacent,2042,created,,"[29, 30]",33,33.0,4b4459f922658131,e8ec427d45ca5178,20,0
+bug:TI-4723::delete_internal::2042,bug:TI-4723,fold0,delete_internal,2042,created,,[2],33,32.0,4b4459f922658131,1b87f8e8f7c82248,31,0
+bug:TI-4723::duplicate_block::2042,bug:TI-4723,fold0,duplicate_block,2042,created,,"[12, 13]",33,35.0,4b4459f922658131,338f0920284eea7d,61,0
+bug:TI-4723::skip_status::2042,bug:TI-4723,fold0,skip_status,2042,created,,[6],33,32.0,4b4459f922658131,288226d1b245c8a5,7,0
+bug:TI-4723::multi_edit::2042,bug:TI-4723,fold0,multi_edit,2042,created,,"[[""duplicate"", 12], [""delete"", 25], [""swap"", 28]]",33,33.0,4b4459f922658131,a5510c08eb60f2b2,1,0
+bug:TI-4724::swap_adjacent::2042,bug:TI-4724,fold0,swap_adjacent,2042,created,,"[2, 3]",12,12.0,6348c4e7f254143c,5fdcde1628920108,7,0
+bug:TI-4724::delete_internal::2042,bug:TI-4724,fold0,delete_internal,2042,created,,[2],12,11.0,6348c4e7f254143c,eff9128cbc5c3a8f,10,0
+bug:TI-4724::duplicate_block::2042,bug:TI-4724,fold0,duplicate_block,2042,created,,[10],12,13.0,6348c4e7f254143c,d321fbac078b2522,19,0
+bug:TI-4724::skip_status::2042,bug:TI-4724,fold0,skip_status,2042,created,,[5],12,11.0,6348c4e7f254143c,3b8b21652632f3d0,2,0
+bug:TI-4724::multi_edit::2042,bug:TI-4724,fold0,multi_edit,2042,created,,"[[""duplicate"", 9], [""swap"", 2], [""delete"", 2]]",12,12.0,6348c4e7f254143c,62cc17ddd3b3ece6,1,0
+bug:TI-4727::swap_adjacent::2042,bug:TI-4727,fold0,swap_adjacent,2042,created,,"[1, 2]",26,26.0,bc6bac65240216e6,2e9ec85518b155e1,23,0
+bug:TI-4727::delete_internal::2042,bug:TI-4727,fold0,delete_internal,2042,created,,[10],26,25.0,bc6bac65240216e6,b7a959d031e58e84,24,0
+bug:TI-4727::duplicate_block::2042,bug:TI-4727,fold0,duplicate_block,2042,created,,[5],26,27.0,bc6bac65240216e6,8f9b65a63e3f43a7,47,0
+bug:TI-4727::skip_status::2042,bug:TI-4727,fold0,skip_status,2042,created,,[21],26,25.0,bc6bac65240216e6,f25d16a72308d782,5,0
+bug:TI-4727::multi_edit::2042,bug:TI-4727,fold0,multi_edit,2042,created,,"[[""swap"", 9], [""duplicate"", 14], [""duplicate"", 3]]",26,28.0,bc6bac65240216e6,b34a04efd9030a62,1,0
+bug:TI-4811::swap_adjacent::2042,bug:TI-4811,fold0,swap_adjacent,2042,created,,"[10, 11]",25,25.0,e1a4f2ebc1f4f94c,31e2e76dc438f81b,18,0
+bug:TI-4811::delete_internal::2042,bug:TI-4811,fold0,delete_internal,2042,created,,[22],25,24.0,e1a4f2ebc1f4f94c,fca0becd8c56d97e,23,0
+bug:TI-4811::duplicate_block::2042,bug:TI-4811,fold0,duplicate_block,2042,created,,"[19, 20]",25,27.0,e1a4f2ebc1f4f94c,2b9a9cbfe257657f,45,0
+bug:TI-4811::skip_status::2042,bug:TI-4811,fold0,skip_status,2042,created,,[13],25,24.0,e1a4f2ebc1f4f94c,7a112e7f434a9d2c,5,0
+bug:TI-4811::multi_edit::2042,bug:TI-4811,fold0,multi_edit,2042,created,,"[[""duplicate"", 11], [""duplicate"", 11], [""swap"", 10]]",25,27.0,e1a4f2ebc1f4f94c,69c40756b1a536b8,1,0
+bug:TI-4829::swap_adjacent::2042,bug:TI-4829,fold0,swap_adjacent,2042,created,,"[6, 7]",18,18.0,28aabdce93049bbd,ce58fe0c5876a9e6,14,0
+bug:TI-4829::delete_internal::2042,bug:TI-4829,fold0,delete_internal,2042,created,,[16],18,17.0,28aabdce93049bbd,c4c995f44747b383,16,0
+bug:TI-4829::duplicate_block::2042,bug:TI-4829,fold0,duplicate_block,2042,created,,[7],18,19.0,28aabdce93049bbd,efd21d6e56cdaea5,31,0
+bug:TI-4829::skip_status::2042,bug:TI-4829,fold0,skip_status,2042,created,,[10],18,17.0,28aabdce93049bbd,3ec03830772f9eff,2,0
+bug:TI-4829::multi_edit::2042,bug:TI-4829,fold0,multi_edit,2042,created,,"[[""duplicate"", 3], [""delete"", 4], [""delete"", 4]]",18,17.0,28aabdce93049bbd,48a65e3304aa2eab,1,0
+bug:TI-4834::swap_adjacent::2042,bug:TI-4834,fold0,swap_adjacent,2042,created,,"[2, 3]",21,21.0,763f8ad4b8721266,b282f8be9eb21d87,16,0
+bug:TI-4834::delete_internal::2042,bug:TI-4834,fold0,delete_internal,2042,created,,[3],21,20.0,763f8ad4b8721266,bcf2eb35307d0577,19,0
+bug:TI-4834::duplicate_block::2042,bug:TI-4834,fold0,duplicate_block,2042,created,,"[16, 17]",21,23.0,763f8ad4b8721266,31b56c1a3f70673a,37,0
+bug:TI-4834::skip_status::2042,bug:TI-4834,fold0,skip_status,2042,created,,[17],21,20.0,763f8ad4b8721266,dd4bc89007309887,5,0
+bug:TI-4834::multi_edit::2042,bug:TI-4834,fold0,multi_edit,2042,created,,"[[""swap"", 17], [""delete"", 19], [""swap"", 3]]",21,20.0,763f8ad4b8721266,040f2aa69114b6b2,1,0
+bug:TI-5200::swap_adjacent::2042,bug:TI-5200,fold0,swap_adjacent,2042,created,,"[1, 2]",22,22.0,72a251eb95aa5d26,30074f30e2fa6d58,17,0
+bug:TI-5200::delete_internal::2042,bug:TI-5200,fold0,delete_internal,2042,created,,[19],22,21.0,72a251eb95aa5d26,142206c14032202a,20,0
+bug:TI-5200::duplicate_block::2042,bug:TI-5200,fold0,duplicate_block,2042,created,,"[15, 16]",22,24.0,72a251eb95aa5d26,3f4ec6e2808c7d3a,39,0
+bug:TI-5200::skip_status::2042,bug:TI-5200,fold0,skip_status,2042,created,,[8],22,21.0,72a251eb95aa5d26,e62de4f4f7ef2b1f,5,0
+bug:TI-5200::multi_edit::2042,bug:TI-5200,fold0,multi_edit,2042,created,,"[[""swap"", 19], [""delete"", 20], [""duplicate"", 3]]",22,22.0,72a251eb95aa5d26,5ed2a953e1a71cba,1,0
+bug:TI-5254::swap_adjacent::2042,bug:TI-5254,fold0,swap_adjacent,2042,created,,"[3, 4]",6,6.0,cdb6984cf6a5a3f3,fcc2bf9076571533,3,0
+bug:TI-5254::delete_internal::2042,bug:TI-5254,fold0,delete_internal,2042,created,,[2],6,5.0,cdb6984cf6a5a3f3,52d1f1b42eb963a3,4,0
+bug:TI-5254::duplicate_block::2042,bug:TI-5254,fold0,duplicate_block,2042,created,,"[1, 2]",6,8.0,cdb6984cf6a5a3f3,7e7f3528eb9da695,7,0
+bug:TI-5254::skip_status::2042,bug:TI-5254,fold0,skip_status,2042,skipped,no_internal_status,,6,,cdb6984cf6a5a3f3,,0,0
+bug:TI-5254::multi_edit::2042,bug:TI-5254,fold0,multi_edit,2042,created,,"[[""swap"", 2], [""delete"", 1], [""duplicate"", 2]]",6,6.0,cdb6984cf6a5a3f3,af5f7b3edfc49f12,1,0
+bug:TI-5268::swap_adjacent::2042,bug:TI-5268,fold0,swap_adjacent,2042,created,,"[6, 7]",17,17.0,9d9f57ab67637f2f,1f8d65b47075a7d9,11,0
+bug:TI-5268::delete_internal::2042,bug:TI-5268,fold0,delete_internal,2042,created,,[3],17,16.0,9d9f57ab67637f2f,db1e5dfd69cacfda,15,0
+bug:TI-5268::duplicate_block::2042,bug:TI-5268,fold0,duplicate_block,2042,created,,"[7, 8]",17,19.0,9d9f57ab67637f2f,3de0fb4db7516fd9,29,0
+bug:TI-5268::skip_status::2042,bug:TI-5268,fold0,skip_status,2042,created,,[9],17,16.0,9d9f57ab67637f2f,404a75b01dabdd42,2,0
+bug:TI-5268::multi_edit::2042,bug:TI-5268,fold0,multi_edit,2042,created,,"[[""delete"", 15], [""delete"", 9], [""swap"", 6]]",17,15.0,9d9f57ab67637f2f,315d206bdec52339,1,0
+bug:TI-5332::swap_adjacent::2042,bug:TI-5332,fold0,swap_adjacent,2042,created,,"[19, 20]",22,22.0,91b84709d071ff93,5fd3bfaf3afd260c,15,0
+bug:TI-5332::delete_internal::2042,bug:TI-5332,fold0,delete_internal,2042,created,,[3],22,21.0,91b84709d071ff93,446e83f20a3ab00c,20,0
+bug:TI-5332::duplicate_block::2042,bug:TI-5332,fold0,duplicate_block,2042,created,,"[18, 19]",22,24.0,91b84709d071ff93,1464d74957003f25,39,0
+bug:TI-5332::skip_status::2042,bug:TI-5332,fold0,skip_status,2042,created,,[16],22,21.0,91b84709d071ff93,43c0ed9266864f24,3,0
+bug:TI-5332::multi_edit::2042,bug:TI-5332,fold0,multi_edit,2042,created,,"[[""swap"", 15], [""duplicate"", 5], [""duplicate"", 18]]",22,24.0,91b84709d071ff93,62c475c76cee8a2b,1,0
+bug:TI-5376::swap_adjacent::2042,bug:TI-5376,fold0,swap_adjacent,2042,created,,"[22, 23]",25,25.0,c2f4a10523b471ab,8f0b24a94fd74217,17,0
+bug:TI-5376::delete_internal::2042,bug:TI-5376,fold0,delete_internal,2042,created,,[22],25,24.0,c2f4a10523b471ab,5a772660f2fe8c5c,23,0
+bug:TI-5376::duplicate_block::2042,bug:TI-5376,fold0,duplicate_block,2042,created,,"[3, 4]",25,27.0,c2f4a10523b471ab,cf39beb28dc89436,45,0
+bug:TI-5376::skip_status::2042,bug:TI-5376,fold0,skip_status,2042,created,,[20],25,24.0,c2f4a10523b471ab,0a40109a30244c99,5,0
+bug:TI-5376::multi_edit::2042,bug:TI-5376,fold0,multi_edit,2042,created,,"[[""delete"", 13], [""swap"", 19], [""duplicate"", 14]]",25,25.0,c2f4a10523b471ab,de2440b276c1f30c,1,0
+bug:TI-5390::swap_adjacent::2042,bug:TI-5390,fold0,swap_adjacent,2042,created,,"[3, 4]",10,10.0,ed69340ffeea465f,8f584407ff1aedbe,7,0
+bug:TI-5390::delete_internal::2042,bug:TI-5390,fold0,delete_internal,2042,created,,[6],10,9.0,ed69340ffeea465f,395f5cde359c2b65,8,0
+bug:TI-5390::duplicate_block::2042,bug:TI-5390,fold0,duplicate_block,2042,created,,[2],10,11.0,ed69340ffeea465f,ed576f53b24bcfa3,15,0
+bug:TI-5390::skip_status::2042,bug:TI-5390,fold0,skip_status,2042,created,,[3],10,9.0,ed69340ffeea465f,54352afdccc2c3f8,2,0
+bug:TI-5390::multi_edit::2042,bug:TI-5390,fold0,multi_edit,2042,created,,"[[""swap"", 2], [""swap"", 2], [""delete"", 1]]",10,9.0,ed69340ffeea465f,a2f3ea901ac47466,1,0
+bug:TI-5411::swap_adjacent::2042,bug:TI-5411,fold0,swap_adjacent,2042,created,,"[3, 4]",14,14.0,deab9cb8d1cbdd46,502efc7f1d5ec875,9,0
+bug:TI-5411::delete_internal::2042,bug:TI-5411,fold0,delete_internal,2042,created,,[9],14,13.0,deab9cb8d1cbdd46,c51464c7877bdfe4,12,0
+bug:TI-5411::duplicate_block::2042,bug:TI-5411,fold0,duplicate_block,2042,created,,"[8, 9]",14,16.0,deab9cb8d1cbdd46,906f8af3bb868f07,23,0
+bug:TI-5411::skip_status::2042,bug:TI-5411,fold0,skip_status,2042,created,,[7],14,13.0,deab9cb8d1cbdd46,3b4a12863de5a739,2,0
+bug:TI-5411::multi_edit::2042,bug:TI-5411,fold0,multi_edit,2042,created,,"[[""delete"", 5], [""duplicate"", 1], [""duplicate"", 5]]",14,15.0,deab9cb8d1cbdd46,3a9d8d917ccf58e1,1,0
+bug:TI-5412::swap_adjacent::2042,bug:TI-5412,fold0,swap_adjacent,2042,created,,"[7, 8]",61,61.0,2ef89ba75d4d4bf6,9c4a3d1162e93698,35,0
+bug:TI-5412::delete_internal::2042,bug:TI-5412,fold0,delete_internal,2042,created,,[4],61,60.0,2ef89ba75d4d4bf6,6a8ebc8681585dfe,59,0
+bug:TI-5412::duplicate_block::2042,bug:TI-5412,fold0,duplicate_block,2042,created,,"[49, 50]",61,63.0,2ef89ba75d4d4bf6,216f76c2dff6fdfd,117,0
+bug:TI-5412::skip_status::2042,bug:TI-5412,fold0,skip_status,2042,created,,[31],61,60.0,2ef89ba75d4d4bf6,253ad082560699ad,5,0
+bug:TI-5412::multi_edit::2042,bug:TI-5412,fold0,multi_edit,2042,created,,"[[""delete"", 13], [""delete"", 34], [""swap"", 23]]",61,59.0,2ef89ba75d4d4bf6,5c801274e5076ade,1,0
+bug:TI-5445::swap_adjacent::2042,bug:TI-5445,fold0,swap_adjacent,2042,created,,"[2, 3]",8,8.0,5618dac98d1d8c89,5315d11df0a160ef,5,0
+bug:TI-5445::delete_internal::2042,bug:TI-5445,fold0,delete_internal,2042,created,,[4],8,7.0,5618dac98d1d8c89,469cf04502ae8269,6,0
+bug:TI-5445::duplicate_block::2042,bug:TI-5445,fold0,duplicate_block,2042,created,,[3],8,9.0,5618dac98d1d8c89,481ed0492f0c1e5f,11,0
+bug:TI-5445::skip_status::2042,bug:TI-5445,fold0,skip_status,2042,skipped,no_internal_status,,8,,5618dac98d1d8c89,,0,0
+bug:TI-5445::multi_edit::2042,bug:TI-5445,fold0,multi_edit,2042,created,,"[[""delete"", 2], [""duplicate"", 3], [""duplicate"", 2]]",8,9.0,5618dac98d1d8c89,0fae18e6119bc7c0,1,0
+bug:TI-5480::swap_adjacent::2042,bug:TI-5480,fold0,swap_adjacent,2042,created,,"[25, 26]",34,34.0,bb18ecf75dce6657,24ae06c995823e04,28,0
+bug:TI-5480::delete_internal::2042,bug:TI-5480,fold0,delete_internal,2042,created,,[8],34,33.0,bb18ecf75dce6657,2fac5233aab504d0,32,0
+bug:TI-5480::duplicate_block::2042,bug:TI-5480,fold0,duplicate_block,2042,created,,"[10, 11]",34,36.0,bb18ecf75dce6657,41f9e57b5c1e0d17,63,0
+bug:TI-5480::skip_status::2042,bug:TI-5480,fold0,skip_status,2042,created,,[9],34,33.0,bb18ecf75dce6657,08524cf4370706c4,7,0
+bug:TI-5480::multi_edit::2042,bug:TI-5480,fold0,multi_edit,2042,created,,"[[""delete"", 22], [""swap"", 3], [""duplicate"", 10]]",34,34.0,bb18ecf75dce6657,9da7b950fdddcf88,1,0
+bug:TI-5492::swap_adjacent::2042,bug:TI-5492,fold0,swap_adjacent,2042,created,,"[2, 3]",33,33.0,c4a4c94651a44c6f,21b4392cfb425045,26,0
+bug:TI-5492::delete_internal::2042,bug:TI-5492,fold0,delete_internal,2042,created,,[6],33,32.0,c4a4c94651a44c6f,15164d0d48daf97c,31,0
+bug:TI-5492::duplicate_block::2042,bug:TI-5492,fold0,duplicate_block,2042,created,,"[20, 21]",33,35.0,c4a4c94651a44c6f,c99108eb17b1fb1f,61,0
+bug:TI-5492::skip_status::2042,bug:TI-5492,fold0,skip_status,2042,created,,[31],33,32.0,c4a4c94651a44c6f,5aed375cd3faf106,3,0
+bug:TI-5492::multi_edit::2042,bug:TI-5492,fold0,multi_edit,2042,created,,"[[""duplicate"", 13], [""delete"", 2], [""delete"", 22]]",33,32.0,c4a4c94651a44c6f,0813df6ea6094aad,1,0
+bug:TI-5568::swap_adjacent::2042,bug:TI-5568,fold0,swap_adjacent,2042,created,,"[16, 17]",19,19.0,f7b38cb0c7381cf7,f58e47df9c502dd3,16,0
+bug:TI-5568::delete_internal::2042,bug:TI-5568,fold0,delete_internal,2042,created,,[9],19,18.0,f7b38cb0c7381cf7,2ba893baf522d278,17,0
+bug:TI-5568::duplicate_block::2042,bug:TI-5568,fold0,duplicate_block,2042,created,,"[13, 14]",19,21.0,f7b38cb0c7381cf7,3a0988946cf61f1f,33,0
+bug:TI-5568::skip_status::2042,bug:TI-5568,fold0,skip_status,2042,created,,[14],19,18.0,f7b38cb0c7381cf7,c7c867d70838e009,7,0
+bug:TI-5568::multi_edit::2042,bug:TI-5568,fold0,multi_edit,2042,created,,"[[""duplicate"", 2], [""swap"", 16], [""delete"", 10]]",19,19.0,f7b38cb0c7381cf7,f3077c1a5def5af3,1,0
+bug:TI-5591::swap_adjacent::2042,bug:TI-5591,fold0,swap_adjacent,2042,created,,"[14, 15]",25,25.0,dd29587019e34480,12f75070261dacb2,22,0
+bug:TI-5591::delete_internal::2042,bug:TI-5591,fold0,delete_internal,2042,created,,[7],25,24.0,dd29587019e34480,fd39ed67fe878ff3,23,0
+bug:TI-5591::duplicate_block::2042,bug:TI-5591,fold0,duplicate_block,2042,created,,"[13, 14]",25,27.0,dd29587019e34480,430f120e3139cf99,45,0
+bug:TI-5591::skip_status::2042,bug:TI-5591,fold0,skip_status,2042,created,,[21],25,24.0,dd29587019e34480,1a6df2bee37f57bb,8,0
+bug:TI-5591::multi_edit::2042,bug:TI-5591,fold0,multi_edit,2042,created,,"[[""swap"", 22], [""duplicate"", 8], [""duplicate"", 20]]",25,27.0,dd29587019e34480,c33b3961d64f7bd5,1,0
+bug:TI-5618::swap_adjacent::2042,bug:TI-5618,fold0,swap_adjacent,2042,created,,"[5, 6]",16,16.0,5506e8656823bc3a,aef4ea82da7ff340,8,0
+bug:TI-5618::delete_internal::2042,bug:TI-5618,fold0,delete_internal,2042,created,,[2],16,15.0,5506e8656823bc3a,4385fe5e2260f0c9,14,0
+bug:TI-5618::duplicate_block::2042,bug:TI-5618,fold0,duplicate_block,2042,created,,"[10, 11]",16,18.0,5506e8656823bc3a,a2f324c183007322,27,0
+bug:TI-5618::skip_status::2042,bug:TI-5618,fold0,skip_status,2042,created,,[14],16,15.0,5506e8656823bc3a,2b582a3015f7bfbc,2,0
+bug:TI-5618::multi_edit::2042,bug:TI-5618,fold0,multi_edit,2042,created,,"[[""delete"", 8], [""delete"", 12], [""duplicate"", 4]]",16,15.0,5506e8656823bc3a,d935d41ccf86d7d0,1,0
+bug:TI-5675::swap_adjacent::2042,bug:TI-5675,fold0,swap_adjacent,2042,created,,"[3, 4]",7,7.0,fcd4c97a59106396,48117de1b653d920,4,0
+bug:TI-5675::delete_internal::2042,bug:TI-5675,fold0,delete_internal,2042,created,,[4],7,6.0,fcd4c97a59106396,18972e001e273fde,5,0
+bug:TI-5675::duplicate_block::2042,bug:TI-5675,fold0,duplicate_block,2042,created,,"[4, 5]",7,9.0,fcd4c97a59106396,3943701d132879bc,9,0
+bug:TI-5675::skip_status::2042,bug:TI-5675,fold0,skip_status,2042,skipped,no_internal_status,,7,,fcd4c97a59106396,,0,0
+bug:TI-5675::multi_edit::2042,bug:TI-5675,fold0,multi_edit,2042,created,,"[[""delete"", 1], [""swap"", 3], [""swap"", 2]]",7,6.0,fcd4c97a59106396,36a80d87076ac515,1,0
+bug:TI-5863::swap_adjacent::2042,bug:TI-5863,fold0,swap_adjacent,2042,created,,"[9, 10]",15,15.0,5fe8a5e5d951f263,200f250f4f1d7b16,12,0
+bug:TI-5863::delete_internal::2042,bug:TI-5863,fold0,delete_internal,2042,created,,[11],15,14.0,5fe8a5e5d951f263,366c110f8875bf55,13,0
+bug:TI-5863::duplicate_block::2042,bug:TI-5863,fold0,duplicate_block,2042,created,,"[2, 3]",15,17.0,5fe8a5e5d951f263,03c0de0cb7d91b49,25,0
+bug:TI-5863::skip_status::2042,bug:TI-5863,fold0,skip_status,2042,created,,[6],15,14.0,5fe8a5e5d951f263,9544884bc5a1e496,2,0
+bug:TI-5863::multi_edit::2042,bug:TI-5863,fold0,multi_edit,2042,created,,"[[""duplicate"", 5], [""delete"", 11], [""duplicate"", 11]]",15,16.0,5fe8a5e5d951f263,a353d113b1e5fbb6,1,0
+bug:TI-5900::swap_adjacent::2042,bug:TI-5900,fold0,swap_adjacent,2042,created,,"[18, 19]",23,23.0,688db9d7a398af04,e87233242f9d6e8d,16,0
+bug:TI-5900::delete_internal::2042,bug:TI-5900,fold0,delete_internal,2042,created,,[3],23,22.0,688db9d7a398af04,e37b9a2c3078ef80,21,0
+bug:TI-5900::duplicate_block::2042,bug:TI-5900,fold0,duplicate_block,2042,created,,"[16, 17]",23,25.0,688db9d7a398af04,ccfb6325851cd2b0,41,0
+bug:TI-5900::skip_status::2042,bug:TI-5900,fold0,skip_status,2042,created,,[6],23,22.0,688db9d7a398af04,962e314f45b2a07a,5,0
+bug:TI-5900::multi_edit::2042,bug:TI-5900,fold0,multi_edit,2042,created,,"[[""swap"", 5], [""duplicate"", 21], [""swap"", 1]]",23,24.0,688db9d7a398af04,cf53cbfa24d8bef7,1,0
+bug:TI-6007::swap_adjacent::2042,bug:TI-6007,fold0,swap_adjacent,2042,created,,"[10, 11]",13,13.0,366320f6dbb4273b,ce1e26e27a1f820e,8,0
+bug:TI-6007::delete_internal::2042,bug:TI-6007,fold0,delete_internal,2042,created,,[10],13,12.0,366320f6dbb4273b,55148b561cf3dc26,11,1
+bug:TI-6007::duplicate_block::2042,bug:TI-6007,fold0,duplicate_block,2042,created,,[1],13,14.0,366320f6dbb4273b,4f90af6f6e6e6489,21,0
+bug:TI-6007::skip_status::2042,bug:TI-6007,fold0,skip_status,2042,created,,[5],13,12.0,366320f6dbb4273b,cb7fd2fda9ac65d9,2,0
+bug:TI-6007::multi_edit::2042,bug:TI-6007,fold0,multi_edit,2042,created,,"[[""swap"", 4], [""delete"", 3], [""duplicate"", 7]]",13,13.0,366320f6dbb4273b,d724b7e0ed25cb2f,1,0
+bug:TI-6041::swap_adjacent::2042,bug:TI-6041,fold0,swap_adjacent,2042,created,,"[6, 7]",20,20.0,b9a37717064b74b7,3b8e034122697f52,17,0
+bug:TI-6041::delete_internal::2042,bug:TI-6041,fold0,delete_internal,2042,created,,[17],20,19.0,b9a37717064b74b7,8d84e15c4f4a529b,18,0
+bug:TI-6041::duplicate_block::2042,bug:TI-6041,fold0,duplicate_block,2042,created,,"[11, 12]",20,22.0,b9a37717064b74b7,8d9ff100b675403b,35,0
+bug:TI-6041::skip_status::2042,bug:TI-6041,fold0,skip_status,2042,created,,[5],20,19.0,b9a37717064b74b7,be62892f1322b82d,2,0
+bug:TI-6041::multi_edit::2042,bug:TI-6041,fold0,multi_edit,2042,created,,"[[""duplicate"", 12], [""swap"", 9], [""delete"", 18]]",20,20.0,b9a37717064b74b7,b70f6ebd67b6159b,1,0
+bug:TI-6132::swap_adjacent::2042,bug:TI-6132,fold0,swap_adjacent,2042,created,,"[8, 9]",13,13.0,9f12f67730130b13,565ba8f3c500e5f7,8,0
+bug:TI-6132::delete_internal::2042,bug:TI-6132,fold0,delete_internal,2042,created,,[10],13,12.0,9f12f67730130b13,1b81f41387392982,11,0
+bug:TI-6132::duplicate_block::2042,bug:TI-6132,fold0,duplicate_block,2042,created,,"[3, 4]",13,15.0,9f12f67730130b13,dfc607c28738df88,21,0
+bug:TI-6132::skip_status::2042,bug:TI-6132,fold0,skip_status,2042,created,,[11],13,12.0,9f12f67730130b13,a89afb2e6f0a66a8,2,0
+bug:TI-6132::multi_edit::2042,bug:TI-6132,fold0,multi_edit,2042,created,,"[[""swap"", 2], [""swap"", 1], [""swap"", 4]]",13,13.0,9f12f67730130b13,f1982f6a58cae8f8,1,0
+bug:TI-6150::swap_adjacent::2042,bug:TI-6150,fold0,swap_adjacent,2042,created,,"[11, 12]",18,18.0,829ed051d2714c39,900a0c16cd24ba62,15,0
+bug:TI-6150::delete_internal::2042,bug:TI-6150,fold0,delete_internal,2042,created,,[16],18,17.0,829ed051d2714c39,8562210eddeb4a60,16,0
+bug:TI-6150::duplicate_block::2042,bug:TI-6150,fold0,duplicate_block,2042,created,,[1],18,19.0,829ed051d2714c39,91f0907458465dbe,31,0
+bug:TI-6150::skip_status::2042,bug:TI-6150,fold0,skip_status,2042,created,,[5],18,17.0,829ed051d2714c39,7418af511fc52e25,4,0
+bug:TI-6150::multi_edit::2042,bug:TI-6150,fold0,multi_edit,2042,created,,"[[""swap"", 4], [""delete"", 12], [""swap"", 4]]",18,17.0,829ed051d2714c39,4843b520d8a663de,1,0
+bug:TI-6203::swap_adjacent::2042,bug:TI-6203,fold0,swap_adjacent,2042,created,,"[12, 13]",21,21.0,b2b48427e764a445,daf51efab16b121e,17,0
+bug:TI-6203::delete_internal::2042,bug:TI-6203,fold0,delete_internal,2042,created,,[19],21,20.0,b2b48427e764a445,4031b9d80bc95936,19,0
+bug:TI-6203::duplicate_block::2042,bug:TI-6203,fold0,duplicate_block,2042,created,,[8],21,22.0,b2b48427e764a445,cabc397e9e5bb4f7,37,0
+bug:TI-6203::skip_status::2042,bug:TI-6203,fold0,skip_status,2042,created,,[6],21,20.0,b2b48427e764a445,afd91bea1f83d945,2,0
+bug:TI-6203::multi_edit::2042,bug:TI-6203,fold0,multi_edit,2042,created,,"[[""duplicate"", 17], [""delete"", 16], [""swap"", 14]]",21,21.0,b2b48427e764a445,757cbd463eea10aa,1,0
+bug:TI-6209::swap_adjacent::2042,bug:TI-6209,fold0,swap_adjacent,2042,created,,"[16, 17]",27,27.0,cba66c8667b66995,70dcf7d94f3fec4a,22,0
+bug:TI-6209::delete_internal::2042,bug:TI-6209,fold0,delete_internal,2042,created,,[17],27,26.0,cba66c8667b66995,a0cb6a56e1d3b1af,25,0
+bug:TI-6209::duplicate_block::2042,bug:TI-6209,fold0,duplicate_block,2042,created,,"[14, 15]",27,29.0,cba66c8667b66995,0a9cb90856cc50c1,49,0
+bug:TI-6209::skip_status::2042,bug:TI-6209,fold0,skip_status,2042,created,,[24],27,26.0,cba66c8667b66995,62d1d9b4b7c4784f,3,0
+bug:TI-6209::multi_edit::2042,bug:TI-6209,fold0,multi_edit,2042,created,,"[[""delete"", 13], [""swap"", 18], [""swap"", 4]]",27,26.0,cba66c8667b66995,9dba0758f176022e,1,0
+bug:TI-4686::swap_adjacent::2142,bug:TI-4686,fold1,swap_adjacent,2142,created,,"[5, 6]",25,25.0,be0b97b3ba3fefa0,57b1efe2b3ee9b4e,20,0
+bug:TI-4686::delete_internal::2142,bug:TI-4686,fold1,delete_internal,2142,created,,[3],25,24.0,be0b97b3ba3fefa0,595b375fb035f1e0,23,0
+bug:TI-4686::duplicate_block::2142,bug:TI-4686,fold1,duplicate_block,2142,created,,"[16, 17]",25,27.0,be0b97b3ba3fefa0,cbd0e58b23666d0d,45,0
+bug:TI-4686::skip_status::2142,bug:TI-4686,fold1,skip_status,2142,created,,[16],25,24.0,be0b97b3ba3fefa0,34b9ebdcbe3aac53,9,0
+bug:TI-4686::multi_edit::2142,bug:TI-4686,fold1,multi_edit,2142,created,,"[[""duplicate"", 15], [""swap"", 1], [""swap"", 3]]",25,26.0,be0b97b3ba3fefa0,a78fb5484a23b8b5,1,0
+bug:TI-4740::swap_adjacent::2142,bug:TI-4740,fold1,swap_adjacent,2142,created,,"[6, 7]",25,25.0,cf601abb1fd0e704,5b4d44a67552fc11,22,0
+bug:TI-4740::delete_internal::2142,bug:TI-4740,fold1,delete_internal,2142,created,,[3],25,24.0,cf601abb1fd0e704,12ea9162f97d659c,23,0
+bug:TI-4740::duplicate_block::2142,bug:TI-4740,fold1,duplicate_block,2142,created,,[23],25,26.0,cf601abb1fd0e704,884917ac7cbc1b4c,45,0
+bug:TI-4740::skip_status::2142,bug:TI-4740,fold1,skip_status,2142,created,,[9],25,24.0,cf601abb1fd0e704,beac6bf92948f765,5,0
+bug:TI-4740::multi_edit::2142,bug:TI-4740,fold1,multi_edit,2142,created,,"[[""delete"", 16], [""swap"", 18], [""swap"", 4]]",25,24.0,cf601abb1fd0e704,070f7c00fc594c05,1,0
+bug:TI-4745::swap_adjacent::2142,bug:TI-4745,fold1,swap_adjacent,2142,created,,"[4, 5]",11,11.0,e4765dc730dd482f,47af724bf0c64af7,7,0
+bug:TI-4745::delete_internal::2142,bug:TI-4745,fold1,delete_internal,2142,created,,[1],11,10.0,e4765dc730dd482f,965bc8de64862804,9,0
+bug:TI-4745::duplicate_block::2142,bug:TI-4745,fold1,duplicate_block,2142,created,,[9],11,12.0,e4765dc730dd482f,3ddbc248444fd71c,17,0
+bug:TI-4745::skip_status::2142,bug:TI-4745,fold1,skip_status,2142,created,,[9],11,10.0,e4765dc730dd482f,1ef5886e3bd164af,2,0
+bug:TI-4745::multi_edit::2142,bug:TI-4745,fold1,multi_edit,2142,created,,"[[""swap"", 8], [""delete"", 4], [""swap"", 1]]",11,10.0,e4765dc730dd482f,67a6d7108ada82f8,1,0
+bug:TI-4872::swap_adjacent::2142,bug:TI-4872,fold1,swap_adjacent,2142,created,,"[5, 6]",8,8.0,2ae4414eda80fae2,17b639008dccd5c6,4,0
+bug:TI-4872::delete_internal::2142,bug:TI-4872,fold1,delete_internal,2142,created,,[5],8,7.0,2ae4414eda80fae2,d4980724863359ce,6,0
+bug:TI-4872::duplicate_block::2142,bug:TI-4872,fold1,duplicate_block,2142,created,,[3],8,9.0,2ae4414eda80fae2,eab28741a0520995,11,0
+bug:TI-4872::skip_status::2142,bug:TI-4872,fold1,skip_status,2142,created,,[5],8,7.0,2ae4414eda80fae2,d4980724863359ce,2,0
+bug:TI-4872::multi_edit::2142,bug:TI-4872,fold1,multi_edit,2142,created,,"[[""delete"", 3], [""duplicate"", 4], [""swap"", 1]]",8,8.0,2ae4414eda80fae2,8bfe2be922c1e98f,1,0
+bug:TI-4888::swap_adjacent::2142,bug:TI-4888,fold1,swap_adjacent,2142,created,,"[7, 8]",18,18.0,97f2c4d4c82e5184,b7992b9f5bad9d7c,14,0
+bug:TI-4888::delete_internal::2142,bug:TI-4888,fold1,delete_internal,2142,created,,[2],18,17.0,97f2c4d4c82e5184,f84e6215a8afaa15,16,0
+bug:TI-4888::duplicate_block::2142,bug:TI-4888,fold1,duplicate_block,2142,created,,"[9, 10]",18,20.0,97f2c4d4c82e5184,599fea1c678743a9,31,0
+bug:TI-4888::skip_status::2142,bug:TI-4888,fold1,skip_status,2142,created,,[16],18,17.0,97f2c4d4c82e5184,05e2c2a834e2706c,5,0
+bug:TI-4888::multi_edit::2142,bug:TI-4888,fold1,multi_edit,2142,created,,"[[""duplicate"", 10], [""delete"", 2], [""delete"", 15]]",18,17.0,97f2c4d4c82e5184,1b5d3e7062d34795,1,0
+bug:TI-4935::swap_adjacent::2142,bug:TI-4935,fold1,swap_adjacent,2142,created,,"[2, 3]",10,10.0,a26518f96756d2bc,f6a80cc36ef2dd9e,7,0
+bug:TI-4935::delete_internal::2142,bug:TI-4935,fold1,delete_internal,2142,created,,[6],10,9.0,a26518f96756d2bc,5cf5fc174c2485ec,8,0
+bug:TI-4935::duplicate_block::2142,bug:TI-4935,fold1,duplicate_block,2142,created,,[4],10,11.0,a26518f96756d2bc,0012efec630766a0,15,0
+bug:TI-4935::skip_status::2142,bug:TI-4935,fold1,skip_status,2142,created,,[8],10,9.0,a26518f96756d2bc,240c13ff05c0e462,3,0
+bug:TI-4935::multi_edit::2142,bug:TI-4935,fold1,multi_edit,2142,created,,"[[""swap"", 7], [""delete"", 4], [""swap"", 4]]",10,9.0,a26518f96756d2bc,3b4ed750bf8ad506,1,0
+bug:TI-5052::swap_adjacent::2142,bug:TI-5052,fold1,swap_adjacent,2142,created,,"[4, 5]",7,7.0,a2a90349e9024852,618fade546d05a17,4,0
+bug:TI-5052::delete_internal::2142,bug:TI-5052,fold1,delete_internal,2142,created,,[4],7,6.0,a2a90349e9024852,99a85ed20d5e7c42,5,0
+bug:TI-5052::duplicate_block::2142,bug:TI-5052,fold1,duplicate_block,2142,created,,"[3, 4]",7,9.0,a2a90349e9024852,2648940bee033da3,9,0
+bug:TI-5052::skip_status::2142,bug:TI-5052,fold1,skip_status,2142,skipped,no_internal_status,,7,,a2a90349e9024852,,0,0
+bug:TI-5052::multi_edit::2142,bug:TI-5052,fold1,multi_edit,2142,created,,"[[""duplicate"", 1], [""delete"", 2], [""delete"", 3]]",7,6.0,a2a90349e9024852,53a976f024f3269f,1,0
+bug:TI-5115::swap_adjacent::2142,bug:TI-5115,fold1,swap_adjacent,2142,created,,"[1, 2]",4,4.0,50b12c6f786d8a8c,a97bbdf29211b737,1,0
+bug:TI-5115::delete_internal::2142,bug:TI-5115,fold1,delete_internal,2142,created,,[2],4,3.0,50b12c6f786d8a8c,7b048793c1d0a79a,2,0
+bug:TI-5115::duplicate_block::2142,bug:TI-5115,fold1,duplicate_block,2142,created,,[2],4,5.0,50b12c6f786d8a8c,9d94fd4272741092,3,0
+bug:TI-5115::skip_status::2142,bug:TI-5115,fold1,skip_status,2142,skipped,no_internal_status,,4,,50b12c6f786d8a8c,,0,0
+bug:TI-5115::multi_edit::2142,bug:TI-5115,fold1,multi_edit,2142,created,,"[[""swap"", 1], [""swap"", 1], [""delete"", 1]]",4,3.0,50b12c6f786d8a8c,06f6ca0c2f8001d7,1,0
+bug:TI-5145::swap_adjacent::2142,bug:TI-5145,fold1,swap_adjacent,2142,created,,"[7, 8]",13,13.0,57be6e545060cadd,333f4c9525b43f88,10,0
+bug:TI-5145::delete_internal::2142,bug:TI-5145,fold1,delete_internal,2142,created,,[3],13,12.0,57be6e545060cadd,b5e75ca5f27d79a3,11,0
+bug:TI-5145::duplicate_block::2142,bug:TI-5145,fold1,duplicate_block,2142,created,,[6],13,14.0,57be6e545060cadd,6109a7d60869ad6a,21,0
+bug:TI-5145::skip_status::2142,bug:TI-5145,fold1,skip_status,2142,created,,[9],13,12.0,57be6e545060cadd,91be6c4f038d2d35,5,0
+bug:TI-5145::multi_edit::2142,bug:TI-5145,fold1,multi_edit,2142,created,,"[[""delete"", 1], [""delete"", 5], [""swap"", 1]]",13,11.0,57be6e545060cadd,3b0a159df19f4084,1,0
+bug:TI-5199::swap_adjacent::2142,bug:TI-5199,fold1,swap_adjacent,2142,created,,"[1, 2]",5,5.0,88ab4114fa9e1d9b,0afde1122686e69e,2,0
+bug:TI-5199::delete_internal::2142,bug:TI-5199,fold1,delete_internal,2142,created,,[3],5,4.0,88ab4114fa9e1d9b,acd531ebba3cf9e9,3,0
+bug:TI-5199::duplicate_block::2142,bug:TI-5199,fold1,duplicate_block,2142,created,,[3],5,6.0,88ab4114fa9e1d9b,37ebf3721ff5252d,5,0
+bug:TI-5199::skip_status::2142,bug:TI-5199,fold1,skip_status,2142,skipped,no_internal_status,,5,,88ab4114fa9e1d9b,,0,0
+bug:TI-5199::multi_edit::2142,bug:TI-5199,fold1,multi_edit,2142,created,,"[[""swap"", 1], [""swap"", 1], [""delete"", 1]]",5,4.0,88ab4114fa9e1d9b,6bde7d9fbf87b36f,1,0
+bug:TI-5244::swap_adjacent::2142,bug:TI-5244,fold1,swap_adjacent,2142,created,,"[4, 5]",23,23.0,1bae106d25b24fdd,8ae4698d78fff813,16,0
+bug:TI-5244::delete_internal::2142,bug:TI-5244,fold1,delete_internal,2142,created,,[10],23,22.0,1bae106d25b24fdd,93ddadadc47503a6,21,0
+bug:TI-5244::duplicate_block::2142,bug:TI-5244,fold1,duplicate_block,2142,created,,"[17, 18]",23,25.0,1bae106d25b24fdd,20832e064dbb132a,41,0
+bug:TI-5244::skip_status::2142,bug:TI-5244,fold1,skip_status,2142,created,,[20],23,22.0,1bae106d25b24fdd,e6ea0d90226ba99c,3,0
+bug:TI-5244::multi_edit::2142,bug:TI-5244,fold1,multi_edit,2142,created,,"[[""duplicate"", 20], [""swap"", 9], [""duplicate"", 13]]",23,25.0,1bae106d25b24fdd,3e83d842a8b41815,1,0
+bug:TI-5256::swap_adjacent::2142,bug:TI-5256,fold1,swap_adjacent,2142,created,,"[14, 15]",19,19.0,7d5bde6dd9814ebd,f454c894a2a206ba,12,0
+bug:TI-5256::delete_internal::2142,bug:TI-5256,fold1,delete_internal,2142,created,,[5],19,18.0,7d5bde6dd9814ebd,be1d933c8725827b,17,0
+bug:TI-5256::duplicate_block::2142,bug:TI-5256,fold1,duplicate_block,2142,created,,[2],19,20.0,7d5bde6dd9814ebd,b68c8c7f5f2d8b52,33,0
+bug:TI-5256::skip_status::2142,bug:TI-5256,fold1,skip_status,2142,created,,[3],19,18.0,7d5bde6dd9814ebd,28555cbe871e443c,5,0
+bug:TI-5256::multi_edit::2142,bug:TI-5256,fold1,multi_edit,2142,created,,"[[""duplicate"", 5], [""swap"", 1], [""delete"", 16]]",19,19.0,7d5bde6dd9814ebd,509fb21d431844be,1,0
+bug:TI-5260::swap_adjacent::2142,bug:TI-5260,fold1,swap_adjacent,2142,created,,"[11, 12]",14,14.0,280d0afd6edcdf5e,97091a4cdba11cca,11,0
+bug:TI-5260::delete_internal::2142,bug:TI-5260,fold1,delete_internal,2142,created,,[11],14,13.0,280d0afd6edcdf5e,c7da338015efd566,12,0
+bug:TI-5260::duplicate_block::2142,bug:TI-5260,fold1,duplicate_block,2142,created,,"[6, 7]",14,16.0,280d0afd6edcdf5e,ce54a3da45997168,23,0
+bug:TI-5260::skip_status::2142,bug:TI-5260,fold1,skip_status,2142,created,,[3],14,13.0,280d0afd6edcdf5e,20f49fe32022e600,2,0
+bug:TI-5260::multi_edit::2142,bug:TI-5260,fold1,multi_edit,2142,created,,"[[""delete"", 4], [""delete"", 1], [""swap"", 9]]",14,12.0,280d0afd6edcdf5e,b3cadf1fcabaf93e,1,0
+bug:TI-5261::swap_adjacent::2142,bug:TI-5261,fold1,swap_adjacent,2142,created,,"[8, 9]",12,12.0,364a0e5f160d8e59,d0f3eaf22f1123dc,9,0
+bug:TI-5261::delete_internal::2142,bug:TI-5261,fold1,delete_internal,2142,created,,[4],12,11.0,364a0e5f160d8e59,7d6aeeeb4c078d48,10,0
+bug:TI-5261::duplicate_block::2142,bug:TI-5261,fold1,duplicate_block,2142,created,,[5],12,13.0,364a0e5f160d8e59,cd53d96f73903e6d,19,0
+bug:TI-5261::skip_status::2142,bug:TI-5261,fold1,skip_status,2142,created,,[5],12,11.0,364a0e5f160d8e59,98197c659d195424,1,0
+bug:TI-5261::multi_edit::2142,bug:TI-5261,fold1,multi_edit,2142,created,,"[[""delete"", 2], [""duplicate"", 1], [""delete"", 8]]",12,11.0,364a0e5f160d8e59,3d8c6c886db4d285,1,0
+bug:TI-5266::swap_adjacent::2142,bug:TI-5266,fold1,swap_adjacent,2142,created,,"[5, 6]",25,25.0,da361572ccd37dab,ddbed8537d456f62,17,0
+bug:TI-5266::delete_internal::2142,bug:TI-5266,fold1,delete_internal,2142,created,,[20],25,24.0,da361572ccd37dab,4020fba4b7eb3080,23,0
+bug:TI-5266::duplicate_block::2142,bug:TI-5266,fold1,duplicate_block,2142,created,,"[20, 21]",25,27.0,da361572ccd37dab,ce15919e885a3e28,45,0
+bug:TI-5266::skip_status::2142,bug:TI-5266,fold1,skip_status,2142,created,,[16],25,24.0,da361572ccd37dab,e1297c19ceefe6f2,5,0
+bug:TI-5266::multi_edit::2142,bug:TI-5266,fold1,multi_edit,2142,created,,"[[""swap"", 18], [""swap"", 20], [""swap"", 8]]",25,25.0,da361572ccd37dab,8f14233a4acc8a1e,1,0
+bug:TI-5269::swap_adjacent::2142,bug:TI-5269,fold1,swap_adjacent,2142,created,,"[13, 14]",32,32.0,5ce54b165acdf89e,177618df93b6b2e1,26,0
+bug:TI-5269::delete_internal::2142,bug:TI-5269,fold1,delete_internal,2142,created,,[3],32,31.0,5ce54b165acdf89e,ac4e4594538061d4,30,0
+bug:TI-5269::duplicate_block::2142,bug:TI-5269,fold1,duplicate_block,2142,created,,"[23, 24]",32,34.0,5ce54b165acdf89e,5b4b4ee1283516b2,59,0
+bug:TI-5269::skip_status::2142,bug:TI-5269,fold1,skip_status,2142,created,,[29],32,31.0,5ce54b165acdf89e,38622d9de8ac8465,5,0
+bug:TI-5269::multi_edit::2142,bug:TI-5269,fold1,multi_edit,2142,created,,"[[""delete"", 15], [""delete"", 24], [""delete"", 21]]",32,29.0,5ce54b165acdf89e,4a434c1189af9420,1,0
+bug:TI-5331::swap_adjacent::2142,bug:TI-5331,fold1,swap_adjacent,2142,created,,"[7, 8]",25,25.0,efac5d467748e2a2,da97a829dddcdb5e,18,0
+bug:TI-5331::delete_internal::2142,bug:TI-5331,fold1,delete_internal,2142,created,,[5],25,24.0,efac5d467748e2a2,25045d5a162c6b65,23,0
+bug:TI-5331::duplicate_block::2142,bug:TI-5331,fold1,duplicate_block,2142,created,,[2],25,26.0,efac5d467748e2a2,4054d808959f0eec,45,0
+bug:TI-5331::skip_status::2142,bug:TI-5331,fold1,skip_status,2142,created,,[20],25,24.0,efac5d467748e2a2,b2577fe186478e1e,3,0
+bug:TI-5331::multi_edit::2142,bug:TI-5331,fold1,multi_edit,2142,created,,"[[""swap"", 20], [""delete"", 18], [""duplicate"", 6]]",25,25.0,efac5d467748e2a2,19d9aab284a58d53,1,0
+bug:TI-5382::swap_adjacent::2142,bug:TI-5382,fold1,swap_adjacent,2142,created,,"[5, 6]",12,12.0,c1f96a468fdf24b4,710cdfce7d3b8e4b,9,0
+bug:TI-5382::delete_internal::2142,bug:TI-5382,fold1,delete_internal,2142,created,,[8],12,11.0,c1f96a468fdf24b4,1b24a546c1125d70,10,0
+bug:TI-5382::duplicate_block::2142,bug:TI-5382,fold1,duplicate_block,2142,created,,"[3, 4]",12,14.0,c1f96a468fdf24b4,e4955aa18939b0fc,19,0
+bug:TI-5382::skip_status::2142,bug:TI-5382,fold1,skip_status,2142,created,,[10],12,11.0,c1f96a468fdf24b4,02def573f2414c6e,2,0
+bug:TI-5382::multi_edit::2142,bug:TI-5382,fold1,multi_edit,2142,created,,"[[""duplicate"", 6], [""duplicate"", 4], [""delete"", 8]]",12,13.0,c1f96a468fdf24b4,1f19d7973aed7efe,1,0
+bug:TI-5383::swap_adjacent::2142,bug:TI-5383,fold1,swap_adjacent,2142,created,,"[1, 2]",14,14.0,a56fe2bdd0acce60,e225a64a9c1ecab2,11,0
+bug:TI-5383::delete_internal::2142,bug:TI-5383,fold1,delete_internal,2142,created,,[5],14,13.0,a56fe2bdd0acce60,c720cecc4f436d3c,12,0
+bug:TI-5383::duplicate_block::2142,bug:TI-5383,fold1,duplicate_block,2142,created,,"[1, 2]",14,16.0,a56fe2bdd0acce60,208740069187eae3,23,0
+bug:TI-5383::skip_status::2142,bug:TI-5383,fold1,skip_status,2142,created,,[10],14,13.0,a56fe2bdd0acce60,6cf71958265738ed,2,0
+bug:TI-5383::multi_edit::2142,bug:TI-5383,fold1,multi_edit,2142,created,,"[[""delete"", 2], [""duplicate"", 2], [""duplicate"", 6]]",14,15.0,a56fe2bdd0acce60,c448b5e03119a466,1,0
+bug:TI-5410::swap_adjacent::2142,bug:TI-5410,fold1,swap_adjacent,2142,created,,"[4, 5]",12,12.0,55148b561cf3dc26,501d35bf1d837721,8,0
+bug:TI-5410::delete_internal::2142,bug:TI-5410,fold1,delete_internal,2142,created,,[2],12,11.0,55148b561cf3dc26,04996196bf856845,10,0
+bug:TI-5410::duplicate_block::2142,bug:TI-5410,fold1,duplicate_block,2142,created,,[5],12,13.0,55148b561cf3dc26,0ad22184ca5f0ee5,19,0
+bug:TI-5410::skip_status::2142,bug:TI-5410,fold1,skip_status,2142,created,,[10],12,11.0,55148b561cf3dc26,6a1837c1251ebaed,2,0
+bug:TI-5410::multi_edit::2142,bug:TI-5410,fold1,multi_edit,2142,created,,"[[""swap"", 1], [""delete"", 3], [""swap"", 8]]",12,11.0,55148b561cf3dc26,97c39581ae232e0f,1,0
+bug:TI-5444::swap_adjacent::2142,bug:TI-5444,fold1,swap_adjacent,2142,created,,"[5, 6]",19,19.0,63322be0f06fab6f,657d8ad827a512ab,14,0
+bug:TI-5444::delete_internal::2142,bug:TI-5444,fold1,delete_internal,2142,created,,[17],19,18.0,63322be0f06fab6f,8ff25b0b6fc68549,17,0
+bug:TI-5444::duplicate_block::2142,bug:TI-5444,fold1,duplicate_block,2142,created,,[13],19,20.0,63322be0f06fab6f,35030e7e7f6d5b05,33,0
+bug:TI-5444::skip_status::2142,bug:TI-5444,fold1,skip_status,2142,created,,[10],19,18.0,63322be0f06fab6f,4e276dd340542b5e,5,0
+bug:TI-5444::multi_edit::2142,bug:TI-5444,fold1,multi_edit,2142,created,,"[[""duplicate"", 12], [""swap"", 6], [""delete"", 12]]",19,19.0,63322be0f06fab6f,46489df88e68450e,1,0
+bug:TI-5564::swap_adjacent::2142,bug:TI-5564,fold1,swap_adjacent,2142,created,,"[19, 20]",37,37.0,e5d16ab24b73e9eb,c9e2e34724f7f177,30,0
+bug:TI-5564::delete_internal::2142,bug:TI-5564,fold1,delete_internal,2142,created,,[10],37,36.0,e5d16ab24b73e9eb,65d472df82ae5f1c,35,0
+bug:TI-5564::duplicate_block::2142,bug:TI-5564,fold1,duplicate_block,2142,created,,[11],37,38.0,e5d16ab24b73e9eb,887a4510efe8bb49,69,0
+bug:TI-5564::skip_status::2142,bug:TI-5564,fold1,skip_status,2142,created,,[30],37,36.0,e5d16ab24b73e9eb,105c39524bb00da0,11,0
+bug:TI-5564::multi_edit::2142,bug:TI-5564,fold1,multi_edit,2142,created,,"[[""duplicate"", 30], [""swap"", 15], [""duplicate"", 23]]",37,39.0,e5d16ab24b73e9eb,9e8fff01ba6192ce,1,0
+bug:TI-5569::swap_adjacent::2142,bug:TI-5569,fold1,swap_adjacent,2142,created,,"[15, 16]",19,19.0,fc32ec9d1e1f790c,406f1c27e8811943,13,0
+bug:TI-5569::delete_internal::2142,bug:TI-5569,fold1,delete_internal,2142,created,,[7],19,18.0,fc32ec9d1e1f790c,89ec94f9b60be473,17,0
+bug:TI-5569::duplicate_block::2142,bug:TI-5569,fold1,duplicate_block,2142,created,,"[4, 5]",19,21.0,fc32ec9d1e1f790c,0d3348de8bf42e39,33,0
+bug:TI-5569::skip_status::2142,bug:TI-5569,fold1,skip_status,2142,created,,[5],19,18.0,fc32ec9d1e1f790c,c236faaa28aee81a,2,0
+bug:TI-5569::multi_edit::2142,bug:TI-5569,fold1,multi_edit,2142,created,,"[[""duplicate"", 14], [""delete"", 10], [""swap"", 9]]",19,19.0,fc32ec9d1e1f790c,e6e0386712a08a44,1,0
+bug:TI-5583::swap_adjacent::2142,bug:TI-5583,fold1,swap_adjacent,2142,created,,"[10, 11]",22,22.0,5ab88b7b59bf6ff6,4512d6a02b484ab9,17,0
+bug:TI-5583::delete_internal::2142,bug:TI-5583,fold1,delete_internal,2142,created,,[9],22,21.0,5ab88b7b59bf6ff6,b98733ed1f12f75f,20,0
+bug:TI-5583::duplicate_block::2142,bug:TI-5583,fold1,duplicate_block,2142,created,,[18],22,23.0,5ab88b7b59bf6ff6,95aff4e077a55d48,39,0
+bug:TI-5583::skip_status::2142,bug:TI-5583,fold1,skip_status,2142,created,,[15],22,21.0,5ab88b7b59bf6ff6,0c73adb5e419f03e,5,0
+bug:TI-5583::multi_edit::2142,bug:TI-5583,fold1,multi_edit,2142,created,,"[[""swap"", 16], [""duplicate"", 6], [""swap"", 17]]",22,23.0,5ab88b7b59bf6ff6,97b86328164e007d,1,0
+bug:TI-5598::swap_adjacent::2142,bug:TI-5598,fold1,swap_adjacent,2142,created,,"[11, 12]",37,37.0,4f0c9fd7d910ff29,eeaed7b469264290,28,0
+bug:TI-5598::delete_internal::2142,bug:TI-5598,fold1,delete_internal,2142,created,,[31],37,36.0,4f0c9fd7d910ff29,db4933d94dd87bfa,35,0
+bug:TI-5598::duplicate_block::2142,bug:TI-5598,fold1,duplicate_block,2142,created,,[13],37,38.0,4f0c9fd7d910ff29,86889e67d9b0feb3,69,0
+bug:TI-5598::skip_status::2142,bug:TI-5598,fold1,skip_status,2142,created,,[13],37,36.0,4f0c9fd7d910ff29,8cc550a46fdf7dc3,4,0
+bug:TI-5598::multi_edit::2142,bug:TI-5598,fold1,multi_edit,2142,created,,"[[""swap"", 7], [""swap"", 28], [""delete"", 8]]",37,36.0,4f0c9fd7d910ff29,af76b99fc553b678,1,0
+bug:TI-5672::swap_adjacent::2142,bug:TI-5672,fold1,swap_adjacent,2142,created,,"[17, 18]",36,36.0,70fc124f5f9eb5f4,e8f12d4d264e9cc6,30,0
+bug:TI-5672::delete_internal::2142,bug:TI-5672,fold1,delete_internal,2142,created,,[22],36,35.0,70fc124f5f9eb5f4,701ea1bd8c10cfaa,34,0
+bug:TI-5672::duplicate_block::2142,bug:TI-5672,fold1,duplicate_block,2142,created,,"[32, 33]",36,38.0,70fc124f5f9eb5f4,4c8802e97a373e87,67,0
+bug:TI-5672::skip_status::2142,bug:TI-5672,fold1,skip_status,2142,created,,[11],36,35.0,70fc124f5f9eb5f4,e3a298a805e0118c,5,0
+bug:TI-5672::multi_edit::2142,bug:TI-5672,fold1,multi_edit,2142,created,,"[[""delete"", 24], [""swap"", 7], [""delete"", 22]]",36,34.0,70fc124f5f9eb5f4,44daf2dbcccb66e5,1,0
+bug:TI-5770::swap_adjacent::2142,bug:TI-5770,fold1,swap_adjacent,2142,created,,"[5, 6]",19,19.0,8ddf4f497ab23ef6,1ce1a69ae08bcaa3,15,0
+bug:TI-5770::delete_internal::2142,bug:TI-5770,fold1,delete_internal,2142,created,,[7],19,18.0,8ddf4f497ab23ef6,5bb42b442bd43b49,17,0
+bug:TI-5770::duplicate_block::2142,bug:TI-5770,fold1,duplicate_block,2142,created,,"[11, 12]",19,21.0,8ddf4f497ab23ef6,3c413a5f77119482,33,0
+bug:TI-5770::skip_status::2142,bug:TI-5770,fold1,skip_status,2142,created,,[17],19,18.0,8ddf4f497ab23ef6,76f8f519d31fb6f1,4,0
+bug:TI-5770::multi_edit::2142,bug:TI-5770,fold1,multi_edit,2142,created,,"[[""swap"", 4], [""delete"", 4], [""delete"", 2]]",19,17.0,8ddf4f497ab23ef6,bfc9e581a3fce70c,1,0
+bug:TI-5916::swap_adjacent::2142,bug:TI-5916,fold1,swap_adjacent,2142,created,,"[33, 34]",36,36.0,aca8f0e3ffae533b,4e106bfba0fd7dad,33,0
+bug:TI-5916::delete_internal::2142,bug:TI-5916,fold1,delete_internal,2142,created,,[33],36,35.0,aca8f0e3ffae533b,c0ad0907cc0c0743,34,0
+bug:TI-5916::duplicate_block::2142,bug:TI-5916,fold1,duplicate_block,2142,created,,"[21, 22]",36,38.0,aca8f0e3ffae533b,f09c81bc62d371fe,67,0
+bug:TI-5916::skip_status::2142,bug:TI-5916,fold1,skip_status,2142,created,,[29],36,35.0,aca8f0e3ffae533b,ca95d3ccc7768364,5,0
+bug:TI-5916::multi_edit::2142,bug:TI-5916,fold1,multi_edit,2142,created,,"[[""delete"", 23], [""delete"", 16], [""duplicate"", 22]]",36,35.0,aca8f0e3ffae533b,c11fa7eb12440ad6,1,0
+bug:TI-6043::swap_adjacent::2142,bug:TI-6043,fold1,swap_adjacent,2142,created,,"[5, 6]",15,15.0,c5ab8ffd7f86424d,37b70d8fbaec8188,11,0
+bug:TI-6043::delete_internal::2142,bug:TI-6043,fold1,delete_internal,2142,created,,[4],15,14.0,c5ab8ffd7f86424d,c0a95e7525675417,13,0
+bug:TI-6043::duplicate_block::2142,bug:TI-6043,fold1,duplicate_block,2142,created,,"[7, 8]",15,17.0,c5ab8ffd7f86424d,3a60a2b0cbe08b08,25,0
+bug:TI-6043::skip_status::2142,bug:TI-6043,fold1,skip_status,2142,created,,[8],15,14.0,c5ab8ffd7f86424d,3063d5749c6eb702,2,0
+bug:TI-6043::multi_edit::2142,bug:TI-6043,fold1,multi_edit,2142,created,,"[[""swap"", 11], [""delete"", 7], [""swap"", 5]]",15,14.0,c5ab8ffd7f86424d,d25966aaa28d866e,1,0
+bug:TI-6088::swap_adjacent::2142,bug:TI-6088,fold1,swap_adjacent,2142,created,,"[2, 3]",12,12.0,e888dd8a6a2e29a3,a8b0427af5756f63,7,0
+bug:TI-6088::delete_internal::2142,bug:TI-6088,fold1,delete_internal,2142,created,,[9],12,11.0,e888dd8a6a2e29a3,d3057ae739cfa610,10,0
+bug:TI-6088::duplicate_block::2142,bug:TI-6088,fold1,duplicate_block,2142,created,,"[6, 7]",12,14.0,e888dd8a6a2e29a3,f6c1e39872b09ba9,19,0
+bug:TI-6088::skip_status::2142,bug:TI-6088,fold1,skip_status,2142,created,,[5],12,11.0,e888dd8a6a2e29a3,017e208704276b91,2,0
+bug:TI-6088::multi_edit::2142,bug:TI-6088,fold1,multi_edit,2142,created,,"[[""delete"", 7], [""duplicate"", 9], [""delete"", 8]]",12,11.0,e888dd8a6a2e29a3,ab40b931cc391efa,1,0
+bug:TI-6152::swap_adjacent::2142,bug:TI-6152,fold1,swap_adjacent,2142,created,,"[8, 9]",14,14.0,e10358270b6c9c4e,51268f86d16a89ff,11,0
+bug:TI-6152::delete_internal::2142,bug:TI-6152,fold1,delete_internal,2142,created,,[1],14,13.0,e10358270b6c9c4e,e4daefdefe460152,12,0
+bug:TI-6152::duplicate_block::2142,bug:TI-6152,fold1,duplicate_block,2142,created,,[7],14,15.0,e10358270b6c9c4e,b71e7c1bae7ad359,23,0
+bug:TI-6152::skip_status::2142,bug:TI-6152,fold1,skip_status,2142,created,,[12],14,13.0,e10358270b6c9c4e,b45d6bc007a8d87c,3,0
+bug:TI-6152::multi_edit::2142,bug:TI-6152,fold1,multi_edit,2142,created,,"[[""swap"", 3], [""swap"", 4], [""delete"", 3]]",14,13.0,e10358270b6c9c4e,14a6ae3c22cbdae6,1,0
+bug:TI-6297::swap_adjacent::2142,bug:TI-6297,fold1,swap_adjacent,2142,created,,"[2, 3]",7,7.0,405c5d2b173b0daa,fc74a4b966ea7da6,4,0
+bug:TI-6297::delete_internal::2142,bug:TI-6297,fold1,delete_internal,2142,created,,[5],7,6.0,405c5d2b173b0daa,8096d3779f90fb89,5,0
+bug:TI-6297::duplicate_block::2142,bug:TI-6297,fold1,duplicate_block,2142,created,,[4],7,8.0,405c5d2b173b0daa,2f737fab8625380b,9,0
+bug:TI-6297::skip_status::2142,bug:TI-6297,fold1,skip_status,2142,skipped,no_internal_status,,7,,405c5d2b173b0daa,,0,0
+bug:TI-6297::multi_edit::2142,bug:TI-6297,fold1,multi_edit,2142,created,,"[[""duplicate"", 1], [""delete"", 6], [""delete"", 4]]",7,6.0,405c5d2b173b0daa,aee677d27518abeb,1,0
+bug:TI-4649::swap_adjacent::2242,bug:TI-4649,fold2,swap_adjacent,2242,created,,"[3, 4]",6,6.0,ebe84e4f8019ded3,215ee5cfb2061f04,3,0
+bug:TI-4649::delete_internal::2242,bug:TI-4649,fold2,delete_internal,2242,created,,[1],6,5.0,ebe84e4f8019ded3,06320765a109d67e,4,0
+bug:TI-4649::duplicate_block::2242,bug:TI-4649,fold2,duplicate_block,2242,created,,"[3, 4]",6,8.0,ebe84e4f8019ded3,f410c0e3a341a5e1,7,0
+bug:TI-4649::skip_status::2242,bug:TI-4649,fold2,skip_status,2242,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-4649::multi_edit::2242,bug:TI-4649,fold2,multi_edit,2242,created,,"[[""duplicate"", 3], [""duplicate"", 3], [""swap"", 5]]",6,8.0,ebe84e4f8019ded3,818e209d4a2acb46,1,0
+bug:TI-4682::swap_adjacent::2242,bug:TI-4682,fold2,swap_adjacent,2242,created,,"[23, 24]",26,26.0,fa5127c53c1f4932,84c0bc772e5b3c62,14,0
+bug:TI-4682::delete_internal::2242,bug:TI-4682,fold2,delete_internal,2242,created,,[4],26,25.0,fa5127c53c1f4932,bdaa7927704d992f,24,0
+bug:TI-4682::duplicate_block::2242,bug:TI-4682,fold2,duplicate_block,2242,created,,"[8, 9]",26,28.0,fa5127c53c1f4932,95fb5ded46c23840,47,0
+bug:TI-4682::skip_status::2242,bug:TI-4682,fold2,skip_status,2242,created,,[21],26,25.0,fa5127c53c1f4932,08cd7e2c0ca18bf7,5,0
+bug:TI-4682::multi_edit::2242,bug:TI-4682,fold2,multi_edit,2242,created,,"[[""duplicate"", 15], [""duplicate"", 15], [""duplicate"", 12]]",26,29.0,fa5127c53c1f4932,99cc2f454c4ffff9,1,0
+bug:TI-4751::swap_adjacent::2242,bug:TI-4751,fold2,swap_adjacent,2242,created,,"[25, 26]",37,37.0,16d3c8c1a76a4528,39937650b1f081ea,24,0
+bug:TI-4751::delete_internal::2242,bug:TI-4751,fold2,delete_internal,2242,created,,[28],37,36.0,16d3c8c1a76a4528,f6638556597523d6,35,0
+bug:TI-4751::duplicate_block::2242,bug:TI-4751,fold2,duplicate_block,2242,created,,[22],37,38.0,16d3c8c1a76a4528,13355e136ed97915,69,0
+bug:TI-4751::skip_status::2242,bug:TI-4751,fold2,skip_status,2242,created,,[11],37,36.0,16d3c8c1a76a4528,25e22c2c24be4528,7,0
+bug:TI-4751::multi_edit::2242,bug:TI-4751,fold2,multi_edit,2242,created,,"[[""swap"", 15], [""duplicate"", 28], [""delete"", 29]]",37,37.0,16d3c8c1a76a4528,806931be801829c6,1,0
+bug:TI-4759::swap_adjacent::2242,bug:TI-4759,fold2,swap_adjacent,2242,created,,"[13, 14]",16,16.0,3e7cb1ecf12dbfe9,abf3695fbfa372ba,12,0
+bug:TI-4759::delete_internal::2242,bug:TI-4759,fold2,delete_internal,2242,created,,[3],16,15.0,3e7cb1ecf12dbfe9,582ce9f33cedb000,14,0
+bug:TI-4759::duplicate_block::2242,bug:TI-4759,fold2,duplicate_block,2242,created,,[1],16,17.0,3e7cb1ecf12dbfe9,960683f6ee9a4863,27,0
+bug:TI-4759::skip_status::2242,bug:TI-4759,fold2,skip_status,2242,created,,[9],16,15.0,3e7cb1ecf12dbfe9,c63a3cf40db947dc,3,0
+bug:TI-4759::multi_edit::2242,bug:TI-4759,fold2,multi_edit,2242,created,,"[[""duplicate"", 11], [""delete"", 6], [""swap"", 3]]",16,16.0,3e7cb1ecf12dbfe9,7c3d8abf96866882,1,0
+bug:TI-4818::swap_adjacent::2242,bug:TI-4818,fold2,swap_adjacent,2242,created,,"[6, 7]",11,11.0,7e1470fb6a90d19c,e114b8844f11b8a0,8,0
+bug:TI-4818::delete_internal::2242,bug:TI-4818,fold2,delete_internal,2242,created,,[6],11,10.0,7e1470fb6a90d19c,eba431ab05c0cb60,9,0
+bug:TI-4818::duplicate_block::2242,bug:TI-4818,fold2,duplicate_block,2242,created,,[2],11,12.0,7e1470fb6a90d19c,2eb3d69da489f35a,17,0
+bug:TI-4818::skip_status::2242,bug:TI-4818,fold2,skip_status,2242,created,,[6],11,10.0,7e1470fb6a90d19c,eba431ab05c0cb60,2,0
+bug:TI-4818::multi_edit::2242,bug:TI-4818,fold2,multi_edit,2242,created,,"[[""swap"", 1], [""duplicate"", 6], [""duplicate"", 5]]",11,13.0,7e1470fb6a90d19c,629485e7769450bc,1,0
+bug:TI-4849::swap_adjacent::2242,bug:TI-4849,fold2,swap_adjacent,2242,created,,"[1, 2]",5,5.0,516fcecbc5fbf8fd,90446df65c246d1b,2,0
+bug:TI-4849::delete_internal::2242,bug:TI-4849,fold2,delete_internal,2242,created,,[3],5,4.0,516fcecbc5fbf8fd,acd531ebba3cf9e9,3,0
+bug:TI-4849::duplicate_block::2242,bug:TI-4849,fold2,duplicate_block,2242,created,,[1],5,6.0,516fcecbc5fbf8fd,d67cb505e8d261a2,5,0
+bug:TI-4849::skip_status::2242,bug:TI-4849,fold2,skip_status,2242,skipped,no_internal_status,,5,,516fcecbc5fbf8fd,,0,0
+bug:TI-4849::multi_edit::2242,bug:TI-4849,fold2,multi_edit,2242,created,,"[[""duplicate"", 3], [""swap"", 2], [""delete"", 4]]",5,5.0,516fcecbc5fbf8fd,3127bd99054e2cb4,2,1
+bug:TI-4876::swap_adjacent::2242,bug:TI-4876,fold2,swap_adjacent,2242,created,,"[12, 13]",23,23.0,6565b2d90ca02ea5,3e5b640d6dd22796,17,0
+bug:TI-4876::delete_internal::2242,bug:TI-4876,fold2,delete_internal,2242,created,,[4],23,22.0,6565b2d90ca02ea5,93f3832de6c568e6,21,0
+bug:TI-4876::duplicate_block::2242,bug:TI-4876,fold2,duplicate_block,2242,created,,"[3, 4]",23,25.0,6565b2d90ca02ea5,4db4f9ea6c25696f,41,0
+bug:TI-4876::skip_status::2242,bug:TI-4876,fold2,skip_status,2242,created,,[8],23,22.0,6565b2d90ca02ea5,1ef9f2a8997d1f62,3,0
+bug:TI-4876::multi_edit::2242,bug:TI-4876,fold2,multi_edit,2242,created,,"[[""delete"", 1], [""delete"", 5], [""duplicate"", 19]]",23,22.0,6565b2d90ca02ea5,2b3943c91c11cfb0,1,0
+bug:TI-4887::swap_adjacent::2242,bug:TI-4887,fold2,swap_adjacent,2242,created,,"[2, 3]",6,6.0,ebe84e4f8019ded3,03127c0884dbd6ad,3,0
+bug:TI-4887::delete_internal::2242,bug:TI-4887,fold2,delete_internal,2242,created,,[1],6,5.0,ebe84e4f8019ded3,06320765a109d67e,4,0
+bug:TI-4887::duplicate_block::2242,bug:TI-4887,fold2,duplicate_block,2242,created,,"[1, 2]",6,8.0,ebe84e4f8019ded3,cfdb3f5a86a6def2,7,0
+bug:TI-4887::skip_status::2242,bug:TI-4887,fold2,skip_status,2242,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-4887::multi_edit::2242,bug:TI-4887,fold2,multi_edit,2242,created,,"[[""swap"", 3], [""delete"", 1], [""duplicate"", 1]]",6,6.0,ebe84e4f8019ded3,a6a0d18d5a168e7d,1,0
+bug:TI-4893::swap_adjacent::2242,bug:TI-4893,fold2,swap_adjacent,2242,created,,"[27, 28]",37,37.0,96330626995974ab,ddbda5208a52baaf,25,0
+bug:TI-4893::delete_internal::2242,bug:TI-4893,fold2,delete_internal,2242,created,,[7],37,36.0,96330626995974ab,de5c86d78345a55b,35,0
+bug:TI-4893::duplicate_block::2242,bug:TI-4893,fold2,duplicate_block,2242,created,,"[22, 23]",37,39.0,96330626995974ab,d1316ff22ad4298b,69,0
+bug:TI-4893::skip_status::2242,bug:TI-4893,fold2,skip_status,2242,created,,[29],37,36.0,96330626995974ab,f68c7d7650a60cd6,5,0
+bug:TI-4893::multi_edit::2242,bug:TI-4893,fold2,multi_edit,2242,created,,"[[""swap"", 17], [""swap"", 12], [""duplicate"", 21]]",37,38.0,96330626995974ab,88f2caa0ccb5cf64,1,0
+bug:TI-4966::swap_adjacent::2242,bug:TI-4966,fold2,swap_adjacent,2242,created,,"[6, 7]",9,9.0,131e1fc8eda82646,2b2909fd20335b1f,6,0
+bug:TI-4966::delete_internal::2242,bug:TI-4966,fold2,delete_internal,2242,created,,[3],9,8.0,131e1fc8eda82646,d7bb5609ba2f4501,7,0
+bug:TI-4966::duplicate_block::2242,bug:TI-4966,fold2,duplicate_block,2242,created,,[6],9,10.0,131e1fc8eda82646,99ab2643c0a80b9e,13,0
+bug:TI-4966::skip_status::2242,bug:TI-4966,fold2,skip_status,2242,created,,[6],9,8.0,131e1fc8eda82646,14a7bc676ef2c472,1,0
+bug:TI-4966::multi_edit::2242,bug:TI-4966,fold2,multi_edit,2242,created,,"[[""swap"", 5], [""delete"", 6], [""duplicate"", 3]]",9,9.0,131e1fc8eda82646,d59149fece6d833f,1,0
+bug:TI-5023::swap_adjacent::2242,bug:TI-5023,fold2,swap_adjacent,2242,created,,"[1, 2]",17,17.0,d4f253172df086b6,84008ace75d7ceab,10,0
+bug:TI-5023::delete_internal::2242,bug:TI-5023,fold2,delete_internal,2242,created,,[2],17,16.0,d4f253172df086b6,286fa59f9b43e989,15,0
+bug:TI-5023::duplicate_block::2242,bug:TI-5023,fold2,duplicate_block,2242,created,,[11],17,18.0,d4f253172df086b6,d223ac3491013c1c,29,0
+bug:TI-5023::skip_status::2242,bug:TI-5023,fold2,skip_status,2242,created,,[7],17,16.0,d4f253172df086b6,59895c930c1b7998,2,0
+bug:TI-5023::multi_edit::2242,bug:TI-5023,fold2,multi_edit,2242,created,,"[[""duplicate"", 9], [""duplicate"", 6], [""swap"", 1]]",17,19.0,d4f253172df086b6,9aeafcd79b154dc4,1,0
+bug:TI-5066::swap_adjacent::2242,bug:TI-5066,fold2,swap_adjacent,2242,created,,"[13, 14]",21,21.0,6bbab05fa7d7d3f2,7131f0aa160b0f2d,17,0
+bug:TI-5066::delete_internal::2242,bug:TI-5066,fold2,delete_internal,2242,created,,[7],21,20.0,6bbab05fa7d7d3f2,d17d7fb3c8e5665b,19,0
+bug:TI-5066::duplicate_block::2242,bug:TI-5066,fold2,duplicate_block,2242,created,,"[17, 18]",21,23.0,6bbab05fa7d7d3f2,9055f63c6a835c96,37,0
+bug:TI-5066::skip_status::2242,bug:TI-5066,fold2,skip_status,2242,created,,[10],21,20.0,6bbab05fa7d7d3f2,2da09c29eb3c686e,5,0
+bug:TI-5066::multi_edit::2242,bug:TI-5066,fold2,multi_edit,2242,created,,"[[""delete"", 17], [""swap"", 10], [""swap"", 13]]",21,20.0,6bbab05fa7d7d3f2,a64c7892551c8c08,1,0
+bug:TI-5117::swap_adjacent::2242,bug:TI-5117,fold2,swap_adjacent,2242,created,,"[2, 3]",17,17.0,474f970ee2a487e9,21a1042af355dcee,11,0
+bug:TI-5117::delete_internal::2242,bug:TI-5117,fold2,delete_internal,2242,created,,[13],17,16.0,474f970ee2a487e9,45443cf3f7e37ee8,15,0
+bug:TI-5117::duplicate_block::2242,bug:TI-5117,fold2,duplicate_block,2242,created,,"[12, 13]",17,19.0,474f970ee2a487e9,b7ea9b1f7e55ecfe,29,0
+bug:TI-5117::skip_status::2242,bug:TI-5117,fold2,skip_status,2242,created,,[5],17,16.0,474f970ee2a487e9,6955c9a64448dcbe,2,0
+bug:TI-5117::multi_edit::2242,bug:TI-5117,fold2,multi_edit,2242,created,,"[[""swap"", 5], [""delete"", 4], [""duplicate"", 14]]",17,17.0,474f970ee2a487e9,8259b58e23d56d5c,1,0
+bug:TI-5139::swap_adjacent::2242,bug:TI-5139,fold2,swap_adjacent,2242,created,,"[20, 21]",29,29.0,6ecafd3890c04b54,8016056beb4f3209,22,0
+bug:TI-5139::delete_internal::2242,bug:TI-5139,fold2,delete_internal,2242,created,,[16],29,28.0,6ecafd3890c04b54,5dc2deb134eb34f2,27,0
+bug:TI-5139::duplicate_block::2242,bug:TI-5139,fold2,duplicate_block,2242,created,,"[13, 14]",29,31.0,6ecafd3890c04b54,01aae19f6a8cf361,53,0
+bug:TI-5139::skip_status::2242,bug:TI-5139,fold2,skip_status,2242,created,,[27],29,28.0,6ecafd3890c04b54,5ce8e20160599f7a,7,0
+bug:TI-5139::multi_edit::2242,bug:TI-5139,fold2,multi_edit,2242,created,,"[[""swap"", 16], [""delete"", 20], [""swap"", 20]]",29,28.0,6ecafd3890c04b54,5b1f463190ab50fc,1,0
+bug:TI-5176::swap_adjacent::2242,bug:TI-5176,fold2,swap_adjacent,2242,created,,"[1, 2]",27,27.0,0052b9308538e975,877e511624dfc029,13,0
+bug:TI-5176::delete_internal::2242,bug:TI-5176,fold2,delete_internal,2242,created,,[21],27,26.0,0052b9308538e975,e8959a69cdad0503,25,0
+bug:TI-5176::duplicate_block::2242,bug:TI-5176,fold2,duplicate_block,2242,created,,[24],27,28.0,0052b9308538e975,66ba5776745ef1b9,49,0
+bug:TI-5176::skip_status::2242,bug:TI-5176,fold2,skip_status,2242,created,,[22],27,26.0,0052b9308538e975,dff93fd36452de6b,3,0
+bug:TI-5176::multi_edit::2242,bug:TI-5176,fold2,multi_edit,2242,created,,"[[""swap"", 5], [""duplicate"", 3], [""swap"", 18]]",27,28.0,0052b9308538e975,d7e74ec3d761f67e,1,0
+bug:TI-5201::swap_adjacent::2242,bug:TI-5201,fold2,swap_adjacent,2242,created,,"[1, 2]",15,15.0,713de5cf582431ea,e56219cd14c338a1,12,0
+bug:TI-5201::delete_internal::2242,bug:TI-5201,fold2,delete_internal,2242,created,,[12],15,14.0,713de5cf582431ea,db13e2b99fa51bb5,13,0
+bug:TI-5201::duplicate_block::2242,bug:TI-5201,fold2,duplicate_block,2242,created,,[1],15,16.0,713de5cf582431ea,27a51a4d1d3f588b,25,0
+bug:TI-5201::skip_status::2242,bug:TI-5201,fold2,skip_status,2242,created,,[6],15,14.0,713de5cf582431ea,fdfe32b09827857a,2,0
+bug:TI-5201::multi_edit::2242,bug:TI-5201,fold2,multi_edit,2242,created,,"[[""duplicate"", 11], [""duplicate"", 3], [""swap"", 7]]",15,17.0,713de5cf582431ea,82ad907e14cdb02d,1,0
+bug:TI-5311::swap_adjacent::2242,bug:TI-5311,fold2,swap_adjacent,2242,created,,"[4, 5]",8,8.0,ceb545c9f4d5c8a8,41b483efcad114e7,5,0
+bug:TI-5311::delete_internal::2242,bug:TI-5311,fold2,delete_internal,2242,created,,[6],8,7.0,ceb545c9f4d5c8a8,dfcd4c0a549be3e7,6,0
+bug:TI-5311::duplicate_block::2242,bug:TI-5311,fold2,duplicate_block,2242,created,,[2],8,9.0,ceb545c9f4d5c8a8,3a0d0b36f8ec5b1a,11,0
+bug:TI-5311::skip_status::2242,bug:TI-5311,fold2,skip_status,2242,skipped,no_internal_status,,8,,ceb545c9f4d5c8a8,,0,0
+bug:TI-5311::multi_edit::2242,bug:TI-5311,fold2,multi_edit,2242,created,,"[[""delete"", 5], [""delete"", 2], [""duplicate"", 3]]",8,7.0,ceb545c9f4d5c8a8,4bd4c982df4c076e,1,0
+bug:TI-5346::swap_adjacent::2242,bug:TI-5346,fold2,swap_adjacent,2242,created,,"[3, 4]",19,19.0,e7d5251ad5a76c49,d0b4415ff5f54be3,16,0
+bug:TI-5346::delete_internal::2242,bug:TI-5346,fold2,delete_internal,2242,created,,[9],19,18.0,e7d5251ad5a76c49,94add821710df711,17,0
+bug:TI-5346::duplicate_block::2242,bug:TI-5346,fold2,duplicate_block,2242,created,,"[1, 2]",19,21.0,e7d5251ad5a76c49,bf1b159e996711c7,33,0
+bug:TI-5346::skip_status::2242,bug:TI-5346,fold2,skip_status,2242,created,,[12],19,18.0,e7d5251ad5a76c49,856c83195d30e7ee,5,0
+bug:TI-5346::multi_edit::2242,bug:TI-5346,fold2,multi_edit,2242,created,,"[[""swap"", 8], [""duplicate"", 7], [""duplicate"", 13]]",19,21.0,e7d5251ad5a76c49,2a06afa43f8bf7f7,1,0
+bug:TI-5420::swap_adjacent::2242,bug:TI-5420,fold2,swap_adjacent,2242,created,,"[11, 12]",24,24.0,f608d2f97be7b5f2,813991806e2ed8e5,20,0
+bug:TI-5420::delete_internal::2242,bug:TI-5420,fold2,delete_internal,2242,created,,[11],24,23.0,f608d2f97be7b5f2,f79bb6436aa7220e,22,0
+bug:TI-5420::duplicate_block::2242,bug:TI-5420,fold2,duplicate_block,2242,created,,"[1, 2]",24,26.0,f608d2f97be7b5f2,9d337d4b0257ad68,43,0
+bug:TI-5420::skip_status::2242,bug:TI-5420,fold2,skip_status,2242,created,,[11],24,23.0,f608d2f97be7b5f2,f79bb6436aa7220e,3,0
+bug:TI-5420::multi_edit::2242,bug:TI-5420,fold2,multi_edit,2242,created,,"[[""swap"", 7], [""delete"", 14], [""duplicate"", 14]]",24,24.0,f608d2f97be7b5f2,9d10d54fae2ce2c5,1,0
+bug:TI-5426::swap_adjacent::2242,bug:TI-5426,fold2,swap_adjacent,2242,created,,"[29, 30]",39,39.0,8f60cc7567241bc4,1dfbc02feb2a3b30,28,0
+bug:TI-5426::delete_internal::2242,bug:TI-5426,fold2,delete_internal,2242,created,,[22],39,38.0,8f60cc7567241bc4,bf91d891f44a0594,37,0
+bug:TI-5426::duplicate_block::2242,bug:TI-5426,fold2,duplicate_block,2242,created,,"[25, 26]",39,41.0,8f60cc7567241bc4,f3895f60359d00f4,73,0
+bug:TI-5426::skip_status::2242,bug:TI-5426,fold2,skip_status,2242,created,,[29],39,38.0,8f60cc7567241bc4,96464938cd4976a7,6,0
+bug:TI-5426::multi_edit::2242,bug:TI-5426,fold2,multi_edit,2242,created,,"[[""delete"", 19], [""swap"", 9], [""delete"", 6]]",39,37.0,8f60cc7567241bc4,61fea448d10f83b5,1,0
+bug:TI-5469::swap_adjacent::2242,bug:TI-5469,fold2,swap_adjacent,2242,created,,"[14, 15]",28,28.0,b70a37ab44c75fc8,5a4165e5331e855c,22,0
+bug:TI-5469::delete_internal::2242,bug:TI-5469,fold2,delete_internal,2242,created,,[26],28,27.0,b70a37ab44c75fc8,ae279530462f3633,26,0
+bug:TI-5469::duplicate_block::2242,bug:TI-5469,fold2,duplicate_block,2242,created,,[11],28,29.0,b70a37ab44c75fc8,2d17374870a7f786,51,0
+bug:TI-5469::skip_status::2242,bug:TI-5469,fold2,skip_status,2242,created,,[8],28,27.0,b70a37ab44c75fc8,02874c6e4e7b9159,5,0
+bug:TI-5469::multi_edit::2242,bug:TI-5469,fold2,multi_edit,2242,created,,"[[""delete"", 6], [""duplicate"", 1], [""swap"", 7]]",28,28.0,b70a37ab44c75fc8,71862d6a1cdd79c1,1,0
+bug:TI-5484::swap_adjacent::2242,bug:TI-5484,fold2,swap_adjacent,2242,created,,"[12, 13]",21,21.0,613c8892ee9a046f,5eb109d4d239b129,17,0
+bug:TI-5484::delete_internal::2242,bug:TI-5484,fold2,delete_internal,2242,created,,[6],21,20.0,613c8892ee9a046f,90957c5b2a14f6e1,19,0
+bug:TI-5484::duplicate_block::2242,bug:TI-5484,fold2,duplicate_block,2242,created,,[6],21,22.0,613c8892ee9a046f,429f1562afdc2d6a,37,0
+bug:TI-5484::skip_status::2242,bug:TI-5484,fold2,skip_status,2242,created,,[18],21,20.0,613c8892ee9a046f,f822028018a4460d,3,0
+bug:TI-5484::multi_edit::2242,bug:TI-5484,fold2,multi_edit,2242,created,,"[[""delete"", 6], [""duplicate"", 11], [""swap"", 9]]",21,21.0,613c8892ee9a046f,048df8d516519fe3,1,0
+bug:TI-5488::swap_adjacent::2242,bug:TI-5488,fold2,swap_adjacent,2242,created,,"[8, 9]",16,16.0,23f452ec9dc42b76,4f236c6f4d82df5f,12,0
+bug:TI-5488::delete_internal::2242,bug:TI-5488,fold2,delete_internal,2242,created,,[10],16,15.0,23f452ec9dc42b76,e27dd7e756126cd4,14,0
+bug:TI-5488::duplicate_block::2242,bug:TI-5488,fold2,duplicate_block,2242,created,,"[3, 4]",16,18.0,23f452ec9dc42b76,53c7e617de4a2d81,27,0
+bug:TI-5488::skip_status::2242,bug:TI-5488,fold2,skip_status,2242,created,,[12],16,15.0,23f452ec9dc42b76,07abc9be85ff94ee,5,0
+bug:TI-5488::multi_edit::2242,bug:TI-5488,fold2,multi_edit,2242,created,,"[[""duplicate"", 4], [""duplicate"", 4], [""duplicate"", 9]]",16,19.0,23f452ec9dc42b76,e7e443e07bc1f135,1,0
+bug:TI-5608::swap_adjacent::2242,bug:TI-5608,fold2,swap_adjacent,2242,created,,"[20, 21]",29,29.0,8ad9762e0851bd40,ed33d964ee7ede34,21,0
+bug:TI-5608::delete_internal::2242,bug:TI-5608,fold2,delete_internal,2242,created,,[25],29,28.0,8ad9762e0851bd40,4758162d030bcce9,27,0
+bug:TI-5608::duplicate_block::2242,bug:TI-5608,fold2,duplicate_block,2242,created,,[24],29,30.0,8ad9762e0851bd40,2030503538e1e145,53,0
+bug:TI-5608::skip_status::2242,bug:TI-5608,fold2,skip_status,2242,created,,[16],29,28.0,8ad9762e0851bd40,982ceeeaaf7a57c9,3,0
+bug:TI-5608::multi_edit::2242,bug:TI-5608,fold2,multi_edit,2242,created,,"[[""duplicate"", 26], [""swap"", 15], [""swap"", 5]]",29,30.0,8ad9762e0851bd40,0f0a86d8faeebc59,1,0
+bug:TI-5636::swap_adjacent::2242,bug:TI-5636,fold2,swap_adjacent,2242,created,,"[10, 11]",13,13.0,32c6bfb292213d1d,f9ffa6bd65e885d8,8,0
+bug:TI-5636::delete_internal::2242,bug:TI-5636,fold2,delete_internal,2242,created,,[2],13,12.0,32c6bfb292213d1d,8d4a54d96d4ca4fc,11,0
+bug:TI-5636::duplicate_block::2242,bug:TI-5636,fold2,duplicate_block,2242,created,,"[1, 2]",13,15.0,32c6bfb292213d1d,4050e7e6157efeae,21,0
+bug:TI-5636::skip_status::2242,bug:TI-5636,fold2,skip_status,2242,created,,[11],13,12.0,32c6bfb292213d1d,7ddea80d51da9879,2,0
+bug:TI-5636::multi_edit::2242,bug:TI-5636,fold2,multi_edit,2242,created,,"[[""duplicate"", 9], [""swap"", 1], [""duplicate"", 1]]",13,15.0,32c6bfb292213d1d,ce187062bdb5bc56,1,0
+bug:TI-5637::swap_adjacent::2242,bug:TI-5637,fold2,swap_adjacent,2242,created,,"[10, 11]",34,34.0,2a06167833dc65ca,7b4536a99c73e191,21,0
+bug:TI-5637::delete_internal::2242,bug:TI-5637,fold2,delete_internal,2242,created,,[4],34,33.0,2a06167833dc65ca,eed1f6efb3c46b76,32,0
+bug:TI-5637::duplicate_block::2242,bug:TI-5637,fold2,duplicate_block,2242,created,,"[3, 4]",34,36.0,2a06167833dc65ca,0096ea3fa549505d,63,0
+bug:TI-5637::skip_status::2242,bug:TI-5637,fold2,skip_status,2242,created,,[19],34,33.0,2a06167833dc65ca,5d903eeba5e997a5,5,0
+bug:TI-5637::multi_edit::2242,bug:TI-5637,fold2,multi_edit,2242,created,,"[[""duplicate"", 12], [""swap"", 13], [""swap"", 14]]",34,35.0,2a06167833dc65ca,ca3f70bbdb064cd2,1,0
+bug:TI-5656::swap_adjacent::2242,bug:TI-5656,fold2,swap_adjacent,2242,created,,"[1, 2]",13,13.0,a33ce4687d9c1ecf,241d3c0139af26d8,9,0
+bug:TI-5656::delete_internal::2242,bug:TI-5656,fold2,delete_internal,2242,created,,[7],13,12.0,a33ce4687d9c1ecf,38de639725110c87,11,0
+bug:TI-5656::duplicate_block::2242,bug:TI-5656,fold2,duplicate_block,2242,created,,"[9, 10]",13,15.0,a33ce4687d9c1ecf,545e9b33131e2797,21,0
+bug:TI-5656::skip_status::2242,bug:TI-5656,fold2,skip_status,2242,created,,[5],13,12.0,a33ce4687d9c1ecf,778ebf6bbbc0e65b,2,0
+bug:TI-5656::multi_edit::2242,bug:TI-5656,fold2,multi_edit,2242,created,,"[[""duplicate"", 5], [""delete"", 5], [""delete"", 6]]",13,12.0,a33ce4687d9c1ecf,1114776b771a6b9d,1,0
+bug:TI-5676::swap_adjacent::2242,bug:TI-5676,fold2,swap_adjacent,2242,created,,"[3, 4]",19,19.0,9bfcbbb2c919f895,66ee782c7d0d922c,15,0
+bug:TI-5676::delete_internal::2242,bug:TI-5676,fold2,delete_internal,2242,created,,[11],19,18.0,9bfcbbb2c919f895,dfaf807dcb619625,17,0
+bug:TI-5676::duplicate_block::2242,bug:TI-5676,fold2,duplicate_block,2242,created,,[1],19,20.0,9bfcbbb2c919f895,55ceafbc9c978a41,33,0
+bug:TI-5676::skip_status::2242,bug:TI-5676,fold2,skip_status,2242,created,,[14],19,18.0,9bfcbbb2c919f895,e581cab8d9a56533,7,0
+bug:TI-5676::multi_edit::2242,bug:TI-5676,fold2,multi_edit,2242,created,,"[[""delete"", 11], [""duplicate"", 12], [""delete"", 10]]",19,18.0,9bfcbbb2c919f895,76c14135c0d23cc7,1,0
+bug:TI-5769::swap_adjacent::2242,bug:TI-5769,fold2,swap_adjacent,2242,skipped,no_distinct_adjacent_pair,,4,,7267c78d0633f3bd,,0,0
+bug:TI-5769::delete_internal::2242,bug:TI-5769,fold2,delete_internal,2242,created,,[2],4,3.0,7267c78d0633f3bd,25249266fe440aae,2,0
+bug:TI-5769::duplicate_block::2242,bug:TI-5769,fold2,duplicate_block,2242,created,,[1],4,5.0,7267c78d0633f3bd,4dd288e11f98458d,3,0
+bug:TI-5769::skip_status::2242,bug:TI-5769,fold2,skip_status,2242,skipped,no_internal_status,,4,,7267c78d0633f3bd,,0,0
+bug:TI-5769::multi_edit::2242,bug:TI-5769,fold2,multi_edit,2242,created,,"[[""duplicate"", 1], [""delete"", 3], [""duplicate"", 1]]",4,5.0,7267c78d0633f3bd,4dd288e11f98458d,1,0
+bug:TI-5991::swap_adjacent::2242,bug:TI-5991,fold2,swap_adjacent,2242,created,,"[2, 3]",17,17.0,8f52d364fe299a43,fc48a2844a8793eb,10,0
+bug:TI-5991::delete_internal::2242,bug:TI-5991,fold2,delete_internal,2242,created,,[9],17,16.0,8f52d364fe299a43,1076b66847331bbe,15,0
+bug:TI-5991::duplicate_block::2242,bug:TI-5991,fold2,duplicate_block,2242,created,,[9],17,18.0,8f52d364fe299a43,2a9868f318aa97c4,29,0
+bug:TI-5991::skip_status::2242,bug:TI-5991,fold2,skip_status,2242,created,,[12],17,16.0,8f52d364fe299a43,0f6c1210b739f1e9,2,0
+bug:TI-5991::multi_edit::2242,bug:TI-5991,fold2,multi_edit,2242,created,,"[[""duplicate"", 13], [""delete"", 2], [""delete"", 4]]",17,16.0,8f52d364fe299a43,b50ea06686d296fd,1,0
+bug:TI-6089::swap_adjacent::2242,bug:TI-6089,fold2,swap_adjacent,2242,created,,"[4, 5]",8,8.0,76c19155194d3bed,b5066e75546fdcc8,5,0
+bug:TI-6089::delete_internal::2242,bug:TI-6089,fold2,delete_internal,2242,created,,[4],8,7.0,76c19155194d3bed,649526437f343fc7,6,0
+bug:TI-6089::duplicate_block::2242,bug:TI-6089,fold2,duplicate_block,2242,created,,[6],8,9.0,76c19155194d3bed,b5bb3ad94e7d4b10,11,0
+bug:TI-6089::skip_status::2242,bug:TI-6089,fold2,skip_status,2242,skipped,no_internal_status,,8,,76c19155194d3bed,,0,0
+bug:TI-6089::multi_edit::2242,bug:TI-6089,fold2,multi_edit,2242,created,,"[[""swap"", 2], [""delete"", 6], [""delete"", 2]]",8,6.0,76c19155194d3bed,09c0acc79af1e19b,1,0
+bug:TI-6151::swap_adjacent::2242,bug:TI-6151,fold2,swap_adjacent,2242,created,,"[2, 3]",11,11.0,d8c6c5bdd187346b,39740ed9ce1b3c30,8,0
+bug:TI-6151::delete_internal::2242,bug:TI-6151,fold2,delete_internal,2242,created,,[8],11,10.0,d8c6c5bdd187346b,140e78d99cf2caef,9,0
+bug:TI-6151::duplicate_block::2242,bug:TI-6151,fold2,duplicate_block,2242,created,,[4],11,12.0,d8c6c5bdd187346b,d40a9f3d6a678c0e,17,0
+bug:TI-6151::skip_status::2242,bug:TI-6151,fold2,skip_status,2242,created,,[9],11,10.0,d8c6c5bdd187346b,b74fa6439b8430fe,2,0
+bug:TI-6151::multi_edit::2242,bug:TI-6151,fold2,multi_edit,2242,created,,"[[""swap"", 7], [""duplicate"", 1], [""swap"", 3]]",11,12.0,d8c6c5bdd187346b,cc5e2baff3c61c39,1,0
+bug:TI-4616::swap_adjacent::2342,bug:TI-4616,fold3,swap_adjacent,2342,created,,"[4, 5]",7,7.0,a7c641e49681b80a,6853047d70dddb0e,4,0
+bug:TI-4616::delete_internal::2342,bug:TI-4616,fold3,delete_internal,2342,created,,[2],7,6.0,a7c641e49681b80a,b56a212d94ca6b7f,5,0
+bug:TI-4616::duplicate_block::2342,bug:TI-4616,fold3,duplicate_block,2342,created,,"[2, 3]",7,9.0,a7c641e49681b80a,0d2e6240fffcb448,9,0
+bug:TI-4616::skip_status::2342,bug:TI-4616,fold3,skip_status,2342,skipped,no_internal_status,,7,,a7c641e49681b80a,,0,0
+bug:TI-4616::multi_edit::2342,bug:TI-4616,fold3,multi_edit,2342,created,,"[[""delete"", 4], [""swap"", 1], [""duplicate"", 2]]",7,7.0,a7c641e49681b80a,7b8968ce318ec17b,1,0
+bug:TI-4617::swap_adjacent::2342,bug:TI-4617,fold3,swap_adjacent,2342,created,,"[4, 5]",46,46.0,7be5b8fee2e9d32d,3e739476c44e56c2,30,0
+bug:TI-4617::delete_internal::2342,bug:TI-4617,fold3,delete_internal,2342,created,,[31],46,45.0,7be5b8fee2e9d32d,f32af80958655a6b,44,0
+bug:TI-4617::duplicate_block::2342,bug:TI-4617,fold3,duplicate_block,2342,created,,[34],46,47.0,7be5b8fee2e9d32d,7cf644828e169273,87,0
+bug:TI-4617::skip_status::2342,bug:TI-4617,fold3,skip_status,2342,created,,[35],46,45.0,7be5b8fee2e9d32d,4b836148668720a5,7,0
+bug:TI-4617::multi_edit::2342,bug:TI-4617,fold3,multi_edit,2342,created,,"[[""swap"", 7], [""delete"", 39], [""duplicate"", 17]]",46,46.0,7be5b8fee2e9d32d,343eba59415e68d8,1,0
+bug:TI-4651::swap_adjacent::2342,bug:TI-4651,fold3,swap_adjacent,2342,created,,"[12, 13]",30,30.0,88c16c25bb0883a4,69599c750a5d3b64,21,0
+bug:TI-4651::delete_internal::2342,bug:TI-4651,fold3,delete_internal,2342,created,,[16],30,29.0,88c16c25bb0883a4,011a31f1e654b672,28,0
+bug:TI-4651::duplicate_block::2342,bug:TI-4651,fold3,duplicate_block,2342,created,,[6],30,31.0,88c16c25bb0883a4,879da27f3b83dc26,55,0
+bug:TI-4651::skip_status::2342,bug:TI-4651,fold3,skip_status,2342,created,,[12],30,29.0,88c16c25bb0883a4,1459026a1488f724,5,0
+bug:TI-4651::multi_edit::2342,bug:TI-4651,fold3,multi_edit,2342,created,,"[[""duplicate"", 27], [""swap"", 2], [""swap"", 9]]",30,31.0,88c16c25bb0883a4,a790fa2723692ca5,1,0
+bug:TI-4726::swap_adjacent::2342,bug:TI-4726,fold3,swap_adjacent,2342,created,,"[3, 4]",6,6.0,ebe84e4f8019ded3,215ee5cfb2061f04,3,0
+bug:TI-4726::delete_internal::2342,bug:TI-4726,fold3,delete_internal,2342,created,,[1],6,5.0,ebe84e4f8019ded3,06320765a109d67e,4,0
+bug:TI-4726::duplicate_block::2342,bug:TI-4726,fold3,duplicate_block,2342,created,,[1],6,7.0,ebe84e4f8019ded3,3d1f24777b9ab115,7,0
+bug:TI-4726::skip_status::2342,bug:TI-4726,fold3,skip_status,2342,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-4726::multi_edit::2342,bug:TI-4726,fold3,multi_edit,2342,created,,"[[""duplicate"", 1], [""delete"", 4], [""delete"", 2]]",6,5.0,ebe84e4f8019ded3,88ab4114fa9e1d9b,1,0
+bug:TI-4748::swap_adjacent::2342,bug:TI-4748,fold3,swap_adjacent,2342,created,,"[17, 18]",51,51.0,a29821cc488bb327,e436661924ee0e44,44,0
+bug:TI-4748::delete_internal::2342,bug:TI-4748,fold3,delete_internal,2342,created,,[49],51,50.0,a29821cc488bb327,2bfc5cd5587d574c,49,0
+bug:TI-4748::duplicate_block::2342,bug:TI-4748,fold3,duplicate_block,2342,created,,"[21, 22]",51,53.0,a29821cc488bb327,93abe0ce103c5ac1,97,0
+bug:TI-4748::skip_status::2342,bug:TI-4748,fold3,skip_status,2342,created,,[46],51,50.0,a29821cc488bb327,625ce196b01e8098,11,0
+bug:TI-4748::multi_edit::2342,bug:TI-4748,fold3,multi_edit,2342,created,,"[[""delete"", 30], [""swap"", 21], [""duplicate"", 47]]",51,51.0,a29821cc488bb327,568c3e8ba59653f7,1,0
+bug:TI-4758::swap_adjacent::2342,bug:TI-4758,fold3,swap_adjacent,2342,created,,"[4, 5]",12,12.0,1fa5775dfc801586,69fb9fdda57945d6,8,0
+bug:TI-4758::delete_internal::2342,bug:TI-4758,fold3,delete_internal,2342,created,,[3],12,11.0,1fa5775dfc801586,818dd34f7c241db7,10,0
+bug:TI-4758::duplicate_block::2342,bug:TI-4758,fold3,duplicate_block,2342,created,,"[9, 10]",12,14.0,1fa5775dfc801586,87bf35086c46893a,19,0
+bug:TI-4758::skip_status::2342,bug:TI-4758,fold3,skip_status,2342,created,,[10],12,11.0,1fa5775dfc801586,a39d404012d4c54d,2,0
+bug:TI-4758::multi_edit::2342,bug:TI-4758,fold3,multi_edit,2342,created,,"[[""swap"", 6], [""swap"", 3], [""swap"", 5]]",12,12.0,1fa5775dfc801586,a1d1d1b47424ecd9,1,0
+bug:TI-4770::swap_adjacent::2342,bug:TI-4770,fold3,swap_adjacent,2342,created,,"[5, 6]",13,13.0,0a59f2b9dcb46ff0,3a723c81bf9c6a82,9,0
+bug:TI-4770::delete_internal::2342,bug:TI-4770,fold3,delete_internal,2342,created,,[4],13,12.0,0a59f2b9dcb46ff0,65f2db07f51d4a78,11,0
+bug:TI-4770::duplicate_block::2342,bug:TI-4770,fold3,duplicate_block,2342,created,,[9],13,14.0,0a59f2b9dcb46ff0,d6c18f75e0456b62,21,0
+bug:TI-4770::skip_status::2342,bug:TI-4770,fold3,skip_status,2342,created,,[11],13,12.0,0a59f2b9dcb46ff0,32d4f67874e1c37a,2,0
+bug:TI-4770::multi_edit::2342,bug:TI-4770,fold3,multi_edit,2342,created,,"[[""duplicate"", 8], [""swap"", 10], [""duplicate"", 3]]",13,15.0,0a59f2b9dcb46ff0,64d0bdc48ec86eee,1,0
+bug:TI-4931::swap_adjacent::2342,bug:TI-4931,fold3,swap_adjacent,2342,created,,"[1, 2]",6,6.0,ebe84e4f8019ded3,36a80d87076ac515,3,0
+bug:TI-4931::delete_internal::2342,bug:TI-4931,fold3,delete_internal,2342,created,,[1],6,5.0,ebe84e4f8019ded3,06320765a109d67e,4,0
+bug:TI-4931::duplicate_block::2342,bug:TI-4931,fold3,duplicate_block,2342,created,,[3],6,7.0,ebe84e4f8019ded3,ac86ef12b6a9f818,7,0
+bug:TI-4931::skip_status::2342,bug:TI-4931,fold3,skip_status,2342,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-4931::multi_edit::2342,bug:TI-4931,fold3,multi_edit,2342,created,,"[[""delete"", 1], [""delete"", 3], [""swap"", 1]]",6,4.0,ebe84e4f8019ded3,043acb712e326e75,1,0
+bug:TI-4936::swap_adjacent::2342,bug:TI-4936,fold3,swap_adjacent,2342,created,,"[10, 11]",16,16.0,c74683a60d3545ba,bfdd1fde05086239,12,0
+bug:TI-4936::delete_internal::2342,bug:TI-4936,fold3,delete_internal,2342,created,,[3],16,15.0,c74683a60d3545ba,43087d1718bdfc23,14,0
+bug:TI-4936::duplicate_block::2342,bug:TI-4936,fold3,duplicate_block,2342,created,,[9],16,17.0,c74683a60d3545ba,6621fcf9c76d638f,27,0
+bug:TI-4936::skip_status::2342,bug:TI-4936,fold3,skip_status,2342,created,,[9],16,15.0,c74683a60d3545ba,9243048818596415,2,0
+bug:TI-4936::multi_edit::2342,bug:TI-4936,fold3,multi_edit,2342,created,,"[[""duplicate"", 14], [""duplicate"", 1], [""duplicate"", 10]]",16,19.0,c74683a60d3545ba,169d6b4344c8bc8e,1,0
+bug:TI-5016::swap_adjacent::2342,bug:TI-5016,fold3,swap_adjacent,2342,created,,"[1, 2]",14,14.0,19312e1550a82b14,deb36c84e41e96db,11,0
+bug:TI-5016::delete_internal::2342,bug:TI-5016,fold3,delete_internal,2342,created,,[7],14,13.0,19312e1550a82b14,1f84d9aa896a82b8,12,0
+bug:TI-5016::duplicate_block::2342,bug:TI-5016,fold3,duplicate_block,2342,created,,"[6, 7]",14,16.0,19312e1550a82b14,647dfa4792e534a8,23,0
+bug:TI-5016::skip_status::2342,bug:TI-5016,fold3,skip_status,2342,created,,[7],14,13.0,19312e1550a82b14,1f84d9aa896a82b8,3,0
+bug:TI-5016::multi_edit::2342,bug:TI-5016,fold3,multi_edit,2342,created,,"[[""swap"", 6], [""delete"", 1], [""delete"", 6]]",14,12.0,19312e1550a82b14,fff7a9a2e5cb102a,1,0
+bug:TI-5041::swap_adjacent::2342,bug:TI-5041,fold3,swap_adjacent,2342,created,,"[18, 19]",21,21.0,69f14c445acff386,2aa3bd6f2479e71a,18,0
+bug:TI-5041::delete_internal::2342,bug:TI-5041,fold3,delete_internal,2342,created,,[4],21,20.0,69f14c445acff386,656ad519b22acf19,19,0
+bug:TI-5041::duplicate_block::2342,bug:TI-5041,fold3,duplicate_block,2342,created,,"[12, 13]",21,23.0,69f14c445acff386,2093163917745db6,37,0
+bug:TI-5041::skip_status::2342,bug:TI-5041,fold3,skip_status,2342,created,,[11],21,20.0,69f14c445acff386,fb9884d7541cee75,5,0
+bug:TI-5041::multi_edit::2342,bug:TI-5041,fold3,multi_edit,2342,created,,"[[""duplicate"", 14], [""swap"", 5], [""swap"", 1]]",21,22.0,69f14c445acff386,1a6eac221da6bab6,1,0
+bug:TI-5133::swap_adjacent::2342,bug:TI-5133,fold3,swap_adjacent,2342,created,,"[9, 10]",14,14.0,e65ebb1bdc9ca5be,e69b7d2c2e2d88be,9,0
+bug:TI-5133::delete_internal::2342,bug:TI-5133,fold3,delete_internal,2342,created,,[12],14,13.0,e65ebb1bdc9ca5be,177cec08381ac305,12,0
+bug:TI-5133::duplicate_block::2342,bug:TI-5133,fold3,duplicate_block,2342,created,,[11],14,15.0,e65ebb1bdc9ca5be,cea0edd4ef11c70f,23,0
+bug:TI-5133::skip_status::2342,bug:TI-5133,fold3,skip_status,2342,created,,[5],14,13.0,e65ebb1bdc9ca5be,56cc595789f934cd,2,0
+bug:TI-5133::multi_edit::2342,bug:TI-5133,fold3,multi_edit,2342,created,,"[[""swap"", 6], [""duplicate"", 4], [""delete"", 1]]",14,14.0,e65ebb1bdc9ca5be,c8a717ee0c08e6d1,1,0
+bug:TI-5153::swap_adjacent::2342,bug:TI-5153,fold3,swap_adjacent,2342,created,,"[29, 30]",54,54.0,bb9cd5b0780c3d61,d334d3299efffa4e,48,0
+bug:TI-5153::delete_internal::2342,bug:TI-5153,fold3,delete_internal,2342,created,,[6],54,53.0,bb9cd5b0780c3d61,52a33c759b494eba,52,0
+bug:TI-5153::duplicate_block::2342,bug:TI-5153,fold3,duplicate_block,2342,created,,"[13, 14]",54,56.0,bb9cd5b0780c3d61,161ddf3ac612996a,103,0
+bug:TI-5153::skip_status::2342,bug:TI-5153,fold3,skip_status,2342,created,,[4],54,53.0,bb9cd5b0780c3d61,d7e6f92075ab1159,7,0
+bug:TI-5153::multi_edit::2342,bug:TI-5153,fold3,multi_edit,2342,created,,"[[""swap"", 21], [""delete"", 13], [""duplicate"", 32]]",54,54.0,bb9cd5b0780c3d61,7ddda55de9f0ad74,1,0
+bug:TI-5308::swap_adjacent::2342,bug:TI-5308,fold3,swap_adjacent,2342,created,,"[2, 3]",10,10.0,adb1f545d326be13,dab8a842a911436d,7,0
+bug:TI-5308::delete_internal::2342,bug:TI-5308,fold3,delete_internal,2342,created,,[2],10,9.0,adb1f545d326be13,e02bf0adf9963a13,8,0
+bug:TI-5308::duplicate_block::2342,bug:TI-5308,fold3,duplicate_block,2342,created,,"[7, 8]",10,12.0,adb1f545d326be13,c3a6cf1acd2045b6,15,0
+bug:TI-5308::skip_status::2342,bug:TI-5308,fold3,skip_status,2342,skipped,no_internal_status,,10,,adb1f545d326be13,,0,0
+bug:TI-5308::multi_edit::2342,bug:TI-5308,fold3,multi_edit,2342,created,,"[[""duplicate"", 8], [""delete"", 2], [""duplicate"", 5]]",10,11.0,adb1f545d326be13,ac947247f8f67954,1,0
+bug:TI-5333::swap_adjacent::2342,bug:TI-5333,fold3,swap_adjacent,2342,created,,"[8, 9]",22,22.0,c0fbc910b6040fea,5d9b7fd124cb34f5,14,0
+bug:TI-5333::delete_internal::2342,bug:TI-5333,fold3,delete_internal,2342,created,,[4],22,21.0,c0fbc910b6040fea,8d2182542654ac6a,20,0
+bug:TI-5333::duplicate_block::2342,bug:TI-5333,fold3,duplicate_block,2342,created,,[9],22,23.0,c0fbc910b6040fea,c6abe396dccc43a6,39,0
+bug:TI-5333::skip_status::2342,bug:TI-5333,fold3,skip_status,2342,created,,[8],22,21.0,c0fbc910b6040fea,107c893b9d6d657e,3,0
+bug:TI-5333::multi_edit::2342,bug:TI-5333,fold3,multi_edit,2342,created,,"[[""duplicate"", 1], [""duplicate"", 8], [""swap"", 18]]",22,24.0,c0fbc910b6040fea,17c38d5ed8898315,1,0
+bug:TI-5366::swap_adjacent::2342,bug:TI-5366,fold3,swap_adjacent,2342,created,,"[5, 6]",18,18.0,5c5b95afb7a9cf47,a5670bb82a1debe3,15,0
+bug:TI-5366::delete_internal::2342,bug:TI-5366,fold3,delete_internal,2342,created,,[10],18,17.0,5c5b95afb7a9cf47,ab22c88e59417659,16,0
+bug:TI-5366::duplicate_block::2342,bug:TI-5366,fold3,duplicate_block,2342,created,,"[3, 4]",18,20.0,5c5b95afb7a9cf47,a68cf3230de30f90,31,0
+bug:TI-5366::skip_status::2342,bug:TI-5366,fold3,skip_status,2342,created,,[16],18,17.0,5c5b95afb7a9cf47,67ac9aea951886d2,2,0
+bug:TI-5366::multi_edit::2342,bug:TI-5366,fold3,multi_edit,2342,created,,"[[""delete"", 10], [""duplicate"", 2], [""delete"", 8]]",18,17.0,5c5b95afb7a9cf47,2b1ab0bb33b4c9af,1,0
+bug:TI-5432::swap_adjacent::2342,bug:TI-5432,fold3,swap_adjacent,2342,created,,"[6, 7]",24,24.0,1eb0743e90800ba1,4daecb8cfd4dd19c,19,0
+bug:TI-5432::delete_internal::2342,bug:TI-5432,fold3,delete_internal,2342,created,,[10],24,23.0,1eb0743e90800ba1,599f0d6afabd38ed,22,0
+bug:TI-5432::duplicate_block::2342,bug:TI-5432,fold3,duplicate_block,2342,created,,[2],24,25.0,1eb0743e90800ba1,9273f524f299c670,43,0
+bug:TI-5432::skip_status::2342,bug:TI-5432,fold3,skip_status,2342,created,,[21],24,23.0,1eb0743e90800ba1,ccf2c0b5efb5832e,3,0
+bug:TI-5432::multi_edit::2342,bug:TI-5432,fold3,multi_edit,2342,created,,"[[""delete"", 7], [""swap"", 15], [""duplicate"", 14]]",24,24.0,1eb0743e90800ba1,1b04ddbffa1da4e8,1,0
+bug:TI-5442::swap_adjacent::2342,bug:TI-5442,fold3,swap_adjacent,2342,created,,"[25, 26]",29,29.0,8ca337db2bc2b3d4,08836bfb8b36ef76,21,0
+bug:TI-5442::delete_internal::2342,bug:TI-5442,fold3,delete_internal,2342,created,,[27],29,28.0,8ca337db2bc2b3d4,bb917de476d9d076,27,0
+bug:TI-5442::duplicate_block::2342,bug:TI-5442,fold3,duplicate_block,2342,created,,"[26, 27]",29,31.0,8ca337db2bc2b3d4,344cbf1922b67498,53,0
+bug:TI-5442::skip_status::2342,bug:TI-5442,fold3,skip_status,2342,created,,[14],29,28.0,8ca337db2bc2b3d4,23ead48ba4824adf,5,0
+bug:TI-5442::multi_edit::2342,bug:TI-5442,fold3,multi_edit,2342,created,,"[[""delete"", 15], [""duplicate"", 6], [""duplicate"", 25]]",29,30.0,8ca337db2bc2b3d4,485981f87ad8bb87,1,0
+bug:TI-5477::swap_adjacent::2342,bug:TI-5477,fold3,swap_adjacent,2342,created,,"[8, 9]",34,34.0,57f80e9816f5d977,d0c028529dd0d362,23,0
+bug:TI-5477::delete_internal::2342,bug:TI-5477,fold3,delete_internal,2342,created,,[2],34,33.0,57f80e9816f5d977,7ed217421e1f1445,32,0
+bug:TI-5477::duplicate_block::2342,bug:TI-5477,fold3,duplicate_block,2342,created,,[12],34,35.0,57f80e9816f5d977,64e71f876d2b073f,63,0
+bug:TI-5477::skip_status::2342,bug:TI-5477,fold3,skip_status,2342,created,,[23],34,33.0,57f80e9816f5d977,553146e4c4dc7118,5,0
+bug:TI-5477::multi_edit::2342,bug:TI-5477,fold3,multi_edit,2342,created,,"[[""delete"", 26], [""duplicate"", 15], [""duplicate"", 9]]",34,35.0,57f80e9816f5d977,fd8f1b06a7facfe1,1,0
+bug:TI-5545::swap_adjacent::2342,bug:TI-5545,fold3,swap_adjacent,2342,created,,"[3, 4]",6,6.0,ebe84e4f8019ded3,215ee5cfb2061f04,3,0
+bug:TI-5545::delete_internal::2342,bug:TI-5545,fold3,delete_internal,2342,created,,[2],6,5.0,ebe84e4f8019ded3,f6841d6b0d9f4d20,4,0
+bug:TI-5545::duplicate_block::2342,bug:TI-5545,fold3,duplicate_block,2342,created,,[2],6,7.0,ebe84e4f8019ded3,7166eaebce7379be,7,0
+bug:TI-5545::skip_status::2342,bug:TI-5545,fold3,skip_status,2342,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-5545::multi_edit::2342,bug:TI-5545,fold3,multi_edit,2342,created,,"[[""swap"", 3], [""swap"", 2], [""duplicate"", 2]]",6,7.0,ebe84e4f8019ded3,1d4cda49cd2e415d,1,0
+bug:TI-5547::swap_adjacent::2342,bug:TI-5547,fold3,swap_adjacent,2342,created,,"[20, 21]",38,38.0,c6ef05d20c42a699,d346bc6812ebad16,28,0
+bug:TI-5547::delete_internal::2342,bug:TI-5547,fold3,delete_internal,2342,created,,[30],38,37.0,c6ef05d20c42a699,1de1c25f7cd12a02,36,0
+bug:TI-5547::duplicate_block::2342,bug:TI-5547,fold3,duplicate_block,2342,created,,[13],38,39.0,c6ef05d20c42a699,72578cabe65c6613,71,0
+bug:TI-5547::skip_status::2342,bug:TI-5547,fold3,skip_status,2342,created,,[8],38,37.0,c6ef05d20c42a699,d68d32fb49c8a4dd,5,0
+bug:TI-5547::multi_edit::2342,bug:TI-5547,fold3,multi_edit,2342,created,,"[[""duplicate"", 2], [""delete"", 2], [""duplicate"", 34]]",38,39.0,c6ef05d20c42a699,35d96dfc0a56041e,1,0
+bug:TI-5555::swap_adjacent::2342,bug:TI-5555,fold3,swap_adjacent,2342,created,,"[4, 5]",20,20.0,cdd44daac1845c1d,2c3671ce8eb061c6,14,0
+bug:TI-5555::delete_internal::2342,bug:TI-5555,fold3,delete_internal,2342,created,,[10],20,19.0,cdd44daac1845c1d,0008abc28a7eccc2,18,0
+bug:TI-5555::duplicate_block::2342,bug:TI-5555,fold3,duplicate_block,2342,created,,"[14, 15]",20,22.0,cdd44daac1845c1d,74c27624d9fd6f78,35,0
+bug:TI-5555::skip_status::2342,bug:TI-5555,fold3,skip_status,2342,created,,[5],20,19.0,cdd44daac1845c1d,280881b35ce2d980,2,0
+bug:TI-5555::multi_edit::2342,bug:TI-5555,fold3,multi_edit,2342,created,,"[[""duplicate"", 15], [""duplicate"", 17], [""duplicate"", 14]]",20,23.0,cdd44daac1845c1d,e236a1acd9ea6173,1,0
+bug:TI-5630::swap_adjacent::2342,bug:TI-5630,fold3,swap_adjacent,2342,created,,"[4, 5]",17,17.0,41af77eaa9cbe100,51b5a53c09d202b1,13,0
+bug:TI-5630::delete_internal::2342,bug:TI-5630,fold3,delete_internal,2342,created,,[8],17,16.0,41af77eaa9cbe100,7e7e046edae97857,15,0
+bug:TI-5630::duplicate_block::2342,bug:TI-5630,fold3,duplicate_block,2342,created,,[7],17,18.0,41af77eaa9cbe100,c60cc96dd0733e4c,29,0
+bug:TI-5630::skip_status::2342,bug:TI-5630,fold3,skip_status,2342,created,,[14],17,16.0,41af77eaa9cbe100,7d8979c0d202d2b3,2,0
+bug:TI-5630::multi_edit::2342,bug:TI-5630,fold3,multi_edit,2342,created,,"[[""duplicate"", 13], [""swap"", 12], [""swap"", 14]]",17,18.0,41af77eaa9cbe100,cc8199b895d21f84,1,0
+bug:TI-5837::swap_adjacent::2342,bug:TI-5837,fold3,swap_adjacent,2342,created,,"[13, 14]",25,25.0,f3293ec527dc57c5,302c54b4c743e822,18,0
+bug:TI-5837::delete_internal::2342,bug:TI-5837,fold3,delete_internal,2342,created,,[4],25,24.0,f3293ec527dc57c5,beab772888ec7ba2,23,0
+bug:TI-5837::duplicate_block::2342,bug:TI-5837,fold3,duplicate_block,2342,created,,[9],25,26.0,f3293ec527dc57c5,4b54f82812efccc1,45,0
+bug:TI-5837::skip_status::2342,bug:TI-5837,fold3,skip_status,2342,created,,[11],25,24.0,f3293ec527dc57c5,ee47a18e4cf6f9f1,5,0
+bug:TI-5837::multi_edit::2342,bug:TI-5837,fold3,multi_edit,2342,created,,"[[""duplicate"", 22], [""delete"", 10], [""delete"", 19]]",25,24.0,f3293ec527dc57c5,e956cbcd257dafe1,1,0
+bug:TI-5965::swap_adjacent::2342,bug:TI-5965,fold3,swap_adjacent,2342,created,,"[1, 2]",10,10.0,d82d709015588549,4671a8e4731d13d3,7,0
+bug:TI-5965::delete_internal::2342,bug:TI-5965,fold3,delete_internal,2342,created,,[1],10,9.0,d82d709015588549,b7b72048c9c1c394,8,0
+bug:TI-5965::duplicate_block::2342,bug:TI-5965,fold3,duplicate_block,2342,created,,[1],10,11.0,d82d709015588549,b5d4579925d13525,15,0
+bug:TI-5965::skip_status::2342,bug:TI-5965,fold3,skip_status,2342,created,,[5],10,9.0,d82d709015588549,1698f365420b30df,2,0
+bug:TI-5965::multi_edit::2342,bug:TI-5965,fold3,multi_edit,2342,created,,"[[""swap"", 4], [""duplicate"", 5], [""duplicate"", 4]]",10,12.0,d82d709015588549,08f46924b79fc439,1,0
+bug:TI-6079::swap_adjacent::2342,bug:TI-6079,fold3,swap_adjacent,2342,created,,"[5, 6]",14,14.0,4ef77daa1ccf8ab4,290be358c295dcd7,8,0
+bug:TI-6079::delete_internal::2342,bug:TI-6079,fold3,delete_internal,2342,created,,[2],14,13.0,4ef77daa1ccf8ab4,10dd1ef13adb859e,12,0
+bug:TI-6079::duplicate_block::2342,bug:TI-6079,fold3,duplicate_block,2342,created,,[1],14,15.0,4ef77daa1ccf8ab4,741b76e9ec52a813,23,0
+bug:TI-6079::skip_status::2342,bug:TI-6079,fold3,skip_status,2342,created,,[5],14,13.0,4ef77daa1ccf8ab4,780293ccd37f323b,2,0
+bug:TI-6079::multi_edit::2342,bug:TI-6079,fold3,multi_edit,2342,created,,"[[""duplicate"", 4], [""delete"", 10], [""swap"", 10]]",14,14.0,4ef77daa1ccf8ab4,74eae8c700206118,1,0
+bug:TI-6094::swap_adjacent::2342,bug:TI-6094,fold3,swap_adjacent,2342,created,,"[19, 20]",27,27.0,0c7b04bbfdf7816d,6c74b0138ef89c67,24,0
+bug:TI-6094::delete_internal::2342,bug:TI-6094,fold3,delete_internal,2342,created,,[4],27,26.0,0c7b04bbfdf7816d,f14ab2b55b436894,25,0
+bug:TI-6094::duplicate_block::2342,bug:TI-6094,fold3,duplicate_block,2342,created,,[3],27,28.0,0c7b04bbfdf7816d,81a340eb3c65b3c0,49,0
+bug:TI-6094::skip_status::2342,bug:TI-6094,fold3,skip_status,2342,created,,[20],27,26.0,0c7b04bbfdf7816d,6aa97adb3552f997,5,0
+bug:TI-6094::multi_edit::2342,bug:TI-6094,fold3,multi_edit,2342,created,,"[[""duplicate"", 7], [""delete"", 4], [""delete"", 3]]",27,26.0,0c7b04bbfdf7816d,a3593983ba52cf01,1,0
+bug:TI-6149::swap_adjacent::2342,bug:TI-6149,fold3,swap_adjacent,2342,created,,"[2, 3]",6,6.0,ebe84e4f8019ded3,03127c0884dbd6ad,3,0
+bug:TI-6149::delete_internal::2342,bug:TI-6149,fold3,delete_internal,2342,created,,[4],6,5.0,ebe84e4f8019ded3,516fcecbc5fbf8fd,4,0
+bug:TI-6149::duplicate_block::2342,bug:TI-6149,fold3,duplicate_block,2342,created,,"[3, 4]",6,8.0,ebe84e4f8019ded3,f410c0e3a341a5e1,7,0
+bug:TI-6149::skip_status::2342,bug:TI-6149,fold3,skip_status,2342,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-6149::multi_edit::2342,bug:TI-6149,fold3,multi_edit,2342,created,,"[[""swap"", 2], [""swap"", 2], [""delete"", 3]]",6,5.0,ebe84e4f8019ded3,88ab4114fa9e1d9b,1,0
+bug:TI-6160::swap_adjacent::2342,bug:TI-6160,fold3,swap_adjacent,2342,created,,"[1, 2]",5,5.0,5bebd6c05531c12f,4f8f2cf68d1c9aa0,1,0
+bug:TI-6160::delete_internal::2342,bug:TI-6160,fold3,delete_internal,2342,created,,[2],5,4.0,5bebd6c05531c12f,199ab2f399f292f0,3,0
+bug:TI-6160::duplicate_block::2342,bug:TI-6160,fold3,duplicate_block,2342,created,,[2],5,6.0,5bebd6c05531c12f,4d5170dd45aaa4b0,5,0
+bug:TI-6160::skip_status::2342,bug:TI-6160,fold3,skip_status,2342,skipped,no_internal_status,,5,,5bebd6c05531c12f,,0,0
+bug:TI-6160::multi_edit::2342,bug:TI-6160,fold3,multi_edit,2342,created,,"[[""delete"", 2], [""swap"", 1], [""swap"", 1]]",5,4.0,5bebd6c05531c12f,199ab2f399f292f0,1,0
+bug:TI-6163::swap_adjacent::2342,bug:TI-6163,fold3,swap_adjacent,2342,created,,"[9, 10]",19,19.0,55a17b929b6714b2,c9c9250fdff21a16,16,0
+bug:TI-6163::delete_internal::2342,bug:TI-6163,fold3,delete_internal,2342,created,,[2],19,18.0,55a17b929b6714b2,3d2f98965c1a54fb,17,0
+bug:TI-6163::duplicate_block::2342,bug:TI-6163,fold3,duplicate_block,2342,created,,"[10, 11]",19,21.0,55a17b929b6714b2,2372b6763068ef07,33,0
+bug:TI-6163::skip_status::2342,bug:TI-6163,fold3,skip_status,2342,created,,[9],19,18.0,55a17b929b6714b2,1d19dc9c16f2c112,7,0
+bug:TI-6163::multi_edit::2342,bug:TI-6163,fold3,multi_edit,2342,created,,"[[""duplicate"", 11], [""swap"", 9], [""swap"", 9]]",19,20.0,55a17b929b6714b2,ebac1e74115cec27,1,0
+bug:TI-6208::swap_adjacent::2342,bug:TI-6208,fold3,swap_adjacent,2342,created,,"[6, 7]",20,20.0,c88c8402505150c0,81ef17d11e23081c,16,0
+bug:TI-6208::delete_internal::2342,bug:TI-6208,fold3,delete_internal,2342,created,,[3],20,19.0,c88c8402505150c0,583915dbcf026cca,18,0
+bug:TI-6208::duplicate_block::2342,bug:TI-6208,fold3,duplicate_block,2342,created,,[1],20,21.0,c88c8402505150c0,31e4449830f2c68e,35,0
+bug:TI-6208::skip_status::2342,bug:TI-6208,fold3,skip_status,2342,created,,[14],20,19.0,c88c8402505150c0,43ca7f88e3d9b5a9,5,0
+bug:TI-6208::multi_edit::2342,bug:TI-6208,fold3,multi_edit,2342,created,,"[[""duplicate"", 17], [""swap"", 9], [""duplicate"", 16]]",20,22.0,c88c8402505150c0,95ab41368cca66da,1,0
+bug:TI-6255::swap_adjacent::2342,bug:TI-6255,fold3,swap_adjacent,2342,created,,"[9, 10]",25,25.0,9538869a1d187b70,9068e6109ce39961,19,0
+bug:TI-6255::delete_internal::2342,bug:TI-6255,fold3,delete_internal,2342,created,,[22],25,24.0,9538869a1d187b70,71db2c0a2c2908eb,23,0
+bug:TI-6255::duplicate_block::2342,bug:TI-6255,fold3,duplicate_block,2342,created,,"[6, 7]",25,27.0,9538869a1d187b70,55c2ef5c1065a64b,45,0
+bug:TI-6255::skip_status::2342,bug:TI-6255,fold3,skip_status,2342,created,,[15],25,24.0,9538869a1d187b70,2e130ea25553ff33,3,0
+bug:TI-6255::multi_edit::2342,bug:TI-6255,fold3,multi_edit,2342,created,,"[[""swap"", 1], [""swap"", 13], [""swap"", 7]]",25,25.0,9538869a1d187b70,e6c40f0a62c14104,1,0
+bug:TI-4683::swap_adjacent::2442,bug:TI-4683,fold4,swap_adjacent,2442,created,,"[9, 10]",12,12.0,1f239ca6b2bf5fd7,8d0ccc35f9fbf90b,8,0
+bug:TI-4683::delete_internal::2442,bug:TI-4683,fold4,delete_internal,2442,created,,[1],12,11.0,1f239ca6b2bf5fd7,267754fe6b76e0f9,10,0
+bug:TI-4683::duplicate_block::2442,bug:TI-4683,fold4,duplicate_block,2442,created,,[6],12,13.0,1f239ca6b2bf5fd7,1e38d8a5831e6c4c,19,0
+bug:TI-4683::skip_status::2442,bug:TI-4683,fold4,skip_status,2442,created,,[5],12,11.0,1f239ca6b2bf5fd7,d3a91acac59884b0,3,1
+bug:TI-4683::multi_edit::2442,bug:TI-4683,fold4,multi_edit,2442,created,,"[[""duplicate"", 1], [""delete"", 6], [""swap"", 3]]",12,12.0,1f239ca6b2bf5fd7,78d5208c775be540,1,0
+bug:TI-4725::swap_adjacent::2442,bug:TI-4725,fold4,swap_adjacent,2442,created,,"[6, 7]",13,13.0,48e6d0adf033832f,fffe830a9611000e,9,0
+bug:TI-4725::delete_internal::2442,bug:TI-4725,fold4,delete_internal,2442,created,,[3],13,12.0,48e6d0adf033832f,673f0268ff587837,11,0
+bug:TI-4725::duplicate_block::2442,bug:TI-4725,fold4,duplicate_block,2442,created,,"[7, 8]",13,15.0,48e6d0adf033832f,faa606faf2c972bd,21,0
+bug:TI-4725::skip_status::2442,bug:TI-4725,fold4,skip_status,2442,created,,[6],13,12.0,48e6d0adf033832f,530650a709f34d44,2,0
+bug:TI-4725::multi_edit::2442,bug:TI-4725,fold4,multi_edit,2442,created,,"[[""delete"", 5], [""duplicate"", 7], [""delete"", 8]]",13,12.0,48e6d0adf033832f,bfa921dc5b1337e2,1,0
+bug:TI-4820::swap_adjacent::2442,bug:TI-4820,fold4,swap_adjacent,2442,created,,"[4, 5]",19,19.0,15e5be97243d4d2c,93d5971124539187,16,0
+bug:TI-4820::delete_internal::2442,bug:TI-4820,fold4,delete_internal,2442,created,,[12],19,18.0,15e5be97243d4d2c,cd736b4f54639b04,17,0
+bug:TI-4820::duplicate_block::2442,bug:TI-4820,fold4,duplicate_block,2442,created,,[6],19,20.0,15e5be97243d4d2c,52478db12954c283,33,0
+bug:TI-4820::skip_status::2442,bug:TI-4820,fold4,skip_status,2442,created,,[7],19,18.0,15e5be97243d4d2c,b6cc09ab4860173d,3,0
+bug:TI-4820::multi_edit::2442,bug:TI-4820,fold4,multi_edit,2442,created,,"[[""delete"", 9], [""duplicate"", 14], [""duplicate"", 14]]",19,20.0,15e5be97243d4d2c,4a89d94d0b578134,1,0
+bug:TI-4871::swap_adjacent::2442,bug:TI-4871,fold4,swap_adjacent,2442,created,,"[4, 5]",18,18.0,9581fc4c32877091,d59ad460a01f528f,13,0
+bug:TI-4871::delete_internal::2442,bug:TI-4871,fold4,delete_internal,2442,created,,[3],18,17.0,9581fc4c32877091,ffb1d72ff5715ad1,16,0
+bug:TI-4871::duplicate_block::2442,bug:TI-4871,fold4,duplicate_block,2442,created,,"[9, 10]",18,20.0,9581fc4c32877091,56f3cb1f2125afb3,31,0
+bug:TI-4871::skip_status::2442,bug:TI-4871,fold4,skip_status,2442,created,,[16],18,17.0,9581fc4c32877091,d497b59c019018ec,4,0
+bug:TI-4871::multi_edit::2442,bug:TI-4871,fold4,multi_edit,2442,created,,"[[""delete"", 5], [""swap"", 10], [""swap"", 14]]",18,17.0,9581fc4c32877091,86726f5608a1c58a,1,0
+bug:TI-4890::swap_adjacent::2442,bug:TI-4890,fold4,swap_adjacent,2442,created,,"[12, 13]",15,15.0,0dcc004d273c8069,d978a53d6f519d03,11,0
+bug:TI-4890::delete_internal::2442,bug:TI-4890,fold4,delete_internal,2442,created,,[3],15,14.0,0dcc004d273c8069,f085e39fb624f9e6,13,0
+bug:TI-4890::duplicate_block::2442,bug:TI-4890,fold4,duplicate_block,2442,created,,[12],15,16.0,0dcc004d273c8069,5eec25d5f29a6bcf,25,0
+bug:TI-4890::skip_status::2442,bug:TI-4890,fold4,skip_status,2442,created,,[5],15,14.0,0dcc004d273c8069,2651389c250c9721,3,0
+bug:TI-4890::multi_edit::2442,bug:TI-4890,fold4,multi_edit,2442,created,,"[[""delete"", 11], [""duplicate"", 12], [""delete"", 6]]",15,14.0,0dcc004d273c8069,20c933df777acd23,1,0
+bug:TI-4894::swap_adjacent::2442,bug:TI-4894,fold4,swap_adjacent,2442,created,,"[3, 4]",6,6.0,ebe84e4f8019ded3,215ee5cfb2061f04,3,0
+bug:TI-4894::delete_internal::2442,bug:TI-4894,fold4,delete_internal,2442,created,,[2],6,5.0,ebe84e4f8019ded3,f6841d6b0d9f4d20,4,0
+bug:TI-4894::duplicate_block::2442,bug:TI-4894,fold4,duplicate_block,2442,created,,"[3, 4]",6,8.0,ebe84e4f8019ded3,f410c0e3a341a5e1,7,0
+bug:TI-4894::skip_status::2442,bug:TI-4894,fold4,skip_status,2442,skipped,no_internal_status,,6,,ebe84e4f8019ded3,,0,0
+bug:TI-4894::multi_edit::2442,bug:TI-4894,fold4,multi_edit,2442,created,,"[[""duplicate"", 3], [""swap"", 1], [""delete"", 2]]",6,6.0,ebe84e4f8019ded3,1b755cb79fe57b86,1,0
+bug:TI-4902::swap_adjacent::2442,bug:TI-4902,fold4,swap_adjacent,2442,created,,"[1, 2]",12,12.0,e0d54b1b44c7d53f,97c395b8f52cddb2,9,0
+bug:TI-4902::delete_internal::2442,bug:TI-4902,fold4,delete_internal,2442,created,,[8],12,11.0,e0d54b1b44c7d53f,5c7150ca332bdc75,10,0
+bug:TI-4902::duplicate_block::2442,bug:TI-4902,fold4,duplicate_block,2442,created,,[3],12,13.0,e0d54b1b44c7d53f,fb2318102f639200,19,0
+bug:TI-4902::skip_status::2442,bug:TI-4902,fold4,skip_status,2442,created,,[9],12,11.0,e0d54b1b44c7d53f,e40e37c54d19f6d4,3,0
+bug:TI-4902::multi_edit::2442,bug:TI-4902,fold4,multi_edit,2442,created,,"[[""duplicate"", 10], [""duplicate"", 3], [""swap"", 7]]",12,14.0,e0d54b1b44c7d53f,8de468a9fc9c7052,1,0
+bug:TI-4932::swap_adjacent::2442,bug:TI-4932,fold4,swap_adjacent,2442,created,,"[3, 4]",12,12.0,283a1551a69a34da,9ed200fae4369d6c,8,0
+bug:TI-4932::delete_internal::2442,bug:TI-4932,fold4,delete_internal,2442,created,,[6],12,11.0,283a1551a69a34da,8c43346865e81384,10,0
+bug:TI-4932::duplicate_block::2442,bug:TI-4932,fold4,duplicate_block,2442,created,,"[9, 10]",12,14.0,283a1551a69a34da,429a32c3e9c22001,19,0
+bug:TI-4932::skip_status::2442,bug:TI-4932,fold4,skip_status,2442,skipped,no_internal_status,,12,,283a1551a69a34da,,0,0
+bug:TI-4932::multi_edit::2442,bug:TI-4932,fold4,multi_edit,2442,created,,"[[""delete"", 9], [""duplicate"", 5], [""delete"", 4]]",12,11.0,283a1551a69a34da,2522a5a3f1547430,1,0
+bug:TI-4967::swap_adjacent::2442,bug:TI-4967,fold4,swap_adjacent,2442,created,,"[21, 22]",37,37.0,8002cd9501ffd916,54e6c10dc6fbb89e,24,0
+bug:TI-4967::delete_internal::2442,bug:TI-4967,fold4,delete_internal,2442,created,,[25],37,36.0,8002cd9501ffd916,0fc1c824a5e7e477,35,0
+bug:TI-4967::duplicate_block::2442,bug:TI-4967,fold4,duplicate_block,2442,created,,[4],37,38.0,8002cd9501ffd916,c7ee7c4fc2cc36e2,69,0
+bug:TI-4967::skip_status::2442,bug:TI-4967,fold4,skip_status,2442,created,,[9],37,36.0,8002cd9501ffd916,9e58128c9f7973b6,5,0
+bug:TI-4967::multi_edit::2442,bug:TI-4967,fold4,multi_edit,2442,created,,"[[""delete"", 16], [""swap"", 10], [""swap"", 2]]",37,36.0,8002cd9501ffd916,3363a7a288c25731,1,0
+bug:TI-5007::swap_adjacent::2442,bug:TI-5007,fold4,swap_adjacent,2442,created,,"[5, 6]",29,29.0,ebf7e082d42bccad,474f644ef1786218,20,0
+bug:TI-5007::delete_internal::2442,bug:TI-5007,fold4,delete_internal,2442,created,,[24],29,28.0,ebf7e082d42bccad,2d1960f517d04788,27,0
+bug:TI-5007::duplicate_block::2442,bug:TI-5007,fold4,duplicate_block,2442,created,,[25],29,30.0,ebf7e082d42bccad,a657b5d9467cc39d,53,0
+bug:TI-5007::skip_status::2442,bug:TI-5007,fold4,skip_status,2442,created,,[22],29,28.0,ebf7e082d42bccad,e3d7080fe5e446a8,5,0
+bug:TI-5007::multi_edit::2442,bug:TI-5007,fold4,multi_edit,2442,created,,"[[""delete"", 7], [""delete"", 11], [""duplicate"", 23]]",29,28.0,ebf7e082d42bccad,8863df3910852a73,1,0
+bug:TI-5091::swap_adjacent::2442,bug:TI-5091,fold4,swap_adjacent,2442,created,,"[14, 15]",22,22.0,1b26dda414a0adb7,65bcf0f5a59dbb4b,18,0
+bug:TI-5091::delete_internal::2442,bug:TI-5091,fold4,delete_internal,2442,created,,[9],22,21.0,1b26dda414a0adb7,2329056c2170c72e,20,0
+bug:TI-5091::duplicate_block::2442,bug:TI-5091,fold4,duplicate_block,2442,created,,[1],22,23.0,1b26dda414a0adb7,9aac5c4c4e3154ef,39,0
+bug:TI-5091::skip_status::2442,bug:TI-5091,fold4,skip_status,2442,created,,[20],22,21.0,1b26dda414a0adb7,161c7a4926bbbe31,3,0
+bug:TI-5091::multi_edit::2442,bug:TI-5091,fold4,multi_edit,2442,created,,"[[""duplicate"", 5], [""delete"", 20], [""delete"", 18]]",22,21.0,1b26dda414a0adb7,751b4997ff4b81d4,1,0
+bug:TI-5118::swap_adjacent::2442,bug:TI-5118,fold4,swap_adjacent,2442,created,,"[37, 38]",58,58.0,a278d311f534785e,690c5f42a33c6d83,44,0
+bug:TI-5118::delete_internal::2442,bug:TI-5118,fold4,delete_internal,2442,created,,[4],58,57.0,a278d311f534785e,be8424194fb97511,56,0
+bug:TI-5118::duplicate_block::2442,bug:TI-5118,fold4,duplicate_block,2442,created,,"[22, 23]",58,60.0,a278d311f534785e,4338c706b961165d,111,0
+bug:TI-5118::skip_status::2442,bug:TI-5118,fold4,skip_status,2442,created,,[16],58,57.0,a278d311f534785e,6826a1019a40c6f9,11,0
+bug:TI-5118::multi_edit::2442,bug:TI-5118,fold4,multi_edit,2442,created,,"[[""swap"", 3], [""swap"", 18], [""delete"", 2]]",58,57.0,a278d311f534785e,3b52930c133443fa,1,0
+bug:TI-5187::swap_adjacent::2442,bug:TI-5187,fold4,swap_adjacent,2442,created,,"[6, 7]",13,13.0,66336410d1cc3332,8a107b59eb944e06,9,0
+bug:TI-5187::delete_internal::2442,bug:TI-5187,fold4,delete_internal,2442,created,,[9],13,12.0,66336410d1cc3332,d2d87a13858d15ad,11,0
+bug:TI-5187::duplicate_block::2442,bug:TI-5187,fold4,duplicate_block,2442,created,,[1],13,14.0,66336410d1cc3332,d2f2fe844252a582,21,0
+bug:TI-5187::skip_status::2442,bug:TI-5187,fold4,skip_status,2442,created,,[10],13,12.0,66336410d1cc3332,d73ed6cb2d668ea4,2,0
+bug:TI-5187::multi_edit::2442,bug:TI-5187,fold4,multi_edit,2442,created,,"[[""duplicate"", 2], [""swap"", 8], [""swap"", 10]]",13,14.0,66336410d1cc3332,0ec6fffdc2dd45c0,1,0
+bug:TI-5246::swap_adjacent::2442,bug:TI-5246,fold4,swap_adjacent,2442,created,,"[3, 4]",13,13.0,e49161b12d1a7ebb,c1c724754a5eb83f,9,0
+bug:TI-5246::delete_internal::2442,bug:TI-5246,fold4,delete_internal,2442,created,,[1],13,12.0,e49161b12d1a7ebb,45aa234f9c35c387,11,0
+bug:TI-5246::duplicate_block::2442,bug:TI-5246,fold4,duplicate_block,2442,created,,[11],13,14.0,e49161b12d1a7ebb,d7042826036249e2,21,0
+bug:TI-5246::skip_status::2442,bug:TI-5246,fold4,skip_status,2442,created,,[11],13,12.0,e49161b12d1a7ebb,b710e51d8f44336f,2,0
+bug:TI-5246::multi_edit::2442,bug:TI-5246,fold4,multi_edit,2442,created,,"[[""swap"", 1], [""duplicate"", 1], [""delete"", 9]]",13,13.0,e49161b12d1a7ebb,1f10213cd40ba0ac,1,0
+bug:TI-5259::swap_adjacent::2442,bug:TI-5259,fold4,swap_adjacent,2442,created,,"[5, 6]",11,11.0,c692aa69d1429056,16bea10051dac68f,7,0
+bug:TI-5259::delete_internal::2442,bug:TI-5259,fold4,delete_internal,2442,created,,[6],11,10.0,c692aa69d1429056,28e01571b2dd30a1,9,0
+bug:TI-5259::duplicate_block::2442,bug:TI-5259,fold4,duplicate_block,2442,created,,[4],11,12.0,c692aa69d1429056,c4d850a8e620a3fa,17,0
+bug:TI-5259::skip_status::2442,bug:TI-5259,fold4,skip_status,2442,created,,[5],11,10.0,c692aa69d1429056,ecd03b75ef704fe4,2,0
+bug:TI-5259::multi_edit::2442,bug:TI-5259,fold4,multi_edit,2442,created,,"[[""delete"", 6], [""duplicate"", 7], [""swap"", 1]]",11,11.0,c692aa69d1429056,7530ba233fcc12b5,1,0
+bug:TI-5267::swap_adjacent::2442,bug:TI-5267,fold4,swap_adjacent,2442,created,,"[19, 20]",28,28.0,7e416a39624ca0d7,01c3280318842cca,24,0
+bug:TI-5267::delete_internal::2442,bug:TI-5267,fold4,delete_internal,2442,created,,[5],28,27.0,7e416a39624ca0d7,7fdb2af07a3c095f,26,0
+bug:TI-5267::duplicate_block::2442,bug:TI-5267,fold4,duplicate_block,2442,created,,"[22, 23]",28,30.0,7e416a39624ca0d7,524b09fc152b00c9,51,0
+bug:TI-5267::skip_status::2442,bug:TI-5267,fold4,skip_status,2442,created,,[6],28,27.0,7e416a39624ca0d7,a19901e556193af3,5,0
+bug:TI-5267::multi_edit::2442,bug:TI-5267,fold4,multi_edit,2442,created,,"[[""duplicate"", 23], [""swap"", 14], [""delete"", 16]]",28,28.0,7e416a39624ca0d7,9a65c1037f1a6f50,1,0
+bug:TI-5345::swap_adjacent::2442,bug:TI-5345,fold4,swap_adjacent,2442,created,,"[1, 2]",17,17.0,6c32a50c0edcc1bd,2fa2adade9d1df89,10,0
+bug:TI-5345::delete_internal::2442,bug:TI-5345,fold4,delete_internal,2442,created,,[12],17,16.0,6c32a50c0edcc1bd,203b204b150670e7,15,0
+bug:TI-5345::duplicate_block::2442,bug:TI-5345,fold4,duplicate_block,2442,created,,"[14, 15]",17,19.0,6c32a50c0edcc1bd,6ee2c7520ea533e3,29,0
+bug:TI-5345::skip_status::2442,bug:TI-5345,fold4,skip_status,2442,created,,[15],17,16.0,6c32a50c0edcc1bd,c0bc70cd20a33459,2,0
+bug:TI-5345::multi_edit::2442,bug:TI-5345,fold4,multi_edit,2442,created,,"[[""delete"", 8], [""delete"", 7], [""duplicate"", 10]]",17,16.0,6c32a50c0edcc1bd,35dcac9c7cdb1935,1,0
+bug:TI-5347::swap_adjacent::2442,bug:TI-5347,fold4,swap_adjacent,2442,created,,"[27, 28]",40,40.0,06c211602124a6a0,c398be3a0588689b,37,0
+bug:TI-5347::delete_internal::2442,bug:TI-5347,fold4,delete_internal,2442,created,,[23],40,39.0,06c211602124a6a0,199dd4b8f98cd716,38,0
+bug:TI-5347::duplicate_block::2442,bug:TI-5347,fold4,duplicate_block,2442,created,,[8],40,41.0,06c211602124a6a0,f3ca3a7cd238c61f,75,0
+bug:TI-5347::skip_status::2442,bug:TI-5347,fold4,skip_status,2442,created,,[34],40,39.0,06c211602124a6a0,67fa7b0cf8093657,9,0
+bug:TI-5347::multi_edit::2442,bug:TI-5347,fold4,multi_edit,2442,created,,"[[""swap"", 12], [""swap"", 33], [""swap"", 18]]",40,40.0,06c211602124a6a0,09d5b0a147a0a87c,1,0
+bug:TI-5362::swap_adjacent::2442,bug:TI-5362,fold4,swap_adjacent,2442,created,,"[12, 13]",33,33.0,238586ec5ce91cdc,f6e3406dc28e6000,28,0
+bug:TI-5362::delete_internal::2442,bug:TI-5362,fold4,delete_internal,2442,created,,[3],33,32.0,238586ec5ce91cdc,89d363e3485d695c,31,0
+bug:TI-5362::duplicate_block::2442,bug:TI-5362,fold4,duplicate_block,2442,created,,[16],33,34.0,238586ec5ce91cdc,4042828acc9aa1cd,61,0
+bug:TI-5362::skip_status::2442,bug:TI-5362,fold4,skip_status,2442,created,,[5],33,32.0,238586ec5ce91cdc,9ce9e3daeb11a938,8,0
+bug:TI-5362::multi_edit::2442,bug:TI-5362,fold4,multi_edit,2442,created,,"[[""swap"", 25], [""duplicate"", 16], [""duplicate"", 4]]",33,35.0,238586ec5ce91cdc,a6939ee94d92e1e6,1,0
+bug:TI-5378::swap_adjacent::2442,bug:TI-5378,fold4,swap_adjacent,2442,created,,"[8, 9]",20,20.0,6fc2c97958e2772c,ac216712eff7ca48,14,0
+bug:TI-5378::delete_internal::2442,bug:TI-5378,fold4,delete_internal,2442,created,,[12],20,19.0,6fc2c97958e2772c,7307bd5dd557677b,18,0
+bug:TI-5378::duplicate_block::2442,bug:TI-5378,fold4,duplicate_block,2442,created,,[7],20,21.0,6fc2c97958e2772c,8c2dfb4f3ade6f65,35,0
+bug:TI-5378::skip_status::2442,bug:TI-5378,fold4,skip_status,2442,created,,[16],20,19.0,6fc2c97958e2772c,2ff15e8eada4fe06,5,0
+bug:TI-5378::multi_edit::2442,bug:TI-5378,fold4,multi_edit,2442,created,,"[[""delete"", 18], [""delete"", 3], [""swap"", 5]]",20,18.0,6fc2c97958e2772c,2a0e4bca26d8f321,1,0
+bug:TI-5440::swap_adjacent::2442,bug:TI-5440,fold4,swap_adjacent,2442,created,,"[2, 3]",19,19.0,95122f931b7a56c4,00e0f8b048914765,15,0
+bug:TI-5440::delete_internal::2442,bug:TI-5440,fold4,delete_internal,2442,created,,[5],19,18.0,95122f931b7a56c4,34c6234f29219f4d,17,0
+bug:TI-5440::duplicate_block::2442,bug:TI-5440,fold4,duplicate_block,2442,created,,"[16, 17]",19,21.0,95122f931b7a56c4,832ffd56670e408e,33,0
+bug:TI-5440::skip_status::2442,bug:TI-5440,fold4,skip_status,2442,created,,[17],19,18.0,95122f931b7a56c4,6d28bada84abe5d8,5,0
+bug:TI-5440::multi_edit::2442,bug:TI-5440,fold4,multi_edit,2442,created,,"[[""duplicate"", 11], [""delete"", 16], [""delete"", 6]]",19,18.0,95122f931b7a56c4,3be17629f41315a3,1,0
+bug:TI-5443::swap_adjacent::2442,bug:TI-5443,fold4,swap_adjacent,2442,created,,"[7, 8]",12,12.0,1fa5775dfc801586,ce2db7f31d58f45d,8,0
+bug:TI-5443::delete_internal::2442,bug:TI-5443,fold4,delete_internal,2442,created,,[1],12,11.0,1fa5775dfc801586,e597af7ee2b7f8b4,10,1
+bug:TI-5443::duplicate_block::2442,bug:TI-5443,fold4,duplicate_block,2442,created,,[5],12,13.0,1fa5775dfc801586,f6453ebf17360e9f,19,0
+bug:TI-5443::skip_status::2442,bug:TI-5443,fold4,skip_status,2442,created,,[6],12,11.0,1fa5775dfc801586,54706e1a0923a189,2,0
+bug:TI-5443::multi_edit::2442,bug:TI-5443,fold4,multi_edit,2442,created,,"[[""delete"", 3], [""duplicate"", 2], [""swap"", 1]]",12,12.0,1fa5775dfc801586,bb8986cfd24933a6,1,0
+bug:TI-5489::swap_adjacent::2442,bug:TI-5489,fold4,swap_adjacent,2442,created,,"[14, 15]",27,27.0,f0595c3d88a13685,97f88ab026032623,21,0
+bug:TI-5489::delete_internal::2442,bug:TI-5489,fold4,delete_internal,2442,created,,[18],27,26.0,f0595c3d88a13685,6e95fe38eff78e79,25,0
+bug:TI-5489::duplicate_block::2442,bug:TI-5489,fold4,duplicate_block,2442,created,,"[6, 7]",27,29.0,f0595c3d88a13685,fe00f9390a85eb15,49,0
+bug:TI-5489::skip_status::2442,bug:TI-5489,fold4,skip_status,2442,created,,[14],27,26.0,f0595c3d88a13685,74530e7b8ee9d04e,5,0
+bug:TI-5489::multi_edit::2442,bug:TI-5489,fold4,multi_edit,2442,created,,"[[""delete"", 10], [""delete"", 5], [""delete"", 20]]",27,24.0,f0595c3d88a13685,a0a4d23078655b90,1,0
+bug:TI-5548::swap_adjacent::2442,bug:TI-5548,fold4,swap_adjacent,2442,created,,"[27, 28]",30,30.0,01394f72a5edd992,faca7cb12fe4af0a,25,0
+bug:TI-5548::delete_internal::2442,bug:TI-5548,fold4,delete_internal,2442,created,,[27],30,29.0,01394f72a5edd992,00d19ec0a55dca25,28,0
+bug:TI-5548::duplicate_block::2442,bug:TI-5548,fold4,duplicate_block,2442,created,,"[12, 13]",30,32.0,01394f72a5edd992,38f3d42a514af0a4,55,0
+bug:TI-5548::skip_status::2442,bug:TI-5548,fold4,skip_status,2442,created,,[27],30,29.0,01394f72a5edd992,00d19ec0a55dca25,5,0
+bug:TI-5548::multi_edit::2442,bug:TI-5548,fold4,multi_edit,2442,created,,"[[""swap"", 5], [""delete"", 24], [""duplicate"", 2]]",30,30.0,01394f72a5edd992,5ab3485e52959d11,1,0
+bug:TI-5586::swap_adjacent::2442,bug:TI-5586,fold4,swap_adjacent,2442,created,,"[21, 22]",33,33.0,a21b8a364e94c0af,13bc203a207b3ab2,22,0
+bug:TI-5586::delete_internal::2442,bug:TI-5586,fold4,delete_internal,2442,created,,[12],33,32.0,a21b8a364e94c0af,d150f8bc36fd43b5,31,0
+bug:TI-5586::duplicate_block::2442,bug:TI-5586,fold4,duplicate_block,2442,created,,"[1, 2]",33,35.0,a21b8a364e94c0af,f641a22334d118e5,61,0
+bug:TI-5586::skip_status::2442,bug:TI-5586,fold4,skip_status,2442,created,,[17],33,32.0,a21b8a364e94c0af,dd50c5b4320b89df,5,0
+bug:TI-5586::multi_edit::2442,bug:TI-5586,fold4,multi_edit,2442,created,,"[[""delete"", 29], [""duplicate"", 6], [""swap"", 2]]",33,33.0,a21b8a364e94c0af,1be844525f0d3de0,1,0
+bug:TI-5633::swap_adjacent::2442,bug:TI-5633,fold4,swap_adjacent,2442,created,,"[17, 18]",30,30.0,9cadd2fc0de11bba,40a53c82c886fc8c,17,0
+bug:TI-5633::delete_internal::2442,bug:TI-5633,fold4,delete_internal,2442,created,,[22],30,29.0,9cadd2fc0de11bba,4ab41885752748ef,28,0
+bug:TI-5633::duplicate_block::2442,bug:TI-5633,fold4,duplicate_block,2442,created,,"[11, 12]",30,32.0,9cadd2fc0de11bba,28a83fd7ec3aeb94,55,0
+bug:TI-5633::skip_status::2442,bug:TI-5633,fold4,skip_status,2442,created,,[21],30,29.0,9cadd2fc0de11bba,f496224653bd23f6,2,0
+bug:TI-5633::multi_edit::2442,bug:TI-5633,fold4,multi_edit,2442,created,,"[[""swap"", 21], [""delete"", 11], [""delete"", 5]]",30,28.0,9cadd2fc0de11bba,05c3101a130a09ba,1,0
+bug:TI-5674::swap_adjacent::2442,bug:TI-5674,fold4,swap_adjacent,2442,created,,"[5, 6]",23,23.0,61ff7be382eec1f7,5101f26b18a4e71c,18,0
+bug:TI-5674::delete_internal::2442,bug:TI-5674,fold4,delete_internal,2442,created,,[13],23,22.0,61ff7be382eec1f7,a624edc482e7c6f1,21,0
+bug:TI-5674::duplicate_block::2442,bug:TI-5674,fold4,duplicate_block,2442,created,,[20],23,24.0,61ff7be382eec1f7,393b99d5d4213341,41,0
+bug:TI-5674::skip_status::2442,bug:TI-5674,fold4,skip_status,2442,created,,[18],23,22.0,61ff7be382eec1f7,a0b9f0ed547c5894,6,0
+bug:TI-5674::multi_edit::2442,bug:TI-5674,fold4,multi_edit,2442,created,,"[[""swap"", 17], [""swap"", 17], [""duplicate"", 11]]",23,24.0,61ff7be382eec1f7,da3a57d4fa14149d,1,0
+bug:TI-5750::swap_adjacent::2442,bug:TI-5750,fold4,swap_adjacent,2442,created,,"[4, 5]",11,11.0,e4765dc730dd482f,47af724bf0c64af7,7,0
+bug:TI-5750::delete_internal::2442,bug:TI-5750,fold4,delete_internal,2442,created,,[6],11,10.0,e4765dc730dd482f,c45783681ebcbb0a,9,0
+bug:TI-5750::duplicate_block::2442,bug:TI-5750,fold4,duplicate_block,2442,created,,[8],11,12.0,e4765dc730dd482f,6348c4e7f254143c,17,0
+bug:TI-5750::skip_status::2442,bug:TI-5750,fold4,skip_status,2442,created,,[5],11,10.0,e4765dc730dd482f,7cfdc69c1fc8cf32,2,0
+bug:TI-5750::multi_edit::2442,bug:TI-5750,fold4,multi_edit,2442,created,,"[[""delete"", 4], [""duplicate"", 2], [""swap"", 1]]",11,11.0,e4765dc730dd482f,6c80a4bef5ae1776,1,0
+bug:TI-5751::swap_adjacent::2442,bug:TI-5751,fold4,swap_adjacent,2442,created,,"[7, 8]",22,22.0,08668dc591cbbd1b,a2329b02c9e20424,19,0
+bug:TI-5751::delete_internal::2442,bug:TI-5751,fold4,delete_internal,2442,created,,[2],22,21.0,08668dc591cbbd1b,31d3aa077b581d45,20,0
+bug:TI-5751::duplicate_block::2442,bug:TI-5751,fold4,duplicate_block,2442,created,,"[3, 4]",22,24.0,08668dc591cbbd1b,dff053c0f3f08a32,39,0
+bug:TI-5751::skip_status::2442,bug:TI-5751,fold4,skip_status,2442,created,,[14],22,21.0,08668dc591cbbd1b,30b7a92fb54d97ad,5,0
+bug:TI-5751::multi_edit::2442,bug:TI-5751,fold4,multi_edit,2442,created,,"[[""delete"", 2], [""duplicate"", 4], [""delete"", 13]]",22,21.0,08668dc591cbbd1b,4a1c099fadf44a1b,1,0
+bug:TI-5915::swap_adjacent::2442,bug:TI-5915,fold4,swap_adjacent,2442,created,,"[1, 2]",10,10.0,d9ebbc2ba2c2fa08,37faf727e1a0f160,6,0
+bug:TI-5915::delete_internal::2442,bug:TI-5915,fold4,delete_internal,2442,created,,[5],10,9.0,d9ebbc2ba2c2fa08,b10a1190fe26052c,8,0
+bug:TI-5915::duplicate_block::2442,bug:TI-5915,fold4,duplicate_block,2442,created,,"[7, 8]",10,12.0,d9ebbc2ba2c2fa08,3b2d5bb37b37fe7f,15,0
+bug:TI-5915::skip_status::2442,bug:TI-5915,fold4,skip_status,2442,created,,[5],10,9.0,d9ebbc2ba2c2fa08,b10a1190fe26052c,3,0
+bug:TI-5915::multi_edit::2442,bug:TI-5915,fold4,multi_edit,2442,created,,"[[""swap"", 6], [""swap"", 1], [""swap"", 5]]",10,10.0,d9ebbc2ba2c2fa08,7f3447bd30fff419,1,0
+bug:TI-6087::swap_adjacent::2442,bug:TI-6087,fold4,swap_adjacent,2442,created,,"[8, 9]",15,15.0,d6de2f5b7930efc6,233250d60a1c77e5,12,0
+bug:TI-6087::delete_internal::2442,bug:TI-6087,fold4,delete_internal,2442,created,,[10],15,14.0,d6de2f5b7930efc6,775902c1160a97be,13,0
+bug:TI-6087::duplicate_block::2442,bug:TI-6087,fold4,duplicate_block,2442,created,,"[3, 4]",15,17.0,d6de2f5b7930efc6,de14b9b612563f41,25,0
+bug:TI-6087::skip_status::2442,bug:TI-6087,fold4,skip_status,2442,created,,[12],15,14.0,d6de2f5b7930efc6,b768e69a0af6a0a8,2,0
+bug:TI-6087::multi_edit::2442,bug:TI-6087,fold4,multi_edit,2442,created,,"[[""duplicate"", 9], [""delete"", 3], [""swap"", 10]]",15,15.0,d6de2f5b7930efc6,16976290ae2d9f7a,1,0
+bug:TI-6105::swap_adjacent::2442,bug:TI-6105,fold4,swap_adjacent,2442,created,,"[7, 8]",16,16.0,0e7f4a63d72d0a55,1413b1aac9ce4f71,12,0
+bug:TI-6105::delete_internal::2442,bug:TI-6105,fold4,delete_internal,2442,created,,[1],16,15.0,0e7f4a63d72d0a55,3981d02a16292668,14,0
+bug:TI-6105::duplicate_block::2442,bug:TI-6105,fold4,duplicate_block,2442,created,,[8],16,17.0,0e7f4a63d72d0a55,3e3c36a8a0aa98b6,27,0
+bug:TI-6105::skip_status::2442,bug:TI-6105,fold4,skip_status,2442,created,,[6],16,15.0,0e7f4a63d72d0a55,7c715ec92766a5d5,4,0
+bug:TI-6105::multi_edit::2442,bug:TI-6105,fold4,multi_edit,2442,created,,"[[""swap"", 10], [""delete"", 9], [""duplicate"", 13]]",16,16.0,0e7f4a63d72d0a55,c04a6dd553a72fb0,1,0

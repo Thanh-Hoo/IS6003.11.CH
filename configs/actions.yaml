@@ -1,0 +1,60 @@
+# Quy tắc chuẩn hóa action Jira -> activity (spec §4.1). Nội dung file này được băm (action_rules_hash).
+#
+# Một dòng event Jira có thể chứa nhiều mệnh đề nối bằng ", " (ví dụ
+# "update resolution to Done, update status to DONE"). Giữ MỘT event; mỗi mệnh đề được so khớp
+# lần lượt với `rules`. Activity chính của event là mệnh đề khớp quy tắc ĐỨNG TRƯỚC nhất trong
+# danh sách (thứ tự trong file = thứ tự ưu tiên); nếu nhiều mệnh đề cùng quy tắc, lấy mệnh đề
+# xuất hiện trước. Các mệnh đề còn lại được lưu ở cột `secondary_changes`, không tách event.
+#
+# Quy tắc ưu tiên theo spec: create > cập nhật status > liên kết commit/MR > assignee >
+# sprint/fix version > các thay đổi field khác > fallback.
+#
+# Chỉ dùng chữ trong mệnh đề (động từ + tên field); KHÔNG suy diễn mục đích từ giá trị tự do và
+# không lưu giá trị (ví dụ mọi "update Backlog Classification to ..." đều là
+# UPDATE_BACKLOG_CLASSIFICATION).
+#
+# `match` là regex fullmatch trên một mệnh đề đã strip. `activity` là mẫu:
+#   {verb}   động từ viết hoa           ({add, update, remove, edit} -> ADD, UPDATE, ...)
+#   {field}  tên field viết hoa, ký tự không chữ-số thành "_" ("Fix Version" -> FIX_VERSION)
+#   {status} giá trị status GIỮ NGUYÊN chữ hoa/thường và khoảng trắng; quy tắc có {status} đặt
+#            status_value cho event (so khớp terminal_statuses).
+version: 1
+missing_role: __MISSING_ROLE__   # role trống; "unknown" vẫn là giá trị riêng
+bot_roles: [bot]
+fallback_activity: OTHER_ACTION
+clause_separator: ',\s+(?=(?:update|add|remove|edit)\s)'
+
+# Hoạt động bị bỏ khỏi core view theo từng noise policy. Policy mặc định chỉ bỏ cập nhật
+# RemoteIssueLink chung chung; vẫn giữ LINK_COMMIT, LINK_MERGE_REQUEST và hành động bot khác.
+noise_policies:
+  drop_generic_external_link_updates: [UPDATE_EXTERNAL_LINK]
+  keep_all: []
+
+rules:
+  - name: create
+    match: 'Issue created'
+    activity: CREATE
+  - name: status
+    match: 'update status to (?P<status>.+)'
+    activity: 'STATUS_{status}'
+  - name: link_commit
+    match: '(?:add|update|remove) RemoteIssueLink to Commit'
+    activity: LINK_COMMIT
+  - name: link_merge_request
+    match: '(?:add|update|remove) RemoteIssueLink to Merge request'
+    activity: LINK_MERGE_REQUEST
+  - name: assignee
+    match: '(?P<verb>add|update|remove) (?P<field>assignee)'
+    activity: '{verb}_{field}'
+  - name: sprint_fix_version
+    match: '(?P<verb>add|update|remove) (?P<field>Sprint|Fix Version)(?: to\b.*)?'
+    activity: '{verb}_{field}'
+  - name: external_link_update
+    match: 'update RemoteIssueLink'
+    activity: UPDATE_EXTERNAL_LINK
+  - name: issue_link
+    match: '(?P<verb>add|remove) link to .+'
+    activity: '{verb}_ISSUE_LINK'
+  - name: field_change
+    match: '(?P<verb>add|update|remove|edit) (?P<field>[A-Za-z][A-Za-z0-9 ]*?)(?: to\b.*)?'
+    activity: '{verb}_{field}'

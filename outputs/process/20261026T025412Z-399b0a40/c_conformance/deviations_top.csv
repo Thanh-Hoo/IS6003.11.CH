@@ -1,0 +1,16 @@
+source,target,in_model,count,n_cases,median_wait_days,example_cases
+CREATE,To Do,False,37,37,1.1020907407407408,"bug:TI-4751, bug:TI-4759, bug:TI-4811, bug:TI-4820, bug:TI-4876"
+To Do,Inbox,False,11,11,6.842387627314815,"bug:TI-4748, bug:TI-4751, bug:TI-5118, bug:TI-5139, bug:TI-5200"
+INVESTIGATED,To Investigate,False,5,5,2.1163537731481483,"bug:TI-4748, bug:TI-5153, bug:TI-5480, bug:TI-5568, bug:TI-6105"
+In Progress,To Do,False,5,5,0.015187453703703703,"bug:TI-4617, bug:TI-4811, bug:TI-5118, bug:TI-6163, bug:TI-6208"
+DONE,In Progress,False,4,4,0.0028675752314814814,"bug:TI-4584, bug:TI-5362, bug:TI-5564, bug:TI-5591"
+Rejected,Inbox,False,4,4,0.0010238483796296295,"bug:TI-4671, bug:TI-4723, bug:TI-4871, bug:TI-4872"
+In Progress,Rejected,False,2,2,2.640046296296296e-05,"bug:TI-4584, bug:TI-5674"
+CREATE,In Progress,False,1,1,0.07264383101851851,bug:TI-6203
+CREATE,OPEN,False,1,1,0.03450582175925926,bug:TI-5770
+In Progress,Inbox,False,1,1,4.664351851851852e-05,bug:TI-5564
+In Test,Inbox,False,1,1,3.057616342592593,bug:TI-4686
+Inbox,To Do,False,1,1,1.960396736111111,bug:TI-4686
+OPEN,Triage,False,1,1,5.91087962962963e-05,bug:TI-5770
+Rejected,To Do,False,1,1,2.519675925925926e-05,bug:TI-4584
+Triage,In Progress,False,1,1,1.0539996064814814,bug:TI-5770
