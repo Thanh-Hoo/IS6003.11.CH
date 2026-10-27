@@ -33,44 +33,65 @@ the phase 1 spec** (the phase 1 spec still wins for everything that belongs to T
 
 ## Repository layout
 
-Compact version; the annotated tree is in [README.md](README.md#repository-layout-standard-folder-structure). Paths in YAML are relative to the repo
-root (the nearest directory containing `pyproject.toml`).
+Compact version. The full drawing, the "folder contract" table and the setup flow chart are in
+[README.md](README.md#repository-layout-standard-folder-structure). Paths in YAML are relative to the repo root (the nearest directory containing
+`pyproject.toml`). Do not move or rename these folders.
 
 ```
-pyproject.toml  uv.lock  .python-version   package `jira-ad`, locked deps, Python 3.12 (supported 3.11–3.12)
-configs/      baseline|actions|experiments|improvement_plan.yaml = LOCKED; improvements|smoke|process.yaml
-dataset/      NOT in Git · read-only · provided by the user (TIeventlogBug.csv, TIeventlogStory.csv required)
-src/jira_ad/  all logic: 34 modules + __init__.py (phase 1 and phase 2, flat)
-tests/        test_<module>.py per module + conftest.py + helpers.py
-notebooks/    01–06 phase 1 (need a V1 run) · 07–12 phase 2 (need a process run)
-scripts/      execute_notebooks.py (wrapper of `jira-ad notebooks`)
-docs/         reports, PROGRESS.md, DECISIONS.md, RESEARCH_NOTES.md, superpowers/{spec,plans}, figures/
-outputs/      NOT in Git · generated · append-only: analysis/, prepared/, runs/, improvement/, process/<UTC>-<hash8>/
+<repo root>/                                  tags: [git] in the clone · [YOU] user provides · [gen] a command creates it · [lock] never edit
+├── pyproject.toml  uv.lock  .python-version  [git]  package `jira-ad`, locked deps, Python 3.12 (supported 3.11–3.12)
+├── configs/                                  [git]  baseline|actions|experiments|improvement_plan.yaml = [lock]; improvements|smoke|process.yaml
+├── dataset/                                  [YOU]  ◀ TIeventlogBug.csv + TIeventlogStory.csv go HERE · read-only · git-ignored
+├── src/jira_ad/                              [git]  all logic: 34 modules + __init__.py (phase 1 and phase 2, flat)
+├── tests/  notebooks/  scripts/  docs/       [git]  test_<module>.py per module · 01–06 phase 1, 07–12 phase 2 · wrapper · reports + PROGRESS/DECISIONS
+├── .venv/                                    [gen]  `uv sync`
+└── outputs/                                  append-only: analysis/ prepared/ improvement/ process/ [gen]; runs/ [gen] and git-ignored (`outputs/runs/*`)
 ```
 
 ## Fresh-clone setup (read before running anything on a new checkout or machine)
 
-The human-readable steps are in README, section "Setup from scratch". Rules for agents:
+The human-readable steps are in README, section "Setup from scratch". Rules for agents. The point of this section: **make the standard folders true
+first, and never guess where something goes.**
 
-1. **Look before acting.** Run `ls dataset outputs`. Both folders are ignored by Git, so a fresh clone has neither.
-2. **The dataset is provided by the user.** Never download, replace or regenerate it (see Invariant rules). If `dataset/TIeventlogBug.csv` or
-   `dataset/TIeventlogStory.csv` is missing, **stop and ask the user** to place the files (source, for the user: Zenodo record 8275679). Once they are
-   there, verify them before any analysis:
+**Folder contract (what an agent may do):**
+
+| Path | Created by | An agent may |
+|---|---|---|
+| `dataset/TIeventlogBug.csv`, `dataset/TIeventlogStory.csv` | **the user** | read only; never write, replace or download; may create the *empty* `dataset/` folder to show where the files go |
+| `.venv/` | `uv sync` | create via `uv` only |
+| `outputs/runs/`, `outputs/improvement/`, `outputs/process/`, `outputs/analysis/`, `outputs/prepared/` | the `jira-ad` commands | create via the commands only; never delete or overwrite an existing run |
+| `configs/{baseline,actions,experiments,improvement_plan}.yaml` | — | never edit |
+| `configs/process.yaml` | — | only the two `paths.*` lines, as setup step 4 below |
+
+1. **Preflight, always first (read-only).** Both `dataset/` and `outputs/runs/*` are git-ignored, so a fresh clone lacks them; the other `outputs/`
+   subfolders are present only if they were committed.
+   ```bash
+   ls dataset outputs 2>&1
+   for f in dataset/TIeventlogBug.csv dataset/TIeventlogStory.csv; do [ -f "$f" ] || echo "MISSING: $f"; done
+   ```
+2. **The dataset is provided by the user, at exactly `<repo root>/dataset/TIeventlogBug.csv` and `<repo root>/dataset/TIeventlogStory.csv`.** Never
+   download, replace or regenerate it (see Invariant rules). If either file is missing, **stop and ask**, for example: *"Please copy
+   `TIeventlogBug.csv` and `TIeventlogStory.csv` (Zenodo record 8275679) into `<repo root>/dataset/`."* Every `jira-ad` command that reads data fails
+   with `Lỗi: Thư mục dữ liệu không tồn tại: dataset` until they are there. Once present, verify them before any analysis:
    - `shasum -a 256 dataset/TIeventlogBug.csv dataset/TIeventlogStory.csv` must give the SHA-256 values listed in README (they are the values
      recorded in the manifest of every existing run);
    - `uv run jira-ad audit --config configs/baseline.yaml` expects 5,126 events / 161 issues (bug) and 4,439 / 182 (story) and prints any difference.
    A mismatch is a data problem: stop and report it; do not edit configs to make it pass.
 3. **Install from the lock:** `uv sync --locked --all-extras --group dev`. Plain `pip install -e '.[notebook,dev]'` lacks pm4py (extra `process`),
    which phase 2 step C needs (Decision 1). Do not change numpy/pandas versions. Graphviz `dot` is optional (without it only `.dot` files are written).
-4. **A missing `outputs/` is normal.** Regenerate it with new folders only (never overwrite), in this order:
-   `jira-ad run --config configs/baseline.yaml` → `jira-ad improve --plan configs/improvement_plan.yaml` → `jira-ad process --config configs/process.yaml`.
-   `configs/process.yaml` hard-codes the author's timestamped folders in `paths.v1_run` and `paths.improvement_dir`; before `process`, change **only those
-   two lines** to the folders just created. This is a setup step, not a stop point; record it as a new Ruling in `docs/PROGRESS.md` and `docs/DECISIONS.md`.
+4. **Regenerate only what the task needs, with new folders only (never overwrite):**
+   - *Reading or re-opening phase 2 results (notebooks 07–12):* a completed `outputs/process/<run>` whose config hash matches `configs/process.yaml` is
+     enough; **no dataset and no V1 run are needed** (verified). Do not regenerate anything.
+   - *Notebooks 01–06, or re-running phase 2:* `uv run jira-ad run --config configs/baseline.yaml` (the V1 run, `outputs/runs/<UTC>-930f8a85`), then
+     `uv run jira-ad improve --plan configs/improvement_plan.yaml` only if `ls -d outputs/improvement/*-bb0fee9a` finds nothing.
+   - *Before `jira-ad process`:* `configs/process.yaml` hard-codes the author's timestamped folders in `paths.v1_run` and `paths.improvement_dir`.
+     Change **only those two lines** to the folders just found (`ls -d outputs/runs/*-930f8a85`, `ls -d outputs/improvement/*-bb0fee9a`). This is a setup step,
+     not a stop point; record it as a new Ruling in `docs/PROGRESS.md` and `docs/DECISIONS.md`. The new run's `<hash8>` will differ from `399b0a40`.
 5. **A phase 2 run made without those two folders is degraded:** step E silently drops the Node2Vec comparison and the `M_markov` dimension (see
    `e_ranking/status.json`). Never present its ranking numbers as thesis results.
-6. **Setup is done when** `uv run pytest -q` passes, `uv run ruff check src tests scripts` is clean, and the locked hashes are unchanged (see Commands).
-   Existing reports quote the author's run `outputs/process/20261026T025412Z-399b0a40`; a regenerated run has a different timestamp and, because the two
-   path lines changed, a different `<hash8>`.
+6. **Setup is done when** `uv run pytest -q` passes (705 tests on a clean copy, no `outputs/` needed), `uv run ruff check src tests scripts` is clean, and
+   the locked hashes are unchanged (see Commands). Existing reports quote the author's run `outputs/process/20261026T025412Z-399b0a40`; a regenerated
+   run reproduces its data files byte for byte on the verified machine (74 of 75; only `e_ranking/status.json`, which records folder paths, differs).
 
 ## Phase 2 context
 

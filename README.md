@@ -66,37 +66,74 @@ raw CSV → normalise → split issues → build graph → learn vectors → sco
 ## Repository layout (standard folder structure)
 
 This is the layout every command and config assumes. Paths in YAML are relative to the **repo root** (the nearest directory
-containing `pyproject.toml`); absolute paths are rejected.
+containing `pyproject.toml`); absolute paths are rejected. Do not move or rename these folders.
+
+Tags: `[git]` arrives with the clone · `[YOU]` **you must provide it** (not in Git) · `[gen]` created by a command, never edit by hand · `[lock]` never edit.
 
 ```
-zenodo/                              # repo root
-├── pyproject.toml  uv.lock          # package `jira-ad`; locked dependencies
-├── .python-version                  # 3.12 (supported: 3.11–3.12)
-├── README.md  CLAUDE.md  AGENTS.md  # human docs · agent rules · agent entry point
-├── configs/                         # ALL parameters, paths, seeds, thresholds (YAML)
-│   ├── baseline.yaml                # phase 1 locked config           ┐
-│   ├── actions.yaml                 # action → activity rules (hashed)│ LOCKED:
-│   ├── experiments.yaml             # ablation matrix                 │ never edit
-│   ├── improvement_plan.yaml        # improvement protocol            ┘
-│   ├── improvements.yaml            # baseline + methods E/F/M
-│   ├── smoke.yaml                   # tiny run for plumbing checks only
-│   └── process.yaml                 # phase 2 config
-├── dataset/                         # ⚠ NOT in Git · READ-ONLY · YOU provide it (see Setup)
-│   ├── TIeventlogBug.csv            #   required (5,126 events, 161 issues)
-│   ├── TIeventlogStory.csv          #   required (4,439 events, 182 issues)
-│   └── README.md, workflow-*.json, graph-viewer.html   # ship with the Zenodo record; not used by the code
-├── src/jira_ad/                     # all logic (34 modules + __init__.py; see Module map)
-├── tests/                           # one test_<module>.py per module + conftest.py + helpers.py
-├── notebooks/                       # 01–06 (phase 1, need a V1 run) · 07–12 (phase 2, need a process run)
-├── scripts/execute_notebooks.py     # thin wrapper of `jira-ad notebooks`
-├── docs/                            # reports, PROGRESS.md, DECISIONS.md, RESEARCH_NOTES.md, figures/
-│   └── superpowers/                 #   spec (phase 1) and plans/ (improvement, phase 2)
-└── outputs/                         # ⚠ NOT in Git · generated artifacts · never edit by hand
-    ├── analysis/                    #   `audit` output (audit_raw.json)
-    ├── prepared/<cohort>-<key>/     #   `prepare` output (normalised data + split)
-    ├── runs/<UTC>-<hash8>/          #   phase 1 runs (`run`, `experiments`)
-    ├── improvement/<UTC>-<hash8>/   #   `improve` output (out-of-fold scores of the 161 issues)
-    └── process/<UTC>-<hash8>/       #   phase 2 runs (`process`): a_quant … e_ranking, notebooks_executed
+IS6003.11.CH/                                      repo root = the folder that contains pyproject.toml
+│
+├── pyproject.toml · uv.lock · .python-version   [git]  package `jira-ad`, locked dependencies, Python 3.12
+├── README.md · CLAUDE.md · AGENTS.md            [git]  human docs · agent rules · agent entry point
+│
+├── configs/                                 [git]  ALL parameters, paths, seeds, thresholds (YAML)
+│   ├── baseline.yaml · actions.yaml             [lock] phase 1 config · action → activity rules (hashed)
+│   ├── experiments.yaml · improvement_plan.yaml [lock] ablation matrix · improvement protocol
+│   ├── improvements.yaml · smoke.yaml               baseline + methods E/F/M · tiny plumbing run (never a result)
+│   └── process.yaml                                 phase 2 config (setup may edit ONLY paths.v1_run / paths.improvement_dir)
+│
+├── dataset/                                 [YOU]  ◀◀◀ PUT THE DATA HERE · read-only · not in Git
+│   ├── TIeventlogBug.csv                            required · 5,126 events · 161 issues
+│   ├── TIeventlogStory.csv                          required · 4,439 events · 182 issues
+│   └── (README.md, workflow-*.json, graph-viewer.html of the Zenodo record: optional, unused by the code)
+│
+├── src/jira_ad/                             [git]  all logic: 34 modules + __init__.py (see Module map)
+├── tests/                                   [git]  test_<module>.py per module + conftest.py + helpers.py
+├── notebooks/                               [git]  01–06 phase 1 · 07–12 phase 2
+├── scripts/                                 [git]  execute_notebooks.py (wrapper of `jira-ad notebooks`)
+├── docs/                                    [git]  reports · PROGRESS.md · DECISIONS.md · RESEARCH_NOTES.md · figures/
+│   └── superpowers/                                spec (phase 1) and plans/ (improvement, phase 2)
+│
+├── .venv/                                   [gen]  created by `uv sync`
+└── outputs/                                        append-only: a run folder is never overwritten
+    ├── analysis/                            [gen]  `audit`   → audit_raw.json
+    ├── prepared/<cohort>-<key>/             [gen]  `prepare` → normalised data + split
+    ├── runs/<UTC>-<hash8>/                  [gen]  `run`, `experiments` → phase 1 runs · git-ignored
+    ├── improvement/<UTC>-<hash8>/           [gen]  `improve` → out-of-fold scores of the 161 issues
+    └── process/<UTC>-<hash8>/               [gen]  `process` → phase 2 run: a_quant … e_ranking, notebooks_executed
+```
+
+**Folder contract** — who creates each folder, and what an agent may do there:
+
+| Path | Created by | Git | Needed for | An agent may |
+|---|---|---|---|---|
+| `dataset/TIeventlogBug.csv`, `dataset/TIeventlogStory.csv` | **the user** (copy from Zenodo) | ignored (`dataset/`) | `audit`, `prepare`, `run`, `improve`, `process` | never write, replace or download them; may create the *empty* `dataset/` folder to show where they go |
+| `.venv/` | `uv sync` | ignored | everything | create only through `uv` |
+| `outputs/runs/` | `jira-ad run`, `experiments` | ignored (`outputs/runs/*`) | notebooks 01–06; `process` step E (Node2Vec) | create only through the commands; never delete or overwrite an existing run |
+| `outputs/improvement/` | `jira-ad improve` | not ignored | `process` step E (`M_markov` dimension) | same |
+| `outputs/process/` | `jira-ad process` | not ignored | notebooks 07–12 | same |
+| `outputs/analysis/`, `outputs/prepared/` | `audit`, `prepare` | not ignored | cache of the pipeline | same |
+| `configs/{baseline,actions,experiments,improvement_plan}.yaml` | — | yes | — | never edit |
+| `configs/process.yaml` | — | yes | phase 2 | only the two `paths.*` lines, and only as a setup step (step 6) |
+
+"Git" follows the current `.gitignore`: it ignores `.venv/`, caches, `dataset/` and `outputs/runs/*`. Everything else under `outputs/` is not ignored,
+so it arrives with a clone only if it was committed.
+
+**Setup flow at a glance** (details in the next section):
+
+```mermaid
+flowchart TD
+    A["git clone"] --> B["uv sync --locked --all-extras --group dev"]
+    B --> C{"dataset/ holds the 2 CSV files?"}
+    C -- no --> D["USER copies TIeventlogBug.csv + TIeventlogStory.csv into dataset/<br/>(an agent stops and asks)"]
+    D --> E
+    C -- yes --> E["sha256 check → jira-ad audit → pytest → ruff"]
+    E --> F{"what do you need?"}
+    F -- "only READ phase 2 results (notebooks 07–12)" --> G["a completed outputs/process/&lt;run&gt; is enough<br/>no dataset, no V1 run needed"]
+    F -- "notebooks 01–06, or RE-RUN phase 2" --> H["jira-ad run  → outputs/runs/ (V1 run)"]
+    H --> I["jira-ad improve — only if outputs/improvement/ is missing"]
+    I --> J["edit the 2 paths.* lines of configs/process.yaml"]
+    J --> K["jira-ad process → jira-ad notebooks"]
 ```
 
 Rules that follow from the layout:
@@ -104,13 +141,12 @@ Rules that follow from the layout:
 - `dataset/` is read-only input. `outputs/` is append-only: a run directory is never overwritten.
 - `<UTC>` is the creation time and `<hash8>` the first 8 hex characters of the config hash, so **a re-run has a different folder name**
   (the same config gives the same hash and, on the same environment, the same numbers).
-- `.venv/`, caches, `dataset/` and `outputs/` are ignored by Git (`.gitignore`). A fresh clone therefore contains the code, configs,
-  notebooks and docs only — see the next section.
+- A fresh clone contains no `dataset/` and no `outputs/runs/`; see the next section for how to supply or regenerate them.
 
 ## Setup from scratch (fresh clone → working code)
 
-Follow these steps in order. Steps 1–4 are enough to run the tests and the audit; steps 5–7 regenerate the artifacts that
-`outputs/` would otherwise hold.
+Follow these steps in order. Steps 1–4 are enough to run the tests and the audit; steps 5–7 regenerate the git-ignored artifacts under
+`outputs/`, and only the ones you need.
 
 **0. Prerequisites**
 
@@ -142,11 +178,19 @@ re-verified since that extra was added; `uv.lock` is the supported path.
 
 **3. Put the dataset in `dataset/`** (not in Git, so you must provide it)
 
+- **Exact location:** `<repo root>/dataset/TIeventlogBug.csv` and `<repo root>/dataset/TIeventlogStory.csv`, directly inside `dataset/` (create the
+  folder with `mkdir -p dataset` if it does not exist). The loader also finds them in sub-folders of `dataset/`, but two files with the same name are an
+  error, so keep the flat layout.
 - Source: Zenodo record [8275679](https://zenodo.org/records/8275679), which accompanies the paper *Process Mining from Jira Issues at a
   Large Company* (ICSME 2023). The two CSV files are the event logs of "Team Newt". See the record page for its terms of use.
-- Required files, anywhere under `dataset/` (the loader searches recursively; two files with the same name are an error):
-  `TIeventlogBug.csv` and `TIeventlogStory.csv`. The other files shipped with the record are optional and unused by the code.
+  The other files of the record (`README.md`, `workflow-*.json`, `graph-viewer.html`) are optional and unused by the code.
 - Do not edit, rename or re-save these files. **AI agents must not download the dataset themselves** (project rule); the user places the files.
+- Quick check that both files are in place (prints nothing when they are):
+
+  ```bash
+  for f in dataset/TIeventlogBug.csv dataset/TIeventlogStory.csv; do [ -f "$f" ] || echo "MISSING: $f"; done
+  ```
+
 - Reference SHA-256 of the copies used for every existing run (recorded in their manifests):
 
   | File | Events | SHA-256 |
@@ -166,18 +210,26 @@ uv run ruff check src tests scripts
 ```
 
 `audit` writes `outputs/analysis/audit_raw.json` and prints any difference from the reference counts (5,126 events / 161 issues for bug,
-4,439 / 182 for story). The tests build their own tiny fake repositories (`tests/helpers.py`) and do not need `outputs/`.
+4,439 / 182 for story). Without `dataset/` it stops with `Lỗi: Thư mục dữ liệu không tồn tại: dataset` ("error: data folder does not exist").
+The tests build their own tiny fake repositories (`tests/helpers.py`) and need neither `dataset/` nor `outputs/`.
 
-**5. Regenerate the phase 1 artifacts** (needed for notebooks 01–06 and for phase 2 step E)
+**5. Choose what you need, then regenerate only that**
+
+| Goal | What it needs |
+|---|---|
+| Only **read** the phase 2 results and re-run notebooks 07–12 | A completed `outputs/process/<run>` whose config hash matches the current `configs/process.yaml` (the author's run `20261026T025412Z-399b0a40` does, while `process.yaml` is unedited). **No dataset and no V1 run** (verified on a clean copy). If you did edit `process.yaml`, pass the run explicitly: `uv run jira-ad notebooks --run-dir outputs/process/<run>`. |
+| Notebooks 01–06 (phase 1) | Dataset + a V1 run: `uv run jira-ad run --config configs/baseline.yaml` (a few seconds). |
+| **Re-run** phase 2 (`process`) with the Node2Vec and `M_markov` parts | Dataset + a V1 run + an improvement folder (below), then step 6. |
 
 ```bash
-uv run jira-ad run     --config configs/baseline.yaml            # → outputs/runs/<UTC>-930f8a85/  (the V1 run)
-uv run jira-ad improve --plan configs/improvement_plan.yaml      # → outputs/improvement/<UTC>-<hash8>/  (~90 s)
+uv run jira-ad run     --config configs/baseline.yaml            # → outputs/runs/<UTC>-930f8a85/   (V1 run; 3.3 s on the verified copy)
+ls -d outputs/improvement/*-bb0fee9a                              # already there? then skip the next line
+uv run jira-ad improve --plan configs/improvement_plan.yaml      # → outputs/improvement/<UTC>-bb0fee9a/   (~90 s)
 ```
 
-**6. Point phase 2 at the regenerated runs**
+**6. Point phase 2 at those folders** (only to re-run `process`)
 
-`configs/process.yaml` hard-codes two folders that only exist on the author's machine (their names contain timestamps):
+`configs/process.yaml` hard-codes two timestamped folders from the author's machine:
 
 ```yaml
 paths:
@@ -185,27 +237,49 @@ paths:
   improvement_dir: outputs/improvement/20261022T151529Z-bb0fee9a
 ```
 
-After step 5, change **only those two lines** to the folders that step 5 created, then run phase 2:
+`outputs/runs/` is git-ignored, so `v1_run` never exists on a fresh clone. Find the folders that step 5 produced and change **only those two lines**
+(use the newest `-930f8a85` folder for `v1_run`, and an existing `-bb0fee9a` folder for `improvement_dir`):
 
 ```bash
+ls -d outputs/runs/*-930f8a85          # the V1 run (930f8a85 = hash8 of configs/baseline.yaml)
+ls -d outputs/improvement/*-bb0fee9a   # the improvement run
 uv run jira-ad process --config configs/process.yaml           # steps A–E → outputs/process/<UTC>-<hash8>/
 uv run jira-ad notebooks --run-dir outputs/process/<run>       # notebooks 07–12
 ```
 
-If the two folders are missing, `process` still completes but step E silently drops the Node2Vec comparison and the `M_markov` dimension
-(it writes a note in `e_ranking/status.json`), so the result differs from the reports.
-Existing reports quote numbers from the author's run `outputs/process/20261026T025412Z-399b0a40`.
+Editing those lines changes the config hash, so the new run's `<hash8>` differs from the author's `399b0a40`. If the two folders are missing,
+`process` still completes but step E silently drops the Node2Vec comparison and the `M_markov` dimension (it writes a note in
+`e_ranking/status.json`), so the result differs from the reports. Existing reports quote the numbers of the author's run
+`outputs/process/20261026T025412Z-399b0a40`.
 
 **7. Open notebooks by hand (optional)**
 
 In VSCode/Jupyter choose the `.venv` kernel (named `jira-ad`) and run from the first cell. Notebooks pick the newest completed run whose
 `config_hash` matches the current config (see Commands).
 
+### What was verified
+
+On a clean copy of the sources (no `.venv`, no `outputs/`; the two CSV files copied from the author's folder, **not downloaded** from Zenodo),
+macOS, Python 3.12, `uv.lock`, on 2026-10-27:
+
+| Step | Result |
+|---|---|
+| `uv sync --locked --all-extras --group dev` | ok |
+| `jira-ad audit` | ok: 5,126 events / 161 issues (bug), 4,439 / 182 (story); without `dataset/` it stops with the error quoted in step 4 |
+| `uv run pytest -q` | 705 passed in 3 min 40 s (no `outputs/` needed) |
+| `jira-ad run` / `jira-ad improve` | ok, 3.3 s / about 90 s |
+| `jira-ad process` without the V1 and improvement folders | ok but degraded (step E drops Node2Vec and `M_markov`, as described above) |
+| `jira-ad process` after step 6, then `jira-ad notebooks` | ok; notebooks 07–12 ran in about 20 s |
+| Same notebooks with `dataset/` and `outputs/runs/` removed | ok |
+| Regenerated phase 2 run vs the author's run `20261026T025412Z-399b0a40` | 74 of 75 data files byte-identical (PNG/SVG, manifest and executed notebooks not compared); the only difference is `e_ranking/status.json`, which records folder paths |
+
+Not verified: the pip route (Option 2) with the `process` extra, a real download from Zenodo, and other OS/CPU (bitwise equality is not guaranteed).
+
 ### What is in Git and what is not
 
-| In Git (after clone) | Not in Git (you create it) |
+| Arrives with a clone (if committed) | Ignored by Git (you create it) |
 |---|---|
-| `src/`, `tests/`, `configs/`, `notebooks/`, `docs/`, `scripts/`, `pyproject.toml`, `uv.lock`, `.python-version` | `dataset/` (provide it, step 3) · `outputs/` (regenerate, steps 5–6) · `.venv/` (step 2) |
+| `src/`, `tests/`, `configs/`, `notebooks/`, `docs/`, `scripts/`, `pyproject.toml`, `uv.lock`, `.python-version`, and `outputs/{analysis,prepared,improvement,process}/` (not git-ignored) | `dataset/` (provide it, step 3) · `outputs/runs/*` (regenerate, step 5) · `.venv/` (step 2) · caches |
 
 ## Commands
 
@@ -287,6 +361,7 @@ Notebooks 07–12 belong to phase 2 (see below).
 | The first notebook cell reports `Chưa chỉ định run` ("no run specified") or `Chưa có run hoàn tất nào khớp configs/baseline.yaml hiện tại` ("no completed run matches the current configs/baseline.yaml") | No run matches the current config: run `uv run jira-ad run --config configs/baseline.yaml`, or set `JIRA_AD_RUN_DIR` |
 | You edited code in `src/jira_ad/` but the notebook still behaves as before | The kernel still holds the old module in memory: **Restart** the kernel and run again |
 | VSCode asks to choose a kernel, or `ModuleNotFoundError: jira_ad` | Choose the kernel of `.venv` (named `jira-ad`); run `uv sync --locked --all-extras --group dev` if `.venv` does not exist yet |
+| `Lỗi: Thư mục dữ liệu không tồn tại: dataset` ("error: data folder does not exist") from `audit`/`prepare`/`run`/`improve`/`process` (checked) | `dataset/` is missing: put `TIeventlogBug.csv` and `TIeventlogStory.csv` in `<repo root>/dataset/` (Setup, step 3). A failed `process` leaves an empty `outputs/process/<UTC>-<hash8>/` folder; it has no `manifest.json`, so it is never picked up, and it is safe to delete |
 | Error `không còn khớp fingerprint` ("no longer matches the fingerprint") or `Đầu vào … đã đổi sau khi chạy run` ("input … changed after the run") | The data or an artifact of the run was modified after the run: re-run the command that the error message prints |
 | `PrepareError … đã có nhưng khác nội dung tính lại` ("… exists but differs from the recomputed content") | A folder in `outputs/prepared/` does not match the recomputed result: delete that folder and run again |
 | `ModuleNotFoundError: pm4py` in phase 2 | The `process` extra is not installed: use `uv sync --locked --all-extras --group dev`, or `pip install -e '.[notebook,dev,process]'` |
@@ -429,7 +504,7 @@ Read in this order if you want to understand the code.
 | `process_run.py`, `process_analysis.py`, `process_plots.py`, `process_report.py` | Orchestration of steps A–E with manifest, notebook loader and generated remarks, figures, cross-check of report numbers against artifacts |
 
 Other directories: `notebooks/` (twelve notebooks) · `scripts/` · `tests/` (one test file per module) · `docs/` · `dataset/` (raw, read-only, not in Git) ·
-`outputs/` (artifacts, not in Git). Agent guidance: [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md).
+`outputs/` (artifacts; `outputs/runs/*` is git-ignored). Agent guidance: [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md).
 
 Documents: [docs/BAO_CAO.md](docs/BAO_CAO.md) (thesis report, V1), [docs/BAO_CAO_CAI_TIEN.md](docs/BAO_CAO_CAI_TIEN.md) (improvement phase),
 [docs/BAO_CAO_TONG_KET.md](docs/BAO_CAO_TONG_KET.md) (summary report), [docs/BAO_CAO_MON_HOC.md](docs/BAO_CAO_MON_HOC.md) (phase 2 course report),
